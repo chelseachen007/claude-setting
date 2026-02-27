@@ -1,9 +1,69 @@
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721"
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
+    "MAX_THINKING_TOKENS": "10000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "haiku"
   },
   "model": "opus",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/scripts/hooks/session-start.js\""
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/scripts/hooks/session-end.js\""
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/scripts/hooks/pre-compact.js\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/scripts/hooks/evaluate-session.js\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/scripts/hooks/suggest-compact.js\""
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "WebSearch",

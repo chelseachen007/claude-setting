@@ -15,6 +15,7 @@ statsig/
 # 历史和统计
 history.jsonl
 stats-cache.json
+settings.local.json
 
 # 系统文件
 .DS_Store

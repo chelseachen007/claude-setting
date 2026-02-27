@@ -1,0 +1,27 @@
+# 临时文件和缓存
+session-env/
+tasks/
+debug/
+telemetry/
+todos/
+shell-snapshots/
+file-history/
+paste-cache/
+image-cache/
+cache/
+backups/
+statsig/
+
+# 历史和统计
+history.jsonl
+stats-cache.json
+
+# 系统文件
+.DS_Store
+
+# 项目相关临时数据
+projects/
+plans/
+
+# IDE
+ide/

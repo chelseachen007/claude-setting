@@ -1,0 +1,19 @@
+{
+  "name": "rss-reader",
+  "description": "RSS 阅读器 MVP 开发团队 - 实现基础阅读 + Obsidian 联动功能",
+  "createdAt": 1771901578598,
+  "leadAgentId": "team-lead@rss-reader",
+  "leadSessionId": "02655482-9f74-456e-bd96-0fb68e91c539",
+  "members": [
+    {
+      "agentId": "team-lead@rss-reader",
+      "name": "team-lead",
+      "agentType": "general-purpose",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1771901578598,
+      "tmuxPaneId": "",
+      "cwd": "/Users/chenjie/Documents/study/claude",
+      "subscriptions": []
+    }
+  ]
+}

@@ -23,6 +23,7 @@ settings.local.json
 # 项目相关临时数据
 projects/
 plans/
+sessions/
 
 # IDE
 ide/

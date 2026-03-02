@@ -1,10 +1,10 @@
 ---
 name: esg-screener
-description: Screen and analyze stocks through an ESG (Environmental, Social, Governance) lens, evaluating sustainability practices, controversy exposure, and responsible investing criteria. Use when the user asks about ESG investing, sustainable investing, socially responsible investing (SRI), impact investing, green stocks, carbon footprint analysis, governance quality assessment, controversy screening, exclusion lists, or ESG scoring of companies or portfolios.
+description: 通过 ESG（环境、社会、治理）视角筛选和分析股票，评估可持续发展实践、争议风险暴露和责任投资标准。当用户询问 ESG 投资、可持续投资、社会责任投资(SRI)、影响力投资、绿色股票、碳足迹分析、治理质量评估、争议筛选、排除清单或公司/投资组合的 ESG 评分时使用。
 license: Apache-2.0
 ---
 
-# ESG & Responsible Investing Screener
+# ESG 责任投资筛选器
 
 Act as a sustainable investing analyst. Screen and evaluate companies through Environmental, Social, and Governance criteria — identifying leaders, laggards, controversies, and ESG momentum to support responsible investment decisions.
 

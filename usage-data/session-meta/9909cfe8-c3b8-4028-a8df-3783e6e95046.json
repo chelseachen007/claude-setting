@@ -1,0 +1,64 @@
+{
+  "session_id": "9909cfe8-c3b8-4028-a8df-3783e6e95046",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-27T06:21:29.851Z",
+  "duration_minutes": 86,
+  "user_message_count": 7,
+  "assistant_message_count": 136,
+  "tool_counts": {
+    "Bash": 63,
+    "Read": 10,
+    "TaskOutput": 3,
+    "TaskStop": 1,
+    "WebSearch": 1,
+    "Write": 3,
+    "Edit": 1
+  },
+  "languages": {
+    "Markdown": 3,
+    "JSON": 7
+  },
+  "git_commits": 3,
+  "git_pushes": 2,
+  "input_tokens": 124856,
+  "output_tokens": 11368,
+  "first_prompt": "分组skills下的，按code、financial、study、life",
+  "user_interruptions": 1,
+  "user_response_times": [
+    142.49,
+    191.508,
+    198.381,
+    507.815,
+    389.043,
+    41.793
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 246,
+  "lines_removed": 1,
+  "files_modified": 3,
+  "message_hours": [
+    14,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T06:21:29.851Z",
+    "2026-02-27T07:06:42.643Z",
+    "2026-02-27T07:16:48.569Z",
+    "2026-02-27T07:16:55.442Z",
+    "2026-02-27T07:22:04.876Z",
+    "2026-02-27T07:34:20.745Z",
+    "2026-02-27T07:36:39.966Z"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "session_id": "85f6bc6d-1173-4d58-8a00-213a1e3cda43",
+  "project_path": "/Users/chenjie/Documents/study/claude/Prium",
+  "start_time": "2026-02-25T08:14:26.226Z",
+  "duration_minutes": 51,
+  "user_message_count": 7,
+  "assistant_message_count": 182,
+  "tool_counts": {
+    "Read": 29,
+    "Glob": 3,
+    "TaskCreate": 4,
+    "TaskUpdate": 5,
+    "Edit": 40,
+    "Write": 8,
+    "Bash": 35,
+    "Grep": 2,
+    "TaskList": 1
+  },
+  "languages": {
+    "TypeScript": 49,
+    "JSON": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 39215,
+  "output_tokens": 17273,
+  "first_prompt": "Implement the following plan:  # RSS 阅读器文章过滤功能实现计划  ## 背景  用户需要一个完整的文章过滤系统，用于在 RSS 文章拉取时自动处理内容。主要场景包括：  1. **订阅源级别过滤** - 为单个订阅源设置规则（如\"标题包含肖战\"自动标记已读） 2. **全局/分组级别过滤** - 为所有订阅或特定分类设置规则 3. **重点标记** - 匹配关…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    27.971,
+    72.001,
+    148.918,
+    149.615,
+    151.665,
+    358.884
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Command Failed": 5,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 3685,
+  "lines_removed": 121,
+  "files_modified": 19,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T08:14:26.226Z",
+    "2026-02-25T08:42:51.712Z",
+    "2026-02-25T08:50:45.318Z",
+    "2026-02-25T08:52:02.235Z",
+    "2026-02-25T08:52:02.932Z",
+    "2026-02-25T08:52:04.982Z",
+    "2026-02-25T08:59:09.943Z"
+  ]
+}

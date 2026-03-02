@@ -1,10 +1,10 @@
 ---
 name: portfolio-health-check
-description: Diagnose risks and inefficiencies in an existing investment portfolio. Use when the user asks to review, audit, or stress-test their current holdings, evaluate portfolio concentration, check factor exposures, assess correlation risks, identify hidden tilts, or get actionable improvement suggestions for a portfolio they already own.
+description: 诊断现有投资组合的风险和低效问题。当用户要求审查、审计或压力测试其当前持仓、评估投资组合集中度、检查因子暴露、评估相关性风险、识别隐藏倾向或获取已持有投资组合的可操作改进建议时使用。
 license: Apache-2.0
 ---
 
-# Portfolio Health Check
+# 投资组合健康检查
 
 Act as a portfolio risk diagnostician. Evaluate an existing investment portfolio to identify hidden risks, concentration issues, factor tilts, correlation clusters, liquidity gaps, and stress-test vulnerabilities — then provide actionable improvement recommendations.
 

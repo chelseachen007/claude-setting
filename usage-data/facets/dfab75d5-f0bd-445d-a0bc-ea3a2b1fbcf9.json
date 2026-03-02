@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "User wanted to know which AI model Claude is currently using",
+  "goal_categories": {
+    "quick_question": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {
+    "unclear": 1
+  },
+  "claude_helpfulness": "unhelpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "request_interrupted": 1
+  },
+  "friction_detail": "User interrupted before any response could be given",
+  "primary_success": "none",
+  "brief_summary": "User asked about Claude's model in Chinese but interrupted the request before receiving an answer.",
+  "session_id": "dfab75d5-f0bd-445d-a0bc-ea3a2b1fbcf9"
+}

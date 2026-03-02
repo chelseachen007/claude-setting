@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "Format and refine a markdown note about Claude Code terminal configuration and Ghostty keyboard shortcuts",
+  "goal_categories": {
+    "documentation_editing": 1,
+    "content_refinement": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User wanted to format and then streamline a terminal/keyboard shortcuts reference note by removing common shortcuts, which was successfully completed.",
+  "session_id": "4c4ed437-a58b-481b-9de3-e4673ccdecc9"
+}

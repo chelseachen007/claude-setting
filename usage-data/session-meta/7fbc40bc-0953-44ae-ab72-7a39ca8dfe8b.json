@@ -1,0 +1,51 @@
+{
+  "session_id": "7fbc40bc-0953-44ae-ab72-7a39ca8dfe8b",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker/backend",
+  "start_time": "2026-01-30T07:29:45.170Z",
+  "duration_minutes": 3,
+  "user_message_count": 6,
+  "assistant_message_count": 2,
+  "tool_counts": {
+    "Bash": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 134289,
+  "output_tokens": 75,
+  "first_prompt": "<task-notification> <task-id>b95db20</task-id> <output-file>/private/tmp/claude-501/-Users-chenjie-Documents-study-claude-github-personal-tracker/tasks/b95db20.output</output-file> <status>failed</sta…",
+  "summary": "Backend server startup failures and success",
+  "user_interruptions": 3,
+  "user_response_times": [
+    134.882,
+    135.004,
+    136.735,
+    136.843,
+    137.766
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-01-30T07:29:45.282Z",
+    "2026-01-30T07:32:35.517Z",
+    "2026-01-30T07:32:35.639Z",
+    "2026-01-30T07:32:37.370Z",
+    "2026-01-30T07:32:37.478Z",
+    "2026-01-30T07:32:38.401Z"
+  ]
+}

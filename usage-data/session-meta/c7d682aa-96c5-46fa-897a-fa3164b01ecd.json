@@ -1,0 +1,49 @@
+{
+  "session_id": "c7d682aa-96c5-46fa-897a-fa3164b01ecd",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/sso-auth/database",
+  "start_time": "2026-02-25T09:17:45.888Z",
+  "duration_minutes": 22,
+  "user_message_count": 2,
+  "assistant_message_count": 17,
+  "tool_counts": {
+    "Task": 2,
+    "AskUserQuestion": 1,
+    "Read": 2,
+    "Bash": 3,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "JSON": 2,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 16354,
+  "output_tokens": 2723,
+  "first_prompt": "能不能前端页面 也做好,别的前端应用可以引入页面，后端只需要鉴权",
+  "user_interruptions": 1,
+  "user_response_times": [
+    86.07
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "File Too Large": 2,
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 253,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T09:17:45.888Z",
+    "2026-02-25T09:39:41.381Z"
+  ]
+}

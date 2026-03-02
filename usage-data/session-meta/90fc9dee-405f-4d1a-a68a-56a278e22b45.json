@@ -1,0 +1,42 @@
+{
+  "session_id": "90fc9dee-405f-4d1a-a68a-56a278e22b45",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-26T01:23:15.007Z",
+  "duration_minutes": 6,
+  "user_message_count": 1,
+  "assistant_message_count": 22,
+  "tool_counts": {
+    "WebSearch": 2,
+    "AskUserQuestion": 3,
+    "Write": 1,
+    "Edit": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 6265,
+  "output_tokens": 3499,
+  "first_prompt": "我现在想要一个设计一个辅助我炒股的软件，你先调研一下一般会做些什么功能，我目前想要的大概是我关注的个股每日信息收集，财报分析。另外还需要一些稳定理财的信息，我们先讨论需要功能，再来考虑页面如何设计，",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 123,
+  "lines_removed": 5,
+  "files_modified": 1,
+  "message_hours": [
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T01:23:15.007Z"
+  ]
+}

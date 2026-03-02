@@ -1,0 +1,61 @@
+{
+  "session_id": "d0ff8340-68de-4139-8d00-944466bc1f23",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker/.claude/worktrees/floating-sleeping-snowflake",
+  "start_time": "2026-02-26T06:52:07.569Z",
+  "duration_minutes": 78,
+  "user_message_count": 4,
+  "assistant_message_count": 147,
+  "tool_counts": {
+    "Glob": 4,
+    "Read": 18,
+    "AskUserQuestion": 1,
+    "TaskCreate": 10,
+    "TaskUpdate": 24,
+    "TaskList": 1,
+    "Bash": 17,
+    "Write": 15,
+    "Edit": 10,
+    "TaskOutput": 2
+  },
+  "languages": {
+    "JSON": 2,
+    "TypeScript": 1,
+    "CSS": 3,
+    "JavaScript": 3
+  },
+  "git_commits": 1,
+  "git_pushes": 0,
+  "input_tokens": 260531,
+  "output_tokens": 32171,
+  "first_prompt": "替换所有模块的搜索下拉框和表格，太丑了，找一个好看点的组件库，一个一个模块建任务来",
+  "user_interruptions": 0,
+  "user_response_times": [
+    317.136,
+    791.726,
+    68.696
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 3,
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2675,
+  "lines_removed": 91,
+  "files_modified": 18,
+  "message_hours": [
+    14,
+    15,
+    15,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T06:52:07.569Z",
+    "2026-02-26T07:24:52.869Z",
+    "2026-02-26T07:41:07.328Z",
+    "2026-02-26T08:09:34.770Z"
+  ]
+}

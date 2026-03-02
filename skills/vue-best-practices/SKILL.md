@@ -1,11 +1,13 @@
 ---
 name: vue-best-practices
-description: Vue 3 and Vue.js best practices for TypeScript, vue-tsc, and Volar. This skill should be used when writing, reviewing, or refactoring Vue components to ensure correct typing patterns. Triggers on tasks involving Vue components, props extraction, wrapper components, template type checking, or Volar configuration.
+description: Vue 3 和 Vue.js 的 TypeScript、vue-tsc 和 Volar 最佳实践。在编写、审查或重构 Vue 组件以确保正确的类型模式时使用。涉及 Vue 组件、props 提取、包装组件、模板类型检查或 Volar 配置的任务时触发。
 license: MIT
 metadata:
   author: hyf0
   version: "8.0.0"
 ---
+
+# Vue 最佳实践
 
 ## Capability Rules
 

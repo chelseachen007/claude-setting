@@ -3,7 +3,7 @@ name: baoyu-post-to-wechat
 description: Post content to WeChat Official Account (微信公众号). Supports both article posting (文章) and image-text posting (图文).
 ---
 
-# Post to WeChat Official Account (微信公众号)
+# 微信公众号发布
 
 Post content to WeChat Official Account using Chrome CDP automation.
 

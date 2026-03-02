@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "User wants to generate a pnpm lock file that isn't being created",
+  "goal_categories": {
+    "debugging_troubleshooting": 1
+  },
+  "outcome": "unclear_from_transcript",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_debugging",
+  "brief_summary": "User troubleshooting why pnpm lock file isn't being generated; Claude provided diagnostic commands but session ended before resolution confirmed.",
+  "session_id": "def84191-7c5f-46f7-a0a0-8338053c8c9f"
+}

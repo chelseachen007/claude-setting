@@ -1,0 +1,73 @@
+{
+  "session_id": "55f90035-6ac1-4fa0-a643-337d5d1dfcb8",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-02-25T07:53:14.412Z",
+  "duration_minutes": 79,
+  "user_message_count": 8,
+  "assistant_message_count": 226,
+  "tool_counts": {
+    "TaskCreate": 7,
+    "TaskUpdate": 8,
+    "Glob": 7,
+    "Read": 26,
+    "Bash": 54,
+    "Write": 34,
+    "Edit": 5,
+    "TaskList": 1
+  },
+  "languages": {
+    "TypeScript": 7,
+    "JavaScript": 20,
+    "JSON": 2,
+    "YAML": 3,
+    "Markdown": 4
+  },
+  "git_commits": 1,
+  "git_pushes": 2,
+  "input_tokens": 46044,
+  "output_tokens": 18179,
+  "first_prompt": "Implement the following plan:  # SSO 单点登录 + 第三方登录实现方案  ## 背景  用户希望将多个自建应用（如 Personal Tracker）的用户系统打通，实现： 1. **单点登录 (SSO)**：一个账号登录所有自建系统 2. **第三方登录**：支持 GitHub、Google、微信等登录方式  ## 当前系统现状  - **后端**: Fast…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    202.417,
+    75.339,
+    212.41,
+    63.582,
+    191.024,
+    114.496,
+    60.267
+  ],
+  "tool_errors": 8,
+  "tool_error_categories": {
+    "Other": 1,
+    "File Not Found": 3,
+    "Command Failed": 4
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 4180,
+  "lines_removed": 7,
+  "files_modified": 28,
+  "message_hours": [
+    15,
+    16,
+    16,
+    16,
+    16,
+    16,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T07:53:14.412Z",
+    "2026-02-25T08:10:18.733Z",
+    "2026-02-25T08:12:44.271Z",
+    "2026-02-25T08:20:48.572Z",
+    "2026-02-25T08:34:58.158Z",
+    "2026-02-25T08:56:36.580Z",
+    "2026-02-25T09:04:05.827Z",
+    "2026-02-25T09:10:58.999Z"
+  ]
+}

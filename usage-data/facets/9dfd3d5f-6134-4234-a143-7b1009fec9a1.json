@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Configure Claude to run certain commands without requiring confirmation",
+  "goal_categories": {
+    "configuration": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User wanted to set up Claude auto-approve permissions and successfully added 50+ safe command patterns to their settings file.",
+  "session_id": "9dfd3d5f-6134-4234-a143-7b1009fec9a1"
+}

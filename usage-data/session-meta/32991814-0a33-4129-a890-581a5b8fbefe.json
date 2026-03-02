@@ -1,0 +1,64 @@
+{
+  "session_id": "32991814-0a33-4129-a890-581a5b8fbefe",
+  "project_path": "/Users/chenjie/Documents/study/claude/账单",
+  "start_time": "2026-02-27T08:13:51.490Z",
+  "duration_minutes": 82,
+  "user_message_count": 9,
+  "assistant_message_count": 68,
+  "tool_counts": {
+    "Read": 9,
+    "Bash": 16,
+    "Glob": 2,
+    "Skill": 1,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 162048,
+  "output_tokens": 22769,
+  "first_prompt": "/bill-screenshot-parser 解析这个微信账单",
+  "user_interruptions": 0,
+  "user_response_times": [
+    698.776,
+    135.07,
+    697.167,
+    140.799,
+    148.567
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 249,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T08:13:51.490Z",
+    "2026-02-27T08:13:51.490Z",
+    "2026-02-27T08:13:51.490Z",
+    "2026-02-27T08:27:05.259Z",
+    "2026-02-27T08:50:35.785Z",
+    "2026-02-27T08:51:39.892Z",
+    "2026-02-27T09:11:25.133Z",
+    "2026-02-27T09:15:57.417Z",
+    "2026-02-27T09:22:19.223Z"
+  ]
+}

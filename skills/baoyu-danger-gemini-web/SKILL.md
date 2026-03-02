@@ -3,7 +3,7 @@ name: baoyu-danger-gemini-web
 description: Image generation skill using Gemini Web. Generates images from text prompts via Google Gemini. Also supports text generation. Use as the image generation backend for other skills like cover-image, xhs-images, article-illustrator.
 ---
 
-# Gemini Web Client
+# Gemini Web 客户端
 
 Supports:
 - Text generation

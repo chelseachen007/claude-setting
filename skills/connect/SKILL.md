@@ -1,9 +1,9 @@
 ---
 name: connect
-description: Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gmail, Slack, GitHub, Notion, and 1000+ services.
+description: 将 Claude 连接到任意应用程序。发送邮件、创建议题、发布消息、更新数据库——在 Gmail、Slack、GitHub、Notion 等 1000+ 服务中执行真实操作。
 ---
 
-# Connect
+# 应用连接器
 
 Connect Claude to any app. Stop generating text about what you could do - actually do it.
 

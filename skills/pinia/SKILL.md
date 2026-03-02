@@ -1,13 +1,13 @@
 ---
 name: pinia
-description: Pinia official Vue state management library, type-safe and extensible. Use when defining stores, working with state/getters/actions, or implementing store patterns in Vue apps.
+description: Pinia 官方 Vue 状态管理库，类型安全且可扩展。在 Vue 应用中定义 store、使用 state/getters/actions 或实现 store 模式时使用。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"
   source: Generated from https://github.com/vuejs/pinia, scripts located at https://github.com/antfu/skills
 ---
 
-# Pinia
+# Pinia 状态管理
 
 Pinia is the official state management library for Vue, designed to be intuitive and type-safe. It supports both Options API and Composition API styles, with first-class TypeScript support and devtools integration.
 

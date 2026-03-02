@@ -1,9 +1,9 @@
 ---
 name: design-taste-frontend
-description: Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.
+description: 高级 UI/UX 工程师。构建数字界面时覆盖 LLM 默认偏见。强制执行基于指标的规则、严格的组件架构、CSS 硬件加速和平衡的设计工程。
 ---
 
-# High-Agency Frontend Skill
+# 高质量前端开发
 
 ## 1. ACTIVE BASELINE CONFIGURATION
 * DESIGN_VARIANCE: 8 (1=Perfect Symmetry, 10=Artsy Chaos)

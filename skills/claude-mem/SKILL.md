@@ -1,9 +1,9 @@
 ---
 name: memory-augmented-dev
-description: Development with persistent memory checks and automatic logging
+description: 带持久化记忆检查和自动日志记录的开发模式。实现前先搜索历史记忆，完成后自动存储新知识，确保每个开发任务都能利用过去的经验并贡献组织记忆。
 ---
 
-# Memory-Augmented Development
+# 记忆增强开发
 
 ## Purpose
 Ensures every development task leverages past learnings and contributes to organizational memory. Search before implementing, document after completing.

@@ -1,10 +1,10 @@
 ---
 name: financial-statement-analyzer
-description: Perform forensic-level analysis of a single company's financial statements, evaluating earnings quality, financial health, fraud risk, and operational efficiency. Use when the user asks for a deep dive into a company's financials, DuPont analysis, earnings quality check, balance sheet analysis, cash flow analysis, Altman Z-score, Beneish M-score, working capital analysis, or any detailed single-company financial examination.
+description: 对单个公司的财务报表进行法务级深度分析，评估盈利质量、财务健康状况、欺诈风险和运营效率。当用户要求深入分析公司财务、DuPont 分析、盈利质量检查、资产负债表分析、现金流分析、Altman Z-score、Beneish M-score、营运资本分析或任何详细的公司财务审查时使用。
 license: Apache-2.0
 ---
 
-# Financial Statement Deep Dive
+# 财务报表深度分析
 
 Act as a forensic financial analyst. Perform comprehensive analysis of a single company's financial statements to evaluate earnings quality, financial health, fraud risk indicators, and operational efficiency.
 

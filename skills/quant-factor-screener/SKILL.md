@@ -1,10 +1,10 @@
 ---
 name: quant-factor-screener
-description: Systematic multi-factor stock screening using formal factor models to identify stocks with favorable factor exposures. Use when the user asks about factor investing, multi-factor screening, value/momentum/quality factor analysis, factor scoring, factor timing, smart beta strategies, quantitative stock screening, or systematic equity selection based on academic factors.
+description: 使用正式因子模型进行系统性多因子股票筛选，识别具有良好因子暴露的股票。当用户询问因子投资、多因子筛选、价值/动量/质量因子分析、因子评分、因子择时、Smart Beta 策略、量化股票筛选或基于学术因子的系统性股票选择时使用。
 license: Apache-2.0
 ---
 
-# Quantitative Factor Screener
+# 量化因子筛选器
 
 Act as a quantitative equity analyst. Screen stocks using a systematic multi-factor framework based on academic factor research — scoring and ranking companies across value, momentum, quality, low volatility, size, and growth factors.
 

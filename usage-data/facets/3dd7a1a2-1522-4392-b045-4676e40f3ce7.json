@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "Start the RSS reader project (both frontend and backend development servers)",
+  "goal_categories": {
+    "start_project": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "buggy_code": 1,
+    "execution_error": 1
+  },
+  "friction_detail": "Backend startup failed with incorrect package name and API error 500, only frontend started successfully",
+  "primary_success": "none",
+  "brief_summary": "User wanted to start the project; frontend started but backend failed with configuration and API errors",
+  "session_id": "3dd7a1a2-1522-4392-b045-4676e40f3ce7"
+}

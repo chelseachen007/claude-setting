@@ -1,0 +1,50 @@
+{
+  "session_id": "6c018148-b051-48bd-8f7e-0943c0f6252c",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-02-25T07:34:07.885Z",
+  "duration_minutes": 19,
+  "user_message_count": 3,
+  "assistant_message_count": 24,
+  "tool_counts": {
+    "Bash": 8,
+    "AskUserQuestion": 2,
+    "Task": 2,
+    "Write": 1,
+    "Edit": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14642,
+  "output_tokens": 819,
+  "first_prompt": "启动前后端",
+  "user_interruptions": 1,
+  "user_response_times": [
+    553.91,
+    21.055
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 171,
+  "lines_removed": 4,
+  "files_modified": 1,
+  "message_hours": [
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T07:34:07.885Z",
+    "2026-02-25T07:44:19.026Z",
+    "2026-02-25T07:53:14.413Z"
+  ]
+}

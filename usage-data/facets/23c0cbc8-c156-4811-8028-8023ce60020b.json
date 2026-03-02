@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Enable the Agent Teams experimental feature in Claude Code settings",
+  "goal_categories": {
+    "configuration": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User asked to enable Agent Teams feature and Claude successfully added the required environment variable to settings.json.",
+  "session_id": "23c0cbc8-c156-4811-8028-8023ce60020b"
+}

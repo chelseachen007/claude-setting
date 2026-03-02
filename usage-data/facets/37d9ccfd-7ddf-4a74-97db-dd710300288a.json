@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "Set Ghostty as the default terminal on macOS system-wide",
+  "goal_categories": {
+    "configuration": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "user_copy_paste_error": 1
+  },
+  "friction_detail": "User's command was split across lines when pasting, causing a grep syntax error",
+  "primary_success": "good_explanations",
+  "brief_summary": "User wanted to set Ghostty as macOS default terminal; Claude provided both GUI and command-line methods, then successfully executed the commands to set it.",
+  "session_id": "37d9ccfd-7ddf-4a74-97db-dd710300288a"
+}

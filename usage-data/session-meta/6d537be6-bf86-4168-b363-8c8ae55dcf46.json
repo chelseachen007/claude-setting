@@ -1,0 +1,57 @@
+{
+  "session_id": "6d537be6-bf86-4168-b363-8c8ae55dcf46",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker/backend",
+  "start_time": "2026-01-30T08:33:18.670Z",
+  "duration_minutes": 31,
+  "user_message_count": 6,
+  "assistant_message_count": 89,
+  "tool_counts": {
+    "Read": 13,
+    "Edit": 24,
+    "Bash": 16,
+    "TaskOutput": 1,
+    "TaskStop": 1
+  },
+  "languages": {
+    "TypeScript": 2
+  },
+  "git_commits": 2,
+  "git_pushes": 2,
+  "input_tokens": 818,
+  "output_tokens": 211,
+  "first_prompt": "remember this ，以后生成代码里使用中文，全局生效",
+  "summary": "Personal Tracker: AG Grid, AI Recognition, Chinese",
+  "user_interruptions": 0,
+  "user_response_times": [
+    31.575,
+    14.648,
+    111.535,
+    1164.31,
+    7.605
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 65,
+  "lines_removed": 58,
+  "files_modified": 9,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-01-30T08:33:18.670Z",
+    "2026-01-30T08:39:39.086Z",
+    "2026-01-30T08:40:03.481Z",
+    "2026-01-30T08:43:26.314Z",
+    "2026-01-30T09:03:19.794Z",
+    "2026-01-30T09:04:31.776Z"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "Test connectivity to a specific server and port (47.80.76.56:3000) using curl",
+  "goal_categories": {
+    "troubleshooting": 1,
+    "network_testing": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "api_error": 1
+  },
+  "friction_detail": "API error prevented completion of the user's request to test the connection",
+  "primary_success": "none",
+  "brief_summary": "User wanted to test a telnet connection using curl as an alternative, but an API error prevented Claude from providing the test command.",
+  "session_id": "e1b282fe-38b8-44f8-b209-50d01debedee"
+}

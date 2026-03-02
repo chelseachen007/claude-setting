@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Acknowledge notification about killed background task",
+  "goal_categories": {
+    "task_management": 0
+  },
+  "outcome": "unclear_from_transcript",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "unhelpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "none",
+  "brief_summary": "Session contains only a system notification about a killed background task with no actual user request or interaction.",
+  "session_id": "58a1abaa-3a61-4f97-b6bc-1115bdf0d2f0"
+}

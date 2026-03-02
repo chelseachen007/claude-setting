@@ -1,9 +1,9 @@
 ---
 name: skill-finder
-description: Auto-discovery and generation of skills from local skills directory or GitHub high-star repositories. Use when: (1) User requests a task that might benefit from an existing skill, (2) User wants to create a new skill based on popular GitHub projects, (3) No relevant skill exists locally and GitHub search is needed to find reference implementations.
+description: 从本地技能目录或 GitHub 高星仓库自动发现和生成技能。当以下情况使用：(1) 用户请求的任务可能受益于现有技能，(2) 用户想要基于热门 GitHub 项目创建新技能，(3) 本地没有相关技能需要 GitHub 搜索找到参考实现。
 ---
 
-# Skill Finder
+# Skill 查找器
 
 Automatically discovers existing skills or generates new ones from GitHub repositories.
 

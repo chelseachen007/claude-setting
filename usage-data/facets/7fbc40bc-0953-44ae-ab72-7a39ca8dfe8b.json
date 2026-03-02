@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "User wanted to start and run the backend server but encountered repeated failures",
+  "goal_categories": {
+    "warmup_minimal": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "unhelpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "buggy_code": 2,
+    "task_failed": 2
+  },
+  "friction_detail": "Backend server failed to start twice (exit code 1), and user interrupted Claude's attempts to read output files",
+  "primary_success": "none",
+  "brief_summary": "User attempted to start a backend server which failed twice, and they interrupted Claude before any debugging could occur.",
+  "session_id": "7fbc40bc-0953-44ae-ab72-7a39ca8dfe8b"
+}

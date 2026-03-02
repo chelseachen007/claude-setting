@@ -1,0 +1,42 @@
+{
+  "session_id": "d85c9707-b342-44c5-9472-65e322e7289a",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-26T01:02:00.714Z",
+  "duration_minutes": 12,
+  "user_message_count": 1,
+  "assistant_message_count": 73,
+  "tool_counts": {
+    "Bash": 18,
+    "mcp__github__get_file_contents": 8,
+    "mcp__github__search_repositories": 1,
+    "mcp__github__create_repository": 1,
+    "Write": 3
+  },
+  "languages": {
+    "Markdown": 3
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 6791,
+  "output_tokens": 3853,
+  "first_prompt": "帮我把 现在用到的 claude skills 上传到 github，新增 Claude-Mem插件，再加上也加上，GitHub - Leonxlnx/taste-skill: Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 568,
+  "lines_removed": 0,
+  "files_modified": 3,
+  "message_hours": [
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T01:02:00.714Z"
+  ]
+}

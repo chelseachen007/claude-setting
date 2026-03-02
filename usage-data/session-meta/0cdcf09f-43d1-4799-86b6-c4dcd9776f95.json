@@ -1,0 +1,68 @@
+{
+  "session_id": "0cdcf09f-43d1-4799-86b6-c4dcd9776f95",
+  "project_path": "/Users/chenjie",
+  "start_time": "2026-02-26T01:40:48.799Z",
+  "duration_minutes": 43,
+  "user_message_count": 9,
+  "assistant_message_count": 96,
+  "tool_counts": {
+    "WebSearch": 7,
+    "Bash": 17,
+    "Write": 1,
+    "TaskOutput": 1,
+    "Read": 4,
+    "Edit": 4
+  },
+  "languages": {
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 18990,
+  "output_tokens": 8334,
+  "first_prompt": "1.开启多路并行，产出直接起飞 核心狠招是同时挂载 3 到 5 个 git worktree，每个环境跑一套独立的 Claude 会话。别傻等进度条，当一个在跑测试或写长代码时，直接瞬移到另一个环境开工。 2.复杂任务死磕 plan mode 逻辑 底层共识是只要活儿难，起手必进 plan mode。把所有脑力堆在计划的严密性上，只要逻辑闭环，AI 的执行往往能一次到位。发现跑偏立刻退回规划模式重…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    196.718,
+    166.03,
+    13.548,
+    38.274,
+    120.953,
+    230.176,
+    9.974,
+    330.234
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 137,
+  "lines_removed": 6,
+  "files_modified": 3,
+  "message_hours": [
+    9,
+    9,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T01:40:48.799Z",
+    "2026-02-26T01:50:25.360Z",
+    "2026-02-26T02:04:18.626Z",
+    "2026-02-26T02:04:44.136Z",
+    "2026-02-26T02:05:08.862Z",
+    "2026-02-26T02:09:18.112Z",
+    "2026-02-26T02:14:20.790Z",
+    "2026-02-26T02:15:54.875Z",
+    "2026-02-26T02:23:07.950Z"
+  ]
+}

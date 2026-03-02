@@ -1,10 +1,10 @@
 ---
 name: agent-browser
-description: Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information from web pages.
+description: 浏览器自动化工具，用于网页测试、表单填写、截图和数据提取。当用户需要导航网站、与网页交互、填写表单、截图、测试Web应用或从网页提取信息时使用。
 allowed-tools: Bash(agent-browser:*)
 ---
 
-# Browser Automation with agent-browser
+# 浏览器自动化
 
 ## Quick start
 

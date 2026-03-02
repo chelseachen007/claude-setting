@@ -1,0 +1,55 @@
+{
+  "session_id": "889a510c-24e9-4476-8fb0-16074c95d950",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-26T01:29:32.080Z",
+  "duration_minutes": 38,
+  "user_message_count": 4,
+  "assistant_message_count": 180,
+  "tool_counts": {
+    "Bash": 37,
+    "Write": 28,
+    "Read": 10,
+    "Edit": 6,
+    "Grep": 1
+  },
+  "languages": {
+    "TypeScript": 39,
+    "CSS": 2,
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 62009,
+  "output_tokens": 28943,
+  "first_prompt": "Implement the following plan:  # 炒股辅助软件功能规划  ## 一、项目背景  用户需要一个本地运行的炒股辅助软件，主要用于： - 关注的个股每日信息收集 - 财报基础指标分析 - 债券/国债理财信息查询  ## 二、核心功能模块  ### 2.1 自选股管理 - 添加/删除自选股（支持A股股票代码、ETF/基金代码） - 股票分组管理（如：核心持仓、观察股、ETF…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    73.338,
+    172.865,
+    168.826
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 2,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 3335,
+  "lines_removed": 16,
+  "files_modified": 21,
+  "message_hours": [
+    9,
+    9,
+    9,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T01:29:32.080Z",
+    "2026-02-26T01:51:45.000Z",
+    "2026-02-26T01:55:31.273Z",
+    "2026-02-26T02:05:36.865Z"
+  ]
+}

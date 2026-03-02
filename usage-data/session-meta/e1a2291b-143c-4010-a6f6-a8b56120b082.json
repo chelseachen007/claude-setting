@@ -1,0 +1,48 @@
+{
+  "session_id": "e1a2291b-143c-4010-a6f6-a8b56120b082",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-01-30T07:03:40.116Z",
+  "duration_minutes": 9,
+  "user_message_count": 2,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "mcp__github__search_repositories": 5,
+    "mcp__github__get_file_contents": 4,
+    "Write": 2,
+    "EnterPlanMode": 1,
+    "Task": 2,
+    "Read": 2,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 2,
+    "JavaScript": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 22782,
+  "output_tokens": 156,
+  "first_prompt": "在 github 上寻找类似的项目，有 AI  识别图片来添加数据，有完善的表格展示",
+  "summary": "GitHub AI Tracker Project Research & Implementation Plan",
+  "user_interruptions": 0,
+  "user_response_times": [
+    142.554
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 838,
+  "lines_removed": 0,
+  "files_modified": 2,
+  "message_hours": [
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-01-30T07:03:40.116Z",
+    "2026-01-30T07:07:27.139Z"
+  ]
+}

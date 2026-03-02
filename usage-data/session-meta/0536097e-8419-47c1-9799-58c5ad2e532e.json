@@ -1,0 +1,43 @@
+{
+  "session_id": "0536097e-8419-47c1-9799-58c5ad2e532e",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-24T02:28:11.410Z",
+  "duration_minutes": 24,
+  "user_message_count": 1,
+  "assistant_message_count": 12,
+  "tool_counts": {
+    "Task": 1,
+    "Write": 1,
+    "AskUserQuestion": 1,
+    "Edit": 4,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 4035,
+  "output_tokens": 9367,
+  "first_prompt": "我想做一个 RSS 阅读器，可以导入之前的 rss，可以和我的 obsidian 做联动，可以过滤一些重复信息，可以从外部发现热点或者有用的信息。帮我做一个详细的产品文档",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1467,
+  "lines_removed": 43,
+  "files_modified": 1,
+  "message_hours": [
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T02:28:11.410Z"
+  ]
+}

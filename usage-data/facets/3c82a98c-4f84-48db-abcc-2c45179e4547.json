@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Parse and extract information from a WeChat payment bill image",
+  "goal_categories": {
+    "data_extraction": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "unclear": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User requested parsing of a WeChat payment bill image and Claude extracted and formatted the transaction details into a readable table.",
+  "session_id": "3c82a98c-4f84-48db-abcc-2c45179e4547"
+}

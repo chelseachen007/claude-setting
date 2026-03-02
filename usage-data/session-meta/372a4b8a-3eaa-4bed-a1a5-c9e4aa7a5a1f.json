@@ -1,0 +1,48 @@
+{
+  "session_id": "372a4b8a-3eaa-4bed-a1a5-c9e4aa7a5a1f",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-14T02:23:27.869Z",
+  "duration_minutes": 2,
+  "user_message_count": 1,
+  "assistant_message_count": 64,
+  "tool_counts": {
+    "TeamCreate": 1,
+    "TaskCreate": 3,
+    "Task": 6,
+    "TaskOutput": 9,
+    "TaskList": 6,
+    "TaskUpdate": 9,
+    "Read": 6,
+    "Bash": 5,
+    "Glob": 1,
+    "SendMessage": 6,
+    "TeamDelete": 1
+  },
+  "languages": {
+    "JSON": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 5391,
+  "output_tokens": 2878,
+  "first_prompt": "I'm designing a CLI tool that helps developers track TODO comments across their codebase. Create an agent team to explore this from different angles: one teammate on UX, one on technical architecture,…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 3
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T02:23:27.869Z"
+  ]
+}

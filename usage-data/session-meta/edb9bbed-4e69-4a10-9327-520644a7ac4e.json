@@ -1,0 +1,50 @@
+{
+  "session_id": "edb9bbed-4e69-4a10-9327-520644a7ac4e",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker/frontend",
+  "start_time": "2026-02-26T05:38:19.479Z",
+  "duration_minutes": 76,
+  "user_message_count": 3,
+  "assistant_message_count": 166,
+  "tool_counts": {
+    "Read": 17,
+    "Edit": 58,
+    "Write": 6,
+    "Glob": 1,
+    "Grep": 8,
+    "Bash": 19
+  },
+  "languages": {
+    "JavaScript": 1,
+    "CSS": 2,
+    "TypeScript": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 304954,
+  "output_tokens": 29853,
+  "first_prompt": "[POST] \"http://localhost:3001/api/auth/login\": <no response> Failed to fetch",
+  "user_interruptions": 0,
+  "user_response_times": [
+    2871.436,
+    126.594
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1176,
+  "lines_removed": 75,
+  "files_modified": 9,
+  "message_hours": [
+    13,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T05:38:19.479Z",
+    "2026-02-26T06:36:04.249Z",
+    "2026-02-26T06:43:14.107Z"
+  ]
+}

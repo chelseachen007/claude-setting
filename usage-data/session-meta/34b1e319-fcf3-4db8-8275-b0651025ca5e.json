@@ -1,0 +1,37 @@
+{
+  "session_id": "34b1e319-fcf3-4db8-8275-b0651025ca5e",
+  "project_path": "/Users/chenjie",
+  "start_time": "2026-02-26T02:39:09.817Z",
+  "duration_minutes": 7,
+  "user_message_count": 1,
+  "assistant_message_count": 43,
+  "tool_counts": {
+    "Read": 3,
+    "WebSearch": 1,
+    "Edit": 7,
+    "Bash": 5
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14786,
+  "output_tokens": 2687,
+  "first_prompt": "启动ghostty的时候报错/Users/chenjie/.config/ghostty/config:32:window-split-theme:unknown field /Users/chenjie/.config/ghostty/config:38:macos-native-fullscreen:unknown field /Users/chenjie/.config/ghostty/co…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 15,
+  "lines_removed": 19,
+  "files_modified": 1,
+  "message_hours": [
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T02:39:09.817Z"
+  ]
+}

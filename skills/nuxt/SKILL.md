@@ -1,11 +1,13 @@
 ---
 name: nuxt
-description: Nuxt full-stack Vue framework with SSR, auto-imports, and file-based routing. Use when working with Nuxt apps, server routes, useFetch, middleware, or hybrid rendering.
+description: Nuxt 全栈 Vue 框架，支持 SSR、自动导入和基于文件的路由。在处理 Nuxt 应用、服务器路由、useFetch、中间件或混合渲染时使用。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"
   source: Generated from https://github.com/nuxt/nuxt, scripts located at https://github.com/antfu/skills
 ---
+
+# Nuxt 全栈框架
 
 Nuxt is a full-stack Vue framework that provides server-side rendering, file-based routing, auto-imports, and a powerful module system. It uses Nitro as its server engine for universal deployment across Node.js, serverless, and edge platforms.
 

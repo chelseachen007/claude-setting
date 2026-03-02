@@ -1,0 +1,49 @@
+{
+  "session_id": "9fed54d7-9674-4cf7-82b2-8883f509c0b1",
+  "project_path": "/Users/chenjie/Documents/study/claude/Prium",
+  "start_time": "2026-02-24T08:10:52.856Z",
+  "duration_minutes": 7,
+  "user_message_count": 4,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "Read": 14,
+    "Glob": 6,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 2,
+    "JSON": 4,
+    "TypeScript": 8
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 37580,
+  "output_tokens": 1627,
+  "first_prompt": "提交代码",
+  "user_interruptions": 1,
+  "user_response_times": [
+    5.515,
+    139.265
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 117,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T08:10:52.856Z",
+    "2026-02-24T08:10:52.856Z",
+    "2026-02-24T08:15:12.195Z",
+    "2026-02-24T08:17:25.945Z"
+  ]
+}

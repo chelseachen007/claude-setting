@@ -1,0 +1,67 @@
+{
+  "session_id": "86465961-1713-483c-b6f5-ad6ba59e1568",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-27T07:51:16.953Z",
+  "duration_minutes": 18,
+  "user_message_count": 8,
+  "assistant_message_count": 49,
+  "tool_counts": {
+    "Glob": 2,
+    "Bash": 2,
+    "Read": 4,
+    "Write": 5,
+    "Edit": 5
+  },
+  "languages": {
+    "Markdown": 8,
+    "Python": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 22735,
+  "output_tokens": 14778,
+  "first_prompt": "/Users/chenjie/.claude/skills/code/bill-screenshot-parser 地址换到这了",
+  "user_interruptions": 2,
+  "user_response_times": [
+    52.36,
+    61.074,
+    77.381,
+    142.113,
+    142.113,
+    8.034,
+    71.608
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "User Rejected": 1,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1926,
+  "lines_removed": 30,
+  "files_modified": 3,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T07:51:16.953Z",
+    "2026-02-27T07:52:29.503Z",
+    "2026-02-27T07:52:38.217Z",
+    "2026-02-27T07:56:59.015Z",
+    "2026-02-27T08:01:54.049Z",
+    "2026-02-27T08:01:54.049Z",
+    "2026-02-27T08:05:26.350Z",
+    "2026-02-27T08:06:29.924Z"
+  ]
+}

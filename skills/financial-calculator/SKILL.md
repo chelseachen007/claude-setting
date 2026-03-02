@@ -1,10 +1,10 @@
 ---
 name: findata-toolkit-us
-description: Financial data toolkit for US market analysis. Provides scripts to fetch real-time stock data (yfinance), SEC filings and insider trades (EDGAR), financial statement calculators (DuPont, Z-Score, M-Score, F-Score), portfolio analytics (VaR, stress testing, health scoring), multi-factor screening, and macro indicators (FRED). Use when you need live US market data to ground investment analysis. All data sources are free — no API keys required.
+description: 美股市场分析金融数据工具包。提供实时股票数据(yfinance)、SEC 文件和内幕交易(EDGAR)、财务报表计算器(DuPont、Z-Score、M-Score、F-Score)、投资组合分析(VaR、压力测试、健康评分)、多因子筛选和宏观指标(FRED)等脚本。需要实时美股市场数据支撑投资分析时使用。所有数据源免费，无需 API 密钥。
 license: Apache-2.0
 ---
 
-# FinData Toolkit — US Market
+# 金融数据工具包 — 美股市场
 
 A self-contained data toolkit providing live financial data and quantitative calculations for US market analysis. All data sources are **free** and require **no API keys**.
 

@@ -3,7 +3,7 @@ name: stock-analysis
 description: Chinese stock technical analysis with resonance-based framework (客观共振五维框架). Use when users provide Chinese stock codes and request: (1) Technical indicator analysis, (2) Stock price/MA analysis, (3) MACD/KDJ/RSI indicators, (4) Volume analysis, (5) Bollinger Bands/ATR analysis, (6) Comprehensive stock reports, (7) Price trend analysis, (8) Acceleration/limit-up detection. **CORE**: Uses multi-dimensional resonance validation (客观共振) and probability-based scoring (not absolute predictions). Supports 6-digit stock codes (e.g., 000001, 600036, 603259) for Chinese A-shares.
 ---
 
-# Stock Technical Analysis - 客观共振五维框架
+# 股票技术分析 - 客观共振五维框架
 
 基于**多维度共振验证**和**概率化评分**的A股技术分析工具，拒绝主观预判，让信号自己说话。
 

@@ -1,0 +1,56 @@
+{
+  "session_id": "9dfd3d5f-6134-4234-a143-7b1009fec9a1",
+  "project_path": "/Users/chenjie",
+  "start_time": "2026-01-28T08:04:22.235Z",
+  "duration_minutes": 12,
+  "user_message_count": 6,
+  "assistant_message_count": 23,
+  "tool_counts": {
+    "Bash": 1,
+    "Read": 4,
+    "Edit": 1,
+    "Write": 1
+  },
+  "languages": {
+    "JSON": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "怎么设置 claude 无需确认的一些命令",
+  "summary": "Claude permissions configuration setup guide",
+  "user_interruptions": 1,
+  "user_response_times": [
+    560.288,
+    561.818,
+    585.429,
+    14.398,
+    31.258
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 71,
+  "lines_removed": 3,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-01-28T08:04:22.235Z",
+    "2026-01-28T08:13:53.148Z",
+    "2026-01-28T08:13:54.678Z",
+    "2026-01-28T08:14:18.289Z",
+    "2026-01-28T08:15:15.909Z",
+    "2026-01-28T08:16:00.136Z"
+  ]
+}

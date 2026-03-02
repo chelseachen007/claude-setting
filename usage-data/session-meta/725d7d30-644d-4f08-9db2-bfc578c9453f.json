@@ -1,0 +1,47 @@
+{
+  "session_id": "725d7d30-644d-4f08-9db2-bfc578c9453f",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-01-31T03:06:13.734Z",
+  "duration_minutes": 20,
+  "user_message_count": 2,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "Grep": 1,
+    "Read": 1,
+    "Write": 2,
+    "Edit": 2,
+    "Bash": 3,
+    "Task": 2,
+    "AskUserQuestion": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "更多图表类型支持，其他的计划都不要，记住这个系统最重要的是记录数据，增援未来",
+  "user_interruptions": 0,
+  "user_response_times": [
+    54.837
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 789,
+  "lines_removed": 1,
+  "files_modified": 3,
+  "message_hours": [
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-01-31T03:21:11.367Z",
+    "2026-01-31T03:23:54.087Z"
+  ]
+}

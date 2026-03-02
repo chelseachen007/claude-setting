@@ -1,13 +1,13 @@
 ---
 name: vue
-description: Vue.js progressive JavaScript framework. Use when building Vue components, working with reactivity (ref, reactive, computed, watch), or implementing Vue Composition API patterns.
+description: Vue.js 渐进式 JavaScript 框架。在构建 Vue 组件、使用响应式（ref、reactive、computed、watch）或实现 Vue Composition API 模式时使用。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"
   source: Generated from https://github.com/vuejs/docs, scripts located at https://github.com/antfu/skills
 ---
 
-# Vue
+# Vue.js 框架
 
 > The skill is based on Vue 3.5+, generated at 2026-01-28.
 

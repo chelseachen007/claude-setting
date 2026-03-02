@@ -1,0 +1,73 @@
+{
+  "session_id": "dc312410-181a-4d21-8f06-f3569d72686e",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-01-27T08:26:23.243Z",
+  "duration_minutes": 1204,
+  "user_message_count": 9,
+  "assistant_message_count": 442,
+  "tool_counts": {
+    "TaskCreate": 11,
+    "Bash": 76,
+    "Write": 35,
+    "TaskUpdate": 21,
+    "Edit": 46,
+    "Read": 23,
+    "TaskOutput": 9
+  },
+  "languages": {
+    "Markdown": 6,
+    "JSON": 4,
+    "TypeScript": 89
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 68895,
+  "output_tokens": 897,
+  "first_prompt": "https://mp.weixin.qq.com/s/dkhdsm7KfOtgxx2oNx0Yaw  分析这篇文章，生成一个类似的系统，先给出计划",
+  "summary": "AI Worker System Design & Implementation",
+  "user_interruptions": 1,
+  "user_response_times": [
+    70.943,
+    75.53,
+    79.162,
+    1051.822,
+    466.407,
+    2204.955,
+    608.926
+  ],
+  "tool_errors": 11,
+  "tool_error_categories": {
+    "Command Failed": 9,
+    "Edit Failed": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 5899,
+  "lines_removed": 136,
+  "files_modified": 31,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    17,
+    8,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-01-27T08:26:23.243Z",
+    "2026-01-27T08:28:35.342Z",
+    "2026-01-27T08:28:39.929Z",
+    "2026-01-27T08:28:43.561Z",
+    "2026-01-27T08:50:25.294Z",
+    "2026-01-27T09:29:02.169Z",
+    "2026-01-28T00:54:15.232Z",
+    "2026-01-28T03:06:16.449Z",
+    "2026-01-28T03:16:52.100Z"
+  ]
+}

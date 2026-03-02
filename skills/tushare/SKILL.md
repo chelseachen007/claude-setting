@@ -1,15 +1,9 @@
 ---
 name: tushare
-description: >-
-  Tushare Pro API reference for Chinese A-share (SSE/SZSE) market data. Use when:
-  (1) writing Tushare API queries for stock prices, financials, or valuation data,
-  (2) looking up Tushare API parameters, return fields, or rate limits,
-  (3) working with CN A-share reference data, daily bars, adjustment factors,
-  money flow, or limit up/down lists, (4) handling PIT-correct financial data
-  queries with Tushare, (5) any task involving tushare Python SDK.
+description: Tushare Pro API 参考，用于中国 A 股（上交所/深交所）市场数据。当以下情况使用：(1) 编写 Tushare API 查询股票价格、财务或估值数据，(2) 查找 Tushare API 参数、返回字段或速率限制，(3) 处理 A 股参考数据、日线行情、复权因子、资金流向或涨跌停列表，(4) 处理 Tushare 的 PIT 校正财务数据查询，(5) 任何涉及 tushare Python SDK 的任务。
 ---
 
-# Tushare Pro API
+# Tushare Pro API 参考
 
 Tushare is a Python SDK-based data platform for Chinese A-share market data (SSE, SZSE, BSE). It provides reference data, OHLCV prices, valuation metrics, financial statements, and market behavior data via a simple Python API.
 

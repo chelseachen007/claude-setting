@@ -1,0 +1,38 @@
+{
+  "session_id": "d4199307-5fea-4643-a8db-988d757f43f6",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-02-26T06:41:20.418Z",
+  "duration_minutes": 2,
+  "user_message_count": 1,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Glob": 2,
+    "Read": 2
+  },
+  "languages": {
+    "TypeScript": 1,
+    "YAML": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1222,
+  "output_tokens": 517,
+  "first_prompt": "端口总是冲突有办法可以控制吗",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T06:41:20.418Z"
+  ]
+}

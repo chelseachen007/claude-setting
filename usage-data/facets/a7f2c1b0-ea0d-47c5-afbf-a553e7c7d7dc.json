@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "Export and package global and local Claude skills into a compressed archive",
+  "goal_categories": {
+    "export_data": 1,
+    "create_archive": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "fast_accurate_search",
+  "brief_summary": "User wanted to export global and local skills as a compressed archive, and Claude successfully listed available skills and created the zip file.",
+  "session_id": "a7f2c1b0-ea0d-47c5-afbf-a553e7c7d7dc"
+}

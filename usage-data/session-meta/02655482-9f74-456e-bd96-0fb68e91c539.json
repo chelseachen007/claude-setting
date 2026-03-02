@@ -1,0 +1,49 @@
+{
+  "session_id": "02655482-9f74-456e-bd96-0fb68e91c539",
+  "project_path": "/Users/chenjie/Documents/study/claude/rss-reader/apps/server",
+  "start_time": "2026-02-24T07:25:30.122Z",
+  "duration_minutes": 31,
+  "user_message_count": 4,
+  "assistant_message_count": 71,
+  "tool_counts": {
+    "Edit": 26,
+    "Glob": 2,
+    "Read": 21,
+    "Write": 3,
+    "Grep": 1
+  },
+  "languages": {
+    "TypeScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 71911,
+  "output_tokens": 9668,
+  "first_prompt": "<task-notification> <task-id>bb5882a</task-id> <output-file>/private/tmp/claude-501/-Users-chenjie-Documents-study-claude/tasks/bb5882a.output</output-file> <status>completed</status> <summary>Backgro…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    7.789,
+    169.458
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1036,
+  "lines_removed": 21,
+  "files_modified": 10,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T07:25:30.123Z",
+    "2026-02-24T07:36:50.673Z",
+    "2026-02-24T07:37:17.443Z",
+    "2026-02-24T07:56:27.672Z"
+  ]
+}

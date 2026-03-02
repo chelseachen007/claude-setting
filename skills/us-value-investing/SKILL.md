@@ -1,10 +1,10 @@
 ---
 name: undervalued-stock-screener
-description: Screen and identify undervalued stocks with strong fundamentals using professional equity research methodology. Use when the user asks to find undervalued stocks, screen for cheap or bargain stocks, identify value investing opportunities, perform fundamental stock analysis, find stocks trading below intrinsic value, or requests a stock screener based on financial metrics like P/E ratio, debt-to-equity, free cash flow, or ROIC.
+description: 使用专业股票研究方法论筛选和识别具有强劲基本面的低估值股票。当用户要求寻找低估值股票、筛选便宜或 bargain 股票、识别价值投资机会、进行基本面股票分析、寻找低于内在价值交易的股票，或基于市盈率、债务股本比、自由现金流或 ROIC 等财务指标请求股票筛选器时使用。
 license: Apache-2.0
 ---
 
-# Undervalued Stock Screener
+# 低估值股票筛选器
 
 Act as a professional equity research analyst. Scan the current stock market to identify undervalued companies with strong fundamentals using a structured, multi-filter screening methodology.
 

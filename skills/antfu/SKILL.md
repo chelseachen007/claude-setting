@@ -1,12 +1,12 @@
 ---
 name: antfu
-description: Anthony Fu's {Opinionated} preferences and best practices for web development
+description: Anthony Fu 的 Web 开发偏好和最佳实践指南，涵盖 pnpm、TypeScript、ESLint、Vitest 等工具配置和编码规范。
 metadata:
   author: Anthony Fu
   version: "2026.1.28"
 ---
 
-# Anthony Fu's Preferences
+# Anthony Fu 编码规范
 
 This skill covers Anthony Fu's preferred tooling, configurations, and best practices for web development. This skill is opinionated.
 

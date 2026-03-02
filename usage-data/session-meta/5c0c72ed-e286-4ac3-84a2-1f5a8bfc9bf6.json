@@ -1,0 +1,48 @@
+{
+  "session_id": "5c0c72ed-e286-4ac3-84a2-1f5a8bfc9bf6",
+  "project_path": "/Users/chenjie/Documents/study/claude/Prium",
+  "start_time": "2026-02-25T08:02:49.609Z",
+  "duration_minutes": 12,
+  "user_message_count": 2,
+  "assistant_message_count": 19,
+  "tool_counts": {
+    "Task": 3,
+    "Read": 2,
+    "Write": 1,
+    "AskUserQuestion": 1,
+    "Edit": 4,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 1,
+    "Markdown": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 7053,
+  "output_tokens": 1973,
+  "first_prompt": "新增过滤器功能，在每天拉取到文章的时候做一个前置过滤器，需要满足一下需求：内容源多了，就是过滤问题：  你可以为单个订阅源设置**「过滤订阅源」**，比如「新浪微博」一旦满足「标题中包含肖战」这个规则，则自动标为一读，不出现在 Unread 里恶心你。 你可以可以为全局（所有订阅源）设置**「规则」**，比如我设置了一个文件夹叫「Mass News」，然后将每天都有海量新闻资讯产生的 RSS 都丢…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    17.57
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 243,
+  "lines_removed": 5,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T08:02:49.609Z",
+    "2026-02-25T08:14:26.229Z"
+  ]
+}

@@ -1,12 +1,6 @@
 ---
 name: personal-finance-skill
-description: >
-  Personal finance management skill providing 75 tools across 7 extensions
-  for bank account aggregation (Plaid), brokerage trading (Alpaca), portfolio
-  monitoring (IBKR), tax optimization, market intelligence (Finnhub, SEC EDGAR,
-  FRED, BLS, Alpha Vantage), social sentiment (StockTwits, X/Twitter, Quiver),
-  and financial analysis. Supports scheduled scans, anomaly detection, net worth
-  tracking, tax-loss harvesting, and approval-gated execution of financial actions.
+description: 个人财务管理技能，提供 7 个扩展中 75 个工具，涵盖银行账户聚合(Plaid)、券商交易(Alpaca)、投资组合监控(IBKR)、税务优化、市场情报(Finnhub、SEC EDGAR、FRED、BLS、Alpha Vantage)、社交情绪(StockTwits、X/Twitter、Quiver)和财务分析。支持定时扫描、异常检测、净值追踪、税收损失 harvesting 和审批门控的财务操作执行。
 license: MIT
 metadata:
   author: contributors
@@ -15,7 +9,7 @@ metadata:
   extensions: "finance-core, plaid-connect, alpaca-trading, ibkr-portfolio, tax-engine, market-intel, social-sentiment"
 ---
 
-# Personal Finance Skill
+# 个人财务管理
 
 A comprehensive personal finance management skill with 75 tools across 7 extensions for banking, investing, tax, market intelligence, social sentiment, and financial analysis workflows.
 

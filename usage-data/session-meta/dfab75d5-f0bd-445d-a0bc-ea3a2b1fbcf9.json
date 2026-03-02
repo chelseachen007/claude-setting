@@ -1,0 +1,34 @@
+{
+  "session_id": "dfab75d5-f0bd-445d-a0bc-ea3a2b1fbcf9",
+  "project_path": "/Users/chenjie",
+  "start_time": "2026-02-12T01:34:40.553Z",
+  "duration_minutes": 2,
+  "user_message_count": 2,
+  "assistant_message_count": 0,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "你现在用的什么模型",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-12T01:34:40.553Z",
+    "2026-02-12T01:36:22.453Z"
+  ]
+}

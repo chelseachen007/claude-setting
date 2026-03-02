@@ -1,0 +1,43 @@
+{
+  "session_id": "7b854396-7e3b-4ebf-8406-d06b1838e804",
+  "project_path": "/Users/chenjie",
+  "start_time": "2026-01-29T08:06:19.751Z",
+  "duration_minutes": 4,
+  "user_message_count": 3,
+  "assistant_message_count": 15,
+  "tool_counts": {
+    "Bash": 2,
+    "TaskOutput": 1,
+    "Read": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 20540,
+  "output_tokens": 279,
+  "first_prompt": "npm i pnpm --global  npm error code EACCES npm error syscall mkdir npm error path /usr/lib/node_modules/pnpm npm error errno -13 npm error Error: EACCES: permission denied, mkdir '/usr/lib/node_module…",
+  "summary": "npm pnpm install permission errors",
+  "user_interruptions": 0,
+  "user_response_times": [
+    141.68
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-01-29T08:06:19.751Z",
+    "2026-01-29T08:08:51.416Z",
+    "2026-01-29T08:10:06.971Z"
+  ]
+}

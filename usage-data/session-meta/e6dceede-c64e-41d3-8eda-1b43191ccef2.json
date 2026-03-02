@@ -1,0 +1,53 @@
+{
+  "session_id": "e6dceede-c64e-41d3-8eda-1b43191ccef2",
+  "project_path": "/Users/chenjie/Documents/study/claude/github/personal-tracker",
+  "start_time": "2026-02-26T08:29:00.452Z",
+  "duration_minutes": 44,
+  "user_message_count": 5,
+  "assistant_message_count": 16,
+  "tool_counts": {
+    "Read": 2,
+    "Write": 2,
+    "Bash": 3
+  },
+  "languages": {
+    "Markdown": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 100763,
+  "output_tokens": 10825,
+  "first_prompt": "如果你正在使用 Claude Code 和 Codex 构建复杂的应用程序，那么这篇文章非常值得一读。  大多数 AI 编程智能体都能生成前端。  但构建一个真正的全栈应用完全是另一回事。  生成一个落地页与交付一个拥有功能性后端、数据库和 API 层的可用应用之间，仍然存在巨大的鸿沟。  大多数编程智能体默认使用模拟数据、虚假端点和纯前端实现。  但现实世界的 Web 开发需要这三层协同工作。…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    984.495,
+    233.909,
+    72.639,
+    96.621
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 722,
+  "lines_removed": 0,
+  "files_modified": 2,
+  "message_hours": [
+    16,
+    16,
+    16,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T08:29:00.452Z",
+    "2026-02-26T08:49:13.588Z",
+    "2026-02-26T08:57:03.195Z",
+    "2026-02-26T09:01:22.175Z",
+    "2026-02-26T09:01:46.157Z"
+  ]
+}

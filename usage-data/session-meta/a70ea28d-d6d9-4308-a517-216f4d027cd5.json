@@ -1,0 +1,69 @@
+{
+  "session_id": "a70ea28d-d6d9-4308-a517-216f4d027cd5",
+  "project_path": "/Users/chenjie/Documents/study/claude/nanoclaw",
+  "start_time": "2026-03-03T04:43:47.245Z",
+  "duration_minutes": 36,
+  "user_message_count": 7,
+  "assistant_message_count": 249,
+  "tool_counts": {
+    "WebSearch": 2,
+    "mcp__github__search_repositories": 1,
+    "mcp__github__get_file_contents": 3,
+    "Read": 20,
+    "Glob": 2,
+    "Write": 8,
+    "Edit": 6,
+    "Bash": 66,
+    "Grep": 4
+  },
+  "languages": {
+    "TypeScript": 22,
+    "Markdown": 8,
+    "Shell": 1,
+    "JavaScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 98343,
+  "output_tokens": 21842,
+  "first_prompt": "飞书发送没反应",
+  "user_interruptions": 1,
+  "user_response_times": [
+    50.373,
+    188.675,
+    59.15,
+    3.613,
+    21.993,
+    136.299
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Edit Failed": 1,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 1067,
+  "lines_removed": 21,
+  "files_modified": 8,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T04:43:47.245Z",
+    "2026-03-03T04:51:05.116Z",
+    "2026-03-03T04:55:13.031Z",
+    "2026-03-03T04:57:21.935Z",
+    "2026-03-03T05:09:08.378Z",
+    "2026-03-03T05:09:26.758Z",
+    "2026-03-03T05:13:39.372Z"
+  ]
+}

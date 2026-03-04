@@ -1,0 +1,46 @@
+{
+  "session_id": "e917ed9c-83e4-4c1a-aafe-27dba220ad4b",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-03-03T09:04:17.299Z",
+  "duration_minutes": 9,
+  "user_message_count": 2,
+  "assistant_message_count": 45,
+  "tool_counts": {
+    "Bash": 15,
+    "Read": 2,
+    "AskUserQuestion": 1,
+    "Write": 2,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 3,
+    "Shell": 1,
+    "Markdown": 1
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 18397,
+  "output_tokens": 2925,
+  "first_prompt": "https://baoyu.io/blog/2026-02-13/claude-code-auto-commit 添加这套流程",
+  "user_interruptions": 0,
+  "user_response_times": [
+    212.06
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 127,
+  "lines_removed": 0,
+  "files_modified": 3,
+  "message_hours": [
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T09:04:17.299Z",
+    "2026-03-03T09:11:45.559Z"
+  ]
+}

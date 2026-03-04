@@ -1,0 +1,44 @@
+{
+  "session_id": "75e520c2-442d-44e8-8618-b70611bd29e8",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-28T01:50:33.519Z",
+  "duration_minutes": 12,
+  "user_message_count": 2,
+  "assistant_message_count": 53,
+  "tool_counts": {
+    "Glob": 3,
+    "Bash": 19,
+    "Read": 1,
+    "Write": 1
+  },
+  "languages": {
+    "JSON": 1,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 26563,
+  "output_tokens": 4235,
+  "first_prompt": "帮我统计我使用各skill的次数，方便我整理清除多余skill",
+  "user_interruptions": 0,
+  "user_response_times": [
+    128.934
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 137,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T01:51:25.493Z",
+    "2026-02-28T01:59:09.851Z"
+  ]
+}

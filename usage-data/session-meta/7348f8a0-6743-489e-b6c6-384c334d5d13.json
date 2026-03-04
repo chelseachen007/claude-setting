@@ -1,0 +1,50 @@
+{
+  "session_id": "7348f8a0-6743-489e-b6c6-384c334d5d13",
+  "project_path": "/Users/chenjie/Documents/study/claude/Prium",
+  "start_time": "2026-02-28T07:38:45.671Z",
+  "duration_minutes": 17,
+  "user_message_count": 3,
+  "assistant_message_count": 27,
+  "tool_counts": {
+    "Glob": 2,
+    "Read": 5,
+    "Agent": 3,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 4,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 55092,
+  "output_tokens": 2054,
+  "first_prompt": "这个项目有没有可能纯前端，可以部署到vercel",
+  "user_interruptions": 1,
+  "user_response_times": [
+    92.312,
+    266.143
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 314,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T07:39:01.596Z",
+    "2026-02-28T07:42:25.631Z",
+    "2026-02-28T07:55:19.271Z"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "session_id": "c65ac9ec-e0a1-41ef-b656-e9ec1f3b699f",
+  "project_path": "/Users/chenjie/Documents/study/github/Obsidian",
+  "start_time": "2026-03-03T01:18:03.216Z",
+  "duration_minutes": 205,
+  "user_message_count": 12,
+  "assistant_message_count": 61,
+  "tool_counts": {
+    "Grep": 2,
+    "Read": 5,
+    "WebSearch": 10,
+    "Write": 9,
+    "Edit": 9,
+    "Glob": 1
+  },
+  "languages": {
+    "Markdown": 23
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 239656,
+  "output_tokens": 25602,
+  "first_prompt": "你拿3.5块人民币在中国能买一瓶可乐，拿1美元在美国也能买一瓶可乐。按这个逻辑，1美元应该等于3.5块人民币才对。但你去银行换汇，柜员告诉你：1美元换7.2块。差了一倍多。这中间的差价去哪了？是银行黑你？是美国人在占便宜？还是人民币被”低估”了？  答案可能有点反直觉：这两个数字根本衡量的就不是同一件事。3.5是”购买力平价”，7.2是”名义汇率”，它们之间的关系不是”谁对谁错”，而是”各算各的账…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    156.513,
+    200.76,
+    431.865,
+    272,
+    25.222,
+    189.303
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Edit Failed": 1,
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 2366,
+  "lines_removed": 422,
+  "files_modified": 9,
+  "message_hours": [
+    9,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T01:18:03.216Z",
+    "2026-03-03T02:29:55.080Z",
+    "2026-03-03T02:29:55.080Z",
+    "2026-03-03T02:33:16.028Z",
+    "2026-03-03T02:34:00.275Z",
+    "2026-03-03T02:37:51.380Z",
+    "2026-03-03T02:43:36.800Z",
+    "2026-03-03T02:44:59.091Z",
+    "2026-03-03T02:44:59.091Z",
+    "2026-03-03T02:45:24.298Z",
+    "2026-03-03T02:50:48.589Z",
+    "2026-03-03T04:41:44.501Z"
+  ]
+}

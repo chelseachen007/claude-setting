@@ -1,0 +1,58 @@
+{
+  "session_id": "dfd1b8ee-8a7b-47cd-9c6b-adaa093be6cf",
+  "project_path": "/Users/chenjie/Documents/study/github/Obsidian",
+  "start_time": "2026-02-28T01:45:48.687Z",
+  "duration_minutes": 27,
+  "user_message_count": 6,
+  "assistant_message_count": 36,
+  "tool_counts": {
+    "Task": 1,
+    "WebSearch": 3,
+    "Read": 4,
+    "Glob": 1,
+    "Write": 2,
+    "Grep": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "Markdown": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 56013,
+  "output_tokens": 5747,
+  "first_prompt": "分析我的分析审美偏好，并给出学习的建议和线索",
+  "user_interruptions": 0,
+  "user_response_times": [
+    106.222,
+    223.046,
+    404.958,
+    62.364,
+    40.993
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 104,
+  "lines_removed": 3,
+  "files_modified": 2,
+  "message_hours": [
+    9,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T01:46:17.227Z",
+    "2026-02-28T01:52:38.128Z",
+    "2026-02-28T01:59:27.693Z",
+    "2026-02-28T02:07:30.263Z",
+    "2026-02-28T02:10:19.979Z",
+    "2026-02-28T02:11:55.000Z"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "session_id": "898e0509-60b9-4ea6-8bbb-797664e659bf",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-28T02:21:56.867Z",
+  "duration_minutes": 43,
+  "user_message_count": 4,
+  "assistant_message_count": 34,
+  "tool_counts": {
+    "Write": 1,
+    "Bash": 7,
+    "TaskOutput": 2,
+    "Edit": 1,
+    "Read": 2
+  },
+  "languages": {
+    "Python": 2,
+    "HTML": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 33912,
+  "output_tokens": 2234,
+  "first_prompt": "测试 http://localhost:3100/lease/contract/detail?id=4759&bizType=ZL&typeId=contract",
+  "user_interruptions": 0,
+  "user_response_times": [
+    29.412,
+    1475.668
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Command Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 75,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T02:22:18.719Z",
+    "2026-02-28T02:22:18.719Z",
+    "2026-02-28T02:23:16.944Z",
+    "2026-02-28T03:05:22.807Z"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "session_id": "ed043f84-b8dc-4a05-9f6e-6c677590067f",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-03-03T09:06:09.808Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 29,
+  "tool_counts": {
+    "Bash": 10,
+    "Glob": 1,
+    "Read": 1,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40981,
+  "output_tokens": 2464,
+  "first_prompt": "No prompt",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 53,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T09:06:09.808Z",
+    "2026-03-03T09:06:09.808Z"
+  ]
+}

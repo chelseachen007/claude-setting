@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Parse WeChat bill screenshot and extract transaction records to monthly Excel file",
+  "goal_categories": {
+    "data_extraction": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "proactive_help",
+  "brief_summary": "User uploaded a WeChat bill screenshot which was successfully parsed into 12 transaction records and appended to the monthly Excel file with category classification.",
+  "session_id": "261f2365-5d07-436d-b4f3-40a40f8311a3"
+}

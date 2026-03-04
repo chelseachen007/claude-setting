@@ -1,0 +1,18 @@
+{
+  "underlying_goal": "Set up Claude Code auto-commit workflow from a blog article and commit the changes to remote",
+  "goal_categories": {
+    "workflow_automation": 1,
+    "code_management": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "multi_file_changes",
+  "brief_summary": "User wanted to add an auto-commit workflow from a blog post; Claude created hook scripts, skill definitions, updated settings, and pushed everything to remote successfully.",
+  "session_id": "e917ed9c-83e4-4c1a-aafe-27dba220ad4b"
+}

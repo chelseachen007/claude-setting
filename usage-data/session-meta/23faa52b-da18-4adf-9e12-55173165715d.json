@@ -1,0 +1,41 @@
+{
+  "session_id": "23faa52b-da18-4adf-9e12-55173165715d",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-02-28T02:39:02.579Z",
+  "duration_minutes": 4,
+  "user_message_count": 4,
+  "assistant_message_count": 8,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 5583,
+  "output_tokens": 834,
+  "first_prompt": "服务器上报错no space left on device, write，检查du -h --max-depth=1后96M     ./.npm-global 1.1G    ./.cache 49M     ./node_modules 17M     ./.claude 618M    ./.openclaw 8.0K    ./Prium 8.0K    ./.chelper 1.5G…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    73.726,
+    41.403
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T02:39:34.176Z",
+    "2026-02-28T02:41:13.914Z",
+    "2026-02-28T02:41:29.137Z",
+    "2026-02-28T02:42:28.308Z"
+  ]
+}

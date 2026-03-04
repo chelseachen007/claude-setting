@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Free up disk space on a server that ran out of storage",
+  "goal_categories": {
+    "troubleshooting": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_debugging",
+  "brief_summary": "User needed to free disk space on a 95% full server; initial cleanup only freed 300MB of the needed space, requiring more aggressive approaches.",
+  "session_id": "23faa52b-da18-4adf-9e12-55173165715d"
+}

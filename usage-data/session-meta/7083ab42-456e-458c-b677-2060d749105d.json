@@ -1,0 +1,60 @@
+{
+  "session_id": "7083ab42-456e-458c-b677-2060d749105d",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-03-03T04:50:01.395Z",
+  "duration_minutes": 32,
+  "user_message_count": 5,
+  "assistant_message_count": 44,
+  "tool_counts": {
+    "Bash": 7,
+    "Glob": 1,
+    "Read": 1,
+    "Write": 1,
+    "Edit": 2,
+    "WebSearch": 2,
+    "mcp__github__get_file_contents": 2,
+    "mcp__github__search_code": 1,
+    "AskUserQuestion": 1
+  },
+  "languages": {
+    "JSON": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 7290,
+  "output_tokens": 2295,
+  "first_prompt": "检查下内存使用情况",
+  "user_interruptions": 1,
+  "user_response_times": [
+    983.828,
+    396.899,
+    17.828,
+    165.7
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": true,
+  "uses_web_fetch": false,
+  "lines_added": 34,
+  "lines_removed": 2,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    13,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T04:50:01.395Z",
+    "2026-03-03T05:08:25.640Z",
+    "2026-03-03T05:16:50.340Z",
+    "2026-03-03T05:17:27.074Z",
+    "2026-03-03T05:22:07.094Z"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "User wanted guidance on what to learn, sharing an image of a computer science learning roadmap for analysis",
+  "goal_categories": {
+    "learning_guidance": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "image_read_issue": 1
+  },
+  "friction_detail": "Initial image read attempt required a second try with a different approach",
+  "primary_success": "good_explanations",
+  "brief_summary": "User shared a learning roadmap image asking what to study, and Claude successfully analyzed and organized the 50 learning directions into categorized recommendations.",
+  "session_id": "e69da44f-d9f9-4a3a-8ade-6eb9c8734e31"
+}

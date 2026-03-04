@@ -1,0 +1,36 @@
+{
+  "session_id": "e69da44f-d9f9-4a3a-8ade-6eb9c8734e31",
+  "project_path": "/Users/chenjie/Documents/study/claude",
+  "start_time": "2026-03-02T02:18:46.660Z",
+  "duration_minutes": 4,
+  "user_message_count": 2,
+  "assistant_message_count": 3,
+  "tool_counts": {
+    "Read": 2
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1277,
+  "output_tokens": 1561,
+  "first_prompt": "应该学习什么",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T02:18:46.660Z",
+    "2026-03-02T02:18:46.660Z"
+  ]
+}

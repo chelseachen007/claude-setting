@@ -11,10 +11,6 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"$HOME/.claude/hooks/auto-commit.sh\""
-          },
-          {
-            "type": "command",
             "command": "afplay /System/Library/Sounds/Glass.aiff"
           }
         ]

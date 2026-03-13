@@ -5,6 +5,17 @@
   },
   "model": "opus",
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/skill-vetter-hook.sh \"$CLAUDE_TOOL_INPUT\""
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",

@@ -30,7 +30,9 @@ python3 scripts/analyze_sessions.py --date today
 
 ### 3. 写入行思录
 
-行思录路径：`~/Obsidian/行思录/YYYY-MM-DD.md`
+行思录路径：`~/Obsidian/行思录/年/年-月/年-月-日.md`
+
+例如：`行思录/2026/2026-03/2026-03-13.md`
 
 文件格式遵循Obsidian日记模板：
 - YAML frontmatter
@@ -87,12 +89,14 @@ or file.name= dateformat(date(today)-dur(3 year), "yyyy-MM-dd")
 
 **环境变量**: `OBSIDIAN_VAULT_PATH` - Obsidian库的根路径
 
+**当前配置**: `/Users/chenjie/Documents/study/github/Obsidian`
+
 ### 首次使用时的路径发现流程
 
 如果 `OBSIDIAN_VAULT_PATH` 环境变量未设置，按以下步骤操作：
 
 1. **搜索常见Obsidian位置**：
-   - `~/Documents/study/github/Obsidian`
+   - `~/Documents/study/github/Obsidian` (当前配置)
    - `~/Obsidian`
    - `~/Documents/Obsidian`
    - `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/` (iCloud)
@@ -104,7 +108,7 @@ or file.name= dateformat(date(today)-dur(3 year), "yyyy-MM-dd")
 4. **存储配置**：将确认的路径设置到环境变量：
    ```bash
    # 添加到 ~/.zshrc 或 ~/.bashrc
-   export OBSIDIAN_VAULT_PATH="/path/to/confirmed/obsidian/vault"
+   export OBSIDIAN_VAULT_PATH="/Users/chenjie/Documents/study/github/Obsidian"
    ```
 
 5. **日记文件夹**：在Obsidian库内查找名为 `行思录` 的文件夹，如不存在则创建

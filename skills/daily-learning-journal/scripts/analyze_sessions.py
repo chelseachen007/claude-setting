@@ -1,288 +1,228 @@
 #!/usr/bin/env python3
-"""
-分析Claude Code会话记录，提取今日学习内容
-"""
+"""Claude Code 会话分析脚本"""
 
+import argparse
 import json
 import os
-import glob
-from datetime import datetime, date
+import re
 from collections import defaultdict
-import argparse
+from datetime import datetime, timedelta
+from pathlib import Path
+from typing import Any
 
 
-def get_session_files(base_path: str) -> list:
-    """获取所有会话jsonl文件"""
-    projects_dir = os.path.expanduser(base_path)
-    files = []
-
-    for project_dir in os.listdir(projects_dir):
-        project_path = os.path.join(projects_dir, project_dir)
-        if os.path.isdir(project_path):
-            jsonl_files = glob.glob(os.path.join(project_path, "*.jsonl"))
-            files.extend(jsonl_files)
-
-    return files
-
-
-def parse_session_file(filepath: str, target_date: date) -> list:
-    """解析单个会话文件，提取指定日期的消息"""
-    messages = []
-
+def get_date_filter(date_arg: str) -> str:
+    if date_arg == "today":
+        return datetime.now().strftime("%Y-%m-%d")
+    elif date_arg == "yesterday":
+        return (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
+        return datetime.strptime(date_arg, "%Y-%m-%d").strftime("%Y-%m-%d")
+    except ValueError:
+        return date_arg
+
+
+def find_session_files(projects_dir: Path, target_date: str) -> list[Path]:
+    session_files = []
+    for jsonl_file in projects_dir.rglob("*.jsonl"):
+        if "subagents" in str(jsonl_file):
+            continue
+        try:
+            mtime = datetime.fromtimestamp(jsonl_file.stat().st_mtime)
+            if mtime.strftime("%Y-%m-%d") == target_date:
+                session_files.append(jsonl_file)
+        except Exception:
+            continue
+    return session_files
+
+
+def extract_user_messages(jsonl_path: Path) -> list[dict]:
+    messages = []
+    try:
+        with open(jsonl_path, "r", encoding="utf-8") as f:
             for line in f:
                 try:
                     data = json.loads(line.strip())
-                    timestamp = data.get('timestamp', '')
-
-                    if timestamp:
-                        msg_date = datetime.fromisoformat(timestamp.replace('Z', '+00:00')).date()
-                        if msg_date == target_date:
-                            messages.append(data)
-                except (json.JSONDecodeError, ValueError):
+                    if data.get("type") == "user" and "message" in data:
+                        msg = data["message"]
+                        messages.append({
+                            "content": msg.get("content", ""),
+                            "timestamp": data.get("timestamp", ""),
+                            "cwd": data.get("cwd", "")
+                        })
+                except json.JSONDecodeError:
                     continue
-    except Exception as e:
-        print(f"Error reading {filepath}: {e}")
-
+    except Exception:
+        pass
     return messages
 
 
-def extract_user_messages(messages: list) -> list:
-    """提取用户消息"""
-    user_msgs = []
-
+def extract_skills_used(messages: list[dict]) -> dict[str, int]:
+    skills_count = defaultdict(int)
+    skill_patterns = [
+        r'<command-name>/([a-zA-Z0-9_-]+)</command-name>',
+        r'<command-message>([a-zA-Z0-9_-]+)</command-message>',
+    ]
+    exclude = {'null', 'project', 'Mobile', 'upgrade', 'env', 'plugin', 'Everything',
+               'Learn', 'Claude', 'prompt', 'API', 'http', 'true', 'false', 'async'}
+    
     for msg in messages:
-        if msg.get('type') == 'user':
-            content = msg.get('message', {}).get('content', '')
-            if isinstance(content, str):
-                user_msgs.append(content)
-            elif isinstance(content, list):
-                for item in content:
-                    if isinstance(item, dict) and item.get('type') == 'text':
-                        user_msgs.append(item.get('text', ''))
-
-    return user_msgs
+        content = str(msg.get("content", ""))
+        for pattern in skill_patterns:
+            for match in re.findall(pattern, content):
+                if match and len(match) > 2 and match not in exclude:
+                    skills_count[match] += 1
+    return dict(sorted(skills_count.items(), key=lambda x: -x[1]))
 
 
-def extract_skills_used(messages: list) -> set:
-    """提取使用的skills"""
-    skills = set()
-
+def extract_projects(messages: list[dict]) -> dict[str, int]:
+    projects = defaultdict(int)
     for msg in messages:
-        content = msg.get('message', {}).get('content', '')
-
-        # 检查command-name标签
-        if '<command-name>' in str(content):
-            import re
-            matches = re.findall(r'<command-name>([^<]+)</command-name>', str(content))
-            skills.update(matches)
-
-        # 检查skill加载提示
-        if 'skill' in str(content).lower() and 'Base directory' in str(content):
-            import re
-            matches = re.findall(r'/([^/]+)\n#', str(content))
-            skills.update(matches)
-
-    return skills
-
-
-def extract_assistant_messages(messages: list) -> list:
-    """提取助手消息"""
-    assistant_msgs = []
-
-    for msg in messages:
-        if msg.get('type') == 'assistant':
-            content = msg.get('message', {}).get('content', [])
-            if isinstance(content, list):
-                for item in content:
-                    if isinstance(item, dict):
-                        if item.get('type') == 'text':
-                            assistant_msgs.append(item.get('text', '')[:500])  # 截取前500字符
-                        elif item.get('type') == 'thinking':
-                            assistant_msgs.append(f"[思考] {item.get('thinking', '')[:300]}")
-
-    return assistant_msgs
-
-
-def extract_projects(messages: list) -> dict:
-    """提取项目活动"""
-    projects = defaultdict(list)
-
-    for msg in messages:
-        cwd = msg.get('cwd', '')
+        cwd = msg.get("cwd", "")
         if cwd:
-            # 提取项目名
-            parts = cwd.split('/')
-            if parts:
-                project_name = parts[-1] if parts[-1] else parts[-2] if len(parts) > 1 else 'unknown'
-                projects[project_name].append(msg.get('type', 'unknown'))
-
-    return dict(projects)
+            name = Path(cwd).name
+            if name and name not in ["", "/", "home"]:
+                projects[name] += 1
+    return dict(sorted(projects.items(), key=lambda x: -x[1]))
 
 
-def identify_learning_topics(user_msgs: list, assistant_msgs: list) -> list:
-    """识别学习主题"""
-    topics = []
-    combined_text = ' '.join(user_msgs + assistant_msgs).lower()
-
-    # 技术关键词识别
-    tech_keywords = {
-        'vue': 'Vue.js',
-        'react': 'React',
-        'typescript': 'TypeScript',
-        'javascript': 'JavaScript',
-        'python': 'Python',
-        'go': 'Go',
-        'rust': 'Rust',
-        'docker': 'Docker',
-        'kubernetes': 'Kubernetes',
-        'api': 'API设计',
-        'database': '数据库',
-        'sql': 'SQL',
-        'git': 'Git',
-        'testing': '测试',
-        'security': '安全',
-        'performance': '性能优化',
-        'architecture': '架构设计',
-        'refactor': '重构',
-        'debug': '调试',
-        'deployment': '部署',
-        'ci/cd': 'CI/CD',
-        'claude': 'Claude',
-        'skill': 'Skills开发',
-        'mcp': 'MCP协议',
-        'obsidian': 'Obsidian',
-        'nuxt': 'Nuxt.js',
-        'tailwind': 'Tailwind CSS',
-        'prisma': 'Prisma ORM',
-        'sqlite': 'SQLite',
-        'fastify': 'Fastify',
-    }
-
-    for keyword, topic in tech_keywords.items():
-        if keyword in combined_text:
-            topics.append(topic)
-
-    return list(set(topics))
+def extract_tech_topics(messages: list[dict]) -> list[str]:
+    topics = set()
+    keywords = ["React", "Vue", "TypeScript", "Python", "Go", "Docker", "Git",
+                "Playwright", "Jest", "PostgreSQL", "Redis", "API", "HTTP",
+                "CSS", "HTML", "Node.js", "Claude", "GPT", "LLM", "AI", "Agent",
+                "Hook", "Skill", "MCP", "Plugin", "Test", "Debug", "Build"]
+    for msg in messages:
+        content = str(msg.get("content", "")).lower()
+        for kw in keywords:
+            if kw.lower() in content:
+                topics.add(kw)
+    return sorted(list(topics))
 
 
-def identify_pending_tasks(user_msgs: list, assistant_msgs: list) -> list:
-    """识别未完成任务"""
-    tasks = []
-    combined_text = '\n'.join(user_msgs + assistant_msgs)
-
-    import re
-
-    # 查找TODO模式
-    todo_patterns = [
-        r'TODO[:：]\s*(.+)',
-        r'待办[:：]\s*(.+)',
-        r'需要(.+)',
-        r'接下来(.+)',
-        r'然后(.+)',
-        r'- \[ \] (.+)',
-    ]
-
-    for pattern in todo_patterns:
-        matches = re.findall(pattern, combined_text)
-        tasks.extend([m.strip() for m in matches if len(m.strip()) > 5])
-
-    return list(set(tasks))[:5]  # 最多返回5个
+def count_messages(jsonl_path: Path) -> dict[str, int]:
+    counts = {"total": 0, "user": 0, "assistant": 0}
+    try:
+        with open(jsonl_path, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    data = json.loads(line.strip())
+                    counts["total"] += 1
+                    if data.get("type") == "user":
+                        counts["user"] += 1
+                    elif data.get("type") == "assistant":
+                        counts["assistant"] += 1
+                except json.JSONDecodeError:
+                    continue
+    except Exception:
+        pass
+    return counts
 
 
-def analyze_today(date_str: str = None) -> dict:
-    """分析今天的会话"""
-    if date_str and date_str.lower() == 'today':
-        date_str = None
-    target_date = datetime.strptime(date_str, '%Y-%m-%d').date() if date_str else date.today()
-
-    session_files = get_session_files('~/.claude/projects/')
+def analyze_sessions(target_date: str, projects_dir: Path) -> dict[str, Any]:
+    session_files = find_session_files(projects_dir, target_date)
     all_messages = []
-
-    for filepath in session_files:
-        messages = parse_session_file(filepath, target_date)
-        all_messages.extend(messages)
-
-    user_msgs = extract_user_messages(all_messages)
-    assistant_msgs = extract_assistant_messages(all_messages)
-    skills = extract_skills_used(all_messages)
-    projects = extract_projects(all_messages)
-    topics = identify_learning_topics(user_msgs, assistant_msgs)
-    pending = identify_pending_tasks(user_msgs, assistant_msgs)
-
+    all_counts = {"total": 0, "user": 0, "assistant": 0}
+    
+    for sf in session_files:
+        all_messages.extend(extract_user_messages(sf))
+        c = count_messages(sf)
+        all_counts["total"] += c["total"]
+        all_counts["user"] += c["user"]
+        all_counts["assistant"] += c["assistant"]
+    
     return {
-        'date': target_date.isoformat(),
-        'total_messages': len(all_messages),
-        'user_messages_count': len(user_msgs),
-        'skills_used': list(skills),
-        'projects': projects,
-        'learning_topics': topics,
-        'pending_tasks': pending,
-        'sample_user_messages': user_msgs[:10],
-        'sample_assistant_messages': assistant_msgs[:5],
+        "date": target_date,
+        "session_files": len(session_files),
+        "message_counts": all_counts,
+        "skills_used": extract_skills_used(all_messages),
+        "projects": extract_projects(all_messages),
+        "tech_topics": extract_tech_topics(all_messages),
     }
 
 
-def get_obsidian_path() -> str:
-    """获取Obsidian库路径，优先从环境变量读取"""
-    # 优先使用环境变量
-    env_path = os.environ.get('OBSIDIAN_VAULT_PATH')
-    if env_path:
-        return os.path.expanduser(env_path)
-
-    # 常见位置列表
-    common_paths = [
-        '~/Documents/study/github/Obsidian',
-        '~/Obsidian',
-        '~/Documents/Obsidian',
-        '~/Library/Mobile Documents/iCloud~md~obsidian/Documents/',
+def generate_journal(analysis: dict[str, Any]) -> str:
+    date = analysis["date"]
+    lines = [
+        "---", "tags:", f'title: "{date}"', f"date: {date}", f"lastmod: {date}",
+        "---", "", "#日记", "", "## 事件记录", "", "### 今日学习", "",
+        f"- **Claude Code 使用**: 今日共 {analysis['message_counts']['user']} 次交互",
     ]
-
-    for path in common_paths:
-        expanded = os.path.expanduser(path)
-        if os.path.isdir(expanded) and os.path.isdir(os.path.join(expanded, '.obsidian')):
-            return expanded
-
-    # 默认返回第一个常见位置
-    return os.path.expanduser('~/Documents/study/github/Obsidian')
-
-
-def write_to_obsidian(journal_content: str, date_str: str = None) -> str:
-    """写入Obsidian行思录"""
-    target_date = date_str if date_str else date.today().isoformat()
-    obsidian_path = get_obsidian_path()
-    journal_dir = os.path.join(obsidian_path, '行思录')
-    journal_file = os.path.join(journal_dir, f'{target_date}.md')
-
-    os.makedirs(journal_dir, exist_ok=True)
-
-    with open(journal_file, 'w', encoding='utf-8') as f:
-        f.write(journal_content)
-
-    return journal_file
+    if analysis["tech_topics"]:
+        lines.append(f"- **技术主题**: {', '.join(analysis['tech_topics'][:10])}")
+    
+    lines.extend(["", "### 使用的 Skills", ""])
+    for skill, count in list(analysis["skills_used"].items())[:10]:
+        lines.append(f"- `/{skill}`: {count} 次")
+    
+    lines.extend(["", "### 项目活动", ""])
+    for proj, count in list(analysis["projects"].items())[:5]:
+        lines.append(f"- **{proj}**: {count} 条消息")
+    
+    lines.extend([
+        "", "### 未完成事项", "", "- [ ] ", "",
+        "## 今日新闻", "", "## 那年今日", "",
+        "```dataview", "List",
+        'where file.name= dateformat(date(today)-dur(1 year), "yyyy-MM-dd")',
+        'or file.name= dateformat(date(today)-dur(2 year), "yyyy-MM-dd")',
+        'or file.name= dateformat(date(today)-dur(3 year), "yyyy-MM-dd")',
+        "```", ""
+    ])
+    return "\n".join(lines)
 
 
 def main():
-    parser = argparse.ArgumentParser(description='分析Claude Code会话记录')
-    parser.add_argument('--date', type=str, default=None, help='指定日期 (YYYY-MM-DD)，默认今天')
-    parser.add_argument('--output', type=str, choices=['json', 'markdown'], default='json', help='输出格式')
-
+    parser = argparse.ArgumentParser(description="分析 Claude Code 会话记录")
+    parser.add_argument("--date", default="today")
+    parser.add_argument("--projects-dir", default=None)
+    parser.add_argument("--obsidian-path", default=None)
+    parser.add_argument("--format", choices=["json", "markdown"], default="markdown")
+    parser.add_argument("--write-journal", action="store_true")
     args = parser.parse_args()
 
-    result = analyze_today(args.date)
+    target_date = get_date_filter(args.date)
+    projects_dir = Path(args.projects_dir) if args.projects_dir else Path.home() / ".claude" / "projects"
+    
+    if not projects_dir.exists():
+        print(f"Error: {projects_dir} not found")
+        return 1
 
-    if args.output == 'json':
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+    analysis = analyze_sessions(target_date, projects_dir)
+
+    if args.write_journal:
+        obsidian = args.obsidian_path or os.environ.get("OBSIDIAN_VAULT_PATH")
+        if not obsidian:
+            for p in [Path.home() / "Documents" / "study" / "github" / "Obsidian",
+                      Path.home() / "Obsidian"]:
+                if p.exists() and (p / ".obsidian").exists():
+                    obsidian = str(p)
+                    break
+        if not obsidian:
+            print("Error: Obsidian path not found")
+            return 1
+        
+        # 按照年/年-月/日.md 结构组织
+        year = target_date[:4]
+        month = target_date[5:7]
+        journal_dir = Path(obsidian) / "行思录" / year / f"{year}-{month}"
+        journal_dir.mkdir(parents=True, exist_ok=True)
+        journal_file = journal_dir / f"{target_date}.md"
+        
+        with open(journal_file, "w", encoding="utf-8") as f:
+            f.write(generate_journal(analysis))
+        print(f"Journal written to: {journal_file}")
+        return 0
+
+    if args.format == "json":
+        print(json.dumps(analysis, indent=2, ensure_ascii=False))
     else:
-        print(f"# {result['date']} 学习总结\n")
-        print(f"## 统计\n- 总消息数: {result['total_messages']}\n")
-        print(f"## 使用Skills\n- " + '\n- '.join(result['skills_used']) + '\n')
-        print(f"## 学习主题\n- " + '\n- '.join(result['learning_topics']) + '\n')
-        print(f"## 项目活动\n")
-        for proj, activities in result['projects'].items():
-            print(f"- **{proj}**: {len(activities)} 次操作")
+        print(f"# {target_date} 会话分析报告\n")
+        print(f"- 会话文件数: {analysis['session_files']}")
+        print(f"- 用户消息数: {analysis['message_counts']['user']}")
+        print(f"- Skills: {list(analysis['skills_used'].keys())[:10]}")
+        print(f"- 项目: {list(analysis['projects'].keys())[:5]}")
+    return 0
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    exit(main())

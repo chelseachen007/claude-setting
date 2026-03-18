@@ -5,6 +5,14 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-16T09:01:46.061Z"
+    "lastUpdated": "2026-03-18T09:33:37.313Z"
+  },
+  "last30days-skill": {
+    "source": {
+      "source": "github",
+      "repo": "mvanhorn/last30days-skill"
+    },
+    "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/last30days-skill",
+    "lastUpdated": "2026-03-18T02:47:47.012Z"
   }
 }

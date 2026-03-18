@@ -3,46 +3,114 @@ name: daily-learning-journal
 description: 每日学习总结助手。分析今天的Claude Code会话记录，提取学习知识点和未完成事项，自动记录到Obsidian行思录中。当用户说"总结今天的学习"、"写日记"、"记录今天学到了什么"、"今日复盘"、"更新行思录"或运行/daily-journal时触发。
 ---
 
-# 每日学习总结助手
+# 每日学习总结助手（并行 Agent 版）
 
-将Claude Code使用记录自动总结并写入Obsidian行思录。
+将 Claude Code 使用记录自动总结并写入 Obsidian 行思录。
 
-## 工作流程
-
-### 1. 发现今日会话文件
-
-使用 Glob 工具查找今天修改的会话文件：
+## 核心架构
 
 ```
-~/.claude/projects/**/*.jsonl
+┌─────────────────────────────────────────────────────────────┐
+│                      主协调器                                │
+│  1. 发现今日会话文件                                         │
+│  2. 并行启动 Agent 分析每个会话                              │
+│  3. 汇总所有 Agent 结果                                     │
+│  4. 生成并写入日记                                          │
+└─────────────────────────────────────────────────────────────┘
+         │              │              │              │
+         ▼              ▼              ▼              ▼
+    ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐
+    │ Agent 1 │   │ Agent 2 │   │ Agent 3 │   │ Agent N │
+    │ 会话A   │   │ 会话B   │   │ 会话C   │   │ 会话N   │
+    └─────────┘   └─────────┘   └─────────┘   └─────────┘
 ```
 
-筛选条件：文件修改日期为今天，排除 subagents 目录。
+## 执行流程
 
-### 2. 读取并分析会话内容
+### Step 1: 发现今日会话文件
 
-使用 Read 工具读取会话文件，提取：
+```bash
+find ~/.claude/projects -name "*.jsonl" -not -path "*/subagents/*" -mtime 0 2>/dev/null
+```
 
-**关键活动识别：**
-- 安装的新工具/MCP（搜索 "install", "pipx", "npm install", "brew install"）
-- 使用的 Skills（搜索 `<command-name>/`, `<command-message>`）
-- MCP 工具调用（搜索 `mcp__`, 工具名如 `webReader`, `github`）
-- 创建/更新的文件（搜索 `Write`, `Edit`, `file_path`）
-- 后台任务（搜索 `run_in_background`, `task-notification`）
+获取所有今天修改的会话文件列表。
 
-**项目活动：**
-- 从 `cwd` 字段提取工作目录
-- 统计各项目的消息数量
+### Step 2: 并行启动 Agent 分析
 
-**技术主题：**
-- 关键词匹配：React, Vue, TypeScript, Python, Go, Docker, MCP, Agent, Hook, Skill 等
+**为每个会话文件启动一个独立的 Agent**，使用 `run_in_background: true` 并行执行。
 
-**未完成事项：**
-- 搜索 `[ ]`, `TODO`, `待办`, `未完成` 等标记
+**Agent Prompt 模板：**
 
-### 3. 生成日记内容
+```
+分析以下 Claude Code 会话文件，提取关键信息并返回 JSON 格式摘要。
 
-根据分析结果，按以下模板生成日记：
+会话文件: {session_file_path}
+
+请执行以下分析：
+
+1. **用户主要意图** - 从前几条用户消息中提取
+2. **使用的 Skills** - 搜索 `<command-name>/` 和 `<command-message>` 标签
+3. **MCP 工具调用** - 搜索 `mcp__` 开头的工具调用，统计调用次数
+4. **创建/更新的文件** - 搜索 `Write`, `Edit` 工具的 `file_path` 参数
+5. **技术主题** - 识别 React, Vue, TypeScript, Python, Go, Docker, MCP, Agent, Hook 等关键词
+6. **未完成事项** - 搜索 `[ ]`, `TODO`, `待办`, `未完成` 标记
+7. **关键洞察** - 从对话中提取有价值的知识点
+8. **项目路径** - 从 `cwd` 字段提取
+
+返回格式：
+```json
+{
+  "session_id": "从文件名提取",
+  "project": "项目名称",
+  "user_intent": "用户主要意图的一句话总结",
+  "skills_used": [{"name": "skill名", "count": 1}],
+  "mcp_tools": [{"name": "工具名", "count": 2}],
+  "files_created": ["文件路径1"],
+  "files_updated": ["文件路径2"],
+  "tech_topics": ["主题1", "主题2"],
+  "todos": ["待办事项1"],
+  "insights": ["关键洞察1"],
+  "message_count": 10
+}
+```
+
+只返回 JSON，不要其他内容。
+```
+
+**启动方式：**
+
+使用 Agent 工具，为每个会话文件启动一个 general-purpose agent，设置 `run_in_background: true`。
+
+### Step 3: 等待所有 Agent 完成
+
+使用 TaskOutput 收集每个 Agent 的结果。所有 Agent 并行运行，等待全部完成后汇总。
+
+### Step 4: 汇总并生成日记
+
+**汇总逻辑：**
+
+1. **合并 Skills 使用** - 相同 skill 的 count 相加
+2. **合并 MCP 工具** - 相同工具的 count 相加
+3. **合并技术主题** - 去重
+4. **合并文件操作** - 按笔记目录筛选
+5. **合并未完成事项** - 去重
+6. **提取关键洞察** - 选择最有价值的 3-5 条
+7. **统计项目活动** - 按项目分组统计消息数
+
+### Step 5: 写入行思录
+
+**日记路径**: `$OBSIDIAN_VAULT_PATH/行思录/YYYY/YYYY-MM/YYYY-MM-DD.md`
+
+**路径发现顺序**：
+1. 环境变量 `OBSIDIAN_VAULT_PATH`
+2. 常见位置：
+   - `~/Documents/study/github/Obsidian`
+   - `~/Obsidian`
+   - `~/Documents/Obsidian`
+   - `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/`
+3. 验证：目录包含 `.obsidian` 文件夹
+
+## 日记模板
 
 ```markdown
 ---
@@ -65,7 +133,7 @@ lastmod: YYYY-MM-DD
 
 ### 技术学习
 
-- **Claude Code**: 今日共 N 次交互
+- **Claude Code**: 今日共 N 次会话，M 次交互
 - **技术主题**: 主题1, 主题2, ...
 
 ### 使用的 Skills/MCP
@@ -88,6 +156,11 @@ lastmod: YYYY-MM-DD
 |------|------|------|
 | 笔记名 | 新建/更新 | 主题 |
 
+### 关键洞察
+
+1. 洞察1
+2. 洞察2
+
 ## 间隔复习
 
 ## 今日新闻
@@ -102,36 +175,41 @@ or file.name= dateformat(date(today)-dur(3 year), "yyyy-MM-dd")
 \`\`\`
 ```
 
-### 4. 写入行思录
+## 单会话 Agent 分析指令
 
-**日记路径**: `$OBSIDIAN_VAULT_PATH/行思录/YYYY/YYYY-MM/YYYY-MM-DD.md`
+当需要分析单个会话时，启动一个 Agent 执行以下任务：
 
-**路径发现顺序**：
-1. 环境变量 `OBSIDIAN_VAULT_PATH`
-2. 常见位置：
-   - `~/Documents/study/github/Obsidian`
-   - `~/Obsidian`
-   - `~/Documents/Obsidian`
-   - `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/`
+### 分析脚本
 
-3. 验证：目录包含 `.obsidian` 文件夹
+```bash
+# 读取会话文件的前 50 行获取基本信息
+head -50 {session_file}
 
-## 分析要点
+# 搜索关键模式
+grep -c "command-name\|command-message" {session_file}  # Skills 使用
+grep -o "mcp__[a-z_]*" {session_file} | sort | uniq -c  # MCP 工具
+grep -o '"file_path":"[^"]*\.md"' {session_file} | head -20  # 笔记文件
+grep -c '"role":"user"' {session_file}  # 消息数量
+```
 
-### 重点捕获
+### 提取规则
 
-1. **新安装的工具** - 特别关注 MCP 工具、npm/pip 包
-2. **Skills 使用** - `/command` 形式的技能调用
-3. **笔记创建** - 卡片/目录下的 .md 文件
-4. **后台任务** - 长时间运行的任务
-5. **未完成事项** - 被中断的工作
+| 信息类型 | 搜索模式 | 提取方法 |
+|----------|----------|----------|
+| 用户意图 | `role: user, content` | 取前 3 条用户消息 |
+| Skills | `<command-name>` | 统计出现次数 |
+| MCP 工具 | `mcp__` 前缀 | 提取工具名并计数 |
+| 文件操作 | `Write`, `Edit` + `file_path` | 提取文件路径 |
+| 技术主题 | 关键词匹配 | React, Vue, Python 等 |
+| 未完成 | `[ ]`, `TODO` | 提取整行 |
+| 项目路径 | `cwd` 字段 | 提取目录名 |
 
-### 避免遗漏
+## 性能优化
 
-- 同时检查用户消息和助手消息
-- 注意 MCP 工具调用（可能没有 `/` 前缀）
-- 检查文件操作（Write/Edit）了解实际产出
-- 关注安装日志中的包名
+1. **并行执行** - 所有会话分析 Agent 同时启动
+2. **限制数量** - 如果会话超过 20 个，只分析最近 20 个
+3. **超时控制** - 每个 Agent 设置 60 秒超时
+4. **增量分析** - 可选只分析新增内容
 
 ## 示例用法
 
@@ -140,3 +218,18 @@ or file.name= dateformat(date(today)-dur(3 year), "yyyy-MM-dd")
 - "写今天的日记"
 - "记录今天学到了什么"
 - "/daily-journal"
+
+## 执行示例
+
+```
+主协调器:
+1. 发现 5 个今日会话文件
+2. 启动 5 个并行 Agent...
+3. 等待 Agent 完成... (3.2s)
+4. 汇总结果:
+   - Skills: 3 个，共 5 次调用
+   - MCP: 4 个工具，共 12 次调用
+   - 笔记: 新建 8 篇，更新 3 篇
+   - 洞察: 4 条
+5. 写入日记: 行思录/2026/2026-03/2026-03-18.md
+```

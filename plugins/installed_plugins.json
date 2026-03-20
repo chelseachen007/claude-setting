@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "plugins": {
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5",
+        "version": "5.0.5",
+        "installedAt": "2026-03-17T08:45:38.421Z",
+        "lastUpdated": "2026-03-18T01:32:44.594Z",
+        "gitCommitSha": "3cee13e516e91d44b957c1336c3d08c8a8392702"
+      }
+    ],
+    "last30days@last30days-skill": [
+      {
+        "scope": "user",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/last30days-skill/last30days/2.9.5",
+        "version": "2.9.5",
+        "installedAt": "2026-03-18T02:48:47.681Z",
+        "lastUpdated": "2026-03-18T02:48:47.681Z",
+        "gitCommitSha": "6a5a0013c03b3cc03758a07d41cfa93777a5b623"
+      }
+    ],
+    "example-skills@anthropic-agent-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/anthropic-agent-skills/example-skills/b0cbd3df1533",
+        "version": "b0cbd3df1533",
+        "installedAt": "2026-03-20T01:57:55.391Z",
+        "lastUpdated": "2026-03-20T01:57:55.391Z",
+        "gitCommitSha": "b0cbd3df1533b396d281a6886d5132f623393a9c"
+      }
+    ]
+  }
+}

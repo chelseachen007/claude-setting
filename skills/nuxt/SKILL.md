@@ -1,6 +1,6 @@
 ---
 name: nuxt
-description: Nuxt 全栈 Vue 框架，支持 SSR、自动导入和基于文件的路由。在处理 Nuxt 应用、服务器路由、useFetch、中间件或混合渲染时使用。
+description: "触发词：Nuxt、SSR、useFetch、服务器路由、自动导入、中间件、混合渲染、Nitro。当处理Nuxt应用时触发。"
 metadata:
   author: Anthony Fu
   version: "2026.1.28"

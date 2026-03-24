@@ -1,6 +1,6 @@
 ---
 name: commit
-description: 提交当前未 commit 的修改。自动分析变更内容，生成规范的 commit message，支持按目录分组提交或一次性提交所有修改。
+description: "触发词：提交、commit、git commit、帮我提交代码。当用户想要提交当前修改到 git 仓库时触发。"
 ---
 
 # Git Commit 技能

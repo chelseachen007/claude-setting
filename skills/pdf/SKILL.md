@@ -1,6 +1,6 @@
 ---
 name: pdf
-description: 综合性 PDF 处理工具包，支持提取文本和表格、创建新 PDF、合并/拆分文档以及处理表单。当 Claude 需要填写 PDF 表单或以编程方式大规模处理、生成或分析 PDF 文档时使用。
+description: "触发词：PDF、pdf、提取PDF、合并PDF、拆分PDF、填写表单、PDF转文字。当用户需要处理PDF文件时触发。"
 license: Proprietary. LICENSE.txt has complete terms
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: tushare
-description: Tushare Pro API 参考，用于中国 A 股（上交所/深交所）市场数据。当以下情况使用：(1) 编写 Tushare API 查询股票价格、财务或估值数据，(2) 查找 Tushare API 参数、返回字段或速率限制，(3) 处理 A 股参考数据、日线行情、复权因子、资金流向或涨跌停列表，(4) 处理 Tushare 的 PIT 校正财务数据查询，(5) 任何涉及 tushare Python SDK 的任务。
+description: "触发词：Tushare、ts.pro_api、A股行情、财务数据、复权因子、资金流向、涨跌停、PIT数据。当用户需要查询Tushare API时触发。"
 ---
 
 # Tushare Pro API 参考

@@ -1,6 +1,6 @@
 ---
 name: vue-best-practices
-description: Vue 3 和 Vue.js 的 TypeScript、vue-tsc 和 Volar 最佳实践。在编写、审查或重构 Vue 组件以确保正确的类型模式时使用。涉及 Vue 组件、props 提取、包装组件、模板类型检查或 Volar 配置的任务时触发。
+description: "触发词：Vue组件、props提取、vue-tsc、Volar、TypeScript、defineProps、模板类型检查。当编写或审查Vue组件时触发。"
 license: MIT
 metadata:
   author: hyf0

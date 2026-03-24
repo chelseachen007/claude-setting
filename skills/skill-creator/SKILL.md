@@ -1,6 +1,6 @@
 ---
 name: skill-creator
-description: 创建有效技能的指南。当用户想要创建新技能（或更新现有技能）以通过专业知识、工作流程或工具集成来扩展 Claude 的能力时使用。
+description: "触发词：创建技能、新建技能、skill、写个技能、帮我创建技能、更新技能。当用户想要创建或更新技能时触发。"
 license: Complete terms in LICENSE.txt
 ---
 

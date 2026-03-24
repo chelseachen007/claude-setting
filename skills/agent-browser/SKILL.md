@@ -1,6 +1,6 @@
 ---
 name: agent-browser
-description: 浏览器自动化工具，用于网页测试、表单填写、截图和数据提取。当用户需要导航网站、与网页交互、填写表单、截图、测试Web应用或从网页提取信息时使用。
+description: "触发词：浏览器自动化、网页测试、截图、表单填写、爬虫、Playwright。当用户需要自动化操作浏览器时触发。"
 allowed-tools: Bash(agent-browser:*)
 ---
 

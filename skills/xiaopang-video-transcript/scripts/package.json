@@ -1,0 +1,11 @@
+{
+  "name": "xiaopang-video-transcript",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}

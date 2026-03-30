@@ -63,7 +63,7 @@
   "model": "opus[1m]",
   "statusLine": {
     "type": "command",
-    "command": "bash -c 'plugin_dir=$(ls -d \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}\"/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | sort -V | tail -1); [ -n \"$plugin_dir\" ] && exec \"/usr/local/bin/node\" \"${plugin_dir}dist/index.js\"'"
+    "command": "node \"/Users/chenjie/.claude/hooks/gsd-statusline.js\""
   },
   "enabledPlugins": {
     "claude-hud@claude-hud": true,
@@ -100,6 +100,16 @@
             "command": "bash \"${HOME}/.claude/hooks/usage-stats.sh\""
           }
         ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/hooks/gsd-prompt-guard.js\"",
+            "timeout": 5
+          }
+        ]
       }
     ],
     "Notification": [
@@ -122,6 +132,28 @@
             "type": "command",
             "command": "bash \"${HOME}/.claude/hooks/stop-sound.sh\"",
             "async": true
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/hooks/gsd-check-update.js\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|MultiEdit|Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/chenjie/.claude/hooks/gsd-context-monitor.js\"",
+            "timeout": 10
           }
         ]
       }

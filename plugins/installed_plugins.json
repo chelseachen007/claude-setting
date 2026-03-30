@@ -4,10 +4,10 @@
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5",
-        "version": "5.0.5",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.6",
+        "version": "5.0.6",
         "installedAt": "2026-03-17T08:45:38.421Z",
-        "lastUpdated": "2026-03-18T01:32:44.594Z",
+        "lastUpdated": "2026-03-26T01:26:56.471Z",
         "gitCommitSha": "3cee13e516e91d44b957c1336c3d08c8a8392702"
       }
     ],
@@ -64,10 +64,10 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/79caa0d824ac",
-        "version": "79caa0d824ac",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/183a6ca35d5f",
+        "version": "183a6ca35d5f",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-03-24T06:53:34.625Z",
+        "lastUpdated": "2026-03-30T01:36:22.858Z",
         "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
       }
     ],

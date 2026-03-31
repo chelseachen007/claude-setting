@@ -64,10 +64,10 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/183a6ca35d5f",
-        "version": "183a6ca35d5f",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/52e95f6756e5",
+        "version": "52e95f6756e5",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-03-30T01:36:22.858Z",
+        "lastUpdated": "2026-03-31T01:45:44.465Z",
         "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
       }
     ],

@@ -18,6 +18,8 @@ metadata:
 
 1. **平台识别** - 自动识别 YouTube、Bilibili 等平台
 2. **官方字幕优先** - 尝试获取官方提供的字幕
+   - **Bilibili**: 优先通过 CDP（浏览器自动化）获取，利用用户 Chrome 登录态，无需处理 WBI 签名；CDP 不可用时降级到直接 API 调用
+   - **YouTube**: 使用 InnerTube API 获取
 3. **Whisper AI 兜底** - 如果没有官方字幕，使用 AI 语音识别生成
 
 ## 脚本位置
@@ -188,10 +190,23 @@ YouTube 字幕首次获取时会缓存：
 - **ffmpeg** - 音频格式转换（Whisper 需要）
 - **faster-whisper** - AI 语音识别（首次使用时自动安装）
 
+## Bilibili 字幕获取策略
+
+采用三级降级策略：
+
+| 优先级 | 方式 | 说明 |
+|--------|------|------|
+| 1 | CDP 浏览器模式 | 通过 web-access 的 CDP Proxy 在用户 Chrome 中打开视频页面，利用登录态直接调用 player API。**无需处理 WBI 签名和 Cookie** |
+| 2 | 直接 API 调用 | 通过 Node.js 直接调用 Bilibili API（可能在签名验证、登录态方面受限） |
+| 3 | Whisper AI | 下载音频后使用 AI 语音识别生成字幕 |
+
+CDP 模式需要 Chrome 开启远程调试（`chrome://inspect/#remote-debugging` 勾选 Allow），CDP Proxy 自动运行于 `localhost:3456`。
+
 ## 注意事项
 
 - **URL 需要单引号** — zsh 会把 `?` 当作通配符，所以需要用单引号包裹 URL：`'https://www.youtube.com/watch?v=xxx'`
 - 官方字幕获取速度快且准确
+- Bilibili 字幕获取优先使用 CDP 模式（需要 Chrome 开启远程调试）
 - Whisper AI 需要下载音频并进行语音识别，耗时较长
 - 对于中文视频，默认 `--language zh` 效果最佳
 - YouTube 默认启用章节分割（`--chapters`）

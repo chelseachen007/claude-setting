@@ -116,39 +116,137 @@ function ensureDir(p: string) {
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
 }
 
-// --- Bilibili Official Transcript ---
+// --- Bilibili Official Transcript (CDP 优先) ---
 
-async function fetchBilibiliTranscript(bvid: string): Promise<{ segments: TranscriptSegment[]; meta: VideoMeta }> {
-  // 获取视频信息
-  const videoUrl = `https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`;
-  const videoR = await fetch(videoUrl, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-      "Referer": "https://www.bilibili.com",
-    },
+const CDP_PROXY = "http://127.0.0.1:3456";
+
+async function cdpEval(targetId: string, js: string): Promise<any> {
+  const r = await fetch(`${CDP_PROXY}/eval?target=${targetId}`, {
+    method: "POST",
+    body: js,
   });
+  const json = await r.json();
+  if (json.error) throw new Error(json.error);
+  return json.value;
+}
+
+async function isCdpAvailable(): Promise<boolean> {
+  try {
+    const r = await fetch(`${CDP_PROXY}/targets`, { signal: AbortSignal.timeout(3000) });
+    const text = await r.text();
+    return text.startsWith("[");
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 通过 CDP 在 Bilibili 页面上下文中提取字幕。
+ * 利用用户 Chrome 的登录态和 WBI 签名，无需手动处理认证。
+ */
+async function fetchBilibiliTranscriptViaCdp(bvid: string): Promise<{ segments: TranscriptSegment[]; meta: VideoMeta }> {
+  // 1. 打开视频页面
+  const newR = await fetch(`${CDP_PROXY}/new?url=https://www.bilibili.com/video/${bvid}`);
+  const { targetId } = await newR.json() as { targetId: string };
+
+  try {
+    // 2. 等待页面渲染
+    await new Promise(r => setTimeout(r, 4000));
+
+    // 3. 从 __INITIAL_STATE__ 获取基础信息
+    const infoRaw = await cdpEval(targetId, `JSON.stringify({
+      aid: window.__INITIAL_STATE__?.aid,
+      cid: window.__INITIAL_STATE__?.cid || window.__INITIAL_STATE__?.videoData?.cid,
+      title: window.__INITIAL_STATE__?.videoData?.title,
+      author: window.__INITIAL_STATE__?.videoData?.owner?.name,
+      desc: window.__INITIAL_STATE__?.videoData?.desc,
+      duration: window.__INITIAL_STATE__?.videoData?.duration,
+      pic: window.__INITIAL_STATE__?.videoData?.pic,
+    })`);
+    const info = JSON.parse(infoRaw);
+    if (!info.aid || !info.cid) throw new Error("页面信息提取失败");
+
+    // 4. 在页面上下文调用 player API（自动带 Cookie 和签名）
+    const playerRaw = await cdpEval(targetId, `
+(async () => {
+  const url = 'https://api.bilibili.com/x/player/wbi/v2?bvid=${bvid}&cid=${info.cid}&aid=${info.aid}';
+  const res = await fetch(url, {credentials: 'include'});
+  const data = await res.json();
+  if (data.code !== 0) return JSON.stringify({error: data.message});
+  const subs = data.data?.subtitle?.subtitles || [];
+  return JSON.stringify(subs.map(s => ({
+    subtitle_url: s.subtitle_url,
+    lan: s.lan,
+    lan_doc: s.lan_doc,
+  })));
+})()
+`);
+    if (playerRaw.startsWith?.('{"error"')) throw new Error(`Player API 失败: ${JSON.parse(playerRaw).error}`);
+    const subtitles: Array<{ subtitle_url: string; lan: string; lan_doc: string }> = JSON.parse(playerRaw);
+    if (!subtitles.length) throw new Error("该视频没有官方字幕");
+
+    // 5. 选择字幕语言
+    const target = subtitles.find(s => s.lan === "zh-CN") ||
+                   subtitles.find(s => s.lan.startsWith("zh")) ||
+                   subtitles[0];
+    const subtitleUrl = target.subtitle_url.startsWith("http") ? target.subtitle_url : `https:${target.subtitle_url}`;
+
+    // 6. 下载字幕内容
+    const subRaw = await cdpEval(targetId, `
+(async () => {
+  const res = await fetch('${subtitleUrl}');
+  const data = await res.json();
+  return JSON.stringify(data.body || []);
+})()
+`);
+    const body: Array<{ from: number; to: number; content: string }> = JSON.parse(subRaw);
+
+    const segments: TranscriptSegment[] = body.map(s => ({
+      start: s.from,
+      end: s.to,
+      text: s.content,
+    }));
+
+    const meta: VideoMeta = {
+      id: bvid,
+      platform: "bilibili",
+      title: info.title || "",
+      author: info.author || "",
+      description: info.desc || "",
+      duration: info.duration || 0,
+      url: `https://www.bilibili.com/video/${bvid}`,
+      coverImage: info.pic || "",
+      language: target.lan,
+    };
+
+    return { segments, meta };
+  } finally {
+    // 始终关闭 tab
+    await fetch(`${CDP_PROXY}/close?target=${targetId}`).catch(() => {});
+  }
+}
+
+/**
+ * 直接调用 Bilibili API 获取字幕（降级方案，不依赖 CDP）。
+ */
+async function fetchBilibiliTranscriptViaApi(bvid: string): Promise<{ segments: TranscriptSegment[]; meta: VideoMeta }> {
+  const headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Referer": "https://www.bilibili.com",
+  };
+
+  const videoR = await fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`, { headers });
   const videoData = await videoR.json();
   if (videoData.code !== 0) throw new Error(`获取视频信息失败: ${videoData.message}`);
 
   const info = videoData.data;
-  const aid = info.aid;
-  const cid = info.cid;
-
-  // 获取字幕列表
-  const playerUrl = `https://api.bilibili.com/x/player/wbi/v2?aid=${aid}&cid=${cid}`;
-  const playerR = await fetch(playerUrl, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-      "Referer": "https://www.bilibili.com",
-    },
-  });
+  const playerR = await fetch(`https://api.bilibili.com/x/player/wbi/v2?aid=${info.aid}&cid=${info.cid}`, { headers });
   const playerData = await playerR.json();
   if (playerData.code !== 0) throw new Error(`获取播放器信息失败: ${playerData.message}`);
 
   const subtitles = playerData.data?.subtitle?.subtitles || [];
   if (!subtitles.length) throw new Error("该视频没有官方字幕");
 
-  // 优先选择中文字幕
   const targetSubtitle = subtitles.find((s: any) => s.lan === "zh-CN") ||
                          subtitles.find((s: any) => s.lan.startsWith("zh")) ||
                          subtitles[0];
@@ -157,33 +255,38 @@ async function fetchBilibiliTranscript(bvid: string): Promise<{ segments: Transc
     ? targetSubtitle.subtitle_url
     : `https:${targetSubtitle.subtitle_url}`;
 
-  const subR = await fetch(subtitleUrl, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-      "Referer": "https://www.bilibili.com",
-    },
-  });
+  const subR = await fetch(subtitleUrl, { headers });
   const subData = await subR.json();
 
-  const segments: TranscriptSegment[] = (subData.body || []).map((s: any) => ({
-    start: s.from,
-    end: s.to,
-    text: s.content,
-  }));
-
-  const meta: VideoMeta = {
-    id: bvid,
-    platform: "bilibili",
-    title: info.title || "",
-    author: info.owner?.name || "",
-    description: info.desc || "",
-    duration: info.duration || 0,
-    url: `https://www.bilibili.com/video/${bvid}`,
-    coverImage: info.pic || "",
-    language: targetSubtitle.lan,
+  return {
+    segments: (subData.body || []).map((s: any) => ({ start: s.from, end: s.to, text: s.content })),
+    meta: {
+      id: bvid,
+      platform: "bilibili",
+      title: info.title || "",
+      author: info.owner?.name || "",
+      description: info.desc || "",
+      duration: info.duration || 0,
+      url: `https://www.bilibili.com/video/${bvid}`,
+      coverImage: info.pic || "",
+      language: targetSubtitle.lan,
+    },
   };
+}
 
-  return { segments, meta };
+async function fetchBilibiliTranscript(bvid: string): Promise<{ segments: TranscriptSegment[]; meta: VideoMeta }> {
+  // CDP 优先：利用用户 Chrome 登录态，无需处理 WBI 签名
+  if (await isCdpAvailable()) {
+    try {
+      console.error("  → 使用 CDP 模式获取字幕（浏览器登录态）...");
+      return await fetchBilibiliTranscriptViaCdp(bvid);
+    } catch (e) {
+      console.error(`  → CDP 模式失败: ${(e as Error).message}，降级到直接 API...`);
+    }
+  } else {
+    console.error("  → CDP 不可用，使用直接 API 模式...");
+  }
+  return fetchBilibiliTranscriptViaApi(bvid);
 }
 
 // --- Whisper AI Transcript ---

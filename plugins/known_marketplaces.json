@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-31T07:50:43.489Z"
+    "lastUpdated": "2026-04-01T09:17:20.610Z"
   },
   "last30days-skill": {
     "source": {
@@ -30,5 +30,13 @@
     },
     "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/claude-hud",
     "lastUpdated": "2026-03-21T04:51:10.744Z"
+  },
+  "openai-codex": {
+    "source": {
+      "source": "github",
+      "repo": "openai/codex-plugin-cc"
+    },
+    "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/openai-codex",
+    "lastUpdated": "2026-03-31T09:11:14.758Z"
   }
 }

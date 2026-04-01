@@ -61,26 +61,6 @@
     ]
   },
   "model": "opus[1m]",
-  "statusLine": {
-    "type": "command",
-    "command": "node \"/Users/chenjie/.claude/hooks/gsd-statusline.js\""
-  },
-  "enabledPlugins": {
-    "claude-hud@claude-hud": true,
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
-    "minimalist-entrepreneur@local": true
-  },
-  "extraKnownMarketplaces": {
-    "claude-hud": {
-      "source": {
-        "source": "github",
-        "repo": "jarrodwatts/claude-hud"
-      }
-    }
-  },
-  "skipDangerousModePermissionPrompt": true,
   "hooks": {
     "PreToolUse": [
       {
@@ -158,5 +138,32 @@
         ]
       }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"/Users/chenjie/.claude/hooks/gsd-statusline.js\""
+  },
+  "enabledPlugins": {
+    "claude-hud@claude-hud": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "minimalist-entrepreneur@local": true,
+    "codex@openai-codex": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
+      }
+    },
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    }
+  },
+  "skipDangerousModePermissionPrompt": true
 }

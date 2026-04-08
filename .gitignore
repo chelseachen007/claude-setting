@@ -30,3 +30,4 @@ sessions/
 
 # IDE
 ide/
+__pycache__/

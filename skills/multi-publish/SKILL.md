@@ -2,7 +2,8 @@
 name: multi-publish
 description: |
   多平台一键发布。将文章同时发布到微信公众号草稿箱和小红书。
-  支持内容格式自动适配：微信 HTML 优化、小红书 emoji 风格压缩。
+  支持内容格式自动适配：微信 HTML 优化、小红书图文卡片生成。
+  小红书通过 web-access CDP 浏览器自动化发布。
   触发词：一键发布、多平台发布、发布到微信、发布到小红书、同步发布。
 allowed-tools: Bash, Read, Write, Skill
 ---
@@ -19,6 +20,20 @@ allowed-tools: Bash, Read, Write, Skill
 - "发布到小红书" / "推到小红书"
 - "同时发布到微信和小红书"
 
+## 素材目录
+
+所有素材（卡片图片、HTML 文件等）统一存放到：
+
+```
+/Users/chenjie/Documents/study/claude/素材/{平台}/{主题}/
+```
+
+示例：
+- `素材/小红书/ai-yanggao/xhs_yanggao_1.png`
+- `素材/公众号/knowledge-garden/`
+
+每次发布前，先根据文章主题创建对应子目录。主题名用英文短横线风格（kebab-case）。
+
 ## 前置检查
 
 ### 微信公众号配置
@@ -34,9 +49,10 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py --setup
 - Python 依赖：`requests`, `Pillow`（可选，用于图片转换）
 
 ### 小红书配置
-复用已有的 `xiaohongshu-skills`，需要：
-- Chrome 浏览器已启动（`python scripts/chrome_launcher.py`）
-- 已登录小红书账号（`python scripts/cli.py check-login`）
+使用 web-access skill 的 CDP 浏览器自动化方案，需要：
+- 用户的日常 Chrome 已登录小红书（creator.xiaohongshu.com）
+- CDP proxy 可连接（`bash ~/.claude/skills/web-access/scripts/check-deps.sh`）
+- 如果 proxy 连接失败，引导用户在 Chrome 中开启远程调试授权
 
 ## 执行流程
 
@@ -79,9 +95,17 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 
 ### 步骤 4：生成小红书图文卡片
 
-当发布目标是小红书时，使用 `card-caster` skill 的 `-m` 模式将文章内容拆分为多张 1080x1440 卡片图片。图片卡片是小红书的主要内容载体，正文只作为补充文案。
+当发布目标是小红书时，使用 `card-caster` 的 HTML 模板将文章内容拆分为多张 1080x1440 卡片图片。图片卡片是小红书的主要内容载体，正文只作为补充文案。
 
-#### 4.1 内容拆分原则
+#### 4.1 创建素材目录
+
+```bash
+mkdir -p "/Users/chenjie/Documents/study/claude/素材/小红书/{主题名}"
+```
+
+主题名根据文章内容取一个简短的英文标识，如 `ai-yanggao`、`knowledge-garden`。
+
+#### 4.2 内容拆分原则
 
 将长文按主题拆为 6-10 张卡片，每张一个核心主题，遵循升番逻辑（简单→复杂→高潮）：
 - **封面卡**：标题 + 引子数据/故事，建立好奇
@@ -90,7 +114,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 
 **核心原则：保留原文内容，不要缩减。** 如果原文较长，增加到 8-10 张卡片。用户的原始表述（具体数字、专有名词、完整论据）必须保留，不要用自己的话改写或概括。
 
-#### 4.2 单卡内容密度
+#### 4.3 单卡内容密度
 
 每张卡可用高度约 1274px（1440 - 64顶部 - 52底部 - 50页脚），正文 36px/1.7 行高。参考视觉重量：
 - 首卡标题区约 160px，续卡 running title 约 60px
@@ -106,7 +130,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 - 是否有原文关键论述被省略？把省略的内容补回来
 - 单张卡是否只有一个 h2 + 1-2 句话就结束了？太单薄，合并到相邻卡片或补内容
 
-#### 4.3 HTML 模板结构
+#### 4.4 HTML 模板结构
 
 使用 `card-caster` 的 `assets/poster_template.html` 模板：
 - **首卡**：`{{TITLE_BLOCK}}` + `{{HEADER_BLOCK}}` 为空 + `{{BODY_HTML}}`（**不要**使用 `.dropcap`，首字不放大）
@@ -125,16 +149,21 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 
 色调选择复用 card-caster 的色调感知表，根据内容气质匹配 BG + Accent 色。
 
-#### 4.4 截图命令
+#### 4.5 截图命令
+
+HTML 文件和截图都保存到素材目录：
 
 ```bash
 # 逐张截图（可并行）
-node ~/.claude/skills/card-caster/assets/capture.js /tmp/ljg_cast_poster_{name}_{N}.html ~/Downloads/{name}_{N}.png 1080 1440
+node ~/.claude/skills/card-caster/assets/capture.js \
+  /tmp/xhs_{topic}_{N}.html \
+  "/Users/chenjie/Documents/study/claude/素材/小红书/{topic}/xhs_{topic}_{N}.png" \
+  1080 1440
 ```
 
 截图后用 Read 查看每张 PNG，检查内容是否完整、有无截断或留白过多，必要时调整 HTML 重拍。
 
-#### 4.5 预览与迭代
+#### 4.6 预览与迭代
 
 生成卡片后，**必须先展示预览**再发布：
 1. 截图所有卡片后，用 Read 查看每张 PNG
@@ -142,14 +171,14 @@ node ~/.claude/skills/card-caster/assets/capture.js /tmp/ljg_cast_poster_{name}_
 3. 等用户确认后再进入发布流程
 4. 如用户要求修改（内容缩减、标题换行、追加图片等），调整 HTML 重拍后再确认
 
-#### 4.6 追加用户图片
+#### 4.7 追加用户图片
 
 用户可能在卡片之外提供自己的图片（截图、照片等），需要混合排列：
 - 用户图片通常放在第一张（作为封面）或最后一张
-- 将用户图片路径加入 `--images` 参数，与卡片 PNG 一起发布
+- 将用户图片复制到素材目录，与卡片 PNG 一起发布
 - 图片总数 ≤18 张（小红书限制）
 
-#### 4.7 适配小红书正文
+#### 4.8 适配小红书正文
 
 图片是主内容，正文作为钩子文案（≤350字）：
 - 开头用引子数据或反差句吸引注意
@@ -157,34 +186,106 @@ node ~/.claude/skills/card-caster/assets/capture.js /tmp/ljg_cast_poster_{name}_
 - 加入适当 emoji（但不要每句都加）
 - 末尾 CTA：点赞收藏 + 引导评论
 
-### 步骤 5：发布到小红书
+### 步骤 5：通过 web-access 发布到小红书
 
-#### 5.1 检查登录状态
+使用 web-access skill 的 CDP proxy 操控用户日常 Chrome 完成发布。
 
-```bash
-cd ~/.claude/commands/xiaohongshu-skills
-python3 scripts/cli.py check-login
-```
-
-#### 5.2 发布
+#### 5.1 启动 CDP Proxy
 
 ```bash
-cd ~/.claude/commands/xiaohongshu-skills
-python3 scripts/cli.py publish \
-  --title-file /tmp/xhs_title.txt \
-  --content-file /tmp/xhs_content.txt \
-  --images /path/to/card_1.png /path/to/card_2.png ... /path/to/card_N.png
+bash ~/.claude/skills/web-access/scripts/check-deps.sh
 ```
 
-注意：多张图片用空格分隔，不要用逗号。
+如果连接失败，引导用户：
+1. 在 Chrome 地址栏输入 `chrome://inspect/#remote-debugging`
+2. 勾选 "Allow remote debugging for this browser instance"
+3. 重启 Chrome 后重试
 
-发布前必须确认用户同意。
+#### 5.2 打开发布页面
+
+```bash
+# 打开小红书创作平台发布页
+curl -s "http://localhost:3456/new?url=https://creator.xiaohongshu.com/publish/publish"
+```
+
+等待页面加载后，切换到"上传图文"标签：
+
+```bash
+# 切换到上传图文
+curl -s -X POST "http://localhost:3456/eval?target={TARGET_ID}" \
+  -d '(() => {
+    const tabs = document.querySelectorAll(".creator-tab");
+    for (const t of tabs) {
+      if (t.textContent.trim() === "上传图文" && !t.classList.contains("active")) {
+        t.click(); return "ok";
+      }
+    }
+  })()'
+```
+
+#### 5.3 上传图片
+
+```bash
+curl -s -X POST "http://localhost:3456/setFiles?target={TARGET_ID}" \
+  -d '{
+    "selector": "input.upload-input",
+    "files": ["/path/to/card_1.png", "/path/to/card_2.png", ...]
+  }'
+```
+
+等待图片上传完成（约 3-5 秒）。
+
+#### 5.4 填写标题和正文
+
+```bash
+# 填写标题
+curl -s -X POST "http://localhost:3456/eval?target={TARGET_ID}" \
+  -d '(() => {
+    const input = document.querySelector("input.d-text");
+    const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+    setter.call(input, "标题内容");
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.dispatchEvent(new Event("change", { bubbles: true }));
+  })()'
+
+# 填写正文
+curl -s -X POST "http://localhost:3456/eval?target={TARGET_ID}" \
+  -d '(() => {
+    const editor = document.querySelector("div.tiptap.ProseMirror");
+    editor.focus();
+    document.execCommand("selectAll", false, null);
+    document.execCommand("insertText", false, `正文内容`);
+  })()'
+```
+
+#### 5.5 确认并发布
+
+截图展示最终效果，等用户确认后点击发布按钮：
+
+```bash
+# 截图确认
+curl -s "http://localhost:3456/screenshot?target={TARGET_ID}&file=/tmp/xhs_final.png"
+
+# 点击发布
+curl -s -X POST "http://localhost:3456/click?target={TARGET_ID}" \
+  -d 'button.d-button.d-button-default.d-button-with-content.custom-button.bg-red'
+```
+
+发布后等待 3-5 秒，检查页面状态确认是否成功。
+
+#### 5.6 清理
+
+发布完成后关闭创建的 tab（不关闭用户原有的 tab）：
+
+```bash
+curl -s "http://localhost:3456/close?target={TARGET_ID}"
+```
 
 ### 步骤 6：汇报结果
 
 展示各平台发布结果：
 - 微信：media_id + 提示去后台预览
-- 小红书：发布状态 + 笔记链接（如有）
+- 小红书：发布状态 + 素材目录位置
 
 ## 单平台快捷发布
 
@@ -195,7 +296,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 ```
 
 ### 仅发布到小红书
-生成卡片图片 → 适配正文 → 调用 xiaohongshu-skills 发布（见步骤 4-5）。
+生成卡片图片到素材目录 → 通过 web-access CDP 上传发布（见步骤 4-5）。
 
 ## 常见问题
 
@@ -205,11 +306,16 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 ### 微信 access_token 过期
 脚本自动刷新，如持续失败检查 AppID/AppSecret 是否正确。
 
-### 小红书未登录
-先运行 `python scripts/cli.py login` 完成登录。
+### CDP Proxy 连接失败
+1. 确认 Chrome 已开启远程调试：`chrome://inspect/#remote-debugging` → 勾选允许
+2. 重启 Chrome 后重试 `bash ~/.claude/skills/web-access/scripts/check-deps.sh`
+3. 如果标准 Chrome DevToolsActivePort 可用，proxy 会自动发现并连接
 
 ### 图片上传失败
-确保图片为 JPG/PNG 格式，≤1MB。
+确保图片为 JPG/PNG 格式，≤1MB。上传后等待 3-5 秒让 XHS 处理完成再填写内容。
+
+### 小红书发布页面报错
+如果发布后出现"遇到问题"，可能是图片未完全上传。重新打开发布页，确保图片上传完成后再填写内容并发布。
 
 ## 文件结构
 
@@ -217,11 +323,11 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 multi-publish/
 ├── SKILL.md              # 本文件 - Skill 定义和执行流程
 ├── wechat_publisher.py   # 微信公众号草稿发布脚本
-└── xhs_adapter.py        # 小红书内容适配器
+└── xhs_adapter.py        # 小红书内容适配器（正文文本适配）
 ```
 
 ## 技术说明
 
 - **微信发布**：使用微信公众号官方 API（OAuth2 Client Credentials），通过 AppID + AppSecret 获取 access_token，调用草稿箱接口创建草稿
-- **小红书发布**：复用已有的 `xiaohongshu-skills`（Chrome 自动化方案），不重复实现
-- **内容适配**：独立 Python 脚本处理格式转换，微信 HTML 优化和小红书 emoji 风格压缩
+- **小红书发布**：通过 web-access skill 的 CDP proxy 直接操控用户日常 Chrome，天然携带登录态，在创作者平台完成发布
+- **内容适配**：卡片图片通过 card-caster 模板生成，正文通过 xhs_adapter.py 适配为小红书风格

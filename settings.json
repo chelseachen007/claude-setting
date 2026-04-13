@@ -3,7 +3,8 @@
     "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
     "ENABLE_LSP_TOOL": "1",
-    "CLAUDE_CODE_NEW_INIT": "on"
+    "CLAUDE_CODE_NEW_INIT": "on",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "200000"
   },
   "permissions": {
     "allow": [
@@ -60,7 +61,7 @@
       "Bash(cargo add:*)"
     ]
   },
-  "model": "opus[1m]",
+  "model": "sonnet[1m]",
   "hooks": {
     "PreToolUse": [
       {
@@ -165,6 +166,6 @@
       }
     }
   },
-  "skipDangerousModePermissionPrompt": true,
-  "autoDreamEnabled": true
+  "autoDreamEnabled": true,
+  "skipDangerousModePermissionPrompt": true
 }

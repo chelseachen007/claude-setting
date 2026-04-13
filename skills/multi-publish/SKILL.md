@@ -20,6 +20,58 @@ allowed-tools: Bash, Read, Write, Skill
 - "发布到小红书" / "推到小红书"
 - "同时发布到微信和小红书"
 
+## 一键发布工具
+
+`~/.multi-publish/wechat_oneclick.py` 是集成工具，包含完整流程：
+
+### 单篇文章发布（自动生成封面）
+```bash
+python3 ~/.multi-publish/wechat_oneclick.py \
+  --md article.md \
+  --prompt "描述封面图内容，900x383px，绿色系主题"
+```
+
+### 单篇发布（已有封面）
+```bash
+python3 ~/.multi-publish/wechat_oneclick.py \
+  --md article.md \
+  --cover /path/to/cover.jpg
+```
+
+### 批量发布
+```bash
+python3 ~/.multi-publish/wechat_oneclick.py --batch batch_config.json
+```
+
+### 仅生成封面（不发布）
+```bash
+python3 ~/.multi-publish/wechat_oneclick.py \
+  --prompt "描述封面图" \
+  --output cover_01.jpg
+```
+
+### 仅转换 HTML
+```bash
+python3 ~/.multi-publish/wechat_oneclick.py --md article.md --html-only
+```
+
+## 正确的发布流程（重要！）
+
+**封面 → 上传 → 转换 → 发布**，不要跳步！
+
+1. **生成封面图**（Gemini）：通过 `wechat_oneclick.py` 或 `batch_covers.py`
+2. **上传封面到微信**：获取 `thumb_media_id`（必须，否则 40007 错误）
+3. **从原始 MD 转换 HTML**：不要从 API 取回内容再重发（会丢失大量内容）
+4. **创建草稿**：带上封面 media_id
+
+### 踩坑记录
+- **封面必须提供**：微信草稿 API 必须要 `thumb_media_id`，否则报 40007
+- **API 编码**：`resp.content.decode('utf-8')` 而非 `resp.json()`
+- **内容不要从 API 回取**：从原始 Markdown 重新转换，API 返回内容会丢失
+- **IP 白名单**：IP 变化时需去 mp.weixin.qq.com 更新，token 缓存失效时 `rm -f ~/.multi-publish/wechat_token.json`
+- **Gemini 检测**：用 `img[src^="blob:https://gemini.google.com/"]` 判断生成完成
+- **Gemini 导出**：用 canvas.toDataURL() 自动导出，无需手动下载
+
 ## 素材目录
 
 所有素材（卡片图片、HTML 文件等）统一存放到：

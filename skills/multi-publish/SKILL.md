@@ -71,6 +71,8 @@ python3 ~/.multi-publish/wechat_oneclick.py --md article.md --html-only
 - **IP 白名单**：IP 变化时需去 mp.weixin.qq.com 更新，token 缓存失效时 `rm -f ~/.multi-publish/wechat_token.json`
 - **Gemini 检测**：用 `img[src^="blob:https://gemini.google.com/"]` 判断生成完成
 - **Gemini 导出**：用 canvas.toDataURL() 自动导出，无需手动下载
+- **微信不支持超链接**：`<a href>` 标签在公众号里不显示为可点击链接。所有链接必须用纯文本展示，格式为 `名称（URL）`，读者复制 URL 打开。文中引用和末尾链接区都适用。
+- **pandoc 裸 HTML 无样式**：pandoc 转出的 HTML 没有排版样式，直接发布效果很差。需要手动写带 inline style 的 HTML：代码块用深色背景、金句用暖黄高亮块、H2 左侧装饰线、表格用 flex 布局模拟。模板参考 `/tmp/claude_code_article_styled.html` 的结构。
 
 ## 素材目录
 

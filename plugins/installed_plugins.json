@@ -46,9 +46,9 @@
         "scope": "user",
         "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
         "version": "1.0.0",
-        "installedAt": "2026-03-23T07:53:56.843Z",
-        "lastUpdated": "2026-03-23T07:53:56.843Z",
-        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+        "installedAt": "2026-04-18T13:48:30.644Z",
+        "lastUpdated": "2026-04-18T13:48:30.644Z",
+        "gitCommitSha": "bb7730114d873b91acd477e696066f217f882391"
       }
     ],
     "typescript-lsp@claude-plugins-official": [
@@ -64,10 +64,10 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/de39da5ba2da",
-        "version": "de39da5ba2da",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/910dafeca878",
+        "version": "910dafeca878",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-04-17T05:16:41.165Z",
+        "lastUpdated": "2026-04-20T02:34:09.304Z",
         "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
       }
     ],

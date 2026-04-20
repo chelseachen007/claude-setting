@@ -28,6 +28,9 @@ projects/
 plans/
 sessions/
 
+# 技能敏感配置
+skills/xueqiu-digest/config.json
+
 # IDE
 ide/
 __pycache__/

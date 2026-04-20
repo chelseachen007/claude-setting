@@ -1,12 +1,12 @@
 ---
 name: findata-toolkit-cn
-description: "触发词：A股数据、股票行情、财务指标、北向资金、董监高增减持、宏观数据、LPR、CPI、PPI、PMI、社融、M2。当用户需要获取A股市场数据或宏观经济指标时触发。"
+description: "触发词：A股数据、港股数据、股票行情、财务指标、北向资金、董监高增减持、宏观数据、LPR、CPI、PPI、PMI、社融、M2。当用户需要获取A股或港股市场数据或宏观经济指标时触发。"
 license: Apache-2.0
 ---
 
-# 金融数据工具包 — A股市场
+# 金融数据工具包 — A股 & 港股
 
-自包含的数据工具包，提供A股市场实时金融数据和定量计算。所有数据源**免费**，**无需API密钥**。
+自包含的数据工具包，提供A股和港股实时金融数据和定量计算。所有数据源**免费**，**无需API密钥**。
 
 ## 安装
 
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 所有脚本位于 `scripts/` 目录。从技能根目录运行。
 
-### 1. A股数据 (`scripts/stock_data.py`)
+### A股数据 (`scripts/stock_data.py`)
 
 通过 AKShare 获取A股基本面、行情、财务指标。
 
@@ -34,7 +34,21 @@ pip install -r requirements.txt
 | `python scripts/stock_data.py --northbound` | 北向资金流向（沪股通/深股通） |
 | `python scripts/stock_data.py 600519 000858 --screen` | 批量筛选 |
 
-### 2. 宏观数据 (`scripts/macro_data.py`)
+### 港股数据 (`scripts/hk_stock_data.py`)
+
+通过腾讯财经/新浪财经 API 获取港股实时行情（使用 curl 绕过 Python 代理问题）。
+
+| 命令 | 用途 |
+|------|------|
+| `python scripts/hk_stock_data.py 00700` | 基本信息（腾讯控股：股价、PE、PB、股息率、市值、52周高低） |
+| `python scripts/hk_stock_data.py 00700 --full` | 全部数据（基本信息+估值） |
+| `python scripts/hk_stock_data.py 00700 --valuation` | 估值指标 |
+
+**已知限制**：
+- 港股历史行情接口（新浪）不稳定，建议通过 WebSearch 补充
+- 详细财报数据需通过 WebSearch 获取年报/季报
+
+### 宏观数据 (`scripts/macro_data.py`)
 
 通过 AKShare 获取中国宏观经济指标。
 

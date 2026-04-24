@@ -4,8 +4,9 @@
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721"
   },
   "model": "opus",
-  "skipDangerousModePermissionPrompt": true,
   "enabledPlugins": {
-    "pyright-lsp@claude-plugins-official": true
-  }
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true
 }

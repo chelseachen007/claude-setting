@@ -4,11 +4,12 @@
  * 支持 YouTube、Bilibili 等平台
  * 优先使用官方字幕，失败时自动使用 Whisper AI 生成
  */
-import { existsSync, mkdirSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, writeFileSync, unlinkSync, rmSync } from "fs";
 import { dirname, join, resolve } from "path";
+import { tmpdir } from "os";
 import { spawnSync } from "child_process";
 
-type Platform = "youtube" | "bilibili" | "unknown";
+type Platform = "youtube" | "bilibili" | "douyin" | "unknown";
 type Format = "text" | "srt" | "json";
 
 interface Options {
@@ -80,6 +81,15 @@ function detectPlatform(input: string): { platform: Platform; videoId: string } 
     // AV号
     const avMatch = input.match(/av(\d+)/i);
     if (avMatch) return { platform: "bilibili", videoId: `av${avMatch[1]}` };
+  }
+
+  // Douyin detection
+  if (input.includes("douyin.com") || input.includes("v.douyin.com")) {
+    // Extract video ID from full URL or short URL
+    const dyMatch = input.match(/douyin\.com\/video\/(\d+)/);
+    if (dyMatch) return { platform: "douyin", videoId: dyMatch[1] };
+    // Short URL — will resolve to full URL via CDP later
+    return { platform: "douyin", videoId: input };
   }
 
   return { platform: "unknown", videoId: input };
@@ -289,6 +299,149 @@ async function fetchBilibiliTranscript(bvid: string): Promise<{ segments: Transc
   return fetchBilibiliTranscriptViaApi(bvid);
 }
 
+// --- Douyin Video Extraction (CDP only) ---
+
+interface DouyinVideoInfo {
+  videoUrl: string;
+  title: string;
+  author: string;
+  videoId: string;
+}
+
+/**
+ * 通过 CDP 在抖音页面中提取视频播放地址和元信息。
+ * yt-dlp 的抖音提取器有 bug（需要 fresh cookies），CDP 是唯一可靠方式。
+ * 视频地址有时效性，提取后需立即下载，且必须带 Referer 头。
+ */
+async function fetchDouyinVideoViaCdp(urlOrId: string): Promise<DouyinVideoInfo & { targetId: string }> {
+  if (!(await isCdpAvailable())) {
+    throw new Error("抖音视频提取需要 CDP（Chrome 远程调试）。请确保 Chrome 已开启远程调试且 CDP Proxy 运行中。");
+  }
+
+  // 确定 URL：如果有完整 URL 直接用，否则当作视频 ID
+  const pageUrl = urlOrId.includes("douyin.com")
+    ? urlOrId
+    : `https://www.douyin.com/video/${urlOrId}`;
+
+  // 1. 打开页面
+  const newR = await fetch(`${CDP_PROXY}/new?url=${encodeURIComponent(pageUrl)}`);
+  const { targetId } = await newR.json() as { targetId: string };
+
+  // 2. 等待页面渲染（短视频通常加载快）
+  await new Promise(r => setTimeout(r, 5000));
+
+  // 3. 提取视频 URL 和元信息
+  const infoRaw = await cdpEval(targetId, `JSON.stringify({
+    videoUrl: document.querySelector("video")?.currentSrc || document.querySelector("video")?.src || "",
+    title: document.title.replace(/ - 抖音$/, "").replace(/ - 抖音精选$/, ""),
+    author: document.querySelector('.author-card-user-name')?.textContent
+           || document.querySelector('[data-e2e="user-info"] h3')?.textContent
+           || "",
+  })`);
+  const info = JSON.parse(infoRaw);
+  if (!info.videoUrl) {
+    await fetch(`${CDP_PROXY}/close?target=${targetId}`).catch(() => {});
+    throw new Error("未找到视频元素或视频 URL 为空");
+  }
+
+  // 4. 从页面 URL 获取视频 ID
+  const page = await (await fetch(`${CDP_PROXY}/info?target=${targetId}`)).json() as { url: string };
+  const idMatch = page.url.match(/video\/(\d+)/);
+  const videoId = idMatch ? idMatch[1] : "unknown";
+
+  return {
+    videoUrl: info.videoUrl,
+    title: info.title || videoId,
+    author: info.author || "",
+    videoId,
+    targetId,
+  };
+}
+
+/**
+ * 下载抖音视频。必须带 Referer: https://www.douyin.com/ 头，否则 CDN 会拒绝。
+ */
+function downloadDouyinVideo(videoUrl: string, outputPath: string): void {
+  const result = spawnSync("curl", [
+    "-L", "-o", outputPath,
+    "--fail",
+    "-H", "Referer: https://www.douyin.com/",
+    "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "--max-time", "120",
+    videoUrl,
+  ], { encoding: "utf-8", stdio: ["inherit", "pipe", "pipe"] });
+
+  if (result.status !== 0) {
+    throw new Error(`下载抖音视频失败: ${result.stderr || "未知错误"}`);
+  }
+}
+
+/**
+ * 用 ffmpeg 从视频文件提取 WAV 音频
+ */
+function extractAudioFromVideo(videoPath: string, wavPath: string): void {
+  const result = spawnSync("ffmpeg", [
+    "-y", "-i", videoPath,
+    "-vn", "-acodec", "pcm_s16le",
+    "-ar", "16000", "-ac", "1",
+    wavPath,
+  ], { encoding: "utf-8", stdio: ["inherit", "pipe", "pipe"] });
+
+  if (result.status !== 0) {
+    throw new Error(`ffmpeg 提取音频失败: ${result.stderr || "未知错误"}`);
+  }
+}
+
+/**
+ * 用 faster-whisper 直接在进程内转写（不走 whisper_transcribe.py 子进程）。
+ * 抖音场景：已有本地音频文件，不需要 yt-dlp 下载。
+ */
+const WHISPER_MODELS = ["tiny", "base", "small", "medium", "large"] as const;
+
+function transcribeLocalFile(wavPath: string, model: string, language: string): TranscriptSegment[] {
+  if (!WHISPER_MODELS.includes(model as any)) throw new Error(`Invalid whisper model: ${model}`);
+  if (!/^[a-z]{2}(-[A-Za-z]{2,4})?$/.test(language)) throw new Error(`Invalid language code: ${language}`);
+
+  const safeWav = wavPath.replace(/"/g, '\\"');
+  const script = `
+import sys, json
+sys.stdout.reconfigure(line_buffering=True)
+from faster_whisper import WhisperModel
+print("Loading model...", file=sys.stderr)
+model = WhisperModel("${model}", device="cpu", compute_type="int8")
+print("Transcribing...", file=sys.stderr)
+segs, info = model.transcribe("${safeWav}", language="${language}", vad_filter=True, vad_parameters=dict(min_silence_duration_ms=500))
+results = []
+for s in segs:
+    results.append({"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()})
+    if len(results) % 50 == 0:
+        print(f"  ... {len(results)} segments, {s.end:.0f}s / {info.duration:.0f}s", file=sys.stderr)
+print(json.dumps(results, ensure_ascii=False))
+`.trim();
+
+  const tmpScript = join(tmpdir(), `douyin-whisper-${Date.now()}.py`);
+  writeFileSync(tmpScript, script);
+
+  try {
+    const result = spawnSync("python3", [tmpScript], {
+      encoding: "utf-8",
+      stdio: ["inherit", "pipe", "pipe"],
+      timeout: 600_000,
+    });
+
+    if (result.status !== 0) {
+      throw new Error(`Whisper 转写失败: ${result.stderr || result.stdout}`);
+    }
+
+    const stdout = result.stdout.trim();
+    const jsonMatch = stdout.match(/\[.*\]/s);
+    if (!jsonMatch) throw new Error(`无法解析 Whisper 输出: ${stdout.slice(0, 200)}`);
+    return JSON.parse(jsonMatch[0]);
+  } finally {
+    try { unlinkSync(tmpScript); } catch {}
+  }
+}
+
 // --- Whisper AI Transcript ---
 
 function runWhisper(url: string, model: string, language: string, outputDir: string): TranscriptSegment[] {
@@ -379,6 +532,59 @@ async function getTranscript(opts: Options): Promise<TranscriptResult> {
   let meta: VideoMeta;
   let source: "official" | "whisper" = "official";
 
+  // Douyin: only Whisper path via CDP video extraction
+  if (platform === "douyin") {
+    console.error("抖音视频：通过 CDP 提取视频 URL → Whisper 转写...");
+    const tmpDir = join("/tmp", `douyin-${Date.now()}`);
+    mkdirSync(tmpDir, { recursive: true });
+
+    try {
+      // 1. CDP 提取视频信息
+      const dyInfo = await fetchDouyinVideoViaCdp(opts.urlOrId);
+      console.error(`  标题: ${dyInfo.title}`);
+      console.error(`  作者: ${dyInfo.author}`);
+
+      // 2. 立即下载视频（URL 有时效性，需带 Referer）
+      const videoPath = join(tmpDir, "video.mp4");
+      console.error("  下载视频中...");
+      downloadDouyinVideo(dyInfo.videoUrl, videoPath);
+
+      // 3. 关闭 CDP tab
+      await fetch(`${CDP_PROXY}/close?target=${dyInfo.targetId}`).catch(() => {});
+
+      // 4. 提取音频
+      const wavPath = join(tmpDir, "audio.wav");
+      console.error("  提取音频...");
+      extractAudioFromVideo(videoPath, wavPath);
+
+      // 5. Whisper 转写
+      console.error(`  Whisper 转写中 (模型: ${opts.whisperModel})...`);
+      segments = transcribeLocalFile(wavPath, opts.whisperModel, opts.language);
+      console.error(`✓ 抖音视频转写完成，共 ${segments.length} 个片段`);
+
+      meta = {
+        id: dyInfo.videoId,
+        platform: "douyin",
+        title: dyInfo.title,
+        author: dyInfo.author,
+        description: "",
+        duration: segments.length > 0 ? segments[segments.length - 1].end : 0,
+        url: `https://www.douyin.com/video/${dyInfo.videoId}`,
+        coverImage: "",
+        language: opts.language,
+      };
+      source = "whisper";
+
+      return { segments, meta, source };
+    } catch (e) {
+      // 尝试关闭可能残留的 CDP tab
+      try { rmSync(tmpDir, { recursive: true }); } catch {}
+      throw new Error(`抖音视频处理失败: ${(e as Error).message}`);
+    } finally {
+      try { rmSync(tmpDir, { recursive: true }); } catch {}
+    }
+  }
+
   // Try official transcript first (unless force whisper)
   if (!opts.forceWhisper) {
     try {
@@ -456,7 +662,7 @@ async function main() {
   if (args.length === 0 || args.includes("-h") || args.includes("--help")) {
     console.log(`Usage: bun main.ts <video-url-or-id> [options]
 
-统一视频字幕提取工具 - 支持 YouTube、Bilibili 等平台
+统一视频字幕提取工具 - 支持 YouTube、Bilibili、抖音(Douyin) 平台
 
 选项:
   --format <fmt>        输出格式: text, srt, json (默认: text)
@@ -475,6 +681,8 @@ async function main() {
   bun main.ts "https://www.youtube.com/watch?v=xxx"
   bun main.ts "https://www.bilibili.com/video/BV1xx411c7mD"
   bun main.ts BV1xx411c7mD --whisper --whisper-model medium
+  bun main.ts "https://v.douyin.com/xxxxx/"
+  bun main.ts "https://v.douyin.com/xxxxx/" --whisper-model medium
 `);
     process.exit(args.length === 0 ? 1 : 0);
   }

@@ -137,7 +137,8 @@ def fetch_financial_metrics(symbol: str) -> dict:
     try:
         df_fin = ak.stock_financial_abstract_ths(symbol=sym, indicator="按报告期")
         if df_fin is not None and not df_fin.empty:
-            latest = df_fin.iloc[0]
+            # 取最新一期（最后一行）
+            latest = df_fin.iloc[-1]
             result["profitability"] = {
                 "roe": safe_float(latest.get("净资产收益率")),
                 "gross_margin": safe_float(latest.get("销售毛利率")),

@@ -116,12 +116,30 @@ def safe_div(a, b, default=None):
 
 
 def safe_float(val, default=None):
-    """安全转换为 float，失败时返回 default。"""
+    """安全转换为 float，失败时返回 default。支持 '32.53%' '5.2亿' 等中文格式。"""
     if val is None:
         return default
     try:
         import math
-        result = float(val)
+        import pandas as pd
+        if isinstance(val, pd.Series):
+            val = val.iloc[0] if len(val) > 0 else None
+            if val is None:
+                return default
+        s = str(val).strip()
+        if s in ("-", "", "False", "None", "NaN", "nan"):
+            return default
+        # 去除百分号，返回纯数值（不除以100，保留原始值）
+        s = s.rstrip("%")
+        # 中文单位：亿→*1e8, 万→*1e4
+        multiplier = 1.0
+        if s.endswith("亿"):
+            s = s[:-1]
+            multiplier = 1e8
+        elif s.endswith("万"):
+            s = s[:-1]
+            multiplier = 1e4
+        result = float(s) * multiplier
         if math.isnan(result) or math.isinf(result):
             return default
         return result

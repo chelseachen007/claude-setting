@@ -1,7 +1,7 @@
 ---
 name: xiaopang-video-transcript
-description: 统一视频字幕提取工具，支持 YouTube、Bilibili 等平台。自动识别视频平台，优先获取官方字幕，失败时自动使用 Whisper AI 语音识别生成字幕。Use when user asks to "提取字幕", "视频字幕", "transcript", "subtitle", "get transcript", "download subtitle", "字幕提取", or provides a YouTube/Bilibili video URL and wants the transcript/subtitle text extracted.
-version: 2.0.0
+description: 统一视频字幕提取工具，支持 YouTube、Bilibili、抖音(Douyin) 平台。自动识别视频平台，优先获取官方字幕，失败时自动使用 Whisper AI 语音识别生成字幕。Use when user asks to "提取字幕", "视频字幕", "transcript", "subtitle", "get transcript", "download subtitle", "字幕提取", or provides a video URL and wants the transcript/subtitle text extracted.
+version: 3.0.0
 metadata:
   openclaw:
     requires:
@@ -16,10 +16,11 @@ metadata:
 
 ## 工作流程
 
-1. **平台识别** - 自动识别 YouTube、Bilibili 等平台
+1. **平台识别** - 自动识别 YouTube、Bilibili、抖音(Douyin) 平台
 2. **官方字幕优先** - 尝试获取官方提供的字幕
    - **Bilibili**: 优先通过 CDP（浏览器自动化）获取，利用用户 Chrome 登录态，无需处理 WBI 签名；CDP 不可用时降级到直接 API 调用
    - **YouTube**: 使用 InnerTube API 获取
+   - **抖音**: 无官方字幕，直接进入 Whisper AI 流程
 3. **Whisper AI 兜底** - 如果没有官方字幕，使用 AI 语音识别生成
 
 ## 脚本位置
@@ -46,11 +47,15 @@ ${BUN_X} {baseDir}/scripts/main.ts BV1xx411c7mD
 # YouTube 视频 (自动使用 youtube.ts 脚本)
 ${BUN_X} {baseDir}/scripts/main.ts "https://www.youtube.com/watch?v=xxx"
 
+# 抖音视频 (自动通过 CDP 提取视频 + Whisper 转写)
+${BUN_X} {baseDir}/scripts/main.ts "https://v.douyin.com/xxxxx/"
+${BUN_X} {baseDir}/scripts/main.ts "https://www.douyin.com/video/7616962174283484426"
+
 # 强制使用 Whisper AI（跳过官方字幕）
 ${BUN_X} {baseDir}/scripts/main.ts <url> --whisper
 
-# 指定 Whisper 模型
-${BUN_X} {baseDir}/scripts/main.ts <url> --whisper --whisper-model medium
+# 指定 Whisper 模型（抖音建议 medium）
+${BUN_X} {baseDir}/scripts/main.ts "https://v.douyin.com/xxxxx/" --whisper-model medium
 
 # SRT 格式输出
 ${BUN_X} {baseDir}/scripts/main.ts <url> --format srt
@@ -178,10 +183,11 @@ YouTube 字幕首次获取时会缓存：
 
 ## 支持的平台
 
-| 平台 | 官方字幕 | Whisper AI | 章节分割 | 说话人识别 |
-|------|----------|------------|----------|------------|
-| YouTube | ✓ | ✓ | ✓ | ✓ |
-| Bilibili | ✓ | ✓ | - | - |
+| 平台 | 官方字幕 | Whisper AI | 章节分割 | 说话人识别 | 备注 |
+|------|----------|------------|----------|------------|------|
+| YouTube | ✓ | ✓ | ✓ | ✓ | InnerTube API |
+| Bilibili | ✓ | ✓ | - | - | CDP 优先 |
+| 抖音(Douyin) | - | ✓ | - | - | CDP 提取视频 + Whisper |
 
 ## 依赖
 
@@ -202,6 +208,20 @@ YouTube 字幕首次获取时会缓存：
 
 CDP 模式需要 Chrome 开启远程调试（`chrome://inspect/#remote-debugging` 勾选 Allow），CDP Proxy 自动运行于 `localhost:3456`。
 
+## 抖音字幕获取策略
+
+抖音没有官方字幕 API，且 yt-dlp 的抖音提取器有 bug（需要 fresh cookies）。采用 CDP 直取方案：
+
+| 步骤 | 方式 | 说明 |
+|------|------|------|
+| 1 | CDP 打开页面 | 通过 web-access 的 CDP Proxy 在用户 Chrome 中打开抖音页面 |
+| 2 | 提取视频 URL | 从 `video.currentSrc` 获取 CDN 地址（有时效性） |
+| 3 | 立即下载 | 带 `Referer: https://www.douyin.com/` 头下载视频 |
+| 4 | ffmpeg 提取音频 | 转 WAV 16kHz mono |
+| 5 | Whisper 转写 | faster-whisper 本地转写（建议 medium 模型） |
+
+**注意**：抖音视频 URL 有时效性（约几分钟），提取后必须立即下载。CDP 模式需要 Chrome 开启远程调试。
+
 ## 注意事项
 
 - **URL 需要单引号** — zsh 会把 `?` 当作通配符，所以需要用单引号包裹 URL：`'https://www.youtube.com/watch?v=xxx'`
@@ -210,3 +230,6 @@ CDP 模式需要 Chrome 开启远程调试（`chrome://inspect/#remote-debugging
 - Whisper AI 需要下载音频并进行语音识别，耗时较长
 - 对于中文视频，默认 `--language zh` 效果最佳
 - YouTube 默认启用章节分割（`--chapters`）
+- **抖音视频需要 CDP** — Chrome 必须开启远程调试，CDP Proxy 运行于 `localhost:3456`
+- **抖音视频建议 `--whisper-model medium`** — small 模型对中文口语准确度较低
+- **抖音视频耗时长** — CDP 提取 + 下载 + Whisper 转写，27 分钟视频约需 10-15 分钟

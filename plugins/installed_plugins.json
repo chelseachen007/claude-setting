@@ -56,18 +56,18 @@
         "scope": "user",
         "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
         "version": "1.0.0",
-        "installedAt": "2026-03-23T07:54:01.737Z",
-        "lastUpdated": "2026-03-23T07:54:01.737Z",
-        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+        "installedAt": "2026-04-22T03:04:59.896Z",
+        "lastUpdated": "2026-04-22T03:04:59.896Z",
+        "gitCommitSha": "89e2d815e7aa2099f5d9c3f6626e3122f1e4687e"
       }
     ],
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/910dafeca878",
-        "version": "910dafeca878",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/89e2d815e7aa",
+        "version": "89e2d815e7aa",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-04-20T02:34:09.304Z",
+        "lastUpdated": "2026-04-21T01:04:45.023Z",
         "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
       }
     ],

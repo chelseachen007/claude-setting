@@ -22,6 +22,7 @@ metadata:
    - **YouTube**: 使用 InnerTube API 获取
    - **抖音**: 无官方字幕，直接进入 Whisper AI 流程
 3. **Whisper AI 兜底** - 如果没有官方字幕，使用 AI 语音识别生成
+4. **转录稿清洗** - 对 Whisper 原始输出进行去重降噪、结构化整理（详见下方"转录稿清洗工作流"）
 
 ## 脚本位置
 
@@ -33,6 +34,7 @@ metadata:
 | `scripts/youtube.ts` | YouTube 专用脚本 (来自 baoyu-skills) |
 | `scripts/whisper_transcribe.py` | Whisper AI 语音识别 |
 | `prompts/speaker-transcript.md` | 说话人识别 prompt 模板 |
+| `prompts/transcript-cleanup.md` | Whisper 转录稿清洗 prompt 模板（去重、降噪、结构化） |
 
 ## 使用方法
 
@@ -135,6 +137,25 @@ ${BUN_X} {baseDir}/scripts/youtube.ts <url> --chapters --speakers
 3. 使用 AI 处理原始文件，识别说话人并分割章节
 4. 输出最终的字幕文件
 
+## 转录稿清洗工作流
+
+Whisper AI 输出的原始转录稿通常包含大量噪声（重复短语、乱码段、繁体中文）。转录完成后自动执行清洗：
+
+### 触发条件
+- **自动触发**：Whisper 转写完成后（抖音视频、无官方字幕时的兜底路径）
+- **手动触发**：用户提供已有的 Whisper 转录稿并要求"整理"、"去重"、"清洗"
+
+### 清洗步骤
+1. **读取 prompt** — `{baseDir}/prompts/transcript-cleanup.md`
+2. **去重降噪** — 移除 ASR 重复片段（连续相同短语保留一次）、倒计时/调试噪声、乱码段
+3. **繁转简** — Whisper 对中文视频常输出繁体，统一转换为简体
+4. **说话人识别** — 从内容推断主持人/嘉宾，标注 `**姓名:**` 格式
+5. **结构化** — 按主题分章节（`### [MM:SS] 标题`），整理为 Q&A 对话格式
+6. **输出** — 替换原始转录稿，保留 frontmatter 元数据
+
+### 典型压缩比
+1700 行原始 Whisper 输出 → 300-400 行清洗后的结构化文字稿
+
 ## Whisper 模型选择
 
 | 模型 | 速度 | 准确度 | 推荐场景 |
@@ -233,3 +254,11 @@ CDP 模式需要 Chrome 开启远程调试（`chrome://inspect/#remote-debugging
 - **抖音视频需要 CDP** — Chrome 必须开启远程调试，CDP Proxy 运行于 `localhost:3456`
 - **抖音视频建议 `--whisper-model medium`** — small 模型对中文口语准确度较低
 - **抖音视频耗时长** — CDP 提取 + 下载 + Whisper 转写，27 分钟视频约需 10-15 分钟
+
+## 集成说明
+
+本 skill 可由 `clip-and-process` 自动调用。当用户提供视频/音频 URL 时，路由器会自动识别并调用本 skill 提取文字稿。
+
+**输出格式**：Markdown 文字稿 + 元数据（标题、作者、时长、平台）。路由器会将输出保存到 `剪藏/` 目录。
+
+**本 skill 只负责提取文字稿**，不保存到剪藏、不翻译、不做深度处理。

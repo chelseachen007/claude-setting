@@ -1,14 +1,11 @@
 ---
 name: stock-debate-analysis
 description: "结构化多空辩论框架，基于数据论证得出投资结论"
-user-invocable: false
-origin: auto-extracted
+user-invocable: true
+trigger: "多空辩论|辩论分析|stock debate|股票辩论|多空分析"
 ---
 
 # 股票多空辩论分析框架
-
-**Extracted:** 2026-03-18
-**Context:** 对个股进行投资分析时，避免情绪化决策
 
 ## 问题
 

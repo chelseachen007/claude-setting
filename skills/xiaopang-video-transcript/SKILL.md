@@ -209,6 +209,8 @@ YouTube 字幕首次获取时会缓存：
 | YouTube | ✓ | ✓ | ✓ | ✓ | InnerTube API |
 | Bilibili | ✓ | ✓ | - | - | CDP 优先 |
 | 抖音(Douyin) | - | ✓ | - | - | CDP 提取视频 + Whisper |
+| 小宇宙(Xiaoyuzhou) | - | ✓ | - | - | CDP 提取音频 + Whisper |
+| 喜马拉雅(Ximalaya) | - | ✓ | - | - | CDP 提取音频 + Whisper |
 
 ## 依赖
 

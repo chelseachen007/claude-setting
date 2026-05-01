@@ -9,7 +9,7 @@ import { dirname, join, resolve } from "path";
 import { tmpdir } from "os";
 import { spawnSync } from "child_process";
 
-type Platform = "youtube" | "bilibili" | "douyin" | "unknown";
+type Platform = "youtube" | "bilibili" | "douyin" | "xiaoyuzhou" | "ximalaya" | "unknown";
 type Format = "text" | "srt" | "json";
 
 interface Options {
@@ -90,6 +90,20 @@ function detectPlatform(input: string): { platform: Platform; videoId: string } 
     if (dyMatch) return { platform: "douyin", videoId: dyMatch[1] };
     // Short URL — will resolve to full URL via CDP later
     return { platform: "douyin", videoId: input };
+  }
+
+  // Xiaoyuzhou (小宇宙) podcast detection
+  if (input.includes("xiaoyuzhoufm.com") || input.includes("xiaoyuzhou.com")) {
+    const epMatch = input.match(/xiaoyuzhoufm\.com\/episode\/([a-zA-Z0-9]+)/);
+    if (epMatch) return { platform: "xiaoyuzhou", videoId: epMatch[1] };
+    return { platform: "xiaoyuzhou", videoId: input };
+  }
+
+  // Ximalaya (喜马拉雅) podcast detection
+  if (input.includes("ximalaya.com") || input.includes("xmly.com")) {
+    const xmMatch = input.match(/ximalaya\.com\/\w+\/(\d+\/\d+)/);
+    if (xmMatch) return { platform: "ximalaya", videoId: xmMatch[1] };
+    return { platform: "ximalaya", videoId: input };
   }
 
   return { platform: "unknown", videoId: input };
@@ -306,6 +320,75 @@ interface DouyinVideoInfo {
   title: string;
   author: string;
   videoId: string;
+}
+
+interface PodcastAudioInfo {
+  audioUrl: string;
+  title: string;
+  author: string;
+  description: string;
+  episodeId: string;
+  targetId: string;
+}
+
+/**
+ * 下载文件到本地
+ */
+function downloadFile(url: string, outputPath: string) {
+  const result = spawnSync("curl", ["-L", "-s", "-o", outputPath, url], { timeout: 120_000 });
+  if (result.status !== 0) {
+    throw new Error(`下载失败: ${result.stderr?.toString() || "unknown error"}`);
+  }
+  if (!existsSync(outputPath)) {
+    throw new Error(`下载失败: 文件未创建`);
+  }
+}
+
+/**
+ * 通过 CDP 在播客页面中提取音频播放地址和元信息。
+ * 小宇宙和喜马拉雅都在 <audio> 元素中加载音频。
+ */
+async function fetchPodcastAudioViaCdp(urlOrId: string, platform: string): Promise<PodcastAudioInfo> {
+  if (!(await isCdpAvailable())) {
+    const label = platform === "xiaoyuzhou" ? "小宇宙" : "喜马拉雅";
+    throw new Error(`${label}播客提取需要 CDP（Chrome 远程调试）。请确保 Chrome 已开启远程调试且 CDP Proxy 运行中。`);
+  }
+
+  // 1. 打开页面
+  const newR = await fetch(`${CDP_PROXY}/new?url=${encodeURIComponent(urlOrId)}`);
+  const { targetId } = await newR.json() as { targetId: string };
+
+  // 2. 等待页面渲染
+  await new Promise(r => setTimeout(r, 5000));
+
+  // 3. 提取音频 URL 和元信息
+  const evalScript = platform === "xiaoyuzhou"
+    ? `JSON.stringify({
+        audioUrl: document.querySelector("audio")?.currentSrc || document.querySelector("audio source")?.src || "",
+        title: document.querySelector("h1")?.textContent?.trim() || document.title,
+        author: document.querySelector('[class*="author"]')?.textContent?.trim() || "",
+        description: document.querySelector('meta[name="description"]')?.content || "",
+      })`
+    : `JSON.stringify({
+        audioUrl: document.querySelector("audio")?.currentSrc || document.querySelector("audio source")?.src || "",
+        title: document.querySelector("h1")?.textContent?.trim() || document.querySelector(".title")?.textContent?.trim() || document.title,
+        author: document.querySelector(".username")?.textContent?.trim() || document.querySelector('[class*="host"]')?.textContent?.trim() || "",
+        description: document.querySelector('meta[name="description"]')?.content || "",
+      })`;
+
+  const infoRaw = await cdpEval(targetId, evalScript);
+  const info = JSON.parse(infoRaw);
+  if (!info.audioUrl) {
+    await fetch(`${CDP_PROXY}/close?target=${targetId}`).catch(() => {});
+    throw new Error("未找到音频元素或音频 URL 为空");
+  }
+
+  // 4. 提取 episode ID
+  const episodeId = urlOrId.match(/episode\/([a-zA-Z0-9]+)/)?.[1]
+    || urlOrId.match(/(\d+\/\d+)$/)?.[1]
+    || "unknown";
+
+  return { ...info, episodeId, targetId };
 }
 
 /**
@@ -580,6 +663,61 @@ async function getTranscript(opts: Options): Promise<TranscriptResult> {
       // 尝试关闭可能残留的 CDP tab
       try { rmSync(tmpDir, { recursive: true }); } catch {}
       throw new Error(`抖音视频处理失败: ${(e as Error).message}`);
+    } finally {
+      try { rmSync(tmpDir, { recursive: true }); } catch {}
+    }
+  }
+
+  // Podcast platforms (xiaoyuzhou, ximalaya): CDP extract audio → Whisper
+  if (platform === "xiaoyuzhou" || platform === "ximalaya") {
+    const platformLabel = platform === "xiaoyuzhou" ? "小宇宙" : "喜马拉雅";
+    console.error(`${platformLabel}播客：通过 CDP 提取音频 URL → Whisper 转写...`);
+    const tmpDir = join("/tmp", `${platform}-${Date.now()}`);
+    mkdirSync(tmpDir, { recursive: true });
+
+    try {
+      // 1. CDP 打开播客页面，提取音频 URL 和元数据
+      const audioInfo = await fetchPodcastAudioViaCdp(opts.urlOrId, platform);
+      console.error(`  标题: ${audioInfo.title}`);
+      console.error(`  作者: ${audioInfo.author}`);
+
+      // 2. 下载音频
+      const audioPath = join(tmpDir, "audio.mp3");
+      console.error("  下载音频中...");
+      downloadFile(audioInfo.audioUrl, audioPath);
+
+      // 3. 关闭 CDP tab
+      if (audioInfo.targetId) {
+        await fetch(`${CDP_PROXY}/close?target=${audioInfo.targetId}`).catch(() => {});
+      }
+
+      // 4. 转换为 WAV
+      const wavPath = join(tmpDir, "audio.wav");
+      console.error("  转换音频格式...");
+      extractAudioFromVideo(audioPath, wavPath);
+
+      // 5. Whisper 转写
+      console.error(`  Whisper 转写中 (模型: ${opts.whisperModel})...`);
+      segments = transcribeLocalFile(wavPath, opts.whisperModel, opts.language);
+      console.error(`✓ ${platformLabel}播客转写完成，共 ${segments.length} 个片段`);
+
+      meta = {
+        id: audioInfo.episodeId,
+        platform: platform,
+        title: audioInfo.title,
+        author: audioInfo.author,
+        description: audioInfo.description || "",
+        duration: segments.length > 0 ? segments[segments.length - 1].end : 0,
+        url: opts.urlOrId,
+        coverImage: "",
+        language: opts.language,
+      };
+      source = "whisper";
+
+      return { segments, meta, source };
+    } catch (e) {
+      try { rmSync(tmpDir, { recursive: true }); } catch {}
+      throw new Error(`${platformLabel}播客处理失败: ${(e as Error).message}`);
     } finally {
       try { rmSync(tmpDir, { recursive: true }); } catch {}
     }

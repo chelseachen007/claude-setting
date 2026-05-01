@@ -1,12 +1,11 @@
 {
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721"
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
+    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED"
   },
   "model": "opus",
   "enabledPlugins": {
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "pyright-lsp@claude-plugins-official": true
   },
   "skipDangerousModePermissionPrompt": true
 }

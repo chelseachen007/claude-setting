@@ -3,5 +3,6 @@
     "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721"
   },
-  "model": "opus"
+  "model": "opus",
+  "skipDangerousModePermissionPrompt": true
 }

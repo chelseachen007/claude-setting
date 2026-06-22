@@ -24,11 +24,11 @@
     "example-skills@anthropic-agent-skills": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/anthropic-agent-skills/example-skills/b0cbd3df1533",
-        "version": "b0cbd3df1533",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/anthropic-agent-skills/example-skills/575462609294",
+        "version": "575462609294",
         "installedAt": "2026-03-20T01:57:55.391Z",
-        "lastUpdated": "2026-03-20T01:57:55.391Z",
-        "gitCommitSha": "b0cbd3df1533b396d281a6886d5132f623393a9c"
+        "lastUpdated": "2026-06-10T03:48:52.121Z",
+        "gitCommitSha": "57546260929473d4e0d1c1bb75297be2fdfa1949"
       }
     ],
     "claude-hud@claude-hud": [
@@ -64,10 +64,10 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/53017d76bb87",
-        "version": "53017d76bb87",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/7fa4b83cf10e",
+        "version": "7fa4b83cf10e",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-05-20T06:07:53.298Z",
+        "lastUpdated": "2026-05-20T09:29:35.703Z",
         "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
       }
     ],

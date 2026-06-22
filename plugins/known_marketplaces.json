@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-05-20T09:26:55.278Z"
+    "lastUpdated": "2026-06-11T04:16:02.731Z"
   },
   "last30days-skill": {
     "source": {
@@ -21,7 +21,7 @@
       "repo": "anthropics/skills"
     },
     "installLocation": "/Users/chenjie/.claude/plugins/marketplaces/anthropic-agent-skills",
-    "lastUpdated": "2026-03-20T01:57:29.676Z"
+    "lastUpdated": "2026-06-11T04:16:01.084Z"
   },
   "claude-hud": {
     "source": {

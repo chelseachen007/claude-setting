@@ -64,11 +64,11 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/903d9b5e16c9",
-        "version": "903d9b5e16c9",
+        "installPath": "/Users/chenjie/.claude/plugins/cache/claude-plugins-official/skill-creator/f61482cb8f73",
+        "version": "f61482cb8f73",
         "installedAt": "2026-03-23T08:01:14.385Z",
-        "lastUpdated": "2026-06-29T02:19:56.019Z",
-        "gitCommitSha": "903d9b5e16c914e251406dcb7df7a1fb0f9e7559"
+        "lastUpdated": "2026-07-06T01:25:39.133Z",
+        "gitCommitSha": "f61482cb8f73c1df6a13e598d224e07305417ee8"
       }
     ],
     "minimalist-entrepreneur@local": [

@@ -1,0 +1,11 @@
+{
+  "initialized": true,
+  "whisper_backend": "whisperkit",
+  "default_model": "openai_whisper-large-v3-v20240930_626MB",
+  "default_language": "zh",
+  "default_output_dir": "/tmp/xvt",
+  "whisperkit_cli": "/opt/homebrew/bin/whisperkit-cli",
+  "whisperkit_model_path": "/Users/chenjie/Documents/study/tools/argmax-oss-swift/Models/whisperkit-coreml/openai_whisper-large-v3-v20240930_626MB",
+  "cdp_proxy": "http://127.0.0.1:3456",
+  "vault_video_dir": "视频学习"
+}

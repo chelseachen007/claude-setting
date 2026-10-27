@@ -13,7 +13,8 @@ from datetime import datetime
 
 from openpyxl import load_workbook
 
-TEMPLATE_PATH = '/Users/chenjie/.claude/skills/bill-screenshot-parser/template.xlsx'
+TEMPLATE_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'template.xlsx')
 
 CATEGORIES = ['饮食', '食材', '住房', '咖啡', '通讯', '服饰', '交通',
               '彩妆', '社交', '医疗', '学习', '娱乐', '健身', '日用', '旅行', '其他']
@@ -25,12 +26,12 @@ CATEGORY_KEYWORDS = {
             '巴比', '牛肉汤', '馅饼', '鸡排', '米线', '食品', '麻辣烫', '烧鹅',
             '黄焖鸡', '沙县', '包子', '馒头', '煎饼', '水饺', '馄饨', '面条',
             '蜜雪冰城', '老娘舅', '古茗', '塔斯汀', '卷饼', '猪脚饭', '鸡公煲',
-            '汉堡', '温州小吃', '披萨', '凉皮', '冒菜', '寿司', '拉面'],
+            '汉堡', '温州小吃', '披萨', '凉皮', '冒菜', '寿司', '拉面', '全家'],
     '食材': ['盒马', '超市', '菜场', '生鲜', '菜市场'],
     '住房': ['房租', '物业', '水电', '燃气', '宽带', '水费', '电费'],
     '咖啡': ['咖啡', 'Coffee', '星巴克', '瑞幸', 'Manner'],
     '交通': ['打车', '滴滴', '地铁', '公交', '加油', '停车', '高德', '充电',
-            '出行', '中石化', '石化', '交通', '交通出行', '市民卡', '一码通'],
+            '出行', '中石化', '石化', '交通', '交通出行', '市民卡', '一码通', '神州租车'],
     '通讯': ['话费', '移动', '联通', '电信', '通讯'],
     '服饰': ['服装', '衣服', '鞋', 'ZARA', '优衣库'],
     '彩妆': ['化妆品', '口红', '粉底', '护肤', '美容', '屈臣氏', '丝芙兰'],
@@ -52,8 +53,11 @@ EXCLUDE_KEYWORDS = [
 ]
 
 
-def infer_category(description):
+def infer_category(description, amount=0):
     desc = str(description)
+    # 京东 50 元以下归为饮食
+    if '京东' in desc and 0 < abs(amount) < 50:
+        return '饮食'
     for cat, keywords in CATEGORY_KEYWORDS.items():
         if any(kw in desc for kw in keywords):
             return cat
@@ -293,7 +297,7 @@ def main():
 
         # 4. 推断类别
         if not r.get('category'):
-            r['category'] = infer_category(r.get('description', ''))
+            r['category'] = infer_category(r.get('description', ''), r.get('amount', 0))
 
         # 4. 排除检查
         if should_exclude(r):

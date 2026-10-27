@@ -79,7 +79,7 @@ python3 ~/.multi-publish/wechat_oneclick.py --md article.md --html-only
 所有素材（卡片图片、HTML 文件等）统一存放到：
 
 ```
-/Users/chenjie/Documents/study/claude/素材/{平台}/{主题}/
+/Users/chenjie/Documents/study/Codex/素材/{平台}/{主题}/
 ```
 
 示例：
@@ -94,7 +94,7 @@ python3 ~/.multi-publish/wechat_oneclick.py --md article.md --html-only
 配置文件位于 `~/.multi-publish/wechat_config.json`，首次使用需要运行配置向导：
 
 ```bash
-python3 ~/.claude/skills/multi-publish/wechat_publisher.py --setup
+python3 ~/.Codex/skills/multi-publish/wechat_publisher.py --setup
 ```
 
 需要：
@@ -105,7 +105,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py --setup
 ### 小红书配置
 使用 web-access skill 的 CDP 浏览器自动化方案，需要：
 - 用户的日常 Chrome 已登录小红书（creator.xiaohongshu.com）
-- CDP proxy 可连接（`bash ~/.claude/skills/web-access/scripts/check-deps.sh`）
+- CDP proxy 可连接（`bash ~/.Codex/skills/web-access/scripts/check-deps.sh`）
 - 如果 proxy 连接失败，引导用户在 Chrome 中开启远程调试授权
 
 ## 执行流程
@@ -131,7 +131,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py --setup
 ### 步骤 3：发布到微信公众号草稿箱
 
 ```bash
-python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
+python3 ~/.Codex/skills/multi-publish/wechat_publisher.py \
   --title "文章标题" \
   --content /tmp/article.html \
   --author "作者名" \
@@ -154,7 +154,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 #### 4.1 创建素材目录
 
 ```bash
-mkdir -p "/Users/chenjie/Documents/study/claude/素材/小红书/{主题名}"
+mkdir -p "/Users/chenjie/Documents/study/Codex/素材/小红书/{主题名}"
 ```
 
 主题名根据文章内容取一个简短的英文标识，如 `ai-yanggao`、`knowledge-garden`。
@@ -209,9 +209,9 @@ HTML 文件和截图都保存到素材目录：
 
 ```bash
 # 逐张截图（可并行）
-node ~/.claude/skills/card-caster/assets/capture.js \
+node ~/.Codex/skills/card-caster/assets/capture.js \
   /tmp/xhs_{topic}_{N}.html \
-  "/Users/chenjie/Documents/study/claude/素材/小红书/{topic}/xhs_{topic}_{N}.png" \
+  "/Users/chenjie/Documents/study/Codex/素材/小红书/{topic}/xhs_{topic}_{N}.png" \
   1080 1440
 ```
 
@@ -247,7 +247,7 @@ node ~/.claude/skills/card-caster/assets/capture.js \
 #### 5.1 启动 CDP Proxy
 
 ```bash
-bash ~/.claude/skills/web-access/scripts/check-deps.sh
+bash ~/.Codex/skills/web-access/scripts/check-deps.sh
 ```
 
 如果连接失败，引导用户：
@@ -345,7 +345,7 @@ curl -s "http://localhost:3456/close?target={TARGET_ID}"
 
 ### 仅发布到微信
 ```bash
-python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
+python3 ~/.Codex/skills/multi-publish/wechat_publisher.py \
   --title "标题" --content article.html --cover cover.png
 ```
 
@@ -362,7 +362,7 @@ python3 ~/.claude/skills/multi-publish/wechat_publisher.py \
 
 ### CDP Proxy 连接失败
 1. 确认 Chrome 已开启远程调试：`chrome://inspect/#remote-debugging` → 勾选允许
-2. 重启 Chrome 后重试 `bash ~/.claude/skills/web-access/scripts/check-deps.sh`
+2. 重启 Chrome 后重试 `bash ~/.Codex/skills/web-access/scripts/check-deps.sh`
 3. 如果标准 Chrome DevToolsActivePort 可用，proxy 会自动发现并连接
 
 ### 图片上传失败

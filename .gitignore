@@ -1,36 +1,28 @@
-# 临时文件和缓存
-session-env/
-tasks/
-debug/
-telemetry/
-todos/
-shell-snapshots/
-file-history/
-paste-cache/
-image-cache/
-cache/
-backups/
-statsig/
-node_modules/
-
-# 历史和统计
-history.jsonl
-stats-cache.json
-settings.local.json
-usage-data
-data/
-
-# 系统文件
-.DS_Store
-
-# 项目相关临时数据
-projects/
-plans/
-sessions/
-
-# 技能敏感配置
-skills/xueqiu-digest/config.json
-
-# IDE
-ide/
+# ===== 运行时产物 =====
 __pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.venv/
+venv/
+node_modules/
+*.log
+logs/
+
+# ===== 历史备份（本地保留，不入档）=====
+.backup/
+
+# ===== 技能目录里的临时文件 =====
+.coverage
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# ===== 密钥与本地配置 =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config.local.*

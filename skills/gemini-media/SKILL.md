@@ -27,7 +27,7 @@ description: 当用户想要生成图片、画图、绘画、创建图像、AI�
 ### 第一步：初始化 CDP 环境
 
 ```bash
-bash ~/.claude/skills/web-access/scripts/check-deps.sh
+bash ~/.Codex/skills/web-access/scripts/check-deps.sh
 ```
 
 检查通过后继续。

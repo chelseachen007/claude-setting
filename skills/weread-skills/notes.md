@@ -118,6 +118,10 @@
 | `reviews` | 想法/点评数组 |
 | `reviews[].review.reviewId` | 唯一 ID |
 | `reviews[].review.content` | 内容文本 |
+| `reviews[].review.abstract` | 想法对应的划线原文。仅划线想法等能定位到原文的内容有值，整本书评或章节点评可能为空或不存在 |
+| `reviews[].review.range` | 划线原文位置范围，格式如 `"2959-3007"`。仅能定位到原文的内容有值 |
+| `reviews[].review.chapterUid` | 章节 UID。章节相关内容可能有值 |
+| `reviews[].review.chapterIdx` | 章节序号。章节相关内容可能有值 |
 | `reviews[].review.createTime` | 创建时间 |
 | `reviews[].review.star` | 评分（0-5，-1=无评分） |
 | `reviews[].review.chapterName` | 所在章节名（章节点评时有值，书评为空） |
@@ -125,6 +129,8 @@
 | `totalCount` | 总条数 |
 | `hasMore` | 是否有更多（1=有） |
 | `synckey` | 翻页游标（下次请求传入） |
+
+> `abstract` 和 `range` 是条件字段：如果想法是针对某段划线/原文发表的，应优先用它们展示"原文 + 想法"；如果是整本书评、章节点评或普通想法，可能没有对应原文。
 
 ### `/book/underlines` — 章节划线热度统计
 
@@ -269,4 +275,3 @@
 - **内容导出 = 划线内容 + 想法/点评内容**；当前不能导出书签内容。
 - `reviewCount` 已包含个人点评/书评想法，计算总笔记数时不要再额外加“点评数”。
 - 当用户说“所有笔记内容”时，必须同时查询 `/book/bookmarklist` 和 `/review/list/mine`，不能只返回划线。
-

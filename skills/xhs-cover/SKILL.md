@@ -45,7 +45,7 @@ HTML+CSS + Playwright 截图方案。零外部依赖，一句话出图。
 
 ### 步骤 3：读取设计系统
 
-Read `~/.claude/skills/xhs-cover/references/design-system.md`
+Read `~/.Codex/skills/xhs-cover/references/design-system.md`
 
 根据步骤 2 的分析结果，按设计系统的决策规则选择：
 - **配色方案**：6 选 1（糖果粉/薄荷绿/克莱因蓝/暖橘/冷灰/渐变紫）
@@ -78,7 +78,7 @@ Read `~/.claude/skills/xhs-cover/references/design-system.md`
 ### 步骤 5：截图
 
 ```bash
-node ~/.claude/skills/xhs-cover/assets/capture.js \
+node ~/.Codex/skills/xhs-cover/assets/capture.js \
   /tmp/xhs_cover_{name}.html \
   {输出路径}/cover_{name}.png \
   1080 1440

@@ -32,7 +32,7 @@ git -c core.quotepath=false status --short
 | 路径模式 | 变更类型 |
 |----------|----------|
 | posts/YYYY-MM-DD/[slug]/ | 文章相关 |
-| .claude/skills/ | 技能配置 |
+| .Codex/skills/ | 技能配置 |
 | src/ | 脚本代码 |
 | docs/ | 文档 |
 | 其他 | 项目配置 |
@@ -51,16 +51,33 @@ git -c core.quotepath=false status --short
 
 ### 步骤四：生成 Commit Message
 
-格式规范：
-- 用中文
-- 简洁描述变更内容
-- 不超过 50 字
+格式遵循 Conventional Commits：
 
-常用模板：
-- 文章：添加 [文章主题简述]、润色 [文章标题]、更新 [文章标题]
-- 技能：添加 [技能名] 技能、更新 [技能名] 技能
-- 代码：优化 [功能描述]、修复 [问题描述]
-- 配置：更新项目配置
+```text
+<type>(<scope>): <subject>
+```
+
+- `type` 必填，使用小写英文：
+  - `feat`：新增功能
+  - `fix`：修复问题
+  - `docs`：文档变更
+  - `refactor`：重构，不改变功能
+  - `style`：格式调整，不影响逻辑
+  - `test`：测试相关
+  - `perf`：性能优化
+  - `build` / `ci` / `chore`：构建、CI、杂项配置
+  - `revert`：回滚提交
+- `scope` 可选，填写模块、目录或业务域，例如 `asset-management`、`payment`、`router`。
+- `subject` 用中文简洁描述变更，不以句号结尾。
+- 整行不超过 50 字。
+
+示例：
+
+- `feat(asset-management): 新增资产管理模块及一级路由`
+- `fix(payment): 修复审批状态未刷新的问题`
+- `docs: 补充资产管理模块接入说明`
+- `refactor(router): 简化动态路由注册逻辑`
+- `chore: 更新项目依赖`
 
 ### 步骤五：执行提交
 

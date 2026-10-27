@@ -23,6 +23,7 @@ Codex / WorkBuddy 共用单一源 `~/ai/`，通过软链分发。**Claude Code �
 - MCP：**没有跨平台唯一源**。dsh 在 `~/.dsh/profiles/<profile>/cordis.patch.yml` 的插件条目；Codex 在 `~/.codex/config.toml` 的 `[mcp_servers.*]`；WorkBuddy 在 App 设置里。三家的格式本来就不同，能统一的是「同一个 MCP server 的参数」，不是配置文件本身。
 - 项目级（Obsidian 库）：`AGENTS.md` 唯一规则源；`.agents/skills/` 唯一技能目录（23 个）；`.claude/` 只剩 `scripts/review.py`
 - 体检：`~/ai/sync.sh`（`--fix` 可修复被 App 覆盖的软链）；技能源单独体检 `~/ai/scripts/sync-skill-sources.sh`（`--apply` 可把被覆盖成实体目录的技能入口重新接管）
+- **版本档案仓库 `chelseachen007/claude-setting`**（2026-10-27 接管）：`~/ai` 的只读快照，不是工作副本。`main` = 现快照，`legacy/main-20260714` = 旧 Claude Code 配置归档。同步用 `bash ~/ai/scripts/archive-ai.sh`（加 `--commit` 自动提交推送）。排除 `.backup/`（849M 本地历史备份）、`logs/`、`__pycache__`、`.venv`、`.system`（Codex App 托管）。**脚本会 `git checkout HEAD -- README.md` 和 `.gitignore` 的语义要保住：仓库 README 描述档案本身，`~/ai/README.md` 描述运行目录，两者不同。**
 
 **写记忆的规则**：有长期价值的内容必须回写本文件或 `~/ai/memory/daily/`，不要只留在某个平台的私有记忆库里（Codex 的 `memories_v2.sqlite` 换平台就丢）。
 

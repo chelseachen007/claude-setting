@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "family": "non_existent_cards",
+  "description": "推荐不存在的卡片的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "处理这篇关于时间管理的剪藏",
+      "expected_behavior": "only_recommend_existing_cards",
+      "common_mistake": "recommend_nonexistent_time_management_card",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于 AI Agent 的剪藏",
+      "expected_behavior": "only_recommend_existing_cards",
+      "common_mistake": "recommend_nonexistent_ai_agent_card",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于投资心理学的剪藏",
+      "expected_behavior": "only_recommend_existing_cards",
+      "common_mistake": "recommend_nonexistent_investment_card",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于健康饮食的剪藏",
+      "expected_behavior": "only_recommend_existing_cards",
+      "common_mistake": "recommend_nonexistent_health_card",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "all_recommended_cards_must_exist",
+      "severity": "critical",
+      "check_method": "verify all [[card_name]] exist in 卡片/ directory"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "new_cards_section_must_be_labeled",
+      "severity": "high",
+      "check_method": "verify '可建新卡片' section is clearly marked"
+    }
+  ],
+  "search_strategy": {
+    "required_searches": [
+      "core_keywords_in_filename",
+      "core_keywords_in_content",
+      "synonyms_in_filename",
+      "synonyms_in_content",
+      "related_topics"
+    ],
+    "minimum_searches": 3,
+    "validation_required": true
+  },
+  "validation_checks": [
+    "card_file_exists",
+    "card_content_relevant",
+    "card_name_matches_wikilink"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "description": "clip-process 触发评估用例集",
+  "recommended_threshold": 0.35,
+  "should_trigger": [
+    {
+      "text": "处理剪藏",
+      "family": "explicit_process"
+    },
+    {
+      "text": "处理未整理的剪藏",
+      "family": "explicit_process_with_status"
+    },
+    {
+      "text": "深度处理剪藏",
+      "family": "explicit_deep_process"
+    },
+    {
+      "text": "补充剪藏内容",
+      "family": "explicit_enrich"
+    },
+    {
+      "text": "这篇文章需要深度处理",
+      "family": "implicit_process"
+    },
+    {
+      "text": "帮我分析一下这个剪藏",
+      "family": "implicit_analyze"
+    },
+    {
+      "text": "剪藏并处理 https://xxx.com/article",
+      "family": "full_flow_trigger"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "剪藏 https://www.xiaohongshu.com/explore/xxx",
+      "family": "clip_and_process_trigger"
+    },
+    {
+      "text": "保存这篇文章 https://xxx.com/article",
+      "family": "clip_and_process_trigger"
+    },
+    {
+      "text": "提取内容 https://xxx.com/article",
+      "family": "clip_and_process_trigger"
+    },
+    {
+      "text": "查看剪藏列表",
+      "family": "view_manage"
+    },
+    {
+      "text": "删除剪藏 2026-01-01-xxx",
+      "family": "view_manage"
+    },
+    {
+      "text": "剪藏是什么",
+      "family": "question_about_concept"
+    },
+    {
+      "text": "这个剪藏格式不对",
+      "family": "edit_existing"
+    },
+    {
+      "text": "只是看看这个剪藏",
+      "family": "view_only"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "编辑这个剪藏",
+      "family": "edit_not_process",
+      "expected_trigger": false,
+      "risk": "编辑意图 vs 深度处理意图"
+    },
+    {
+      "text": "总结这篇文章",
+      "family": "summarize_not_clip",
+      "expected_trigger": false,
+      "risk": "用户只是要总结，不是剪藏流程"
+    },
+    {
+      "text": "这篇文章要剪藏",
+      "family": "clip_intent_no_file",
+      "expected_trigger": false,
+      "risk": "用户要剪藏新文章，不是处理已有剪藏"
+    },
+    {
+      "text": "处理一下这个笔记",
+      "family": "note_not_clip",
+      "expected_trigger": false,
+      "risk": "用户说的是笔记，不是剪藏"
+    },
+    {
+      "text": "帮我整理一下知识库",
+      "family": "organize_not_process",
+      "expected_trigger": false,
+      "risk": "泛泛的整理请求，不是针对特定剪藏"
+    }
+  ]
+}

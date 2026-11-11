@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "description": "clip-process 语义配置 - 定义触发评分的正向/负向概念",
+  "positive_concepts": [
+    {
+      "name": "process_intent",
+      "weight": 0.45,
+      "phrases": {
+        "zh": ["处理", "深度处理", "处理剪藏", "处理未整理"],
+        "en": ["process", "deep process", "enrich", "analyze"]
+      }
+    },
+    {
+      "name": "clip_context",
+      "weight": 0.35,
+      "phrases": {
+        "zh": ["剪藏", "未整理", "已保存", "已剪藏"],
+        "en": ["clip", "clipping", "saved", "archived"]
+      }
+    },
+    {
+      "name": "enrich_intent",
+      "weight": 0.20,
+      "phrases": {
+        "zh": ["补充", "分析", "整理", "入库"],
+        "en": ["supplement", "analyze", "organize", "index"]
+      }
+    }
+  ],
+  "negative_concepts": [
+    {
+      "name": "clip_new_content",
+      "weight": 0.45,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["剪藏这个链接", "保存这篇文章", "提取内容", "抓取"],
+        "en": ["clip this link", "save this article", "extract content", "crawl"]
+      }
+    },
+    {
+      "name": "view_manage",
+      "weight": 0.30,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["查看剪藏", "列出剪藏", "删除剪藏", "剪藏列表"],
+        "en": ["list clips", "view clips", "delete clip", "clip stats"]
+      }
+    },
+    {
+      "name": "edit_existing",
+      "weight": 0.25,
+      "exclusive": false,
+      "phrases": {
+        "zh": ["编辑", "修改", "改一下", "格式不对"],
+        "en": ["edit", "modify", "fix", "format"]
+      }
+    },
+    {
+      "name": "question_about_concept",
+      "weight": 0.20,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["剪藏是什么", "什么是剪藏", "怎么用剪藏"],
+        "en": ["what is clip", "how to use clip"]
+      }
+    }
+  ],
+  "scoring": {
+    "method": "weighted_sum_with_exclusive",
+    "threshold": 0.35,
+    "exclusive_override": true
+  }
+}

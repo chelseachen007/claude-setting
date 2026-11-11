@@ -1,0 +1,66 @@
+{
+  "topic": "",
+  "audience": {
+    "level": "beginner",
+    "role": "",
+    "prior_knowledge": "",
+    "target_outcome": ""
+  },
+  "language": "匹配用户请求的语言",
+  "user_materials": {
+    "notes": [],
+    "urls": [],
+    "files": [],
+    "named_references": [],
+    "must_use": [],
+    "nice_to_use": [],
+    "do_not_use": [],
+    "style_references": [],
+    "sufficiency_tier": "自动判断：rich（丰富） | moderate（适中） | thin（薄弱）"
+  },
+  "scope": {
+    "desired_length": "自动判断：以教会目标为限，不设固定上限，除非用户指定",
+    "chapter_count": "自动判断",
+    "time_budget": "",
+    "must_include": [],
+    "avoid": []
+  },
+  "research": {
+    "priority_rule": "用户材料充足时以其为主线；外部来源仅用于验证、补充缺口、更新和提供反面案例",
+    "source_layers": [
+      "x.com",
+      "论文",
+      "权威分享平台",
+      "github"
+    ],
+    "required_domains": [],
+    "forbidden_domains": [],
+    "freshness_requirement": "编写前验证最新事实",
+    "external_research_level": "自动判断：gap-check（缺口检查） | targeted（定向补充） | full-source-ladder（完整来源检索）"
+  },
+  "visuals": {
+    "one_visual_per_chapter": true,
+    "preferred_types": [
+      "flow（流程图）",
+      "layer（层级图）",
+      "comparison（对比图）",
+      "cycle（循环图）",
+      "mindmap（思维导图）",
+      "matrix（矩阵图）"
+    ],
+    "style_notes": "清晰、教学导向、适合截图"
+  },
+  "outputs": [
+    "markdown",
+    "docx",
+    "pdf",
+    "html",
+    "visual-html"
+  ],
+  "quality_control": {
+    "chapter_quality_review": true,
+    "review_file": "research/chapter-quality-review.md",
+    "depth_rule": "学习充分性，不设固定字数"
+  },
+  "citation_style": "公开的人类可读参考资料；内部来源 ID 仅出现在 research 文件中"
+}

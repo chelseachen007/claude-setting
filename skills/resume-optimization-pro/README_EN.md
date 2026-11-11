@@ -22,7 +22,7 @@ English | [简体中文](./README.md)
 ### Installation
 
 ```bash
-cd ~/.claude/skills
+cd ~/.agents/skills
 git clone https://github.com/taielab/resume-optimization-pro.git
 ```
 

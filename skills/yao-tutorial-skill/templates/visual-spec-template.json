@@ -1,0 +1,59 @@
+{
+  "title": "教程章节配图画板",
+  "theme": {
+    "accent": "#1f4e79",
+    "accent2": "#1f4e79",
+    "ink": "#111827",
+    "muted": "#5f6673",
+    "surface": "#f8f6f1",
+    "border": "#d9d6cc",
+    "paper": "#ffffff"
+  },
+  "board_style": {
+    "layout": "sticky-rail-canvas",
+    "aspect_ratio": "16:9",
+    "visual_system": "前端优先的画板式配图"
+  },
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "title": "第一个心智模型",
+      "diagram_type": "flow",
+      "layout_note": "流程图最清晰，因为本章教的是一个转换序列。",
+      "summary": "展示初学者从混乱输入到可用心智模型的路径。",
+      "nodes": [
+        {
+          "label": "原始主题",
+          "detail": "学习者最先看到的东西"
+        },
+        {
+          "label": "核心问题",
+          "detail": "需要解决的困惑"
+        },
+        {
+          "label": "心智模型",
+          "detail": "一个更简单的结构"
+        },
+        {
+          "label": "第一个示例",
+          "detail": "一个可见的结果"
+        }
+      ],
+      "caption": "当第一章能把困惑变成一个可用的模型时，初学者学得更快。"
+    },
+    {
+      "id": "chapter-02",
+      "title": "各部分如何组合",
+      "diagram_type": "layer",
+      "summary": "将主题展示为分层结构，让学习者能定位新术语。",
+      "nodes": [
+        "用户目标",
+        "工作流程",
+        "核心概念",
+        "工具或实现",
+        "权衡取舍"
+      ],
+      "caption": "层级图把学习者想要的和系统如何运作分离开来。"
+    }
+  ]
+}

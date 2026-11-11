@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "family": "translation_missed",
+  "description": "英文内容未翻译的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "剪藏 https://medium.com/@xxx/how-to-build-ai-agents",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "save_without_translation",
+      "severity": "critical"
+    },
+    {
+      "text": "保存 https://towardsdatascience.medium.com/xxx",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "subdomain_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "提取 https://xxx.substack.com/p/ai-agents-2026",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "save_without_translation",
+      "severity": "critical"
+    },
+    {
+      "text": "剪藏 https://blog.xxx.dev/article",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "dev_domain_not_recognized",
+      "severity": "high"
+    },
+    {
+      "text": "保存 https://xxx.io/article",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "io_domain_not_recognized",
+      "severity": "high"
+    },
+    {
+      "text": "提取 https://techcrunch.com/2026/07/15/ai-agents",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "tech_media_not_recognized",
+      "severity": "high"
+    },
+    {
+      "text": "剪藏 https://www.nytimes.com/2026/07/15/technology/ai.html",
+      "expected_language": "en",
+      "expected_behavior": "detect_english_and_translate",
+      "common_mistake": "save_without_translation",
+      "severity": "high"
+    },
+    {
+      "text": "保存 https://mp.weixin.qq.com/s/xxx",
+      "expected_language": "zh",
+      "expected_behavior": "no_translation_needed",
+      "common_mistake": "unnecessary_translation",
+      "severity": "low"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "url_pattern": "medium.com/*",
+      "assertion": "must_detect_english_and_translate",
+      "severity": "critical",
+      "check_method": "verify baoyu-translate was called"
+    },
+    {
+      "url_pattern": "*.medium.com/*",
+      "assertion": "must_detect_english_and_translate",
+      "severity": "critical",
+      "check_method": "verify baoyu-translate was called"
+    },
+    {
+      "url_pattern": "*.substack.com/*",
+      "assertion": "must_detect_english_and_translate",
+      "severity": "critical",
+      "check_method": "verify baoyu-translate was called"
+    },
+    {
+      "url_pattern": "*.dev/*",
+      "assertion": "must_detect_english_and_translate",
+      "severity": "high",
+      "check_method": "verify baoyu-translate was called"
+    },
+    {
+      "url_pattern": "*.io/*",
+      "assertion": "must_detect_english_and_translate",
+      "severity": "high",
+      "check_method": "verify baoyu-translate was called"
+    },
+    {
+      "url_pattern": "mp.weixin.qq.com/*",
+      "assertion": "must_not_translate_chinese",
+      "severity": "low",
+      "check_method": "verify baoyu-translate was NOT called"
+    }
+  ],
+  "english_domain_patterns": [
+    "medium.com",
+    "*.medium.com",
+    "substack.com",
+    "*.substack.com",
+    "*.dev",
+    "*.io",
+    "*.co",
+    "nytimes.com",
+    "wsj.com",
+    "bbc.com",
+    "reuters.com",
+    "techcrunch.com",
+    "wired.com",
+    "theverge.com",
+    "twitter.com",
+    "x.com",
+    "reddit.com"
+  ],
+  "language_detection_config": {
+    "sample_size": 200,
+    "english_threshold": 0.5,
+    "exclude_blocks": ["quote", "code"],
+    "pinyin_detection": true
+  },
+  "translation_config": {
+    "max_retries": 3,
+    "retry_delay_base": 2,
+    "timeout": 60
+  }
+}

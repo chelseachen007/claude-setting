@@ -27,7 +27,7 @@ description: 当用户想要生成图片、画图、绘画、创建图像、AI�
 ### 第一步：初始化 CDP 环境
 
 ```bash
-bash ~/.Codex/skills/web-access/scripts/check-deps.sh
+node ~/.agents/skills/web-access/scripts/check-deps.mjs
 ```
 
 检查通过后继续。
@@ -118,7 +118,7 @@ ls -lt ~/Downloads/ | head -3
 **下载失败兜底**：如果下载按钮点击后没有文件，回退到截图方式保存：
 
 ```bash
-curl -s "http://localhost:3456/screenshot?target=TARGET_ID&file=/Users/chenjie/Downloads/gemini-generated.png"
+curl -s "http://localhost:3456/screenshot?target=TARGET_ID&file=~/Downloads/gemini-generated.png"
 ```
 
 ### 第八步：清理

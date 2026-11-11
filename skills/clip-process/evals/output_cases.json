@@ -1,0 +1,147 @@
+{
+  "version": "1.0.0",
+  "description": "clip-process 输出评估用例集",
+  "evaluation_dimensions": {
+    "structure_completeness": {
+      "weight": 0.25,
+      "description": "是否包含所有必需章节",
+      "required_sections": [
+        "## 常青笔记",
+        "## 连接",
+        "## 行动"
+      ],
+      "optional_sections": [
+        "## 闪念",
+        "## 入库思考"
+      ]
+    },
+    "connection_accuracy": {
+      "weight": 0.30,
+      "description": "推荐的卡片是否真实存在",
+      "required_checks": [
+        "所有 [[卡片名]] 在 卡片/ 目录真实存在",
+        "关联原因说明具体（10-20字）",
+        "不推荐不确定的卡片（宁缺毋滥）"
+      ]
+    },
+    "evergreen_quality": {
+      "weight": 0.20,
+      "description": "常青笔记是否是持久洞见",
+      "forbidden_phrases": [
+        "文章认为",
+        "作者提出",
+        "本文总结",
+        "文章介绍了",
+        "作者认为",
+        "这篇文章讲了"
+      ],
+      "required_patterns": [
+        "独立命题（不依赖文章存在）",
+        "面向未来的知识点",
+        "不是文章复述"
+      ]
+    },
+    "action_executability": {
+      "weight": 0.15,
+      "description": "行动项是否具体可执行",
+      "format": "- [ ] 具体行动",
+      "forbidden_vague": [
+        "深入学习",
+        "了解更多",
+        "研究一下",
+        "继续关注",
+        "后续跟进"
+      ],
+      "required_patterns": [
+        "有明确动词",
+        "有具体对象",
+        "可验证完成"
+      ]
+    },
+    "anchor_alignment": {
+      "weight": 0.10,
+      "description": "是否呼应用户的入库思考",
+      "required_checks": [
+        "常青笔记覆盖用户打动点",
+        "连接呼应用户当下关联",
+        "行动基于用户锚点分析"
+      ]
+    }
+  },
+  "test_cases": [
+    {
+      "name": "AI 知识库文章",
+      "input_file": "剪藏/2026-07-15-ai-knowledge-base.md",
+      "user_anchor": {
+        "touch_point": "CLAUDE.md + Skills + MCP 三层架构让 AI 从工具变成工作系统",
+        "current_relation": "正在搭建自己的 Obsidian + Claude 工作流"
+      },
+      "expected_output": {
+        "evergreen_notes": [
+          {
+            "title": "AI 知识库的三层架构",
+            "should_not_contain": ["文章认为", "作者提出"],
+            "should_contain": ["CLAUDE.md", "Skills", "MCP", "复利效应"]
+          }
+        ],
+        "connections": {
+          "existing_cards": [
+            {"name": "Claudian", "relevance": "Claude AI 集成插件"},
+            {"name": "MCP", "relevance": "连接外部工具的协议"}
+          ],
+          "new_cards": [
+            {"name": "进化系统", "reason": "对比 AI 原稿和人类终稿的学习机制"}
+          ]
+        },
+        "actions": [
+          {
+            "content": "参考进化系统思路，在 skill 中加入修改对比功能",
+            "forbidden": ["深入学习", "了解更多"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "时间管理文章",
+      "input_file": "剪藏/2026-07-15-time-management.md",
+      "user_anchor": {
+        "touch_point": "番茄工作法的专注力原理",
+        "current_relation": "最近工作效率下降，想找方法提升"
+      },
+      "expected_output": {
+        "evergreen_notes": [
+          {
+            "title": "时间块的专注力原理",
+            "should_not_contain": ["文章介绍了", "作者认为"],
+            "should_contain": ["25分钟", "注意力周期", "心流"]
+          }
+        ],
+        "connections": {
+          "existing_cards": [
+            {"name": "心流状态", "relevance": "专注力研究"}
+          ]
+        },
+        "actions": [
+          {
+            "content": "明天尝试番茄工作法，记录专注时长",
+            "forbidden": ["继续关注时间管理"]
+          }
+        ]
+      }
+    }
+  ],
+  "quality_gates": {
+    "basic": {
+      "checks": ["structure_completeness"],
+      "pass_threshold": 1.0
+    },
+    "standard": {
+      "checks": ["structure_completeness", "connection_accuracy", "evergreen_quality"],
+      "pass_threshold": 0.8
+    },
+    "advanced": {
+      "checks": ["structure_completeness", "connection_accuracy", "evergreen_quality", "action_executability", "anchor_alignment"],
+      "pass_threshold": 0.7
+    }
+  }
+}

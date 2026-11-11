@@ -29,7 +29,7 @@
 
 - WorkBuddy：`~/.workbuddy/skills/wechat-clawbot-push/`
 - Codex：`~/.codex/skills/wechat-clawbot-push/`
-- Claude Code：`~/.claude/skills/wechat-clawbot-push/`
+- Claude Code：`~/.agents/skills/wechat-clawbot-push/`
 - 其它遵循 Agent Skills 规范的工具：对应 `skills/` 目录
 
 （常见做法是把真实目录放在 `~/.agents/skills/`，再软链到上面各处。）

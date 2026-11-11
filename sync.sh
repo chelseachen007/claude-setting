@@ -22,12 +22,22 @@ declare -a issues=()
 LINKS=(
   "$HOME/.codex/AGENTS.md|$AI/rules/global.md|规则·Codex"
   "$HOME/.dsh/AGENTS.md|$AI/rules/global.md|规则·dsh"
-  "$HOME/.workbuddy-ai/user-99d85571-55d9-4729-92a4-d3d5a36edab4-personal/MEMORY.md|$AI/memory/MEMORY.md|记忆·长期"
-  "$HOME/.workbuddy-ai/user-99d85571-55d9-4729-92a4-d3d5a36edab4-personal/USER.md|$AI/memory/USER.md|记忆·用户画像"
-  "$HOME/.workbuddy-ai/user-99d85571-55d9-4729-92a4-d3d5a36edab4-personal/SOUL.md|$AI/memory/SOUL.md|记忆·人格"
-  "$HOME/.workbuddy-ai/user-99d85571-55d9-4729-92a4-d3d5a36edab4-personal/IDENTITY.md|$AI/memory/IDENTITY.md|记忆·身份"
   "$HOME/.agents/AGENTS.md|$AI/memory/AGENTS.md|记忆·合并(dsh)"
 )
+
+# WorkBuddy 用户 profile：App 升级或换账号会换 UUID 目录，这里动态探测全部，
+# 不要硬编码。~/.workbuddy 是新版目录，~/.workbuddy-ai 是旧版，两者并存时一并体检。
+for wb in "$HOME"/.workbuddy*/user-*-personal; do
+  [ -d "$wb" ] || continue
+  case "$(basename "$(dirname "$wb")")" in
+    .workbuddy-ai) tag="wb-ai" ;;
+    *)             tag="wb" ;;
+  esac
+  id=$(basename "$wb" | sed -E 's/^user-([0-9a-f]{8}).*/\1/')
+  for f in MEMORY.md USER.md SOUL.md IDENTITY.md; do
+    LINKS+=("$wb/$f|$AI/memory/$f|记忆·$tag:$id")
+  done
+done
 
 echo "AI 资产体检 · $(date '+%Y-%m-%d %H:%M')"
 echo "─────────────────────────────────────"
@@ -38,19 +48,19 @@ for item in "${LINKS[@]}"; do
     actual=$(readlink "$link")
     # 目标存在性校验在下面的 actual 比对里做，这里不能用 -e 当唯一判据
     if [ "$actual" = "$target" ]; then
-      printf '  ✓ %-16s → %s\n' "$label" "${target/#$HOME/~}"
+      printf '  ✓ %-24s → %s\n' "$label" "${target/#$HOME/~}"
       ok=$((ok+1))
     else
-      printf '  ⚠ %-16s 指向别处：%s\n' "$label" "$actual"
+      printf '  ⚠ %-24s 指向别处：%s\n' "$label" "$actual"
       issues+=("$label|$link|$target|错误指向")
       warn=$((warn+1))
     fi
   elif [ -f "$link" ] && [ ! -L "$link" ]; then
-    printf '  ✗ %-16s 被替换成实体文件（App 覆盖了软链）\n' "$label"
+    printf '  ✗ %-24s 被替换成实体文件（App 覆盖了软链）\n' "$label"
     issues+=("$label|$link|$target|实体文件")
     bad=$((bad+1))
   else
-    printf '  ✗ %-16s 不存在\n' "$label"
+    printf '  ✗ %-24s 不存在\n' "$label"
     issues+=("$label|$link|$target|缺失")
     bad=$((bad+1))
   fi

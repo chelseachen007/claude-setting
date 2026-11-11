@@ -1,0 +1,24 @@
+interface:
+  display_name: "Yao 教程 Skill"
+  short_description: "研究任意主题，生成带章节配图和多格式导出的精良入门教程"
+  default_prompt: "使用 yao-tutorial-skill 将我的主题和提供的笔记、链接、文件、论文、仓库或风格参考，转化为一份有来源支撑的入门教程，包含章节配图、第1章/1.1 格式标题、居中 HTML 报告、Word/PDF/HTML 导出和输出包验证。"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "metadata-adapter"
+    claude: "neutral-source-plus-adapter"
+    generic: "neutral-source"

@@ -1,0 +1,228 @@
+{
+  "version": "1.0.0",
+  "family": "wrong_platform_routing",
+  "description": "平台识别错误的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "剪藏 https://www.xiaohongshu.com/explore/6658a1234567890",
+      "expected_platform": "xhs",
+      "expected_strategy": "strategies/platform-xhs.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    },
+    {
+      "text": "保存 https://xhslink.com/abc123",
+      "expected_platform": "xhs",
+      "expected_strategy": "strategies/platform-xhs.md",
+      "common_mistake": "short_link_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "提取 https://www.xiaohongshu.com/user/profile/5a7c8e1234567890",
+      "expected_platform": "xhs",
+      "expected_action": "ask_user_for_specific_post",
+      "common_mistake": "extract_empty_profile",
+      "severity": "high"
+    },
+    {
+      "text": "剪藏 https://www.xiaohongshu.com/discovery/item/6658a1234567890",
+      "expected_platform": "xhs",
+      "expected_strategy": "strategies/platform-xhs.md",
+      "common_mistake": "new_url_format_not_matched",
+      "severity": "high"
+    },
+    {
+      "text": "保存 https://www.bilibili.com/video/BV1xx411c7mu",
+      "expected_platform": "bilibili",
+      "expected_strategy": "strategies/platform-bilibili.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    },
+    {
+      "text": "提取 https://b23.tv/xxx",
+      "expected_platform": "bilibili",
+      "expected_strategy": "strategies/platform-bilibili.md",
+      "common_mistake": "short_link_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "剪藏 https://www.bilibili.com/read/cv12345678",
+      "expected_platform": "bilibili",
+      "expected_content_type": "article",
+      "common_mistake": "article_treated_as_video",
+      "severity": "high"
+    },
+    {
+      "text": "保存 https://www.douyin.com/video/7123456789012345678",
+      "expected_platform": "douyin",
+      "expected_strategy": "strategies/platform-douyin.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    },
+    {
+      "text": "提取 https://v.douyin.com/xxx",
+      "expected_platform": "douyin",
+      "expected_strategy": "strategies/platform-douyin.md",
+      "common_mistake": "short_link_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "剪藏 https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "expected_platform": "youtube",
+      "expected_strategy": "strategies/platform-youtube.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    },
+    {
+      "text": "保存 https://youtu.be/dQw4w9WgXcQ",
+      "expected_platform": "youtube",
+      "expected_strategy": "strategies/platform-youtube.md",
+      "common_mistake": "short_link_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "提取 https://twitter.com/elonmusk/status/1234567890",
+      "expected_platform": "twitter",
+      "expected_strategy": "strategies/platform-twitter.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    },
+    {
+      "text": "剪藏 https://x.com/elonmusk/status/1234567890",
+      "expected_platform": "twitter",
+      "expected_strategy": "strategies/platform-twitter.md",
+      "common_mistake": "x_domain_not_recognized",
+      "severity": "critical"
+    },
+    {
+      "text": "保存 https://mp.weixin.qq.com/s/xxx",
+      "expected_platform": "wechat",
+      "expected_strategy": "strategies/platform-wechat.md",
+      "common_mistake": "routing_to_generic",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "url_pattern": "xiaohongshu.com/*",
+      "assertion": "must_load_platform_xhs_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-xhs.md' in execution_log"
+    },
+    {
+      "url_pattern": "xhslink.com/*",
+      "assertion": "must_resolve_short_link_first",
+      "severity": "critical",
+      "check_method": "verify CDP redirect resolution"
+    },
+    {
+      "url_pattern": "xiaohongshu.com/user/profile/*",
+      "assertion": "must_ask_user_for_specific_post",
+      "severity": "high",
+      "check_method": "verify AskUserQuestion was called"
+    },
+    {
+      "url_pattern": "bilibili.com/video/*",
+      "assertion": "must_load_platform_bilibili_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-bilibili.md' in execution_log"
+    },
+    {
+      "url_pattern": "b23.tv/*",
+      "assertion": "must_resolve_short_link_first",
+      "severity": "critical",
+      "check_method": "verify CDP redirect resolution"
+    },
+    {
+      "url_pattern": "douyin.com/*",
+      "assertion": "must_load_platform_douyin_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-douyin.md' in execution_log"
+    },
+    {
+      "url_pattern": "v.douyin.com/*",
+      "assertion": "must_resolve_short_link_first",
+      "severity": "critical",
+      "check_method": "verify CDP redirect resolution"
+    },
+    {
+      "url_pattern": "youtube.com/*",
+      "assertion": "must_load_platform_youtube_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-youtube.md' in execution_log"
+    },
+    {
+      "url_pattern": "youtu.be/*",
+      "assertion": "must_resolve_short_link_first",
+      "severity": "critical",
+      "check_method": "verify CDP redirect resolution"
+    },
+    {
+      "url_pattern": "twitter.com/*",
+      "assertion": "must_load_platform_twitter_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-twitter.md' in execution_log"
+    },
+    {
+      "url_pattern": "x.com/*",
+      "assertion": "must_load_platform_twitter_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-twitter.md' in execution_log"
+    },
+    {
+      "url_pattern": "mp.weixin.qq.com/*",
+      "assertion": "must_load_platform_wechat_strategy",
+      "severity": "critical",
+      "check_method": "grep 'platform-wechat.md' in execution_log"
+    }
+  ],
+  "test_urls": [
+    {
+      "platform": "xiaohongshu",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/6658a1234567890",
+        "https://xhslink.com/abc123",
+        "https://www.xiaohongshu.com/user/profile/5a7c8e1234567890",
+        "https://www.xiaohongshu.com/discovery/item/6658a1234567890"
+      ]
+    },
+    {
+      "platform": "bilibili",
+      "urls": [
+        "https://www.bilibili.com/video/BV1xx411c7mu",
+        "https://b23.tv/xxx",
+        "https://www.bilibili.com/read/cv12345678"
+      ]
+    },
+    {
+      "platform": "douyin",
+      "urls": [
+        "https://www.douyin.com/video/7123456789012345678",
+        "https://v.douyin.com/xxx"
+      ]
+    },
+    {
+      "platform": "youtube",
+      "urls": [
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://youtu.be/dQw4w9WgXcQ"
+      ]
+    },
+    {
+      "platform": "twitter",
+      "urls": [
+        "https://twitter.com/elonmusk/status/1234567890",
+        "https://x.com/elonmusk/status/1234567890"
+      ]
+    },
+    {
+      "platform": "wechat",
+      "urls": [
+        "https://mp.weixin.qq.com/s/xxx"
+      ]
+    }
+  ]
+}

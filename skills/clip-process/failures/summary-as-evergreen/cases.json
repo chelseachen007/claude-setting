@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "family": "summary_as_evergreen",
+  "description": "常青笔记变成文章总结的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "处理这篇关于番茄工作法的剪藏",
+      "expected_evergreen_pattern": "independent_proposition",
+      "forbidden_phrases": ["文章认为", "作者提出", "本文总结", "文章介绍了", "作者认为"],
+      "common_mistake": "article_summary_as_evergreen",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于 AI Agent 架构的剪藏",
+      "expected_evergreen_pattern": "independent_proposition",
+      "forbidden_phrases": ["文章认为", "作者提出", "本文总结", "文章介绍了", "作者认为"],
+      "common_mistake": "article_summary_as_evergreen",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于深度工作的剪藏",
+      "expected_evergreen_pattern": "independent_proposition",
+      "forbidden_phrases": ["文章认为", "作者提出", "本文总结", "文章介绍了", "作者认为"],
+      "common_mistake": "article_summary_as_evergreen",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于投资心理学的剪藏",
+      "expected_evergreen_pattern": "independent_proposition",
+      "forbidden_phrases": ["文章认为", "作者提出", "本文总结", "文章介绍了", "作者认为"],
+      "common_mistake": "article_summary_as_evergreen",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "evergreen_must_not_contain_article_references",
+      "severity": "critical",
+      "check_method": "grep forbidden phrases in evergreen section"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "evergreen_must_be_independent_proposition",
+      "severity": "critical",
+      "check_method": "validate_evergreen_independence() function"
+    }
+  ],
+  "forbidden_phrases": [
+    "文章认为",
+    "作者提出",
+    "本文总结",
+    "文章介绍了",
+    "作者认为",
+    "这篇文章讲了",
+    "原文提到",
+    "文中指出",
+    "according to the article",
+    "the author argues",
+    "this paper presents"
+  ],
+  "quality_checks": {
+    "independence_test": {
+      "description": "删除文章后，常青笔记是否仍有意义？",
+      "method": "remove_article_context_and_validate"
+    },
+    "decontextualization_test": {
+      "description": "常青笔记是否依赖文章特定上下文？",
+      "method": "check_unique_term_overlap"
+    },
+    "future_oriented_test": {
+      "description": "常青笔记是否面向未来？",
+      "method": "check_future_oriented_language"
+    }
+  }
+}

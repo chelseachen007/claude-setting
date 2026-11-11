@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "family": "vague_actions",
+  "description": "行动项太空泛的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "处理这篇关于时间管理的剪藏",
+      "expected_action_pattern": "specific_executable",
+      "forbidden_phrases": ["深入学习", "了解更多", "研究一下", "继续关注", "后续跟进"],
+      "common_mistake": "generate_vague_learning_actions",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于 AI Agent 的剪藏",
+      "expected_action_pattern": "specific_executable",
+      "forbidden_phrases": ["深入学习", "了解更多", "研究一下", "继续关注", "后续跟进"],
+      "common_mistake": "generate_vague_learning_actions",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于投资心理学的剪藏",
+      "expected_action_pattern": "specific_executable",
+      "forbidden_phrases": ["深入学习", "了解更多", "研究一下", "继续关注", "后续跟进"],
+      "common_mistake": "generate_vague_learning_actions",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "actions_must_not_contain_vague_phrases",
+      "severity": "critical",
+      "check_method": "grep forbidden phrases in actions section"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "actions_must_be_specific",
+      "severity": "critical",
+      "check_method": "validate action specificity"
+    }
+  ],
+  "forbidden_phrases": [
+    "深入学习",
+    "了解更多",
+    "研究一下",
+    "继续关注",
+    "后续跟进",
+    "进一步",
+    "持续",
+    "不断",
+    "learn more",
+    "study further",
+    "continue to",
+    "keep track"
+  ],
+  "specificity_checks": {
+    "required_elements": [
+      "明确动词",
+      "具体对象",
+      "可验证完成"
+    ],
+    "good_verbs": ["创建", "记录", "尝试", "回顾", "分析", "设定", "找", "写", "实现", "测试"],
+    "bad_verbs": ["学习", "了解", "研究", "关注", "跟进"]
+  },
+  "quality_metrics": {
+    "specificity_rate": {
+      "target": 0.9,
+      "description": "行动项具体率"
+    },
+    "user_execution_rate": {
+      "target": 0.5,
+      "description": "用户执行率"
+    }
+  }
+}

@@ -140,7 +140,7 @@ PY
 | `scripts/verify_tagged.py` | 强制校验 |
 
 ```bash
-PY=/Users/chenjie/.workbuddy-ai/binaries/python/versions/3.13.12/bin/python3
+PY=~/.workbuddy-ai/binaries/python/versions/3.13.12/bin/python3
 $PY scripts/clean_template.py
 $PY scripts/build_fields.py
 $PY scripts/tag_template.py

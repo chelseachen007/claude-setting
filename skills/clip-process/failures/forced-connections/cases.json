@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "family": "forced_connections",
+  "description": "强行关联不相关卡片的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "处理这篇关于时间管理的剪藏",
+      "expected_behavior": "only_recommend_truly_relevant_cards",
+      "common_mistake": "force_unrelated_cards_to_meet_count",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于 AI Agent 的剪藏",
+      "expected_behavior": "only_recommend_truly_relevant_cards",
+      "common_mistake": "force_unrelated_cards_to_meet_count",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于投资心理学的剪藏",
+      "expected_behavior": "only_recommend_truly_relevant_cards",
+      "common_mistake": "force_unrelated_cards_to_meet_count",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "connections_must_be_truly_relevant",
+      "severity": "critical",
+      "check_method": "validate connection relevance score >= 0.5"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "connection_reasons_must_be_specific",
+      "severity": "critical",
+      "check_method": "validate reason is not generic"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "prefer_fewer_over_forced",
+      "severity": "high",
+      "check_method": "allow fewer than 3 connections if necessary"
+    }
+  ],
+  "generic_reasons": [
+    "主题相关",
+    "都是",
+    "相关领域",
+    "类似",
+    "有关系",
+    "有关联",
+    "涉及",
+    "包含"
+  ],
+  "relevance_thresholds": {
+    "minimum_relevance_score": 0.5,
+    "minimum_reason_length": 10,
+    "allow_fewer_than_minimum": true
+  },
+  "quality_metrics": {
+    "relevance_score": {
+      "target": 0.5,
+      "description": "关联相关性得分"
+    },
+    "generic_reason_rate": {
+      "target": 0,
+      "description": "泛泛关联出现率"
+    },
+    "user_satisfaction": {
+      "target": 4,
+      "description": "用户满意度（1-5）"
+    }
+  }
+}

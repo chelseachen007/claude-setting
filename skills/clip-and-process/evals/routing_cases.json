@@ -1,0 +1,232 @@
+{
+  "version": "1.0.0",
+  "description": "clip-and-process 路由准确性评估用例",
+  "platforms": {
+    "xiaohongshu": {
+      "cases": [
+        {
+          "url": "https://www.xiaohongshu.com/explore/6658a1234567890",
+          "expected_platform": "xhs",
+          "expected_content_type": "image-text",
+          "expected_worker": "cdp + ocr",
+          "expected_strategy": "strategies/platform-xhs.md"
+        },
+        {
+          "url": "https://xhslink.com/abc123",
+          "expected_platform": "xhs",
+          "expected_content_type": "unknown_after_cdp",
+          "expected_worker": "cdp + ocr/text",
+          "expected_strategy": "strategies/platform-xhs.md",
+          "notes": "短链接需先解析"
+        },
+        {
+          "url": "https://www.xiaohongshu.com/user/profile/xxx",
+          "expected_platform": "xhs",
+          "expected_content_type": "profile",
+          "expected_action": "ask_user_what_to_clip",
+          "notes": "用户主页，不是具体帖子"
+        }
+      ]
+    },
+    "bilibili": {
+      "cases": [
+        {
+          "url": "https://www.bilibili.com/video/BV1xx411c7mu",
+          "expected_platform": "bilibili",
+          "expected_content_type": "video",
+          "expected_worker": "subtitle-api || whisper",
+          "expected_strategy": "strategies/platform-bilibili.md"
+        },
+        {
+          "url": "https://www.bilibili.com/read/cv12345678",
+          "expected_platform": "bilibili",
+          "expected_content_type": "article",
+          "expected_worker": "cdp + text_extract",
+          "expected_strategy": "strategies/platform-bilibili.md"
+        },
+        {
+          "url": "https://b23.tv/xxx",
+          "expected_platform": "bilibili",
+          "expected_content_type": "unknown_after_resolve",
+          "expected_worker": "depends_on_resolved_url",
+          "expected_strategy": "strategies/platform-bilibili.md",
+          "notes": "短链接需先解析"
+        }
+      ]
+    },
+    "douyin": {
+      "cases": [
+        {
+          "url": "https://www.douyin.com/video/7123456789012345678",
+          "expected_platform": "douyin",
+          "expected_content_type": "video",
+          "expected_worker": "cdp + whisper",
+          "expected_strategy": "strategies/platform-douyin.md"
+        },
+        {
+          "url": "https://www.douyin.com/note/7123456789012345678",
+          "expected_platform": "douyin",
+          "expected_content_type": "image-text",
+          "expected_worker": "cdp + ocr",
+          "expected_strategy": "strategies/platform-douyin.md"
+        },
+        {
+          "url": "https://v.douyin.com/xxx",
+          "expected_platform": "douyin",
+          "expected_content_type": "unknown_after_resolve",
+          "expected_worker": "cdp + ocr/whisper",
+          "expected_strategy": "strategies/platform-douyin.md",
+          "notes": "短链接需先解析"
+        }
+      ]
+    },
+    "youtube": {
+      "cases": [
+        {
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "expected_platform": "youtube",
+          "expected_content_type": "video",
+          "expected_worker": "subtitle-api || whisper",
+          "expected_strategy": "strategies/platform-youtube.md"
+        },
+        {
+          "url": "https://youtu.be/dQw4w9WgXcQ",
+          "expected_platform": "youtube",
+          "expected_content_type": "video",
+          "expected_worker": "subtitle-api || whisper",
+          "expected_strategy": "strategies/platform-youtube.md"
+        }
+      ]
+    },
+    "twitter": {
+      "cases": [
+        {
+          "url": "https://twitter.com/elonmusk/status/1234567890",
+          "expected_platform": "twitter",
+          "expected_content_type": "tweet",
+          "expected_worker": "cdp + text_extract",
+          "expected_strategy": "strategies/platform-twitter.md"
+        },
+        {
+          "url": "https://x.com/elonmusk/status/1234567890",
+          "expected_platform": "twitter",
+          "expected_content_type": "tweet",
+          "expected_worker": "cdp + text_extract",
+          "expected_strategy": "strategies/platform-twitter.md"
+        }
+      ]
+    },
+    "wechat": {
+      "cases": [
+        {
+          "url": "https://mp.weixin.qq.com/s/xxx",
+          "expected_platform": "wechat",
+          "expected_content_type": "article",
+          "expected_worker": "cdp + text_extract",
+          "expected_strategy": "strategies/platform-wechat.md"
+        }
+      ]
+    },
+    "feishu": {
+      "cases": [
+        {
+          "url": "https://xxx.feishu.cn/docx/xxx",
+          "expected_platform": "feishu",
+          "expected_content_type": "document",
+          "expected_worker": "lark-mcp",
+          "expected_api": "docx_v1_document_rawContent"
+        },
+        {
+          "url": "https://xxx.feishu.cn/wiki/xxx",
+          "expected_platform": "feishu",
+          "expected_content_type": "wiki",
+          "expected_worker": "lark-mcp",
+          "expected_api": "wiki_v2_space_getNode + docx_v1_document_rawContent"
+        }
+      ]
+    },
+    "medium": {
+      "cases": [
+        {
+          "url": "https://medium.com/@xxx/how-to-build-ai-agents",
+          "expected_platform": "generic",
+          "expected_content_type": "article",
+          "expected_language": "en",
+          "expected_worker": "layer1 + baoyu-translate",
+          "expected_strategy": "strategies/layer1-direct-fetch.md"
+        },
+        {
+          "url": "https://towardsdatascience.medium.com/xxx",
+          "expected_platform": "generic",
+          "expected_content_type": "article",
+          "expected_language": "en",
+          "expected_worker": "layer1 + baoyu-translate",
+          "expected_strategy": "strategies/layer1-direct-fetch.md"
+        }
+      ]
+    },
+    "generic_paywall": {
+      "cases": [
+        {
+          "url": "https://www.wsj.com/articles/xxx",
+          "expected_platform": "generic",
+          "expected_content_type": "article",
+          "expected_worker": "layer1 -> layer1.5 -> layer2 -> layer3",
+          "expected_strategy": "三层降级",
+          "notes": "付费墙站点，需多层降级"
+        },
+        {
+          "url": "https://www.nytimes.com/xxx",
+          "expected_platform": "generic",
+          "expected_content_type": "article",
+          "expected_worker": "layer1 -> layer1.5 -> layer2 -> layer3",
+          "expected_strategy": "三层降级",
+          "notes": "付费墙站点，需多层降级"
+        }
+      ]
+    }
+  },
+  "local_files": {
+    "pdf": [
+      {
+        "path": "/Users/chenjie/Downloads/article.pdf",
+        "expected_type": "document",
+        "expected_worker": "document-extractor (markitdown)"
+      },
+      {
+        "path": "/Users/chenjie/Downloads/scan.pdf",
+        "expected_type": "scanned_document",
+        "expected_worker": "document-extractor + OCR fallback",
+        "notes": "markitdown 输出 <200 字时触发 OCR"
+      }
+    ],
+    "video": [
+      {
+        "path": "/Users/chenjie/Downloads/video.mp4",
+        "expected_type": "video",
+        "expected_worker": "xiaopang-video-transcript"
+      }
+    ],
+    "audio": [
+      {
+        "path": "/Users/chenjie/Downloads/podcast.mp3",
+        "expected_type": "audio",
+        "expected_worker": "xiaopang-video-transcript"
+      }
+    ],
+    "image": [
+      {
+        "path": "/Users/chenjie/Downloads/screenshot.jpg",
+        "expected_type": "image",
+        "expected_worker": "analyze_image (OCR)"
+      }
+    ],
+    "office": [
+      {
+        "path": "/Users/chenjie/Downloads/report.docx",
+        "expected_type": "document",
+        "expected_worker": "document-extractor (markitdown)"
+      }
+    ]
+  }
+}

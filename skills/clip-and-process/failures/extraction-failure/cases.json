@@ -1,0 +1,119 @@
+{
+  "version": "1.0.0",
+  "family": "extraction_failure",
+  "description": "提取失败但未降级的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "剪藏 https://www.wsj.com/articles/ai-agents-future",
+      "expected_behavior": "layer1 -> layer1.5 -> layer2 -> layer3",
+      "common_mistake": "give_up_after_layer1",
+      "severity": "critical",
+      "notes": "付费墙站点，必须尝试所有降级策略"
+    },
+    {
+      "text": "保存 https://www.nytimes.com/2026/07/15/technology/ai.html",
+      "expected_behavior": "layer1 -> layer1.5 -> layer2 -> layer3",
+      "common_mistake": "give_up_after_layer1",
+      "severity": "critical",
+      "notes": "付费墙站点"
+    },
+    {
+      "text": "提取 https://www.ft.com/content/xxx",
+      "expected_behavior": "layer1 -> layer1.5 -> layer2 -> layer3",
+      "common_mistake": "give_up_after_layer1",
+      "severity": "critical",
+      "notes": "付费墙站点"
+    },
+    {
+      "text": "剪藏 https://www.notion.so/xxx",
+      "expected_behavior": "layer1 -> layer2 (CDP for JS rendering)",
+      "common_mistake": "give_up_after_empty_layer1",
+      "severity": "high",
+      "notes": "JS 渲染页面，Layer 1 返回空内容"
+    },
+    {
+      "text": "保存 https://www.zhihu.com/question/123456789",
+      "expected_behavior": "layer1 -> layer2 (CDP with cookies)",
+      "common_mistake": "give_up_after_captcha",
+      "severity": "high",
+      "notes": "反爬虫机制，需要 CDP 模拟"
+    },
+    {
+      "text": "提取 https://medium.com/@xxx/premium-article",
+      "expected_behavior": "layer1 -> layer1.5 -> layer2",
+      "common_mistake": "give_up_after_paywall",
+      "severity": "high",
+      "notes": "Medium 付费文章"
+    },
+    {
+      "text": "剪藏 https://www.example.com/normal-article",
+      "expected_behavior": "layer1 success, no fallback",
+      "common_mistake": "unnecessary_fallback",
+      "severity": "low",
+      "notes": "正常页面，不应触发降级"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "url_pattern": "wsj.com/*",
+      "assertion": "must_attempt_all_layers",
+      "severity": "critical",
+      "check_method": "verify Layer 1.5/2/3 were attempted"
+    },
+    {
+      "url_pattern": "nytimes.com/*",
+      "assertion": "must_attempt_all_layers",
+      "severity": "critical",
+      "check_method": "verify Layer 1.5/2/3 were attempted"
+    },
+    {
+      "url_pattern": "notion.so/*",
+      "assertion": "must_use_cdp_for_js_rendering",
+      "severity": "high",
+      "check_method": "verify CDP was used after Layer 1 empty"
+    },
+    {
+      "url_pattern": "zhihu.com/*",
+      "assertion": "must_use_cdp_with_cookies",
+      "severity": "high",
+      "check_method": "verify CDP was used after anti-crawl detected"
+    },
+    {
+      "url_pattern": "example.com/*",
+      "assertion": "must_not_unnecessary_fallback",
+      "severity": "low",
+      "check_method": "verify only Layer 1 was used"
+    }
+  ],
+  "paywall_detection_keywords": [
+    "subscribe",
+    "login required",
+    "paywall",
+    "premium content",
+    "members only",
+    "付费",
+    "请登录",
+    "开通会员",
+    "subscribe to continue",
+    "create account to read"
+  ],
+  "anti_crawl_signals": [
+    "CAPTCHA",
+    "verify you are human",
+    "access denied",
+    "blocked",
+    "rate limit",
+    "too many requests",
+    "请完成验证",
+    "访问被拒绝"
+  ],
+  "layer_timeout_config": {
+    "layer1": 15,
+    "layer1_5": 20,
+    "layer2": 30,
+    "layer3": 25
+  }
+}

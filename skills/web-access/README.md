@@ -98,7 +98,7 @@ claude plugin install web-access@web-access --scope user
 **方式四：手动**
 
 ```bash
-git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
+git clone https://github.com/eze-is/web-access ~/.agents/skills/web-access
 ```
 
 ## 前置配置（CDP 模式）
@@ -113,7 +113,7 @@ CDP 模式需要 **Node.js 22+** 和 Chrome 开启远程调试：
 ```bash
 node "${CLAUDE_SKILL_DIR}/scripts/check-deps.mjs"
 # $CLAUDE_SKILL_DIR 是 skill 加载时自动设置的环境变量
-# 手动运行请替换为实际路径，如 ~/.claude/skills/web-access
+# 手动运行请替换为实际路径，如 ~/.agents/skills/web-access
 ```
 
 ## CDP Proxy API

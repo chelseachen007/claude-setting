@@ -1,0 +1,16 @@
+{
+  "cookies": "cookiesu=411749019629318; device_id=d848a2597843a834b25a5b4bb1fa6881; smidV2=20250604144709afe64dcba9d53d2127f8aa76e4da67cd00a820306410cd970; xq_is_login=1; u=1692982947; is_overseas=0",
+  "sectors": [
+    "AI/算力",
+    "光模块/CPO",
+    "半导体",
+    "新能源车/锂电",
+    "光伏/储能",
+    "创新药/CXO",
+    "医疗器械"
+  ],
+  "filters": {
+    "min_length": 300,
+    "max_posts": 50
+  }
+}

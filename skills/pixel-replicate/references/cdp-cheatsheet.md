@@ -2,7 +2,7 @@
 
 前置检查：
 ```bash
-node "/Users/chenjie/ai/skills/web-access/scripts/check-deps.mjs"
+node "~/.agents/skills/web-access/scripts/check-deps.mjs"
 ```
 
 ## 页面操作

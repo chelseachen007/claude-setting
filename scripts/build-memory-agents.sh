@@ -32,8 +32,9 @@ emit() {
 
 {
   printf '<!-- 自动生成，勿手改：~/ai/scripts/build-memory-agents.sh -->\n'
-  printf '<!-- 源文件：~/ai/memory/{USER,SOUL,MEMORY}.md -->\n\n'
+  printf '<!-- 源文件：~/ai/memory/{IDENTITY,USER,SOUL,MEMORY}.md -->\n\n'
   printf '# 用户与长期记忆\n'
+  emit "$AI/memory/IDENTITY.md" "我是谁（IDENTITY.md）"
   emit "$AI/memory/USER.md"   "关于我（USER.md）"
   emit "$AI/memory/SOUL.md"   "人格与风格（SOUL.md）"
   emit "$AI/memory/MEMORY.md" "长期记忆（MEMORY.md）"

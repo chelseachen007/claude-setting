@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  .card {
+    width: 680px;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  }
+  .hero {
+    /* {{HERO_GRADIENT}} — 根据目的地风格选择渐变色 */
+    /* 自然/山水：linear-gradient(135deg, #065f46 0%, #059669 40%, #34d399 100%) */
+    /* 文化/古城：linear-gradient(135deg, #92400e 0%, #d97706 40%, #fbbf24 100%) */
+    /* 海滨/度假：linear-gradient(135deg, #1e3a5f 0%, #3b82f6 40%, #93c5fd 100%) */
+    background: linear-gradient(135deg, {{HERO_COLOR_START}} 0%, {{HERO_COLOR_MID}} 40%, {{HERO_COLOR_END}} 100%);
+    padding: 48px 44px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -30px;
+    width: 180px; height: 180px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .hero h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .hero .subtitle {
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  .alert-banner {
+    background: linear-gradient(90deg, #fef3c7, #fde68a);
+    padding: 14px 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #fcd34d;
+  }
+  .alert-icon { font-size: 18px; flex-shrink: 0; }
+  .alert-text {
+    font-size: 13px;
+    color: #92400e;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .itinerary { padding: 32px 44px 12px; }
+  /* {{DAY_THEME}} 类型：默认(绿) / culture(琥珀) / city(蓝) / back(紫) */
+  .day-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 18px;
+    border-left: 4px solid #059669;
+  }
+  .day-card.culture { border-left-color: #b45309; background: #fffbeb; }
+  .day-card.city { border-left-color: #3b82f6; background: #eff6ff; }
+  .day-card.back { border-left-color: #6366f1; background: #f5f3ff; }
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .day-label { display: flex; align-items: center; gap: 12px; }
+  .day-num {
+    background: #059669;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 12px;
+  }
+  .day-card.culture .day-num { background: #b45309; }
+  .day-card.city .day-num { background: #3b82f6; }
+  .day-card.back .day-num { background: #6366f1; }
+  .day-date { font-size: 14px; color: #64748b; font-weight: 500; }
+  .day-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 3px;
+  }
+  .day-route {
+    font-size: 12.5px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+  }
+  .timeline { list-style: none; padding-left: 0; }
+  .timeline li {
+    position: relative;
+    padding-left: 22px;
+    padding-bottom: 10px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #334155;
+  }
+  .timeline li:last-child { padding-bottom: 0; }
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px;
+    width: 7px; height: 7px;
+    background: #94a3b8;
+    border-radius: 50%;
+  }
+  .timeline li:last-child::before { background: #059669; }
+  .timeline .food { color: #d97706; font-weight: 500; }
+  .timeline .food::before { background: #f59e0b; }
+  .timeline .scenic { color: #059669; font-weight: 500; }
+  .timeline .scenic::before { background: #10b981; }
+  .timeline .transport { color: #6366f1; font-weight: 400; font-size: 12.5px; }
+  .timeline .transport::before { background: #818cf8; }
+  .timeline .warn { color: #dc2626; font-weight: 500; }
+  .timeline .warn::before { background: #f87171; }
+  .spot-guide {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+    border-left: 3px solid #10b981;
+  }
+  .spot-guide-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #065f46;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .spot-list { list-style: none; padding: 0; }
+  .spot-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(16,185,129,0.15);
+  }
+  .spot-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .spot-item:first-child { padding-top: 0; }
+  .spot-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #065f46;
+    margin-bottom: 2px;
+  }
+  .spot-desc {
+    font-size: 12px;
+    color: #475569;
+    line-height: 1.5;
+  }
+  .info-box {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+  .info-box-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .info-grid-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 14px;
+  }
+  .info-item {
+    font-size: 12.5px;
+    color: #475569;
+    line-height: 1.5;
+  }
+  .info-item strong { color: #1e293b; }
+  .book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+  .book-table th {
+    background: #e2e8f0;
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    border-radius: 4px;
+  }
+  .book-table td {
+    padding: 6px 10px;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .book-table tr:last-child td { border-bottom: none; }
+  .book-table .rec { color: #059669; font-weight: 600; }
+  .book-table a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .book-table a:hover { text-decoration: underline; }
+  .stat-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+    padding: 0 44px 28px;
+  }
+  .stat-box {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-box .icon { font-size: 24px; margin-bottom: 6px; }
+  .stat-box .label {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .stat-box .value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .stat-box .sub {
+    font-size: 10px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+  .cost-section { padding: 0 44px 28px; }
+  .cost-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 14px;
+  }
+  .cost-bar {
+    display: flex;
+    gap: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .cost-bar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .cost-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .cost-legend span {
+    font-size: 12px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .cost-legend span::before {
+    content: '';
+    width: 10px; height: 10px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .legend-flight::before { background: #3b82f6; }
+  .legend-hotel::before { background: #8b5cf6; }
+  .legend-train::before { background: #06b6d4; }
+  .legend-ticket::before { background: #f59e0b; }
+  .legend-food::before { background: #ef4444; }
+  .tips {
+    background: #f0fdf4;
+    padding: 22px 44px;
+    border-top: 1px solid #dcfce7;
+  }
+  .tips-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 10px;
+  }
+  .tips-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .tips-list li {
+    font-size: 12px;
+    color: #15803d;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .tips-list li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+  }
+  .booking-section { padding: 0 44px 28px; }
+  .booking-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 14px;
+  }
+  .booking-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+  }
+  .booking-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 8px;
+  }
+  .footer {
+    background: #1e293b;
+    padding: 22px 44px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+  .footer .brand {
+    color: #64748b;
+    font-size: 11px;
+    margin-top: 6px;
+  }
+  .export-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #059669, #34d399);
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Noto Sans SC', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(5,150,105,0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .export-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(5,150,105,0.45);
+  }
+  .export-btn:active { transform: translateY(0); }
+  .export-btn.loading { opacity: 0.7; pointer-events: none; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-tag">{{HERO_TAG}}</div>
+    <h1>{{TITLE}}</h1>
+    <div class="subtitle">{{SUBTITLE}}</div>
+  </div>
+
+  <!-- Alert（如无注意事项可删除整个 alert-banner） -->
+  <div class="alert-banner">
+    <span class="alert-icon">⚠️</span>
+    <span class="alert-text">{{ALERT_TEXT}}</span>
+  </div>
+
+  <div class="itinerary">
+
+    <!-- ============ Day 卡片（按天数重复） ============ -->
+    <!-- day-card 类型：默认(绿色) / culture(琥珀) / city(蓝色) / back(紫色) -->
+    <div class="day-card {{DAY_THEME}}">
+      <div class="day-header">
+        <div class="day-label">
+          <span class="day-num">Day {{DAY_NUM}}</span>
+          <span class="day-date">{{DAY_DATE}}</span>
+        </div>
+      </div>
+      <div class="day-title">{{DAY_TITLE}}</div>
+      <div class="day-route">{{DAY_ROUTE}}</div>
+      <ul class="timeline">
+        <!-- timeline li 类型：默认(灰) / transport(紫) / scenic(绿) / food(橙) / warn(红) -->
+        <li class="transport">{{TIMELINE_ITEM}}</li>
+        <li class="scenic">{{TIMELINE_ITEM}}</li>
+        <li class="food">{{TIMELINE_ITEM}}</li>
+        <li class="warn">{{TIMELINE_ITEM}}</li>
+        <li>{{TIMELINE_ITEM}}</li>
+      </ul>
+
+      <!-- Info Box（如无门票信息可删除） -->
+      <div class="info-box">
+        <div class="info-box-title">{{INFO_BOX_TITLE}}</div>
+        <div class="info-grid-inner">
+          <div class="info-item"><strong>{{INFO_KEY}}</strong> {{INFO_VALUE}}</div>
+          <div class="info-item"><strong>{{INFO_KEY}}</strong> {{INFO_VALUE}}</div>
+        </div>
+      </div>
+
+      <!-- 景点看点（每个 Day 卡片都要加，包含必去景点的看点、故事、背景） -->
+      <div class="spot-guide">
+        <div class="spot-guide-title">{{SPOT_GUIDE_TITLE}}</div>
+        <ul class="spot-list">
+          <li class="spot-item">
+            <div class="spot-name">{{SPOT_NAME}}</div>
+            <div class="spot-desc">{{SPOT_DESC}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ============ Day 卡片结束 ============ -->
+
+  </div>
+
+  <!-- ============ 预订链接（按类型重复 booking-card） ============ -->
+  <div class="booking-section">
+    <div class="booking-title">🔗 预订链接（点击直接预订）</div>
+
+    <!-- 航班预订 -->
+    <div class="booking-card">
+      <div class="booking-label">✈️ {{BOOKING_LABEL}}</div>
+      <table class="book-table">
+        <tr><th>航班</th><th>时间</th><th>航程</th><th>价格/人</th><th>预订</th></tr>
+        <!-- rec 类名标记推荐项 -->
+        <tr>
+          <td class="rec">{{FLIGHT_NAME}} ✅</td>
+          <td>{{FLIGHT_TIME}}</td>
+          <td>{{FLIGHT_DURATION}}</td>
+          <td>¥{{FLIGHT_PRICE}}</td>
+          <td><a href="{{BOOKING_URL}}" target="_blank">{{BOOKING_PLATFORM}}</a></td>
+        </tr>
+      </table>
+      <div style="font-size:11px;color:#64748b;margin-top:6px;">{{BOOKING_NOTE}}</div>
+    </div>
+
+    <!-- 住宿预订 -->
+    <div class="booking-card">
+      <div class="booking-label">🏨 {{HOTEL_LABEL}}</div>
+      <table class="book-table">
+        <tr><th>酒店</th><th>价格/晚</th><th>特点</th><th>预订</th></tr>
+        <tr>
+          <td class="rec">{{HOTEL_NAME}} ✅</td>
+          <td>¥{{HOTEL_PRICE}}</td>
+          <td>{{HOTEL_FEATURE}}</td>
+          <td><a href="{{HOTEL_URL}}" target="_blank">{{HOTEL_PLATFORM}}</a></td>
+        </tr>
+      </table>
+      <div style="font-size:11px;color:#64748b;margin-top:6px;">{{HOTEL_NOTE}}</div>
+    </div>
+
+    <!-- 高铁预订 -->
+    <div class="booking-card">
+      <div class="booking-label">🚄 高铁（12306 预订）</div>
+      <table class="book-table">
+        <tr><th>区间</th><th>车程</th><th>票价/人</th><th>预订</th></tr>
+        <tr>
+          <td>{{TRAIN_ROUTE}}</td>
+          <td>{{TRAIN_DURATION}}</td>
+          <td>~¥{{TRAIN_PRICE}}</td>
+          <td><a href="{{TRAIN_URL}}" target="_blank">12306</a></td>
+        </tr>
+      </table>
+      <div style="font-size:11px;color:#64748b;margin-top:6px;">{{TRAIN_NOTE}}</div>
+    </div>
+  </div>
+
+  <!-- Stats（4个统计框，按实际情况调整 icon/label/value/sub） -->
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="icon">{{STAT1_ICON}}</div>
+      <div class="label">{{STAT1_LABEL}}</div>
+      <div class="value">{{STAT1_VALUE}}</div>
+      <div class="sub">{{STAT1_SUB}}</div>
+    </div>
+    <div class="stat-box">
+      <div class="icon">{{STAT2_ICON}}</div>
+      <div class="label">{{STAT2_LABEL}}</div>
+      <div class="value">{{STAT2_VALUE}}</div>
+      <div class="sub">{{STAT2_SUB}}</div>
+    </div>
+    <div class="stat-box">
+      <div class="icon">{{STAT3_ICON}}</div>
+      <div class="label">{{STAT3_LABEL}}</div>
+      <div class="value">{{STAT3_VALUE}}</div>
+      <div class="sub">{{STAT3_SUB}}</div>
+    </div>
+    <div class="stat-box">
+      <div class="icon">{{STAT4_ICON}}</div>
+      <div class="label">{{STAT4_LABEL}}</div>
+      <div class="value">{{STAT4_VALUE}}</div>
+      <div class="sub">{{STAT4_SUB}}</div>
+    </div>
+  </div>
+
+  <!-- Cost（费用构成，按实际费用项调整 flex 比例和颜色） -->
+  <div class="cost-section">
+    <div class="cost-title">{{COST_TITLE}}</div>
+    <div class="cost-bar">
+      <!-- flex 值按费用比例分配，颜色：机票蓝#3b82f6 / 住宿紫#8b5cf6 / 高铁青#06b6d4 / 门票黄#f59e0b / 餐食红#ef4444 -->
+      <div style="flex: {{COST_FLEX}}; background: {{COST_COLOR}};">{{COST_LABEL}}</div>
+    </div>
+    <div class="cost-legend">
+      <span class="legend-flight">{{LEGEND_FLIGHT}}</span>
+      <span class="legend-hotel">{{LEGEND_HOTEL}}</span>
+      <span class="legend-train">{{LEGEND_TRAIN}}</span>
+      <span class="legend-ticket">{{LEGEND_TICKET}}</span>
+    </div>
+  </div>
+
+  <!-- Tips（预订时间线 / 出发前准备） -->
+  <div class="tips">
+    <div class="tips-title">{{TIPS_TITLE}}</div>
+    <ul class="tips-list">
+      <li>{{TIP_ITEM}}</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>{{FOOTER_TEXT}}</p>
+    <div class="brand">Designed by Claude Code</div>
+  </div>
+</div>
+
+<button class="export-btn" id="exportBtn" onclick="exportCard()">导出长图</button>
+
+<script>
+function exportCard() {
+  const btn = document.getElementById('exportBtn');
+  const card = document.querySelector('.card');
+  btn.textContent = '正在生成...';
+  btn.classList.add('loading');
+
+  html2canvas(card, {
+    scale: 2,
+    useCORS: true,
+    backgroundColor: '#ffffff'
+  }).then(canvas => {
+    const link = document.createElement('a');
+    link.download = '{{FILE_NAME}}.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+    btn.textContent = '导出长图';
+    btn.classList.remove('loading');
+  }).catch(() => {
+    btn.textContent = '导出长图';
+    btn.classList.remove('loading');
+    alert('导出失败，请尝试截图');
+  });
+}
+</script>
+
+</body>
+</html>

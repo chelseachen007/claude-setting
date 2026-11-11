@@ -1,0 +1,113 @@
+{
+  "version": "1.0.0",
+  "description": "clip-and-process 触发评估用例集",
+  "recommended_threshold": 0.35,
+  "should_trigger": [
+    {
+      "text": "剪藏 https://www.xiaohongshu.com/explore/xxx",
+      "family": "explicit_clip_with_url"
+    },
+    {
+      "text": "保存这篇文章 https://medium.com/@xxx/article",
+      "family": "explicit_save_with_url"
+    },
+    {
+      "text": "提取内容 https://www.bilibili.com/video/BVxxx",
+      "family": "explicit_extract_with_url"
+    },
+    {
+      "text": "抓取文章 https://mp.weixin.qq.com/s/xxx",
+      "family": "explicit_crawl_with_url"
+    },
+    {
+      "text": "https://www.xiaohongshu.com/explore/xxx",
+      "family": "bare_url_context_dependent"
+    },
+    {
+      "text": "帮我保存这个链接 https://xxx.com/article",
+      "family": "polite_save_with_url"
+    },
+    {
+      "text": "剪藏并处理 https://xxx.com/article",
+      "family": "clip_and_process_full_flow"
+    },
+    {
+      "text": "/Users/chenjie/Downloads/article.pdf",
+      "family": "local_pdf_file"
+    },
+    {
+      "text": "/Users/chenjie/Downloads/video.mp4",
+      "family": "local_video_file"
+    },
+    {
+      "text": "/Users/chenjie/Downloads/photo.jpg",
+      "family": "local_image_file"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "处理剪藏",
+      "family": "clip_process_trigger"
+    },
+    {
+      "text": "处理未整理的剪藏",
+      "family": "clip_process_trigger"
+    },
+    {
+      "text": "查看剪藏列表",
+      "family": "view_manage"
+    },
+    {
+      "text": "删除剪藏 2026-01-01-xxx",
+      "family": "view_manage"
+    },
+    {
+      "text": "剪藏是什么",
+      "family": "question_about_concept"
+    },
+    {
+      "text": "这个剪藏格式不对",
+      "family": "edit_existing"
+    },
+    {
+      "text": "只是看看这个链接 https://xxx",
+      "family": "browse_only"
+    },
+    {
+      "text": "打开这个网页 https://xxx",
+      "family": "browse_only"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "翻译这篇文章 https://medium.com/@xxx/article",
+      "family": "translate_only_no_clip",
+      "expected_trigger": false,
+      "risk": "如果上下文不明确，可能误触发"
+    },
+    {
+      "text": "下载这个视频 https://www.bilibili.com/video/BVxxx",
+      "family": "download_only_no_clip",
+      "expected_trigger": false,
+      "risk": "下载意图 vs 保存到剪藏"
+    },
+    {
+      "text": "帮我总结一下 https://xxx.com/article",
+      "family": "summarize_only",
+      "expected_trigger": false,
+      "risk": "总结意图 vs 剪藏意图"
+    },
+    {
+      "text": "这个链接打不开 https://xxx.com/article",
+      "family": "troubleshooting",
+      "expected_trigger": false,
+      "risk": "用户在反馈问题，不是要剪藏"
+    },
+    {
+      "text": "小红书上看到一篇好文章",
+      "family": "mention_without_url",
+      "expected_trigger": false,
+      "risk": "提到平台但没给 URL"
+    }
+  ]
+}

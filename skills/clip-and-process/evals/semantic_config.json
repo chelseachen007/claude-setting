@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "description": "clip-and-process 语义配置 - 定义触发评分的正向/负向概念",
+  "positive_concepts": [
+    {
+      "name": "clip_intent",
+      "weight": 0.40,
+      "phrases": {
+        "zh": ["剪藏", "保存", "保存链接", "保存文章", "保存这篇文章"],
+        "en": ["clip", "save", "bookmark", "archive"]
+      }
+    },
+    {
+      "name": "extract_intent",
+      "weight": 0.30,
+      "phrases": {
+        "zh": ["提取内容", "抓取", "抓取文章", "读取网页内容", "获取内容"],
+        "en": ["extract", "crawl", "fetch", "scrape", "read content"]
+      }
+    },
+    {
+      "name": "has_url",
+      "weight": 0.20,
+      "phrases": {
+        "zh": ["http://", "https://", "www.", ".com", ".cn", ".io"],
+        "en": ["http://", "https://", "www.", ".com", ".cn", ".io"]
+      }
+    },
+    {
+      "name": "has_media_file",
+      "weight": 0.10,
+      "phrases": {
+        "zh": [".mp4", ".mp3", ".wav", ".m4a", ".pdf", ".epub", ".docx", ".jpg", ".png"],
+        "en": [".mp4", ".mp3", ".wav", ".m4a", ".pdf", ".epub", ".docx", ".jpg", ".png"]
+      }
+    }
+  ],
+  "negative_concepts": [
+    {
+      "name": "process_existing_clip",
+      "weight": 0.40,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["处理剪藏", "深度处理", "处理未整理", "补充剪藏"],
+        "en": ["process clip", "deep process", "enrich clip"]
+      }
+    },
+    {
+      "name": "view_manage",
+      "weight": 0.30,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["查看剪藏", "列出剪藏", "删除剪藏", "剪藏列表", "剪藏统计"],
+        "en": ["list clips", "view clips", "delete clip", "clip stats"]
+      }
+    },
+    {
+      "name": "browse_only",
+      "weight": 0.25,
+      "exclusive": false,
+      "phrases": {
+        "zh": ["只是看看", "浏览", "打开链接", "打开网页"],
+        "en": ["just browse", "open link", "just looking"]
+      }
+    },
+    {
+      "name": "question_about_concept",
+      "weight": 0.20,
+      "exclusive": true,
+      "phrases": {
+        "zh": ["剪藏是什么", "什么是剪藏", "怎么用剪藏"],
+        "en": ["what is clip", "how to use clip"]
+      }
+    }
+  ],
+  "scoring": {
+    "method": "weighted_sum_with_exclusive",
+    "threshold": 0.35,
+    "exclusive_override": true
+  }
+}

@@ -22,7 +22,7 @@
 ### 安装
 
 ```bash
-cd ~/.claude/skills
+cd ~/.agents/skills
 git clone https://github.com/taielab/resume-optimization-pro.git
 ```
 

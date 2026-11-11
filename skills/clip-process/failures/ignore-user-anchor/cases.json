@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "family": "ignore_user_anchor",
+  "description": "忽略入库思考的回归测试用例",
+  "last_updated": "2026-07-15",
+  "should_trigger": [],
+  "should_not_trigger": [],
+  "near_neighbor": [
+    {
+      "text": "处理这篇关于时间管理的剪藏",
+      "user_anchor": {
+        "touch_point": "番茄工作法的专注力原理",
+        "current_relation": "最近工作效率下降"
+      },
+      "expected_behavior": "anchor_aligned_content",
+      "common_mistake": "generate_independent_content",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于 AI Agent 的剪藏",
+      "user_anchor": {
+        "touch_point": "ReAct 框架的思考-行动循环",
+        "current_relation": "正在用 Claude Code"
+      },
+      "expected_behavior": "anchor_aligned_content",
+      "common_mistake": "generate_independent_content",
+      "severity": "critical"
+    },
+    {
+      "text": "处理这篇关于投资心理学的剪藏",
+      "user_anchor": {
+        "touch_point": "损失厌恶的心理机制",
+        "current_relation": "最近投资亏损，想分析原因"
+      },
+      "expected_behavior": "anchor_aligned_content",
+      "common_mistake": "generate_independent_content",
+      "severity": "critical"
+    }
+  ],
+  "regression_assertions": [
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "evergreen_must_cover_touch_point",
+      "severity": "critical",
+      "check_method": "validate_evergreen_coverage(touch_point)"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "connections_must_align_with_current_relation",
+      "severity": "critical",
+      "check_method": "validate_connection_alignment(current_relation)"
+    },
+    {
+      "input_pattern": "处理这篇关于*的剪藏",
+      "assertion": "actions_must_be_based_on_anchor",
+      "severity": "high",
+      "check_method": "validate_action_relevance(anchor)"
+    }
+  ],
+  "anchor_coverage_checks": {
+    "evergreen_coverage": {
+      "target": 0.7,
+      "method": "check keywords from touch_point in evergreen notes"
+    },
+    "connection_alignment": {
+      "target": 0.7,
+      "method": "check relevance to current_relation"
+    },
+    "action_relevance": {
+      "target": 0.7,
+      "method": "check actions derived from anchor"
+    }
+  }
+}

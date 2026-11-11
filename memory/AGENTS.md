@@ -126,8 +126,21 @@ _这个文件会随着成长不断更新。_
 - 体检：`~/ai/sync.sh`（`--fix` 修软链）；技能源 `~/ai/scripts/sync-skill-sources.sh`
 - 档案仓库 `chelseachen007/claude-setting`：`~/ai` 的只读快照，同步用 `bash ~/ai/scripts/archive-ai.sh`（`--commit` 自动推送）。排除 `.backup/`、`logs/`、`__pycache__`、`.venv`、`.system`。**脚本会 `git checkout HEAD -- README.md`：仓库 README 描述档案，`~/ai/README.md` 描述运行目录，两者不同，别合并。**
 
+### 定时任务（LaunchAgent）
+
+**一律用 LaunchAgent，不用 cron。** cron 在 macOS 上被 TCC 拦住访问 `~/Documents`、`~/Desktop` 等目录
+（报 `Operation not permitted`，而且它不会报错、只是每天静默失败）。LaunchAgent 没有这个问题。
+
+- `com.user.vault-git-backup`：每天 **12:30、22:30** 跑 `~/ai/scripts/vault-git-backup.sh`，
+  自动提交并推送到 GitHub 的 6 个仓库（Obsidian、ai-assets、ObPublish、youtube、ai-image-automation、micro-web）。
+  日志 `~/ai/logs/vault-git-backup.log`；`--dry-run` 只预览。绝不用 `git push -f`。
+- `com.user.dsh-web`：dsh web 服务托管（见 `projects/dsh-platform.md`）
+- `agent-autoloop`：自动化中台（见 `projects/agent-autoloop.md`）
+
 ### 系统维护脚本
 
+- `~/ai/scripts/vault-git-backup.sh`：GitHub 自动备份，见上面「定时任务」。
+  - 观察：Obsidian 库每天提交会让 ObPublish 的 submodule 指针天天变，默认 `--ignore-submodules=all` 数变更
 - `~/ai/scripts/chrome-cache-gc.sh`：清理 Chrome 长期未访问的 Service Worker 缓存。
   - 起因：飞书多维表格（`bitableHtml`）的 SW 缓存泄漏，曾累积 39GB / 70+ 个 feishu.cn 租户站点
   - 默认 dry-run，`--force` 移废纸篓，`--purge` 永久删除，`--days=N` 改阈值（默认 30 天）

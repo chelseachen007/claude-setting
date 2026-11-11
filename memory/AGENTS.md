@@ -132,8 +132,12 @@ _这个文件会随着成长不断更新。_
 （报 `Operation not permitted`，而且它不会报错、只是每天静默失败）。LaunchAgent 没有这个问题。
 
 - `com.user.vault-git-backup`：每天 **12:30、22:30** 跑 `~/ai/scripts/vault-git-backup.sh`，
-  自动提交并推送到 GitHub 的 6 个仓库（Obsidian、ai-assets、ObPublish、youtube、ai-image-automation、micro-web）。
-  日志 `~/ai/logs/vault-git-backup.log`；`--dry-run` 只预览。绝不用 `git push -f`。
+  自动提交推送 6 个仓库（Obsidian、ai-assets、ObPublish、youtube、ai-image-automation、micro-web）。
+  日志 `~/ai/logs/vault-git-backup.log`；`--dry-run` 只预览；`--only <名>` 跑单个。绝不用 `git push -f`。
+- **Obsidian 库双远端**（GitHub + Gitee）：`git pushurl` 会覆盖 `url`，只配一层会静默漏推一个远端。
+  两个地址都要 `git remote set-url --add --push origin <url>`。验证方法：`git ls-remote <url> refs/heads/main` 三端对比。
+- **Obsidian Git 插件的自动提交已关闭**（2026-11-11），由 LaunchAgent 统一管，避免两个进程抢 `index.lock`。
+- ObPublish 的 submodule 指针由 **Vercel 自动跟随**推送，不用手动管。
 - `com.user.dsh-web`：dsh web 服务托管（见 `projects/dsh-platform.md`）
 - `agent-autoloop`：自动化中台（见 `projects/agent-autoloop.md`）
 

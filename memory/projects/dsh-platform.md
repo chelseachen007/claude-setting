@@ -47,6 +47,15 @@ read_when:
     `deepseek/deepseek-v4.1-flash` 这个 id 不存在，照抄会报 "model list has no ..."）。
     修完 `config.toml` 应变成 `model_provider = "magpie"` + `base_url = "http://127.0.0.1:3425/v1"`。
     **注意：curl 测不出来**——curl 走的路由和 CLI 不同，三种模型名 curl 全通。要验就真跑一次 `codex exec`。
+  - **2026-11-12 晚 补：根因是「裸名路由歧义」，范围比想象大。** 同一台 codex 只换 `-m` 做对照：
+    - `deepseek-v4.1-flash`（裸名）→ ❌ xdpool 11128。codex 自己会先警告 `Model metadata for \`deepseek-v4.1-flash\` not found. Defaulting to fallback metadata`
+    - `deepseek-v4-flash`（裸名，**config.toml 的老默认值**）→ ✅ 通（22,439 tokens）
+    - `deepseek/deepseek-flash`（带前缀）→ ✅ 通（168 tokens）
+    - `deepseek/deepseek-v4-flash`（带前缀）→ ✅ 通（166 tokens）
+    所以**不是「所有裸名都错」，而是「magpie 认不出的名字会掉进 fallback 路由，而 fallback 落在 xdpool」**。
+    判断方法：先看 codex 有没有打那句 `Model metadata ... not found`。有 → 这个名字没注册，换名字；
+    没有还失败 → 才是通道层面的事。**规矩：凡是走 magpie 的地方，模型名一律带上游前缀**（`deepseek/`、`xd-pool-xdpool/`、`zhipu/`…），
+    别用裸名——裸名今天能跑，明天换 provider 就可能又落到 xdpool。
 - **Gemini CLI 必须开 `experimental.dynamicModelConfiguration`**，否则自定义模型名被兜底成 `gemini-3.5-flash` 并报 ModelNotFoundError。
 - **magpie library 的 instructions/skills 不用**——会与 `~/ai/rules/global.md`、`~/ai/skills/` 双写；只把 MCP 收口在 library（当前 notion → codex）。
 - dsh 侧：`~/.dsh/.credentials.yaml` 的 refs 段需要 `MAGPIE_GATEWAY_KEY: magpie`（值随意，网关不校验）；`cordis.patch.yml` 里同 id 的多个 patch 是**浅覆盖不合并**，`!delete` 自定义 tag 会让整个文件解析失败，删键只能整段重写。

@@ -37,6 +37,13 @@ read_when:
 ## 已做的优化
 
 - 2026-11-11：`agents.codex.model` 设为 `deepseek-v4.1-flash`（原为 config.toml 的 `deepseek-v4-flash`），按用户「Codex 快模式做决策」的偏好。备份 `rules.json.bak-opt-20261111`。hub fact seq 27844 已生效。
+- **2026-11-12：上面那条是错的，已改回 `deepseek/deepseek-flash`。** `deepseek-v4.1-flash` 是 magpie 没注册的名字，
+  codex 会先打 `Model metadata for \`deepseek-v4.1-flash\` not found`，然后模型名被丢进 fallback 路由 → 落到 xdpool →
+  `11128 Illegal API invocation from an unapproved channel`。早报/雪球日报因此**每天静默失败**（card #31 #32 每小时重试一次，全挂）。
+  改后 `agent-autoloop try` 连跑两次都通（#69 #70）。**别再用裸模型名**，一律带 `deepseek/` 前缀。
+- 顺带修了 `app/plugins/codex/agent.ts` 的 `check()`：原来只跑 `codex login status`，而走第三方 provider（magpie）的配置
+  本来就没有 `auth.json`，于是 `doctor` 永远报「Codex 没有登录或用不了」，可 `codex exec` 实际跑得通。
+  现在先读 `~/.codex/config.toml` 的 `model_provider`，非 `openai` 且有对应 `[model_providers.X]` 段就直接判可用。
 - 规则级 `model` 会覆盖 config.toml，可以按规则分别指定（协议文档：`agents.<id>.model` / `effort` / `access`）。
 
 ## 待做（按 ROI）

@@ -1,0 +1,40 @@
+{
+  "stocks": {
+    "sh600690": {
+      "date": "2026-11-12",
+      "close": 20.78,
+      "pct": -1.42,
+      "pe": 11.25,
+      "dd_from_high": -7.22,
+      "above_ma20": true
+    },
+    "sh600900": {
+      "date": "2026-11-12",
+      "close": 29.61,
+      "pct": 0.44,
+      "pe": 22.19,
+      "dd_from_high": -1.27,
+      "above_ma20": false
+    },
+    "sz002460": {
+      "date": "2026-11-12",
+      "close": 36.59,
+      "pct": -1.51,
+      "pe": 11.62,
+      "dd_from_high": -34.23,
+      "above_ma20": false
+    }
+  },
+  "commodities": {
+    "LC0": {
+      "date": "2026-11-12",
+      "last": 90900.0,
+      "prev": 88460.0
+    }
+  },
+  "fired": {
+    "ganfeng_dd30:sz002460": "2026-11-12",
+    "T2:": "2026-11-12"
+  },
+  "checked_on": "2026-11-12"
+}

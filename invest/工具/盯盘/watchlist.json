@@ -1,0 +1,61 @@
+{
+  "_说明": "盯盘配置。规则只写「机械可判定」的条件；判断性内容（值不值得买）不写在这里，去 素材/触发器清单.md 和 投资日记.md。改完直接跑 盯盘.py --force 看效果。",
+  "_改法": [
+    "stocks[].symbol 用腾讯代码：沪市 sh+6位、深市 sz+6位",
+    "rules[].type 可选：price_below（跌到买入区间）/ price_above（涨破压力）/ pe_below（PE 到低估档）/ dd_from_high（距一年高点回撤达到 N%）/ cross_ma20（穿越 20 日线）",
+    "commodities[].code 用新浪连续合约：LC0=碳酸锂",
+    "macro_triggers.conditions[].expr 支持：a>=数、a>=b、连续3月(cpi_yoy>=1.0)"
+  ],
+
+  "stocks": [
+    {
+      "symbol": "sh600690",
+      "name": "海尔智家",
+      "why": "投资日记「观察」区；10-19 起连续 0 命中，但沉默≠无事",
+      "rules": [
+        { "id": "haier_dd25", "type": "dd_from_high", "value": 25,
+          "note": "距一年高点回撤 25% 才值得重看，低于这个档不打扰" },
+        { "id": "haier_ma20", "type": "cross_ma20",
+          "note": "只报穿线当天，不报持续站在线上" }
+      ]
+    },
+    {
+      "symbol": "sh600900",
+      "name": "长江电力",
+      "why": "现金仓/吃股息定位（10-20 记录），关注的是股息率与估值",
+      "rules": [
+        { "id": "cyp_dd15", "type": "dd_from_high", "value": 15,
+          "note": "红利股回撤 15% 是很强的观察信号" }
+      ]
+    },
+    {
+      "symbol": "sz002460",
+      "name": "赣锋锂业",
+      "why": "T7 周期底观察标的（10-19），已是「预演下跌」",
+      "rules": [
+        { "id": "ganfeng_dd30", "type": "dd_from_high", "value": 30,
+          "note": "周期股深度回撤才谈反转，浅回撤不动" }
+      ]
+    }
+  ],
+
+  "commodities": [
+    {
+      "code": "LC0",
+      "name": "碳酸锂主连",
+      "why": "T7 直接输入：锂价企稳回升 + 归母净利环比转正",
+      "rule": { "type": "price_above", "value": 95000,
+        "note": "11-12 收 90900；站上 9.5 万才算企稳，这是拍的档位，改之前先在触发器清单里写理由" }
+    }
+  ],
+
+  "macro_triggers": {
+    "conditions": [
+      { "id": "T1", "expr": "连续3月(cpi_yoy>=1.0)",
+        "text": "T1 核心CPI站稳（当前用整体CPI同比代偿，1.0 是保守门槛）", "gap": "东财没有核心CPI字段，需从统计局补" },
+      { "id": "T2", "expr": "retail_yoy>=1.0", "text": "T2 社零同比回到 1% 以上" },
+      { "id": "T3", "expr": "m1_yoy>=m2_yoy", "text": "T3 M1 同比追上 M2" },
+      { "id": "T4", "expr": "ppi_yoy-cpi_yoy<2.0", "text": "T4 PPI-CPI 剪刀差收窄到 2pct 以内" }
+    ]
+  }
+}

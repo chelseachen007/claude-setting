@@ -122,7 +122,7 @@ python3 xueqiu_score.py --date YYYY-MM-DD --journal "/Users/chenjie/Documents/st
 
 **三问输出**：脚本会在末尾打印「今日三问」——关注池每只股的命中篇数（含连续 0 命中天数）、触发器 T1–T7 命中情况。这段输出是日报首屏的直接来源，原样搬进笔记即可，不要二次加工。
 
-- `--daily-dir`：历史日报目录，用于计算关注池连续 0 命中天数（默认 `/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报`，2026-11-12 起日报在投资工作区，不再在 Obsidian）
+- `--daily-dir`：历史日报目录，用于计算关注池连续 0 命中天数（默认 `/Users/chenjie/ai/invest/素材/雪球日报`，2026-11-12 起日报在投资工作区，不再在 Obsidian）
 - 评分结果默认写入 `posts_YYYY-MM-DD_scored.json`，**不再覆盖原始抓取文件**——原始文件保留全量帖子，三问才能扫到被 Top 50 筛掉的提及
 - 触发器关键词定义在 `xueqiu_score.py` 的 `TRIGGER_KW`，与 `投资/素材/触发器清单.md` 的 T1–T7 对应；改清单时同步改这里
 
@@ -156,7 +156,7 @@ python3 xueqiu_score.py --date YYYY-MM-DD --journal "/Users/chenjie/Documents/st
 
 ### 第四步：生成日报笔记
 
-输出到：`/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报/YYYY-MM-DD.md`
+输出到：`/Users/chenjie/ai/invest/素材/雪球日报/YYYY-MM-DD.md`
 
 > 2026-11-12 起投资人肉内容统一放在投资工作区，**不要再往 Obsidian 写**。历史 141 篇日报已一并迁入该目录，三问的连续性依赖它。
 

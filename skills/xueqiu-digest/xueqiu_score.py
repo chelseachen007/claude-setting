@@ -392,7 +392,7 @@ def main():
     parser.add_argument("--top", type=int, default=50, help="保留 Top N 帖子")
     parser.add_argument("--journal", default="",
                         help="投资日记文件路径（用于提取关注个股）")
-    parser.add_argument("--daily-dir", default="/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报",
+    parser.add_argument("--daily-dir", default="/Users/chenjie/ai/invest/素材/雪球日报",
                         help="历史日报目录（用于计算关注池连续 0 命中天数）；2026-11-12 起日报迁到投资工作区")
     args = parser.parse_args()
 

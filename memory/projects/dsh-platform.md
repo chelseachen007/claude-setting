@@ -91,3 +91,15 @@ read_when:
 - **本机 GitHub CLI 凭据与 Git 传输分离**：`git push` 可走 SSH，而 `gh release` 依赖 `gh auth status` 显示的 keyring token；不要用 push 成功推断 Release 权限正常。
 - 「每个青少年都应该读的中国历史故事」共八册：上古夏商西周、春秋战国、秦汉、三国两晋南北朝、隋唐、五代十国宋、元朝、明朝
 - 中国历史 GIS：服务器 `47.80.76.56`，部署目录 `/var/www/history-map`，Nginx 配置 `/etc/nginx/sites-available/history-map`，域名 `https://history.trotter.top/`
+
+## 已知噪音（不用追）
+
+- **`dsh: [dsh-xdpool] patch: entry "billion-context-xdpool" not found`**（2026-11-12 查清）
+  - 来源：`~/.dsh/profiles/web/node_modules/dsh-xdpool/cordis.patch.yml` 末尾硬编码一条
+    `- id: billion-context-xdpool` + `disabled: true`。
+  - 为什么留着：插件 2.0.0 曾自动挂载 billion-context，但对**已装过**的用户会造成
+    `service "…" has been registered at <…>` 的永久 failed 条目。作者改为保留一条 disabled 记录
+    （可寻址 + 记录决策 + 保证 `bili-native` 是唯一挂载点）。
+  - 代价：该 id 在当前 profile 不存在 → 启动时 stderr 一行 `not found`。**exit=0，不影响功能。**
+  - **不要动它**：改 node_modules 会被升级覆盖；在 profile 里加同名 disabled 条目虽然能消警告，
+    但那条目会出现在插件列表里，正是作者想避免的局面。

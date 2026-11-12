@@ -1,0 +1,16 @@
+# Auto-written by `cne init --profile demo`. Safe to delete with the demo data_root.
+[data]
+root = "/Users/chenjie/WorkBuddy AI/投资/data/cnequity-demo"
+# Says what this lake is, so whole-lake checks do not judge five symbols
+# against the full dataset registry.
+profile = "demo"
+
+[orchestrator]
+workers = 1
+batch_size = 50
+
+[tdx_protocol]
+enabled = true
+allow_mock = false
+min_interval_ms = 100
+servers = "auto"

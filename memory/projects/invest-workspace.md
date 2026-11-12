@@ -1,5 +1,5 @@
 ---
-summary: "投资工作区（~/WorkBuddy AI/投资）的规则、接口坑与口径纪律"
+summary: "投资工作区（~/ai/invest）的规则、接口坑与口径纪律"
 read_when:
   - 抓东方财富/腾讯行情数据
   - 写投资研究笔记或复盘
@@ -7,7 +7,7 @@ read_when:
 
 # 投资工作区
 
-唯一规则源：`~/WorkBuddy AI/投资/AGENTS.md`（新建目录前先读它）。
+唯一规则源：`~/ai/invest/AGENTS.md`（新建目录前先读它）。
 
 ## 结构
 

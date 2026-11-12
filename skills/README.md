@@ -27,7 +27,7 @@
 | `bill-screenshot-parser` | 账单截图 / CSV / XLSX → 交易记录 |
 | `fin-report-check` | 个股财报校对：核口径（股息率TTM/分红率、归母/扣非）、核数字、核披露年份 |
 
-> 投资类技能的**数据抓取约定**在 `~/WorkBuddy AI/投资/AGENTS.md`：统一走
+> 投资类技能的**数据抓取约定**在 `~/ai/invest/AGENTS.md`：统一走
 > `工具/抓数/fetch_eastmoney.py`，别另写一次性脚本。
 
 ### 浏览器与联网

@@ -1,0 +1,94 @@
+{
+  "总体": {
+    "地产链": {
+      "n": 460,
+      "revenue_median": 1.6,
+      "revenue_lt0": 45.9,
+      "profit_median": -13.4,
+      "profit_lt0": 57.6,
+      "profit_weighted": 4.0,
+      "profit_p10": -233.3,
+      "profit_p90": 85.0
+    },
+    "非地产链": {
+      "n": 5331,
+      "revenue_median": 5.5,
+      "revenue_lt0": 36.9,
+      "profit_median": -2.5,
+      "profit_lt0": 51.7,
+      "profit_weighted": 434.9,
+      "profit_p10": -142.8,
+      "profit_p90": 139.4
+    }
+  },
+  "房地产开发": {
+    "n": 89,
+    "revenue_median": -16.0,
+    "revenue_lt0": 62.9,
+    "profit_median": -17.6,
+    "profit_lt0": 59.6,
+    "profit_weighted": 88.0,
+    "profit_p10": -475.6,
+    "profit_p90": 81.4
+  },
+  "房地产服务": {
+    "n": 16,
+    "revenue_median": -15.1,
+    "revenue_lt0": 62.5,
+    "profit_median": 27.4,
+    "profit_lt0": 25.0,
+    "profit_weighted": 16.2,
+    "profit_p10": -3.0,
+    "profit_p90": 101.8
+  },
+  "装修建材": {
+    "n": 38,
+    "revenue_median": -2.6,
+    "revenue_lt0": 57.9,
+    "profit_median": -25.5,
+    "profit_lt0": 65.8,
+    "profit_weighted": 25.4,
+    "profit_p10": -338.3,
+    "profit_p90": 142.2
+  },
+  "水泥": {
+    "n": 23,
+    "revenue_median": -15.8,
+    "revenue_lt0": 91.3,
+    "profit_median": -96.7,
+    "profit_lt0": 82.6,
+    "profit_weighted": 174.4,
+    "profit_p10": -1519.3,
+    "profit_p90": 41.0
+  },
+  "玻璃玻纤": {
+    "n": 17,
+    "revenue_median": -1.0,
+    "revenue_lt0": 52.9,
+    "profit_median": 0.6,
+    "profit_lt0": 47.1,
+    "profit_weighted": 290.8,
+    "profit_p10": -182.1,
+    "profit_p90": 371.2
+  },
+  "工程机械": {
+    "n": 35,
+    "revenue_median": 11.2,
+    "revenue_lt0": 14.3,
+    "profit_median": -0.4,
+    "profit_lt0": 51.4,
+    "profit_weighted": -0.2,
+    "profit_p10": -63.2,
+    "profit_p90": 37.7
+  },
+  "银行": {
+    "n": 42,
+    "revenue_median": 5.9,
+    "revenue_lt0": 11.9,
+    "profit_median": 4.5,
+    "profit_lt0": 19.0,
+    "profit_weighted": 4.2,
+    "profit_p10": -10.3,
+    "profit_p90": 9.8
+  }
+}

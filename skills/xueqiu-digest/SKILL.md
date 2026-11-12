@@ -1,6 +1,6 @@
 ---
 name: xueqiu-digest
-description: 雪球每日精选日报。通过浏览器 CDP 抓取、脚本评分、Claude 智能分析，生成 Obsidian 每日笔记。触发词：雪球日报、雪球精选、xueqiu digest、每日雪球。
+description: 雪球每日精选日报。通过浏览器 CDP 抓取、脚本评分、Claude 智能分析，写入投资工作区 素材/雪球日报/ 的每日笔记。触发词：雪球日报、雪球精选、xueqiu digest、每日雪球。
 ---
 
 # 雪球每日精选日报
@@ -117,14 +117,14 @@ python3 xueqiu_score.py --date 2026-04-16
 
 完整命令：
 ```bash
-python3 xueqiu_score.py --date YYYY-MM-DD --journal "<Obsidian库>/private/投资日记.md"
+python3 xueqiu_score.py --date YYYY-MM-DD --journal "/Users/chenjie/Documents/study/github/Obsidian/private/投资日记.md"
 ```
 
 **三问输出**：脚本会在末尾打印「今日三问」——关注池每只股的命中篇数（含连续 0 命中天数）、触发器 T1–T7 命中情况。这段输出是日报首屏的直接来源，原样搬进笔记即可，不要二次加工。
 
-- `--daily-dir`：历史日报目录，用于计算关注池连续 0 命中天数（默认 `投资研究/雪球日报`）
+- `--daily-dir`：历史日报目录，用于计算关注池连续 0 命中天数（默认 `/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报`，2026-11-12 起日报在投资工作区，不再在 Obsidian）
 - 评分结果默认写入 `posts_YYYY-MM-DD_scored.json`，**不再覆盖原始抓取文件**——原始文件保留全量帖子，三问才能扫到被 Top 50 筛掉的提及
-- 触发器关键词定义在 `xueqiu_score.py` 的 `TRIGGER_KW`，与 `投资研究/触发器清单.md` 的 T1–T7 对应；改清单时同步改这里
+- 触发器关键词定义在 `xueqiu_score.py` 的 `TRIGGER_KW`，与 `投资/素材/触发器清单.md` 的 T1–T7 对应；改清单时同步改这里
 
 **关注 ETF**（2026-11-05 新增）：恒生科技ETF华夏 `SH513180`（港股科技）、中证500增强ETF华泰柏瑞 `SH561550`。
 
@@ -154,9 +154,11 @@ python3 xueqiu_score.py --date YYYY-MM-DD --journal "<Obsidian库>/private/投�
 
 对每个帖子给出：**必读** / **推荐** / **浏览** / **跳过**
 
-### 第四步：生成 Obsidian 笔记
+### 第四步：生成日报笔记
 
-输出到：`<Obsidian库>/投资研究/雪球日报/YYYY-MM-DD.md`
+输出到：`/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报/YYYY-MM-DD.md`
+
+> 2026-11-12 起投资人肉内容统一放在投资工作区，**不要再往 Obsidian 写**。历史 141 篇日报已一并迁入该目录，三问的连续性依赖它。
 
 **`YYYY-MM-DD` 必须使用第一步 JSON 中的 `date` 字段**，不要用其他来源的日期。
 

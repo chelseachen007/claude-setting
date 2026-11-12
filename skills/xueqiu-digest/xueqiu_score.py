@@ -186,7 +186,7 @@ FOCUS_ETFS = {
 MIN_ETF_POST_LEN = 200
 MAX_ETF_POSTS = 12
 
-# 触发器关键词 → 编号，与 投资研究/触发器清单.md 的 T1..T7 一一对应
+# 触发器关键词 → 编号，与 投资/素材/触发器清单.md 的 T1..T7 一一对应
 # 只收窄到「能指认方向」的组合词：单写 CPI/PPI 会让几乎每篇宏观贴都命中，失去信号意义
 TRIGGER_KW = {
     "T1": ["核心CPI", "核心 CPI"],
@@ -351,7 +351,7 @@ def score_file(input_path: Path, output_path: Path | None = None, top_n: int = 5
         if v["count"] > 0 and v["sample"]:
             print(f"     · {tid} 例：{v['sample']}")
 
-    print("3. 动作判定：看上面两问，无命中就不动；有命中按 投资研究/触发器清单.md 判定")
+    print("3. 动作判定：看上面两问，无命中就不动；有命中按 投资/素材/触发器清单.md 判定")
     print("═" * 46)
 
     # ── 关注 ETF ────────────────────────────────────────────
@@ -392,8 +392,8 @@ def main():
     parser.add_argument("--top", type=int, default=50, help="保留 Top N 帖子")
     parser.add_argument("--journal", default="",
                         help="投资日记文件路径（用于提取关注个股）")
-    parser.add_argument("--daily-dir", default="投资研究/雪球日报",
-                        help="历史日报目录（用于计算关注池连续 0 命中天数）")
+    parser.add_argument("--daily-dir", default="/Users/chenjie/WorkBuddy AI/投资/素材/雪球日报",
+                        help="历史日报目录（用于计算关注池连续 0 命中天数）；2026-11-12 起日报迁到投资工作区")
     args = parser.parse_args()
 
     if args.input:

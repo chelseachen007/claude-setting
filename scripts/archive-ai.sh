@@ -42,7 +42,7 @@ rsync -a --delete \
   --exclude '__pycache__' \
   --exclude '*.pyc' \
   --exclude '.venv' \
-  --exclude '.tmp' \
+  --exclude '/.tmp' \
   --exclude 'node_modules' \
   --exclude '*.bak-*' \
   --exclude '.DS_Store' \

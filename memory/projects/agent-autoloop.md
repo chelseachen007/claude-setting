@@ -58,3 +58,21 @@ read_when:
 - `~/.codex/config.toml` 有 3 条无效配置被忽略：`disable_response_storage`、`network_access`、`windows_wsl_setup_acknowledged`。每个 run 开头都会重复报一次（占两行 item），删掉更干净。
 - 飞书 websocket 在 `~/.agent-autoloop/logs/up.log` 里 `reconnecting` 出现 154 次，属正常断线重连（04:00:48 disconnected → 04:02:21 connected），不影响投递。
 - Chrome 远程调试失效时（如 11-08）雪球日报会失败并派卡片；恢复后选「已恢复，重新派发」会从抓取开始补跑。人机协同链路已验证可用。
+
+## 当前规则（2026-11-12）
+
+| 名称 | 触发 | skill | tell |
+|---|---|---|---|
+| 试一下 | 事件 `try.*` | — | — |
+| 早报 | cron `0 8 * * *` | morning-brief | needed |
+| 雪球日报 | cron `0 9 * * *` | xueqiu-digest | needed |
+| 积压消化 | cron `30 21 * * *` | clip-batch | needed |
+
+- `tell` 三档：`always`（无条件推）/ `needed`（**默认值**，只有 Agent 提问或出错才推）/ `never`。
+  定义在 `app/protocol/rules.ts:16`，判定在 `app/kernel/decide.ts:329`。定时任务一律用 `needed`，
+  否则每天都会推一条「做完了」，等于给人加噪音。
+- 手动触发定时规则**走不通**，别浪费时间：
+  - `agent-autoloop tell <编号>` 只是「告诉人一件事」，生成一张 `fyi` 卡片，**不派活给 Agent**（没有 run、没人回答）。
+  - `emit schedule.tick --subject` 只接受 `[A-Za-z0-9#._:/@-]`，中文名被拒。
+  - 要验证只能直接跑技能本身（`codex exec -m deepseek/deepseek-flash "..."`）。
+- 卡在「等重派」的失败轮次用 `agent-autoloop stop <轮次>`；`resolve` 对它们无效（会回「已经处理过了」）。

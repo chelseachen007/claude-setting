@@ -1,0 +1,1185 @@
+15	vuejs/vue	212528	2024-10-10T07:24:15Z	framework,frontend,javascript,vue	This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core
+14	react/react	252536	2026-11-12T13:28:38Z	declarative,frontend,javascript,library,react,ui	The library for web and native user interfaces.
+13	slidevjs/slidev	49446	2026-11-05T06:29:21Z	markdown,presentation,slides,vite,vue,vueuse	Presentation Slides for Developers
+13	puppeteer/puppeteer	95824	2026-11-12T13:42:36Z	automation,chrome,chromium,developer-tools,firefox,headless-chrome,node-module,testing,web	JavaScript API for Chrome and Firefox
+13	animate-css/animate.css	82991	2024-07-29T19:34:21Z	animation,css,css-animations,stylesheets	🍿 A cross-browser library of CSS animations. As easy to use as an easy thing.
+12	storybookjs/storybook	91547	2026-11-12T13:35:04Z	angular,components,design-systems,documentation,html,javascript,react,react-native,stories,storybook,styleguide,svelte,testing,typescript,ui,vite,vue,web-components,webpack,workshop	Storybook is the industry standard workshop for building, documenting, and testing UI comp
+12	microsoft/TypeScript	111790	2026-11-12T07:12:13Z	javascript,language,typechecker,typescript	TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+12	fouber/blog	22536	2019-11-12T05:28:36Z		没事写写文章，喜欢的话请点star，想订阅点watch，千万别fork！
+11	parcel-bundler/parcel	44014	2026-11-11T07:48:44Z	assets,build-tool,commonjs,compiler,css,es6,html,javascript,module-bundler,modules,web	The zero configuration build tool for the web. 📦🚀
+11	google/zx	45844	2026-11-05T11:24:02Z	bash,child-process,cli,exec,javascript,nodejs,pipe,shell,spawn	A tool for writing better scripts
+11	goldbergyoni/nodebestpractices	105726	2026-06-15T11:41:04Z	best-practices,es6,eslint,express,expressjs,javascript,jest,microservices,mocha,node-js,nodejs,nodejs-development,npm,rest,style-guide,styleguide,testing,types	✅ The Node.js best practices list (July 2026)
+11	getify/You-Dont-Know-JS	184840	2026-10-31T16:14:40Z	async,book,book-series,closures,education,es2015,es6,javascript,learn-to-code,programming,prototypes,training-materials,training-providers	A book series (2 published editions) on the JS language.
+10	type-challenges/type-challenges	48566	2026-10-26T04:40:30Z	challenges,type,type-system,typescript	Collection of TypeScript type challenges with online judge
+10	hakimel/reveal.js	72560	2026-09-30T19:38:13Z	presentations,slides,slideshow	The HTML Presentation Framework
+10	evanw/esbuild	40141	2026-08-09T17:20:12Z	bundler,commonjs,compiler,css,esm,javascript,jsx,minifier,react,tsx,typescript	An extremely fast bundler for the web
+10	denoland/deno	108869	2026-10-29T08:03:10Z	deno,javascript,rust,typescript	A modern runtime for JavaScript and TypeScript.
+10	codecrafters-io/build-your-own-x	562031	2026-11-08T16:38:15Z	awesome-list,free,programming,tutorial-code,tutorial-exercises,tutorials	Master programming by recreating your favorite technologies from scratch.
+10	ascoders/weekly	31717	2024-09-09T01:39:37Z	awesome,frontend,weekly	前端精读周刊。帮你理解最前沿、实用的技术。
+10	apache/echarts	67705	2026-10-13T09:27:20Z	apache,canvas,charting-library,charts,data-visualization,data-viz,echarts,svg,visualization	Apache ECharts is a powerful, interactive charting and data visualization library for brow
+10	ant-design/ant-design	100174	2026-11-12T08:16:24Z	ant-design,antd,design-systems,react,typescript,ui-kit,ui-library	An enterprise-class UI design language and React UI library
+10	ElemeFE/element	53975	2024-08-20T07:40:13Z	components,element-ui,javascript,ui-kit,vue,vue-components,vuejs	A Vue.js 2.0 UI Toolkit for Web
+10	Chalarangelo/30-seconds-of-code	129490	2026-11-11T00:51:45Z	astro,awesome-list,css,education,es6-javascript,git,html,javascript,learn-to-code,learning-resources,nodejs,programming,snippets	Coding articles to level up your development skills
+10	Advanced-Frontend/Daily-Interview-Question	27327	2020-11-09T01:07:00Z	css,interview,javascript,react,vue	我是依扬（木易杨），公众号「高级前端进阶」作者，每天搞定一道
+9	webpack/webpack	66000	2026-11-12T13:21:27Z	amd,build-tool,commonjs,compiler,es2015,es6,esm,javascript,javascript-compiler,javascript-modules,loaders,module-bundler,plugins,web,web-performance,webpack	A bundler for javascript and friends. Packs many modules into a few bundled assets. Code S
+9	vuejs/core	55011	2026-11-12T08:47:08Z		🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI
+9	vitejs/vite	83886	2026-11-12T13:39:27Z	build-tool,dev-server,frontend,hmr,vite	Next generation frontend tooling. It's fast!
+9	ustbhuangyi/better-scroll	16428	2024-06-14T02:59:46Z	better-performance,ios,iscroll,mobile-web,more-features,vue	:scroll: inspired by iscroll, and it supports more features and has a better scroll perfer
+9	umijs/qiankun	16705	2026-10-31T12:09:38Z	framework,javascript,micro-frontend,micro-frontends,microfrontend,microfrontends,microservices	📦 🚀 Blazing fast, simple and complete solution for micro frontends.
+9	tsayen/dom-to-image	10768	2024-04-08T16:26:47Z	canvas,css,dom,html,image,javascript,raster,render,svg,vector	Generates an image from a DOM node using HTML5 canvas
+9	trekhleb/javascript-algorithms	196726	2026-07-26T02:43:08Z	algorithm,algorithms,computer-science,data-structures,interview,interview-preparation,javascript,javascript-algorithms	📝 Algorithms and data structures implemented in JavaScript with explanations and links 
+9	swc-project/swc	34214	2026-11-12T03:38:05Z	babel,compiler,ecmascript,ecmascript-parser,javascript,parser,rust,swc,typescript,typescript-compiler,typescript-parser	Rust-based platform for the Web
+9	openclaw/openclaw	394404	2026-11-12T13:48:03Z	ai,assistant,crustacean,molty,openclaw,own-your-data,personal	The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 
+9	nuxt/nuxt	61064	2026-11-12T13:44:03Z	csr,framework,full-stack,hacktoberfest,hybrid,node,nuxt,server-rendering,ssg,ssr,static-site-generator,universal,vue	The full-stack Vue framework.
+9	mrdoob/three.js	118226	2026-11-12T12:52:58Z	3d,augmented-reality,canvas,html5,javascript,svg,virtual-reality,webaudio,webgl,webgl2,webgpu,webxr	JavaScript 3D Library.
+9	mqyqingfeng/Blog	31058	2026-06-09T09:43:14Z	advanced,blog,javascript	冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专�
+9	modood/Administrative-divisions-of-China	21022	2025-12-27T10:07:15Z	address,administrative-divisions,area,china,city,csv,json,nodejs,province,street	中华人民共和国行政区划：省级（省份）、 地级（城市）、 县级（�
+9	microsoft/vscode	195322	2026-11-12T13:46:58Z	editor,electron,microsoft,typescript,visual-studio-code	Visual Studio Code
+9	microsoft/playwright	99969	2026-11-12T04:37:31Z	automation,chrome,chromium,e2e-testing,electron,end-to-end-testing,firefox,javascript,playwright,test,test-automation,testing,testing-tools,web,webkit	Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Fire
+9	microsoft/monaco-editor	46967	2026-11-11T07:48:11Z	browser,editor,monaco-editor,typescript,vscode	A browser based code editor
+9	markedjs/marked	37306	2026-11-11T04:13:03Z	commonmark,compiler,gfm,hacktoberfest,markdown,parser	A markdown parser and compiler. Built for speed.
+9	liriliri/eruda	21243	2025-08-01T09:34:30Z	console,debugger,developer-tools,eruda,mobile	Console for mobile browsers
+9	justjavac/free-programming-books-zh_CN	119589	2026-07-29T00:39:06Z	android,angular,books,free,ios,javascript,kotlin,pdf,programming,python,react,react-native,swift,vue	:books: 免费的计算机编程类中文书籍，欢迎投稿
+9	juliangarnier/anime	74536	2026-11-02T22:25:55Z	animation,anime,canvas,css,javascript,javascript-library,svg	JavaScript animation engine
+9	jamiebuilds/babel-handbook	12089	2024-06-25T15:30:34Z	babel,handbook	:blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.
+9	iamkun/dayjs	48654	2026-11-06T08:47:24Z	date,date-formatting,datetime,dayjs,moment,time	⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern A
+9	flutter/flutter	181247	2026-11-12T10:05:13Z	android,app-framework,cross-platform,dart,dart-platform,desktop,flutter,flutter-package,fuchsia,ios,linux-desktop,macos,material-design,mobile,mobile-development,skia,web,web-framework,windows	Flutter makes it easy and fast to build beautiful apps for mobile and beyond
+9	d3/d3	113918	2026-11-03T19:44:29Z	chart,charts,d3,data-visualization,svg,visualization	Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:
+9	cypress-io/cypress	51028	2026-11-12T13:02:57Z	angular-testing-library,component-testing,cypress,cypress-cloud,cypress-schematic,end-to-end-testing,react-testing-library,svelte-testing-library,test-replay,testing-framework,testing-library,testing-tool,vue-testing-library	Fast, easy and reliable testing for anything that runs in a browser.
+9	axios/axios	109395	2026-11-11T12:36:21Z	hacktoberfest,http-client,javascript,nodejs,promise	Promise based HTTP client for the browser and node.js
+9	anuraghazra/github-readme-stats	79848	2026-10-01T01:02:55Z	dynamic,profile-readme,readme-generator,readme-stats,serverless	:zap: Dynamically generated stats for your github readmes
+9	answershuto/learnVue	12638	2023-02-16T16:48:01Z	diff,dom,dom-nexttick,vue,vue-router,vue-template,vuex	:octocat:Vue.js 源码解析
+9	DefinitelyTyped/DefinitelyTyped	51471	2026-11-12T13:42:35Z	definition,dts,hacktoberfest,types,typescript,typescript-definitions,typings	The repository for high quality TypeScript type definitions.
+9	521xueweihan/HelloGitHub	188385	2026-10-31T18:08:05Z	awesome,github,hellogithub,python	:octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-le
+8	typicode/lowdb	22580	2026-03-27T22:36:45Z	database,electron,embeddable,embedded-database,javascript,json,localstorage,lodash,nodejs,storage	Simple and fast JSON database
+8	streamich/react-use	43978	2026-06-10T18:51:23Z		React Hooks — 👍
+8	single-spa/single-spa	13879	2026-02-28T00:49:11Z	front-end,javascript,microfrontends,microservices,router,single-page-applications,single-spa	The router for easy microfrontends
+8	sindresorhus/awesome	535682	2026-09-02T02:10:47Z	awesome,awesome-list,lists,resources,unicorns	😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporar
+8	rrweb-io/rrweb	20367	2026-11-11T17:28:02Z	fullstory,hotjar,logrocket,recorder,session-replay	record and replay the web
+8	rough-stuff/rough	21377	2024-07-28T21:12:58Z	canvas,draw,graphics,html5-canvas,svg,svg-path	Create graphics with a hand-drawn, sketchy, appearance
+8	public-apis/public-apis	498422	2026-11-11T16:37:57Z	api,apis,dataset,development,free,list,lists,open-source,public,public-api,public-apis,resources,software	A collective list of free APIs
+8	pixijs/pixijs	48678	2026-11-11T15:35:32Z	canvas,canvas2d,data-visualization,game,glsl,javascript,pixi,pixijs,renderer,rendering,rendering-2d-graphics,rendering-engine,webgl	The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexibl
+8	ohmyzsh/ohmyzsh	190582	2026-11-09T12:36:12Z	cli,cli-app,oh-my-zsh,oh-my-zsh-plugin,oh-my-zsh-theme,ohmyzsh,plugin-framework,plugins,productivity,shell,terminal,theme,themes,zsh,zsh-configuration	🙃   A delightful community-driven (with 2,500+ contributors) framework for managing you
+8	nolimits4web/swiper	41911	2026-10-30T22:15:41Z	carousel,gallery,mobile,slider,swipe,swiper,touch,touch-events	Most modern mobile touch slider with hardware accelerated transitions
+8	nilbuild/driver.js	27054	2026-11-12T01:15:16Z	feature-introductions,overlay,overlays,popover,product-tour,product-tours,spotlight,tour,user-onboarding,walkthrough	A lightweight, dependency-free JavaScript library for guiding user focus across the page.
+8	nilbuild/developer-roadmap	371895	2026-11-12T08:37:16Z	angular-roadmap,backend-roadmap,blockchain-roadmap,computer-science,dba-roadmap,developer-roadmap,devops-roadmap,frontend-roadmap,go-roadmap,java-roadmap,javascript-roadmap,nodejs-roadmap,python-roadmap,qa-roadmap,react-roadmap,roadmap,software-architect-roadmap,vue-roadmap	Interactive roadmaps, guides and other educational content to help developers grow in thei
+8	mui/material-ui	99333	2026-11-12T13:28:01Z	design-system,material-design,material-ui,react,react-components	Material UI: Comprehensive React component library that implements Google's Material Desig
+8	mermaid-js/mermaid	91085	2026-11-12T11:17:19Z	diagrams,diagrams-as-code,documentation,flowchart,javascript,mindmap,typescript,uml-diagrams	Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner 
+8	lerna/lerna	36032	2026-11-11T16:19:23Z	lerna,monorepo,npm,package,publishing	Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeS
+8	ksky521/nodeppt	10328	2021-01-25T02:54:35Z	animation,css3,html-presentation,html5,javascript,javascript-library,keynote,markdown,markdown-it,posthtml,ppt,presentation,slides,slideshow,webpack,webslide	This is probably the best web presentation tool so far!
+8	jestjs/jest	45473	2026-11-11T20:49:57Z	easy,expectation,facebook,immersive,javascript,painless,painless-javascript-testing,snapshot,testing	Delightful JavaScript Testing.
+8	ianstormtaylor/slate	31749	2026-11-11T17:56:28Z	browser,editor,framework,javascript,react,rich-text,slate,text-editor	A completely customizable framework for building rich text editors. (Currently in beta.)
+8	haizlin/fe-interview	26251	2025-10-26T20:49:10Z	css,fe-interview,front-end,frontend,frontend-interview,html,interview,interview-questions,javascript,js,node,nodejs,react,resume,vue	前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每�
+8	electron/electron	123869	2026-11-12T13:12:56Z	c-plus-plus,chrome,css,electron,html,javascript,nodejs,v8,works-with-codespaces	:electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS
+8	easy-mock/easy-mock	8947	2023-01-09T09:27:21Z	data-generator,easy-mock,javascript,mock,swagger,vue	A persistent service that generates mock data quickly and provids visualization view.
+8	earendil-works/pi	121621	2026-11-12T13:21:25Z		AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI
+8	chinese-poetry/chinese-poetry	54328	2026-06-17T01:56:08Z	chinese,chinese-poetry,ci,json,poetry,tangshi	The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库,  唐
+8	carbon-app/carbon	36146	2026-11-05T16:59:07Z	beautiful,carbon,education,github-gist,javascript,presentation,sharing,snippets,tweet	:black_heart: Create and share beautiful images of your source code
+8	avwo/whistle	15764	2026-11-08T15:11:41Z	charles,debug,fiddler,hosts,node,nodejs,proxy,web,weinre	HTTP, HTTP2, HTTPS, Websocket debugging proxy
+8	alibaba/formily	12593	2025-06-21T01:46:14Z	ant-design,designable,form,form-builder,fusion,json-schema,json-schema-form,low-code,no-code,observable,react,react-form,react-native,reactive,schema-form,validator,vue,vue-form,vue3	📱🚀 🧩 Cross Device & High Performance Normal Form/Dynamic(JSON Schema) Form/Form B
+8	airbnb/javascript	148011	2026-04-16T19:24:09Z	arrow-functions,es2015,es2016,es2017,es2018,es6,eslint,javascript,linting,naming-conventions,style-guide,style-linter,styleguide,tc39	JavaScript Style Guide
+8	SBoudrias/Inquirer.js	21642	2026-11-12T13:36:32Z	cli,command-line,javascript,javascript-library,node-js,nodejs,prompt,typescript	A collection of common interactive command line user interfaces.
+8	PanJiaChen/vue-element-admin	90103	2024-10-24T11:25:46Z	admin,admin-dashboard,admin-template,axios,dashboard,desktop,element,element-ui,i18n,management-system,mock,tinymce,vue,vue-admin,vue-cli,vuex,webpack,webpack4,xlsx	:tada: A magical vue admin                                                                
+8	MustangYM/WeChatExtension-ForMac	22507	2025-02-13T21:53:57Z	alfred,macos,wechat,wechat-macos,wechat-plugin,weixin-plugin	A plugin for Mac WeChat
+8	MisterBooo/LeetCodeAnimation	76709	2026-06-12T13:49:06Z	animation,leetcode,leetcode-c,leetcode-java,leetcode-solutions	Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式�
+8	ElemeFE/node-interview	10460	2020-10-19T03:29:22Z	interview,nodejs	How to pass the Node.js interview of ElemeFE.
+8	Binaryify/NeteaseCloudMusicApi	30221	2024-02-28T02:47:42Z	api,apis,cloudmusic,javascript,neteasecloud,nodejs	网易云音乐 Node.js API service
+8	996icu/996.ICU	277229	2025-08-22T06:01:29Z		Repo for counting stars and contributing. Press F to pay respect to glorious developers.
+7	youzan/vant	24424	2026-11-12T11:16:39Z	components,mobile,ui-kit,ui-library,vant,vue,vue3	A lightweight, customizable Vue UI library for mobile web apps.
+7	yangshun/front-end-interview-handbook	44003	2026-10-05T08:51:50Z	css,css-questions,front-end,front-end-development,front-end-interview,front-end-system-design,html,html-questions,interview,interview-preparation,interview-questions,interview-test,javascript,js-questions,web-development	Front End interview preparation materials for busy engineers (updated for 2026)
+7	xitu/gold-miner	34373	2024-04-17T09:44:37Z	ai,android,frontend,ios,javascript,react,swift,tensorflow,translation,tutorials	🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读�
+7	wechaty/wechaty	23551	2026-11-12T09:42:21Z	bot,chatbot,conversational-ai,framework,qq,robotics,wechat,wechaty,whatsapp	Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt
+7	vueuse/vueuse	22396	2026-11-10T12:32:04Z	composable,utility-library,vue,vue3,vueuse	Collection of essential Vue Composition Utilities for Vue 3
+7	vuejs/vuex	28286	2024-09-25T13:26:41Z	javascript,state-management,time-travel,vue,vuex	🗃️ Centralized State Management for Vue.js.
+7	vuejs/vuepress	22716	2024-08-07T10:06:47Z	blog-engine,docs-generator,seo,static-site-generator,vue,vuepress	📝 Minimalistic Vue-powered static site generator
+7	vuejs/vue-cli	29496	2025-08-21T10:56:30Z		🛠️ webpack-based tooling for Vue.js Development
+7	vadimdemedes/ink	40266	2026-11-11T22:53:55Z	cli,command-line,flexbox,interactive,javascript,react	🌈 React for interactive command-line apps
+7	ustbhuangyi/vue-analysis	7651	2023-07-18T03:12:29Z		:thumbsup: Vue.js 源码分析
+7	ueberdosis/tiptap	39028	2026-11-12T09:38:23Z	editor,javascript,js,prosemirror,react,renderless-components,rich-text,tiptap,vue,wysiwyg,wysiwyg-editor	The headless rich text editor framework for web artisans.
+7	tusen-ai/naive-ui	18608	2026-10-26T03:58:53Z	component-library,ui-components,vue,vue-typescript,vue3-components	A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.
+7	tldraw/tldraw	51386	2026-11-12T13:14:01Z	canvas,collaboration,design,diagram,drawing,infinite,multiplayer,react,sdk,sketch,sync,whiteboard	Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent reco
+7	tipsy/profile-summary-for-github	19938	2026-02-22T13:17:02Z	github-api,javalin,kotlin,webapp	Tool for visualizing GitHub profiles
+7	teambit/bit	18507	2026-11-11T13:46:03Z	ai,collaboration,component-driven,composable,composable-architecture,distributed,front-end,javascript,micro-frontend,micro-services,monorepo,multirepo,multirepo-maintenance,node-js,polyrepo,react,service-oriented-architecture,typescript,vue	AI-powered development workspaces with reusable components, architectural clarity and zero
+7	tauri-apps/tauri	112831	2026-11-12T09:37:33Z	desktop-app,high-performance,mobile-app,native-app,rust,web-frontend,webview	Build smaller, faster, and more secure desktop and mobile applications with a web frontend
+7	statelyai/xstate	30453	2026-11-11T21:47:44Z	actor-model,background-jobs,finite-state-machine,fsm,interpreter,javascript,orchestration,reactive,scxml,state,state-machine,state-machines,state-management,statechart,statecharts,typescript,visualizer,workflow,xstate	State machines, statecharts, and actors for complex logic
+7	sindresorhus/execa	7659	2026-10-23T09:14:17Z	binary,child-process,exec,execute,javascript,nodejs,shell,spawn,spawned-processes,streams	Process execution for humans
+7	shipshapecode/shepherd	13829	2026-11-12T10:03:50Z	accessibility,guided-tour,hacktoberfest,javascript,onboarding,product-tour,react,shepherd,tooltip,tour,typescript,user-onboarding,walkthrough	Guide your users through a tour of your app
+7	ruanyf/jstraining	20041	2025-07-15T03:46:56Z		全栈工程师培训材料
+7	pmndrs/react-spring	29274	2026-11-01T01:09:40Z	animation-library,react,react-spring,spring-physics,springs	✌️ A spring physics based React animation library
+7	phaserjs/phaser	40701	2026-08-21T06:56:13Z	canvas,discord-activities,facebook-instant-games,game-development,game-frameworks,gamedev,html5-game-development,javascript,phaser,phaser-development,phaserjs,webgl,youtube-playables	Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mo
+7	niklasvh/html2canvas	31926	2024-07-18T07:26:56Z	dom,javascript,screenshot	Screenshots with JavaScript
+7	nestjs/nest	77112	2026-11-12T13:14:13Z	framework,hacktoberfest,javascript,javascript-framework,microservices,nest,nestjs,node,nodejs,nodejs-framework,typescript,typescript-framework,websockets	A progressive TypeScript framework for Node.js backends: from a small API in one file to e
+7	mobxjs/mobx	28213	2026-11-12T11:56:03Z	javascript,mobx,react,reactive-programming,typescript	Simple, scalable state management.
+7	microsoft/rushstack	6509	2026-11-10T04:06:35Z	api,api-extractor,build,bulk-suppressions,eslint,hacktoberfest,heft,lockfile-explorer,monorepo,nodejs,orchestrator,rush,rushstack,toolchain,tsdoc,typescript	Monorepo for tools developed by the Rush Stack community
+7	meta/jscodeshift	10048	2026-10-27T23:14:44Z		A JavaScript codemod toolkit.
+7	lovell/sharp	32840	2026-11-12T13:25:52Z	avif,crop,exif,icc,image,image-processing,javascript,jpeg,libvips,nodejs,performance,png,resize,sharp,svg,tiff,webp	High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, A
+7	localForage/localForage	25802	2024-07-30T20:27:14Z	indexeddb,javascript,localforage,localstorage,offline,storage,websql	💾 Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple bu
+7	jxnblk/mdx-deck	11496	2023-01-04T01:58:59Z	deck,gatsby,gatsby-theme,gatsbyjs,keynote,markdown,mdx,mdx-deck,presentation,presentation-deck,react,reactjs,slides,theme-ui,zero-config	♠️ React MDX-based presentation decks
+7	jwasham/coding-interview-university	364301	2026-11-07T16:03:02Z	algorithm,algorithms,coding-interview,coding-interviews,computer-science,data-structures,interview,interview-prep,interview-preparation,programming-interviews,software-engineering,study-plan	A complete computer science study plan to become a software engineer.
+7	jaywcjlove/awesome-mac	118354	2026-11-12T10:58:26Z	app,apple,application,apps,awesome,awesome-list,awesome-mac,desktop-app,desktop-application,desktop-apps,list,mac,mac-osx,macos,macos-app,macos-apps,macosx,software,swift,swiftui	 This project is dedicated to collecting high-quality macOS software and organizing the
+7	immerjs/immer	29003	2026-11-10T14:47:37Z	immutable,immutables,reducer,redux,state-tree	Create the next immutable state by mutating the current one
+7	iina/iina	47100	2026-11-12T02:01:45Z	hacktoberfest,macos,mpv,swift,video,video-player	The modern video player for macOS.
+7	hzlzh/Best-App	17576	2026-03-17T04:55:46Z	app,mac,macos	收集&推荐优秀的 Apps/硬件/技巧/周边等
+7	houshanren/hangzhou_house_knowledge	26850	2022-02-28T10:57:30Z	hangzhou,knowledge	2017年买房经历总结出来的买房购房知识分享给大家，希望对大家有�
+7	hapijs/joi	21167	2026-11-04T15:02:14Z	hapi,javascript,schema,validation	The most powerful data validation library for JS
+7	h5bp/Front-end-Developer-Interview-Questions	60846	2026-11-09T19:04:42Z	css-questions,front-end,html-questions,interview-questions,interview-test,js-questions	A list of helpful front-end related questions you can use to interview potential candidate
+7	excalidraw/excalidraw	135556	2026-11-11T12:53:18Z	canvas,collaboration,diagrams,drawing,hacktoberfest,productivity,whiteboard	Virtual whiteboard for sketching hand-drawn like diagrams
+7	eggjs/egg	18990	2026-10-23T08:18:18Z	egg,eggjs,enterprise,framework,koa,koa-middleware,koa2,node-framework,nodejs	🥚🥚🥚🥚 Born to build better enterprise frameworks and apps with Node.js & Koa. h
+7	deepseek-ai/deepseek-harness	279565	2026-11-11T11:32:04Z	ai-agents,cordis,dsh,dsh-plugin	DeepSeek Harness: Everything is a Plugin.
+7	dcloudio/mui	13462	2025-05-20T03:58:07Z	android,css,dcloud,hbuilder,ios,javascript,mui,ui	最接近原生APP体验的高性能框架
+7	coder/code-server	79840	2026-11-11T20:33:35Z	browser-ide,dev-tools,development-environment,ide,remote-work,vscode,vscode-remote	VS Code in the browser
+7	codemirror/codemirror5	27193	2026-04-16T15:39:18Z		In-browser code editor (version 5, legacy)
+7	chokcoco/iCSS	20625	2026-03-13T10:55:46Z	css,css3	不止于 CSS
+7	cheeriojs/cheerio	30537	2026-11-12T03:15:59Z	cheerio,dom,hacktoberfest,html,htmlparser,htmlparser2,jquery,parser,scraper,selector	The fast, flexible, and elegant library for parsing and manipulating HTML and XML.
+7	bvaughn/react-virtualized	27069	2026-11-08T21:41:49Z	grid,list,listview,performance,react,react-components,tabular-data,virtualization,windowing	React components for efficiently rendering large lists and tabular data
+7	browser-use/browser-use	120822	2026-11-12T02:11:28Z	ai-agents,ai-tools,browser-agent,browser-automation,browser-use,cdp,cloud-browser,computer-use,headless-browser,llm,mcp,playwright,python,remote-browser,stealth-browser,web-automation,web-scraping	Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers
+7	baidu/amis	18892	2026-03-18T14:07:40Z	admin,frontend,frontend-framework,json,low-code,low-code-development-platform,lowcode,no-code	前端低代码框架，通过 JSON 配置就能生成各种页面。
+7	avajs/ava	20830	2026-11-07T20:12:59Z	assert,async,async-functions,ava,cli,cli-app,concurrency,javascript,node,nodejs,performance,tap,tdd,test-framework,test-runner,testing,unicorns,unit-testing	Node.js test runner that lets you develop with confidence 🚀
+7	atlassian/react-beautiful-dnd	33889	2025-08-18T04:35:31Z	dnd,drag,drag-and-drop,react,reordering,sortable	Beautiful and accessible drag and drop for lists with React
+7	ant-design/ant-design-pro	38963	2026-11-04T17:25:02Z	admin,ant-design,antd,antv,boilerplate,dashboard,enterprise,react,umi	👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!
+7	amfe/article	7519	2016-03-19T01:29:34Z		
+7	alibaba/weex	18495	2025-12-15T06:13:56Z	android,ios,mobile,sdk,web,weex	A framework for building Mobile cross-platform UI
+7	algorithm-visualizer/algorithm-visualizer	49486	2024-06-09T06:54:22Z	algorithm,animation,data-structure,visualization	:fireworks:Interactive Online Platform that Visualizes Algorithms from Code
+7	ai/nanoid	27133	2026-11-05T20:34:00Z		A tiny (118 bytes), secure, URL-friendly, unique string ID generator for JavaScript
+7	acornjs/acorn	11471	2026-11-09T08:44:11Z		A small, fast, JavaScript-based JavaScript parser
+7	Tonejs/Tone.js	14897	2026-11-01T01:18:02Z	javascript,music,samples,scheduling,synthesis,tone,web-audio	A Web Audio framework for making interactive music in the browser.
+7	NervJS/taro	37750	2026-11-12T12:44:09Z	javascript,jquery,nerv,nervjs,react,react-native,reactjs,taro,typescript,vue,vue3,wechat,wechat-mini-program,weixin,wxapp	开放式跨端跨框架解决方案，支持使用 React/Vue 等框架来开发微信/京
+7	FredKSchott/snowpack	19266	2023-03-05T16:10:07Z		ESM-powered frontend build tool. Instant, lightweight, unbundled development. ✌️
+7	EbookFoundation/free-programming-books	401482	2026-11-07T19:10:09Z	books,education,hacktoberfest,list,resource	:books: Freely available programming books
+7	DIYgod/RSSHub	46962	2026-11-12T12:40:32Z	bilibili,douban,dribbble,instagram,lofter,magpie-plugin,pixiv,rss,rsshub,spotify,telegram,tiktok,twitter,v2ex,wechat,weibo,ximalaya,youtube,zhihu	🧡 Everything is RSSible
+6	zenorocha/clipboard.js	34080	2026-02-12T18:51:57Z	clipboard,javascript	:scissors: Modern copy to clipboard. No Flash. Just 3kb gzipped :clipboard:
+6	zenany/weekly	2190	2026-11-09T13:16:05Z	news,weekly	汇总平时看到的好文章...
+6	yygmind/blog	10583	2022-03-14T15:24:25Z	advance,blog,css,html,javascript,react,vue	我是木易杨，公众号「高级前端进阶」作者，跟着我每周重点攻克一
+6	youngwind/blog	4648	2023-09-06T13:30:30Z	blog,react,vue,webpack	梁少峰的个人博客
+6	yeasy/docker_practice	26362	2026-11-11T18:45:58Z	book,cloud-computing,container,devops,docker,kubernetes,linux,mesos,spark,swarm,virtualization	最新Docker容器技术，从真实案例中学习最佳实践！| Learn and understand D
+6	yangshun/tech-interview-handbook	143276	2026-08-07T12:06:42Z	algorithm,algorithm-interview,algorithm-interview-questions,algorithms,behavioral-interviews,coding-interviews,interview-practice,interview-preparation,interview-questions,system-design	Curated coding interview preparation materials for busy software engineers
+6	vuetifyjs/vuetify	41038	2026-11-11T18:49:58Z	javascript,material,material-components,material-design,material-theme,semantic,typescript,ui,ui-components,ui-design,ui-kit,ui-library,vue,vue-components,vue-material,vuejs,vuejs3,vuetify,vuetifyjs	🐉 Vue Component Framework
+6	vuejs/pinia	14767	2026-11-10T19:34:12Z	composition-api,ssr,store,vue,vuex	🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with
+6	vuejs/awesome-vue	73478	2026-11-03T16:02:10Z		🎉 A curated list of awesome things related to Vue.js
+6	verdaccio/verdaccio	17985	2026-11-10T16:48:10Z	docker,helm,helm-charts,javascript,kubernetes,nodejs,npm,pnpm,private-npm,registry,registry-proxy,sponsor,verdaccio,yarn	A lightweight Node.js private proxy registry
+6	usablica/intro.js	23454	2026-11-12T13:26:00Z	cdn,guide,html,introjs,javascript,minify,tour,ux	Lightweight, user-friendly onboarding tour library
+6	uncss/uncss	9388	2024-06-18T07:27:49Z	build-tool,cleanup,css,javascript,postcss,stylesheets,uncss,unusedcss	Remove unused styles from CSS
+6	typicode/json-server	75740	2026-03-23T19:40:00Z	api,fake,frontend,json,mock,rest,test	Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+6	typicode/husky	35389	2026-03-19T23:03:16Z	commit,git,hooks,pre-commit	Git hooks made easy 🐶 woof!
+6	tweenjs/tween.js	10152	2026-11-09T02:11:37Z	animation,easing,easing-curves,easing-equations,easing-functions,interaction,interactive,javascript,tween,tweenjs,typescript	JavaScript/TypeScript animation engine
+6	tj/commander.js	28450	2026-11-07T02:45:24Z		node.js command-line interfaces made easy
+6	taowen/awesome-lowcode	14745	2024-11-07T02:24:32Z	awesome,awsome,low-code,lowcode,nocode	国内低代码平台从业者交流
+6	tailwindlabs/tailwindcss	98590	2026-11-11T20:55:22Z	css,css-framework,functional-css,postcss,responsive,tailwindcss,utility-classes	A utility-first CSS framework for rapid UI development.
+6	tailwindlabs/headlessui	28826	2026-04-13T16:12:31Z	a11y,accessibility,components,headless-ui,headlessui,react,tailwindcss,vue	Completely unstyled, fully accessible UI components, designed to integrate beautifully wit
+6	sveltejs/svelte	88726	2026-11-12T13:32:29Z	compiler,template,ui	web development for the rest of us
+6	sudheerj/reactjs-interview-questions	44921	2026-10-13T20:30:23Z	interview-preparation,interview-questions,javascript,javascript-applications,javascript-framework,javascript-interview-questions,react,react-interview-questions,react-native,react-router,react16,reactjs,redux	List of top 500 ReactJS Interview Questions & Answers....Coding exercise questions are com
+6	strapi/strapi	73467	2026-11-12T13:16:51Z	api,cms,cms-framework,content-management,content-management-system,customizable,dashboard,graphql,hacktoberfest,headless-cms,jamstack,javascript,mysql,no-code,nodejs,posgresql,rest,strapi,typescript	🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fu
+6	stephentian/33-js-concepts	15226	2023-02-28T11:00:21Z		:scroll: 每个 JavaScript 工程师都应懂的33个概念 @leonardomso
+6	snabbdom/snabbdom	12386	2026-06-17T11:11:26Z	hacktoberfest,snabbdom,virtual-dom-library	A virtual DOM library with focus on simplicity, modularity, powerful features and performa
+6	sindresorhus/ora	9772	2026-10-31T07:00:05Z		Elegant terminal spinner
+6	shengxinjing/programmer-job-blacklist	28381	2026-02-27T02:34:40Z		:see_no_evil:程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更�
+6	shelljs/shelljs	14400	2026-10-25T23:02:23Z	bash,javascript,node,nodejs,shell,shelljs,unix	:shell: Portable Unix shell commands for Node.js
+6	rust-lang/rust	121819	2026-11-12T12:31:00Z	compiler,language,rust	Empowering everyone to build reliable and efficient software.
+6	ruanyf/weekly	107967	2026-11-08T14:43:20Z		科技爱好者周刊，每周五发布
+6	ruanyf/free-books	16065	2024-03-28T03:59:19Z		互联网上的免费书籍
+6	ruanyf/es6tutorial	21412	2026-09-24T14:20:28Z		《ECMAScript 6入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScri
+6	rome/tools	23342	2023-09-04T08:42:49Z	formatter,javascript,linter,toolchain,typescript	Unified developer tools for JavaScript, TypeScript, and the web
+6	react/react-native	126906	2026-11-12T13:47:24Z	android,app-framework,cross-platform,ios,mobile,mobile-development,react,react-native	A framework for building native applications using React
+6	prettier/prettier	52406	2026-11-12T08:59:16Z	angular,ast,css,flow,formatter,graphql,html,javascript,json,jsx,less,markdown,prettier,printer,scss,typescript,vue,yaml	Prettier is an opinionated code formatter.
+6	postcss/postcss	28966	2026-11-12T08:05:15Z	ast,css,framework,parser,postcss	Transforming styles with JS plugins
+6	pnpm/pnpm	37066	2026-11-12T13:43:42Z	dependency-manager,install,javascript,modules,node,nodejs,npm,package-manager	Fast, disk space efficient package manager
+6	pmndrs/zustand	58931	2026-11-06T13:35:06Z	hacktoberfest,hooks,react,react-context,reactjs,redux,state-management	🐻 Bear necessities for state management in React
+6	phobal/ivideo	11816	2021-01-28T19:46:42Z		一个可以观看国内主流视频平台所有视频的客户端（Mac、Windows、Linux
+6	pedronauck/docz	23557	2025-11-21T04:28:57Z	design-system,docs,documentation,docz,gatsby,js,mdx,react,theme,ui,zero-configuration	✍ It has never been so easy to document your things!
+6	nwjs/nw.js	41144	2026-11-11T20:30:28Z	desktop,javascript,node-webkit,nodejs,nwjs,web-application-framework	Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing appli
+6	nodejs/node	123515	2026-11-12T13:32:23Z	javascript,js,linux,macos,mit,node,nodejs,runtime,windows	Node.js JavaScript runtime ✨🐢🚀✨
+6	naptha/tesseract.js	38831	2026-05-17T04:19:12Z	deep-learning,javascript,ocr,tesseract,webassembly	Pure Javascript OCR for more than 100 Languages 📖🎉🖥
+6	myliang/x-spreadsheet	14573	2024-08-07T14:04:44Z	canvas,es6,excel,javascript,js,spreadsheet	The project has been migrated to @wolf-table/table https://github.com/wolf-table/table
+6	mswjs/msw	18348	2026-11-11T01:11:44Z	api,api-mocking,devtools,mock,mock-service-worker,mocking,mocking-framework,mocking-library,msw,mswjs,service-worker	The industry standard for API mocking in JavaScript.
+6	mixmark-io/turndown	11509	2026-11-04T12:00:40Z	browser,commonmark,gfm,html,html-to-markdown,javascript,markdown,node	🛏 An HTML to Markdown converter written in JavaScript
+6	meteor/meteor	44796	2026-11-12T13:35:28Z	build-system,framework,hacktoberfest,javascript,meteor,mongodb,nodejs,npm,react,reactive-programming,realtime,rpc,zero-configuration	Meteor, the JavaScript App Platform
+6	meta/docusaurus	66720	2026-11-12T13:38:19Z	documentation,hacktoberfest,javascript,open-source,react,website	Easy to maintain open source documentation websites.
+6	markdown-it/markdown-it	22039	2026-10-23T18:32:33Z	commonmark,javascript,markdown	Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high sp
+6	livoras/blog	3494	2016-05-22T01:21:07Z		Too young, too simple. Sometimes, naive.
+6	lit/lit	21892	2026-11-05T20:00:37Z	html-templates,lit,lit-element,lit-html	Lit is a simple library for building fast, lightweight web components.
+6	latentcat/qrbtf	7043	2025-04-17T08:22:41Z	art-qr,art-qr-code,art-qrcode,generator,qr,qr-code,qr-codes,qrcode,qrcode-generator	AI & parametric QR code generator. AI & 参数化二维码生成器。https://qrbtf.com
+6	konvajs/konva	14944	2026-11-10T15:20:40Z	animation,canvas,canvas-editor,design-editor,drag-and-drop,graphics,html5-canvas,javascript,konva,node-canvas,shape,whiteboard	Konva.js is an HTML5 Canvas JavaScript framework for interactive graphics, design editors,
+6	k88hudson/git-flight-rules	42577	2026-10-29T06:38:27Z		Flight rules for git
+6	jkchao/typescript-book-chinese	6638	2024-07-01T08:52:49Z	book,react,redux,typescript,typescript-javascript,vue,vuepress	TypeScript Deep Dive 中文版 
+6	jamiebuilds/the-super-tiny-compiler	28544	2024-02-19T12:33:21Z		:snowman: Possibly the smallest compiler ever
+6	iview/iview	23742	2024-01-15T00:27:21Z	components,css,design-systems,frontend,iview,javascript,ui-design,ui-kit,vue,vue-components	A high quality UI Toolkit built on Vue.js 2.0
+6	highlightjs/highlight.js	25015	2026-11-11T08:49:44Z	highlighting,javascript,language-grammars,syntax-highlighter,syntax-highlighting	JavaScript syntax highlighter with language auto-detection and zero dependencies.
+6	gulpjs/gulp	32915	2026-02-09T06:30:13Z		A toolkit to automate & enhance your workflow
+6	eligrey/FileSaver.js	21959	2023-03-01T13:55:08Z		An HTML5 saveAs() FileSaver implementation
+6	easychen/howto-make-more-money	18736	2024-03-28T04:24:22Z		程序员如何优雅的挣零花钱，2.0版，升级为小书了。Most of this not work
+6	doodlewind/jshistory-cn	4216	2022-08-24T14:44:33Z	actionscript,book,browser,chinese,eich,history,javascript,js,jscript,mocha,spidermonkey,translation	🇨🇳 《JavaScript 二十年》中文版
+6	donnemartin/system-design-primer	377674	2026-09-15T01:10:09Z	design,design-patterns,design-system,development,interview,interview-practice,interview-questions,programming,python,system,web,web-application,webapp	Learn how to design large-scale systems. Prep for the system design interview.  Includes A
+6	dcloudio/uni-app	41695	2026-11-12T12:39:21Z	android,cross-platform,crossplatform,hbuilderx,ios,javascript,miniprogram,uni,uni-app,uniapp,vue,vue3	A cross-platform framework using Vue.js
+6	colinhacks/zod	44331	2026-11-06T15:57:41Z	runtime-validation,schema-validation,static-types,type-inference,typescript	TypeScript-first schema validation with static type inference
+6	codex-team/editor.js	32001	2026-11-01T14:05:25Z	codex-editor,editor,javascript,json,redactor,typescript,ui,wysiwyg	A block-style editor with clean JSON output
+6	coder2gwy/coder2gwy	27723	2022-02-11T08:56:20Z		互联网首份程序员考公指南，由3位已经进入体制内的前大厂程序员�
+6	byoungd/up	70451	2026-11-04T03:25:03Z	ai-literacy,chinese,english-learning,lifelong-learning,open-education,self-directed-learning,tutorial	韩先凯的人生进阶指南 AI时代 中英双语终身学习指南：AI、学习 、�
+6	azl397985856/leetcode	55706	2025-07-16T09:42:17Z	algo,algorithm,algorithms,algorithms-datastructures,computer-science,cpp,data-structures,interview,java,javascript,leetcode,leetcode-solutions,python,tree	LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己
+6	azl397985856/fe-interview	2836	2023-09-18T17:04:14Z	algorithm,fe,frontend,interview,javascript,qian-duan	宇宙最强的前端面试指南 (https://lucifer.ren/fe-interview)
+6	automerge/automerge-classic	14683	2023-03-14T15:24:45Z	crdt,javascript,offline-first	A JSON-like data structure (a CRDT) that can be modified concurrently by different users, 
+6	ariya/phantomjs	29415	2022-11-26T19:43:12Z	automation,headless,headless-browser,phantomjs	Scriptable Headless Browser
+6	alvarotrigo/fullPage.js	35356	2026-09-20T10:56:49Z	fullpage,fullscreen,javascript,jquery,mousewheel,onepage,scrolling,sections,slide,slideshow,snap,swipe	fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple
+6	alibaba/hooks	14979	2026-10-27T14:23:51Z	ahooks,hooks-library,react,react-hooks,umi-hooks	A high-quality & reliable React Hooks library.   https://alibaba.github.io/hooks/
+6	Unitech/pm2	43331	2026-11-03T11:29:30Z	command-line,command-line-tool,deploy,load-balancer,monitoring,node,nodejs,pm2,process-manager,production	Node.js/Typescript/Bun Production Process Manager with a built-in Load Balancer.
+6	Tencent/vConsole	17539	2026-03-27T04:53:58Z	console,mobile,wechat	A lightweight, extendable front-end developer tool for mobile web page.
+6	TKkk-iOSer/WeChatPlugin-MacOS	14287	2024-06-09T03:27:58Z	alfred-workflow,macos,plugin,tweak,wechat,weixin	微信小助手
+6	SortableJS/Vue.Draggable	20540	2024-03-04T07:33:56Z	component,drag-and-drop,vue	Vue drag-and-drop component based on Sortable.js
+6	RubyLouvre/avalon	5766	2019-03-11T15:06:57Z		an elegant efficient express mvvm framework
+6	Popmotion/popmotion	20158	2024-03-12T00:37:37Z	animation,css,javascript-motion-engine,motion,physics,popmotion,svg,tween	Simple animation libraries for delightful user interfaces
+6	MostlyAdequate/mostly-adequate-guide	23817	2024-09-17T06:18:40Z	functional-programming,javascript,reactive-programming,tutorial	Mostly adequate guide to FP (in javascript)
+6	Matt-Esch/virtual-dom	11821	2023-01-24T11:59:52Z		A Virtual DOM and diffing algorithm
+6	InterviewMap/CS-Interview-Knowledge-Map	18217	2020-05-03T00:47:59Z	algorithms,blog,interview,javascript,react,vue	Build the best interview map. The current content includes JS, network, browser related, p
+6	HcySunYang/vue-design	5951	2022-12-03T06:00:25Z		📖 master分支：《渲染器》
+6	GoogleChromeLabs/quicklink	11306	2026-11-01T01:43:56Z	performance,prefetch,prefetcher,speed,web-performance	⚡️Faster subsequent page-loads by prefetching in-viewport links during idle time
+6	GoogleChromeLabs/comlink	12811	2026-11-05T06:35:33Z		Comlink makes WebWorkers enjoyable.
+6	GoogleChrome/workbox	13043	2026-10-29T21:43:40Z	offline-first,progressive-web-app,service-worker,service-workers,sw-precache,sw-toolbox	📦 Workbox: JavaScript libraries for Progressive Web Apps
+6	DMQ/mvvm	5185	2023-03-08T02:36:19Z	mvvm,vue	剖析vue实现原理，自己动手实现mvvm
+6	CyC2018/CS-Notes	186500	2026-11-09T19:57:55Z	algorithm,computer-science,cpp,interview,java,leetcode,python,system-design	:books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网�
+6	BetaSu/just-react	6381	2025-03-10T22:29:30Z	fiber,hooks,react,reactjs,source-code	「React技术揭秘」  一本自顶向下的React源码分析书
+6	AlloyTeam/AlloyFinger	3433	2019-01-03T07:05:23Z	alloyfinger,finger,gesture,touch	Super tiny size multi-touch gestures library for the web. 　　　You can touch this →
+5	ziishaned/learn-regex	46051	2025-08-25T23:17:54Z	learn-regex,regex,regular-expression	Learn regex the easy way
+5	ziishaned/dumper.js	2748	2025-02-05T18:52:56Z		A better and pretty variable inspector for your Node.js applications
+5	yjs/yjs	23052	2026-11-09T14:57:33Z	collaboration,collaborative-editing,crdt,decentralized,offline-first,p2p,peer-to-peer,realtime,shared-editing,yjs	Shared data types for building collaborative software
+5	yarnpkg/yarn	41459	2026-05-12T11:09:42Z	javascript,npm,package-manager,yarn	The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/be
+5	xingshaocheng/architect-awesome	60851	2024-04-11T11:32:12Z		后端架构师技术图谱
+5	x-extends/vxe-table	8633	2026-11-12T09:30:21Z	cell,checkbox,editable,form,grid,input,modal,pager,radio,select,switch,table,toolbar,vue,vue-table,vxe-grid,vxe-table,vxe-ui	vxe table 支持 vue2, vue3 的表格解决方案
+5	wuchangming/spy-debugger	7622	2025-09-01T08:25:27Z	debug,spy-debugger,wechat,weinre	微信调试，各种WebView样式调试、手机浏览器的页面真机调试。便捷�
+5	webpack/webpack-bundle-analyzer	12655	2026-11-10T09:24:37Z	analyze,bundle,chart,interactive,size,treemap,webpack,webpack-bundle-analyzer	Webpack plugin and CLI utility that represents bundle content as convenient interactive zo
+5	wangeditor-team/wangEditor	18350	2024-10-11T07:11:30Z	rich-text,rich-text-html-editor,typescript,wangeditor,wysiwyg,wysiwyg-editor	wangEditor, open-source Web rich text editor 开源 Web 富文本编辑器
+5	vuejs/vue-router	18852	2026-04-14T01:14:33Z	javascript,router,vue	🚦 The official router for Vue 2
+5	vuejs/vue-hackernews-2.0	10838	2022-12-08T17:39:46Z		HackerNews clone built with Vue 2.0, vue-router & vuex, with server-side rendering
+5	vuejs/vitepress	18487	2026-11-12T11:19:50Z	docs-generator,markdown,ssg,vite,vue	Vite & Vue powered static site generator.
+5	vuejs/rfcs	4926	2025-01-08T09:33:49Z		RFCs for substantial changes / feature additions to Vue core
+5	vuejs/devtools-v6	24651	2024-09-11T14:49:24Z		⚙️ Browser devtools extension for debugging Vue.js applications.
+5	videojs/video.js	40166	2026-11-12T02:43:21Z	dash,hls,html,html5,html5-audio,html5-video,javascript,player,react,svelte,video,video-player,videojs,vue	Video.js v10 - open source media player framework for HTML and React.
+5	vercel/swr	32489	2026-10-16T17:57:58Z	cache,data,data-fetching,fetch,hook,hooks,nextjs,react,react-native,stale-while-revalidate,suspense,swr,vercel	React Hooks for Data Fetching
+5	vercel/serve	9915	2026-11-06T16:38:02Z	cli,command,http,node	Static file serving and directory listing
+5	vercel/pkg	24296	2024-01-03T01:38:16Z	binaries,cli,compiler,nodejs	Package your Node.js project into an executable
+5	vercel/hyper	44751	2026-11-04T19:31:46Z	css,html,hyper,javascript,linux,macos,react,terminal,terminal-emulators	A terminal built on web technologies
+5	unjs/webpackbar	2095	2026-11-11T17:44:23Z	bundler,javascript,node,profile,progressbar,webpack	Elegant ProgressBar and Profiler for Webpack 3 , 4 and 5
+5	travist/jsencrypt	6808	2026-04-08T09:02:21Z		A tiny (18.5 kB gzip), zero-dependency, Javascript library to perform OpenSSL RSA Encrypti
+5	thinkjs/thinkjs	5263	2026-11-04T03:28:19Z	koa,nodejs,thinkjs,typescript	Use full ES2015+ features to develop Node.js applications, Support TypeScript.
+5	tc39/proposals	19209	2026-10-14T22:23:22Z	committee,ecmascript,javascript,language,language-design,proposal,spec,specification	Tracking ECMAScript Proposals
+5	styled-components/styled-components	41046	2026-11-11T23:43:43Z	css,css-in-js,react,reactnative,rsc,styled-components	Fast, expressive styling for React. Server components, client components, streaming SSR, R
+5	standard/standard	29430	2025-07-11T08:28:23Z	development,ecmascript,es6,eslint,javascript,linter,nodejs,standard,static-code-analysis,style-guide	🌟 JavaScript Style Guide, with linter & automatic code fixer
+5	sorrycc/awesome-javascript	35033	2026-11-10T18:59:21Z		🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny thing
+5	solidjs/solid	36261	2026-11-12T12:29:47Z	declarative,fine-grained,javascript,jsx,performance,proxies,reactive,solid	A declarative, efficient, and flexible JavaScript library for building user interfaces.
+5	slab/quill	47368	2025-07-25T06:09:23Z	editor,quill,rich-text-editor,wysiwyg	Quill is a modern WYSIWYG editor built for compatibility and extensibility
+5	shikijs/shiki	13925	2026-11-02T06:02:56Z	markdown,shiki,syntax-highlighting,textmate-grammar	A beautiful yet powerful syntax highlighter
+5	share/sharedb	6563	2026-11-12T09:50:55Z		Realtime database backend based on Operational Transformation (OT)
+5	serverless/serverless	46930	2026-11-11T14:36:11Z	aws,aws-dynamodb,aws-lambda,azure-functions,google-cloud-functions,microservice,serverless,serverless-architectures,serverless-framework	⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs whe
+5	schickling/chromeless	13209	2018-11-13T02:23:55Z	chrome,graphcool,headless,headless-chrome,integration-testing,nightmarejs,selenium,serverless	🖥  Chrome automation made simple. Runs locally or headless on AWS Lambda.
+5	ryanmcdermott/clean-code-javascript	94692	2024-07-29T07:24:37Z	best-practices,clean-architecture,clean-code,composition,inheritance,javascript,principles	Clean Code concepts adapted for JavaScript
+5	rough-stuff/wired-elements	10851	2023-10-07T20:59:18Z	lit-element,lit-html,prototyping,web-components,webcomponents,wireframe,wireframes	Collection of custom elements that appear hand drawn. Great for wireframes or a fun look.
+5	resume/resume.github.com	62901	2023-02-15T06:38:51Z		Resumes generated using the GitHub informations
+5	remotion-dev/remotion	72697	2026-11-12T13:18:24Z	javascript,react,video	🎥      Make videos programmatically with React
+5	remix-run/react-router	56637	2026-11-11T22:11:27Z		Declarative routing for React
+5	rematch/rematch	8390	2023-09-27T10:20:18Z	angular,hacktoberfest,immer,javascript,react,react-native,react-redux,redux,redux-best-practices,redux-made-easy,rematch,state-management,typescript,vue	The Redux Framework
+5	reduxjs/redux	61439	2026-11-11T21:16:56Z	redux	A JS library for predictable global state management
+5	react/create-react-app	103232	2025-02-15T01:32:11Z	build-tools,react,zero-configuration	Set up a modern web app by running one command.
+5	ramda/ramda	24050	2026-10-12T00:34:57Z	javascript,ramda	:ram: Practical functional Javascript
+5	pubkey/rxdb	23423	2026-11-12T13:35:53Z	angular,browser-database,couchdb,crdt,database,firebase,graphql,indexeddb,ionic,local-first,localstorage,nodejs,nosql,postgres,pouchdb,react-native,realtime,realtime-database,rxdb,sqlite	The local-first database that runs on every JS runtime and replicates with your existing b
+5	processing/p5.js	24338	2026-11-11T23:23:51Z	art,creative-coding,design,education,graphics,html,javascript,learning,p5js,processing,sound	p5.js is a client-side JS platform that empowers artists, designers, students, and anyone 
+5	petkaantonov/bluebird	20462	2024-11-07T20:26:46Z		:bird: :zap: Bluebird is a full featured promise library with unmatched performance.
+5	paulmillr/chokidar	12266	2026-11-06T12:02:27Z	chokidar,filesystem,fsevents,nodejs,watch-files,watcher	Minimal and efficient cross-platform file watching library
+5	parallax/jsPDF	31315	2026-11-11T01:36:51Z	hacktoberfest	Client-side JavaScript PDF generation for everyone.
+5	pahen/madge	10184	2026-01-21T23:04:43Z	amd,commonjs,dependencies,es6,graph,graphviz,less,madge,sass,stylus	Create graphs from your CommonJS, AMD or ES6 module dependencies
+5	paddingme/Front-end-Web-Development-Interview-Question	6841	2024-04-23T09:16:59Z	front-end-interview,interview,interview-preparation,interview-questions	前端开发面试题大收集，前端面试集锦 :heart: :gift_heart: :cupid:
+5	oven-sh/bun	96672	2026-11-12T13:41:31Z	bun,bundler,javascript,javascriptcore,jsx,nodejs,npm,react,rust,rust-lang,transpiler,typescript	Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in o
+5	obra/superpowers	316578	2026-11-03T23:24:58Z	ai,brainstorming,coding,obra,sdlc,skills,subagent-driven-development,superpowers	An agentic skills framework & software development methodology that works.
+5	nusr/hacker-laws-zh	12491	2023-06-06T06:22:30Z	chinese,coding,computerscience,laws,principles	💻📖对开发人员有用的定律、理论、原则和模式。(Laws, Theories, Princ
+5	nextapps-de/flexsearch	13821	2026-06-28T18:05:03Z	elasticsearch,full-text-search,fulltext-search,fuzzy,fuzzy-search,javascript,javascript-library,nodejs,open-source,search,search-algorithm,search-engine,search-in-text,searching,searching-algorithms,web,web-worker	Next-generation full-text search library for Browser and Node.js
+5	nativefier/nativefier	35202	2023-09-29T13:45:16Z	desktop-application,electron,linux,macos,nodejs,windows	Make any web page a desktop application
+5	mochajs/mocha	22911	2026-11-11T16:17:30Z	bdd,browser,javascript,mocha,mochajs,node,nodejs,tdd,test,test-framework,testing,testing-tools	☕️ Classic, reliable, trusted test framework for Node.js and the browser
+5	midwayjs/midway	7756	2026-11-12T00:58:41Z	aliyun,aws,azure,cloud,dependency-injection-container,enterprise,framework,ioc,midway,mircoservices,react,serverless,serverless-framework,typescript,vue,web	🍔 A Node.js Serverless Framework for front-end/full-stack developers. Build the applica
+5	lodash/lodash	61366	2026-10-01T23:04:09Z	javascript,lodash,modules,utilities	A modern JavaScript utility library delivering modularity, performance, & extras.
+5	linlinjava/litemall	20407	2026-08-20T00:43:07Z	litemall,mall,spring-boot,vue,wechat,wechat-mini-program	又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序�
+5	leonardomso/33-js-concepts	66525	2026-10-21T16:03:54Z	angular,concepts,es6,es6-javascript,hacktoberfest,javascript,javascript-closures,javascript-engines,javascript-programming,nodejs,primitive-types,programming,react	📜 33 JavaScript concepts every developer should know.
+5	krisk/Fuse	20528	2026-08-09T04:40:41Z	bitap,javascript,lightweight-fuzzy-search,weighted-search	Lightweight fuzzy-search, in JavaScript
+5	koajs/koa	35683	2026-11-03T01:27:25Z	koa	Expressive middleware for node.js using ES2017 async functions
+5	jsdom/jsdom	21752	2026-11-12T07:54:51Z	dom-apis,html,javascript,jsdom,nodejs	A JavaScript implementation of various web standards, for use with Node.js
+5	js-cookie/js-cookie	22564	2026-11-09T21:32:30Z	cookie,javascript	A simple, lightweight JavaScript API for handling cookies, client-side.
+5	iview/iview-admin	16323	2022-05-10T06:51:56Z	admin,admin-template,axios,iview,vue,vue-admin,vue-cli,vuex,webpack2	Vue 2.0 admin management system template based on iView
+5	iperov/DeepFaceLive	31019	2024-11-08T03:07:42Z	deepfake,faceswap,machine-learning,real-time,streaming,videocall,webcam	Real-time face swap for PC streaming or video calls
+5	ionic-team/ionic-framework	52753	2026-11-12T13:32:08Z	angular,capacitor,framework,frontend,ionic,ios,javascript,material-design,mobile,pwa,react,stencil,stenciljs,typescript,ui-components,vue,web,webcomponents	A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progres
+5	impress/impress.js	38152	2026-07-23T07:05:16Z		It's a presentation framework based on the power of CSS3 transforms and transitions in mod
+5	immutable-js/immutable-js	33018	2026-11-12T09:40:41Z		Immutable persistent data collections for Javascript which increase efficiency and simplic
+5	ianstormtaylor/superstruct	7125	2024-10-01T02:42:53Z	interface,javascript,schema,structs,types,typescript,validation	A simple and composable way to validate data in JavaScript (and TypeScript).
+5	hyj1991/easy-monitor	3129	2023-10-10T09:52:03Z	cpu,memory-leak,monitor,monitoring,nodejs,performance,v8	企业级 Node.js 应用性能监控与线上故障定位解决方案
+5	hexojs/hexo	41777	2026-10-26T23:52:47Z	hacktoberfest,hexo,javascript,nodejs,static-site-generator,typescript	A fast, simple & powerful blog framework, powered by Node.js.
+5	halo-dev/halo	40252	2026-11-12T12:34:01Z	blog,blog-engine,cms,content-management-system,halo,halocms,website-builder	Halo 是一款强大易用的开源建站工具，从个人博客、知识库，到企业�
+5	guess-js/guess	7120	2026-11-11T18:00:11Z	hacktoberfest,machine-learning,performance,prefetch,prerender,web-performance	🔮 Libraries & tools for enabling Machine Learning driven user-experiences on the web
+5	grafana/grafana	77859	2026-11-12T13:45:35Z	alerting,analytics,business-intelligence,dashboard,data-visualization,elasticsearch,go,grafana,hacktoberfest,influxdb,metrics,monitoring,mysql,postgres,prometheus	The open and composable observability and data visualization platform. Visualize metrics, 
+5	google-gemini/gemini-cli	108795	2026-11-12T01:10:19Z	ai,ai-agents,cli,gemini,gemini-api,mcp-client,mcp-server	An open-source AI agent that brings the power of Gemini directly into your terminal.
+5	glideapps/quicktype	13913	2026-10-30T02:49:13Z	cplusplus,csharp,elm,golang,graphql,java,json,json-schema,kotlin,objective-c,rust,swift,typescript	Generate types and converters from JSON, Schema, and GraphQL
+5	getsentry/sentry	45764	2026-11-12T13:47:21Z	apm,crash-reporting,crash-reports,csp-report,devops,django,error-logging,error-monitoring,fair-source,hacktoberfest,monitor,monitoring,python,sentry,tag-production	Developer-first error tracking and performance monitoring
+5	freeCodeCamp/freeCodeCamp	459034	2026-11-12T13:27:51Z	careers,certification,community,curriculum,d3,education,freecodecamp,javascript,learn-to-code,math,nodejs,nonprofits,programming,react,teachers	freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and compu
+5	framework7io/framework7	18779	2026-10-30T22:25:51Z	android,components,cordova,framework,ios,library,material,material-design,mobile,phonegap,touch	Full featured HTML framework for building iOS & Android apps
+5	fkling/astexplorer	6543	2024-04-26T13:48:46Z	ast,ast-explorer,babel,javascript,jscodeshift,parser,postcss	A web tool to explore the ASTs generated by various parsers.
+5	fingerprintjs/fingerprintjs	28731	2026-11-05T08:20:09Z	audio-fingerprinting,browser,browser-fingerprint,browser-fingerprinting,detection,fingerprint,fingerprinting,fingerprintjs,fraud,fraud-detection,identification,javascript,visitor-identifier	The most advanced free and open-source browser fingerprinting library
+5	fastify/fastify	37411	2026-11-07T17:47:01Z	fastify,fastify-core,hacktoberfest,nodejs,performance,speed,webframework	Fast and low overhead web framework, for Node.js
+5	farrow-js/farrow	762	2026-06-13T13:02:29Z	full-stack,nodejs,typescript,web-framework	A Type-Friendly Web Framework for Node.js
+5	facebookexperimental/Recoil	19405	2025-01-01T08:07:34Z		Recoil is an experimental state management library for React apps. It provides several cap
+5	facebookarchive/draft-js	22551	2023-02-06T15:35:05Z		A React framework for building text editors.
+5	fabricjs/fabric.js	31556	2026-11-10T19:53:00Z		Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser
+5	eslint/eslint	27616	2026-11-12T10:33:41Z	ecmascript,eslint,javascript,linter,static-code-analysis	Find and fix problems in your JavaScript code.
+5	emotion-js/emotion	18020	2026-10-23T11:24:31Z	babel-plugin,css,css-in-js,emotion,react,reactjs	👩‍🎤 CSS-in-JS library designed for high performance style composition
+5	element-plus/element-plus	27850	2026-11-12T05:55:19Z	component-library,element-plus,element-ui,vue,vue-components,vuejs	🎉 A Vue.js 3 UI Library made by Element team
+5	docsifyjs/docsify	31584	2026-11-10T06:32:13Z	doc,docs,docsify,documentation,documentation-tool,github-pages,markdown,vue	🃏 A magical documentation site generator.
+5	cli/cli	46985	2026-11-11T14:26:42Z	cli,git,github-api-v4,golang	GitHub’s official command line tool
+5	chrislgarry/Apollo-11	76610	2026-10-29T03:37:54Z	agc,apollo,hacktoberfest,nasa	Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.
+5	chakra-ui/chakra-ui	40727	2026-11-12T10:14:33Z	a11y,accessible,ark-ui,chakra-ui,component,css-in-js,dark-mode,design-system,react,react-components,reactjs,styled,ui-components,ui-library,uikit,wai-aria	Chakra UI is a component system for building SaaS products with speed ⚡️
+5	carloscuesta/gitmoji	16814	2026-11-10T20:17:12Z	commits,emoji,gitmoji	An emoji guide for your commit messages. 😜 
+5	caolan/async	28117	2026-11-01T15:33:39Z	async,callbacks,javascript	Async utilities for node and the browser
+5	brick-design/brick-design	5146	2023-10-30T03:20:32Z	drag-and-drop,h5-editor,html-builder,low-code,lowcode,no-code,nocode,page-builder,page-editor,react,site-builder,site-generator,typescript,web-builder,web-design,web-editor	低代码框架，支持流式布局与自由布局拖拽编排，可视化拖拽、随意
+5	bfirsh/jsnes	6436	2026-10-27T06:24:14Z	6502,emulation,emulator,javascript,nes	A JavaScript NES emulator.
+5	berwin/Blog	4144	2022-09-20T03:32:54Z	article,blog,education,javascript,koa,learn-to-code,learning,learning-js,vue	记录成长的过程
+5	basarat/typescript-book	21582	2024-06-29T11:46:59Z	free,open-source,typescript,typescript-book,typescript-community	:books: The definitive guide to TypeScript and possibly the best TypeScript book :book:. F
+5	badges/shields	27389	2026-11-11T17:36:55Z	badge,badge-maker,github,metadata,status,svg	Concise, consistent, and legible badges in SVG and raster format
+5	aria2/aria2	43493	2026-06-25T14:49:35Z	bittorrent,cpp11,download,ftp,http,metalink,rpc,sftp	aria2 is a lightweight multi-protocol & multi-source, cross platform download utility oper
+5	appium/appium	22210	2026-11-12T07:55:03Z	android,appium,automation,ios,macos,test-automation,webdriver,windows	Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriv
+5	antonmedv/fx	20713	2026-10-22T13:49:58Z	cli,command-line,json,tui	Terminal JSON viewer & processor
+5	anomalyco/opencode	226322	2026-11-12T13:13:05Z		The open source coding agent.
+5	alyssaxuu/screenity	18987	2026-11-08T09:54:41Z	annotation,annotation-tool,audio,camera,chrome-extension,design,editor,ffmpeg,javascript,productivity,recorder,screen-capture,screen-recorder,screencast,tensorflow,video	The free and privacy-friendly screen recorder with no limits 🎥
+5	alibaba/ice	18603	2026-04-02T11:24:47Z	framework,icejs,microfrontends,mpa,nodejs,react,react-router,serverless,spa,ssr,typescript,vite,webpack	🚀 ice.js: The Progressive App Framework Based On React（基于 React 的渐进式应�
+5	airbnb/lottie-web	32398	2025-09-01T09:01:31Z		Render After Effects animations natively on Web, Android and iOS, and React Native. http:/
+5	acdlite/react-fiber-architecture	13053	2024-07-02T17:40:28Z		A description of React's new core algorithm, React Fiber
+5	abi/screenshot-to-code	81174	2026-11-05T18:29:51Z		Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
+5	YMFE/yapi	27690	2024-08-12T09:29:34Z	api,api-management,api-manager,api-test	YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口管理平�
+5	Troland/how-javascript-works	1177	2023-01-26T11:25:44Z		Knowledge about how javascript works, event loop,service worker,etc.
+5	Tencent/weui	27452	2026-03-12T12:23:29Z	mobile-web,style,wechat,weui	A UI library by WeChat official design team, includes the most useful widgets/modules in m
+5	Tencent/omi	13283	2026-11-12T02:37:19Z	components,css,custom-elements,html,javascript,js,jsx,omi,reactive-signal,shadow-dom,signal,signals,tailwind,tailwindcss,ts,tsx,typescript,web,web-components,webcomponents	Web Components Framework - Web组件框架
+5	TanStack/query	50580	2026-11-12T10:23:00Z	async,cache,data,fetch,graphql,hooks,query,react,rest,solid,stale,stale-while-revalidate,svelte,typescript,update,vue	🤖 Powerful asynchronous state management, server-state utilities and data fetching for 
+5	Shopify/draggable	18464	2025-12-01T19:07:13Z	drag-and-drop,draggable,es6,javascript	The JavaScript Drag & Drop library your grandparents warned you about.
+5	RelaxedJS/ReLaXed	11790	2025-09-07T14:41:05Z	chromium,converter,html,pdf-document,pug,scss	Create PDF documents using web technologies
+5	RealKai42/qwerty-learner	23757	2026-09-08T06:42:58Z	english-learning,typing,typing-game,typing-practice,typingspeedtest	为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件 / Words learning 
+5	ReactiveX/rxjs	31714	2026-08-08T23:15:21Z	javascript,rxjs	A reactive programming library for JavaScript
+5	ProseMirror/prosemirror	8693	2026-04-01T18:29:27Z		The ProseMirror WYSIWYM editor
+5	Polymer/polymer	22011	2026-04-02T03:04:41Z		Our original Web Component library.
+5	NousResearch/hermes-agent	262884	2026-11-12T13:37:25Z	ai,ai-agent,ai-agents,anthropic,chatgpt,claude,claude-code,codex,hermes,hermes-agent,llm,nous-research,openai	The agent that grows with you
+5	NativeScript/NativeScript	25701	2026-11-12T07:33:57Z	android,angular,cross-platform,flutter,ios,java,javascript,kotlin,nativescript,objective-c,react,solidjs,svelte,swift,swiftui,typescript,visionos,visionpro,vue	⚡ Write Native with TypeScript ✨ Best of all worlds (TypeScript, Swift, Objective C, K
+5	MrXujiang/h5-Dooring	10015	2026-07-20T15:40:49Z	antd,drag-and-drop,h5,h5-builder,h5-dooring,h5-editor,javascript,low-code,low-code-framework,low-code-platform,lowcode,miniprogram,page-builder,page-factory,react,react-dnd,react-router,site-generator,typescript,visual-design	H5 Page Maker, H5 Editor, LowCode. Make H5 as easy as building blocks. | 让H5制作像搭
+5	Molunerfinn/PicGo	27488	2026-11-11T07:34:36Z	aliyun-oss,cloudflare-r2,dsh-plugin,electron,electron-app,electron-vue,github,image,imageuploader,imgur,imgur-uploader,qiniu,s3-uploader,smms,tencent-cos,upyun,vue,weibo	:rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS
+5	Micropoor/Micro8	18033	2021-04-10T14:29:11Z	micro8,micropoor,penetration	Gitbook
+5	Meituan-Dianping/mpvue	20210	2022-03-02T04:31:30Z	mini,mpvue,vue,weapp,wxmp	基于 Vue.js 的小程序开发框架，从底层支持 Vue.js 语法和构建工具体�
+5	FrankFang/best-chinese-front-end-blogs	3889	2022-08-29T14:51:46Z		收集优质的中文前端博客
+5	FormidableLabs/webpack-dashboard	13947	2024-08-12T16:19:21Z	cli,cli-dashboard,dashboard,devtools,dx,socket-communication,webpack,webpack-dashboard	A CLI dashboard for webpack dev server
+5	Fission-AI/OpenSpec	74695	2026-11-11T22:42:08Z	ai,context-engineering,engineering,planning,prd,sdd,sdlc,spec,spec-driven-development,specification	Spec-driven development (SDD) for AI coding assistants.
+5	FiloSottile/mkcert	59872	2024-08-13T13:37:46Z	certificates,chrome,firefox,https,ios,linux,local-development,localhost,macos,root-ca,tls,windows	A simple zero-config tool to make locally trusted development certificates with any names 
+5	ElemeFE/mint-ui	16421	2022-02-28T17:06:11Z	component,mobile,ui-kit,vue,vue-components	Mobile UI elements for Vue.js
+5	DDFE/DDFE-blog	3948	2021-01-19T07:04:57Z		:clap: welcome to DDFE's blog
+5	ChatGPTNextWeb/NextChat	88946	2026-10-20T10:19:31Z	calclaude,claude,cross-platform,desktop,fe,gemini,gemini-pro,gemini-server,gemini-ultra,gpt-4o,groq,nextjs,ollama,react,tauri,tauri-app,vercel,webui	✨ Zero-config AI chat assistant. No API key needed — sign up and instantly chat with G
+5	Chalarangelo/30-seconds-of-css	15963	2023-05-07T17:09:56Z	css,css-snippets,education,learn-to-code,learning-resources,programming,snippets,snippets-collection	Short CSS code snippets for all your development needs
+5	Bogdan-Lyashenko/js-code-to-svg-flowchart	7107	2023-10-02T19:41:41Z	ast,es6,flowchart,javascript,learning,scheme,svg,svg-flowchart,visualisation	js2flowchart - a visualization library to convert any JavaScript code into beautiful SVG f
+5	7kms/react-illustration-series	7909	2024-03-02T06:55:06Z	fiber,hook,react,synthetic-events	图解react源码, 用大量配图的方式, 致力于将react原理表述清楚.
+5	521xueweihan/git-tips	15864	2022-12-08T03:13:00Z	cheatsheet,git,github	:trollface:Git的奇技淫巧
+5	1c7/chinese-independent-developer	62072	2026-11-12T13:25:30Z	china,indie,indie-developer	👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开
+4	zxwk1998/vue-admin-better	18929	2026-11-08T08:25:05Z	admin-dashboard,admin-template,ant-design,ant-design-vue,axios,deepseek-harness,element,element-plus,element-ui,spring-boot,vite,vue,vue-admin,vue-cli,vue-element-admin,vue-template,vue3,vue3-admin,vue3-composition-api,vuejs	🎉 vue admin,vue3 admin,vue3.0 admin,vue后台管理,vue-admin,vue3.0-admin,admin,vue-ad
+4	zloirock/core-js	25517	2026-11-12T13:39:38Z	ecmascript-proposals,es2015,es6,es7,esnext,javascript,js,polyfill,ponyfill,proposal,proposals,shim	Standard Library
+4	ziglang/zig	43277	2025-11-27T01:42:59Z	compiler,language,zig	Moved to Codeberg
+4	zhui-team/zhui	1446	2023-01-04T02:16:21Z		🚀 A Chinese style component library powered by React 
+4	zhaoolee/ChromeAppHeroes	25945	2026-10-06T03:55:27Z		🌈谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chr
+4	you-dont-need/You-Dont-Need-Momentjs	13282	2026-01-21T23:40:58Z	bundle-size,date-fns,esmodules,hacktoberfest,moment-js,pure-function,tree-shaking	List of functions which you can use to replace moment.js + ESLint Plugin
+4	you-dont-need/You-Dont-Need-Lodash-Underscore	19113	2026-10-17T10:20:27Z	alternatives,eslint-plugin,findindex,hacktoberfest,isnan,javascript,javascript-methods,lastindexof,lodash,native,reduceright,underscore,utilities	List of JavaScript methods which you can use natively + ESLint Plugin
+4	yanyiwu/nodejieba	3232	2026-10-12T15:27:38Z		"结巴"中文分词的Node.js版本
+4	xyflow/xyflow	38983	2026-11-12T13:01:19Z	flowchart,graph,javascript,node-based-ui,react,react-flow,svelte,svelte-flow,typescript,typescript-library,workflow	React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs wit
+4	xuxueli/xxl-job	30664	2026-10-09T15:01:06Z	cron,distributed,glue,java,job,quartz,restful,schedule,scheduler,task,xxl-job	A distributed task scheduling framework.（分布式任务调度平台XXL-JOB）
+4	xufei/blog	6625	2024-08-01T08:02:24Z		my personal blog
+4	xtermjs/xterm.js	21350	2026-11-08T21:09:09Z	console,development,javascript,pty,ssh,terminal,terminal-emulators,tty,typescript,vt100,webgl,xterm	A terminal for the web
+4	xirong/my-git	7404	2026-09-09T09:44:31Z	ai-coding,ai-native-development,git,git-flow,git-workflow,gitflow,github,github-flow	Git as the control plane for AI-native software engineering | AI Native 软件工程的 Gi
+4	xcatliu/typescript-tutorial	10752	2024-08-18T17:20:05Z	javascript,tutorial,typescript	TypeScript 入门教程
+4	x1xhlol/system-prompts-and-models-of-ai-tools	144626	2026-10-12T15:19:01Z	ai,bolt,cluely,copilot,cursor,cursorai,devin,github-copilot,lovable,open-source,perplexity,replit,system-prompts,trae,trae-ai,trae-ide,v0,vscode,windsurf,windsurf-ai	FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, L
+4	winstonjs/winston	24528	2026-07-20T19:12:28Z		A logger for just about everything.
+4	wilsonpage/fastdom	6912	2026-10-29T12:19:05Z		Eliminates layout thrashing by batching DOM measurement and mutation tasks
+4	wechatsync/Wechatsync	6612	2026-11-12T00:13:13Z	blog,chrome,chrome-extension,markdown,multiplatform,spider,vue,wechat-official-account,writer	一键同步文章到多个内容平台，支持今日头条、WordPress、知乎、简书
+4	webpack/tapable	3865	2026-11-06T18:39:29Z	hook,hooks,javascript,plugin,plugins	Just a little module for plugins.
+4	wclr/yalc	6315	2024-08-16T08:32:01Z	dependencies,developer-tools,npm,npm-link,yarn,yarn-link	Work with yarn/npm packages locally like a boss.
+4	wasm-bindgen/wasm-bindgen	9228	2026-11-12T01:47:47Z	binding-generator,javascript,rust,rust-wasm,wasm	Facilitating high-level interactions between Wasm modules and JavaScript
+4	wangzheng0822/algo	23118	2024-08-21T07:31:34Z		数据结构和算法必知必会的50个代码实现
+4	vuejs/vetur	5737	2024-06-14T19:37:30Z	hacktoberfest,visual-studio-code,vscode,vue,vue-tooling	Vue tooling for VS Code.
+4	vuejs/language-tools	6752	2026-11-12T10:11:04Z		⚡ High-performance Vue language tooling based-on Volar.js
+4	vueComponent/ant-design-vue	21712	2026-11-11T08:12:01Z	ant,ant-design,antd,antd-vue,css,enterprise,frontend,react,ui,ui-design,vue,vue-antd,vue-antd-ui,vue3,vuecomponent	🌈  An enterprise-class UI components based on Ant Design and Vue. 🐜
+4	visgl/deck.gl	14752	2026-11-12T01:15:11Z	data-visualization,geospatial-analysis,javascript,maps,python,visualization,webgl	WebGL2 powered visualization framework
+4	vercel/turborepo	31331	2026-11-12T13:45:36Z	build-system,build-tool,javascript,monorepo,typescript	The build system for coding agents.
+4	vercel/next.js	143486	2026-11-12T13:44:54Z	blog,browser,compiler,components,hybrid,nextjs,node,react,server-rendering,ssg,static,static-site-generator,universal,vercel	The React Framework
+4	v8/v8	25323	2026-11-12T13:37:02Z	compiler,interpreter,javascript,javascript-engine,virtual-machine	The official mirror of the V8 Git repository
+4	unplugin/unplugin-vue-components	4290	2026-05-20T04:37:54Z	auto-import,components,unplugin,vite,vue-cli,vue3,webpack	📲 On-demand components auto importing for Vue
+4	unocss/unocss	18987	2026-11-12T09:25:29Z	atomic-css,engine,unocss,vite-plugin,windicss	The instant on-demand atomic CSS engine.
+4	unbug/codelf	14121	2025-06-06T02:57:56Z	atom-plugin,chrome-extension,codelf,naming,vscode-extension	A search tool helps dev to solve the naming things problem.
+4	typestack/class-validator	11854	2026-03-25T22:18:47Z	decorators,typescript,validation,validator	Decorator-based property validation for classes.
+4	tokio-rs/tokio	33669	2026-11-12T01:35:33Z	asynchronous,networking,rust	A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networki
+4	toeverything/AFFiNE	74480	2026-11-12T10:41:33Z	app,crdt,editor,electron,knowledge-base,markdown,miro,notes,notion,notion-alternative,rust,rust-lang,rust-language,table,tableview,whiteboard,wiki,workspace	There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowl
+4	timqian/chart.xkcd	7875	2026-10-21T16:32:17Z	chart,graph,hand-drawn,html5,html5-charts,svg,svg-sprite,xkcd	xkcd styled chart lib
+4	thx/gogocode	6087	2024-04-11T02:24:33Z	ast,babel,jscodeshift,recast,vue	GoGoCode is a transformer for JavaScript/Typescript/HTML based on AST but providing a more
+4	thedaviddias/Front-End-Checklist	74714	2026-10-31T05:44:22Z	ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend,guidelines,html,javascript,lists,reference,resources,rules,web-development	🗂 The essential checklist for modern web development, for humans and AI agents
+4	textlint/textlint	3206	2026-11-12T05:00:02Z	javascript,lint,linter,markdown,natural-language,nlp,textlint	textlint is the pluggable linter for natural language text.
+4	text-mask/text-mask	8204	2025-05-26T18:32:18Z	angular,ember,input-mask,inputmask,react,text-formatting,vue	Input mask for React, Angular, Ember, Vue, & plain JavaScript
+4	tensorflow/tensorflow	201577	2026-11-12T13:33:40Z	deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python,tensorflow	An Open Source Machine Learning Framework for Everyone
+4	supnate/rekit	4413	2022-12-03T04:46:14Z	react,react-router,redux,rekit	IDE and toolkit for building scalable web applications with React, Redux and React-router
+4	stylelint/stylelint	11549	2026-11-11T14:50:03Z	css,lint,linter	A mighty CSS linter that helps you avoid errors and enforce conventions.
+4	stevenpetryk/mafs	3451	2026-11-05T05:25:20Z	math,react,visualization	React components for interactive math
+4	stenciljs/core	13153	2026-11-12T13:18:47Z	custom-element,design-system,ionic,ssg,ssr,static-site-generator,stencil,stenciljs,typescript,webcomponent	A toolchain for building scalable, enterprise-ready component systems on top of TypeScript
+4	sparanoid/chinese-copywriting-guidelines	15839	2026-10-12T09:37:50Z	chinese,chinese-simplified,chinese-traditional,copywriting,css,documentation,guideline,leancloud,markdown	Chinese copywriting guidelines for better written communication／中文文案排版指北
+4	soimort/you-get	56857	2026-10-06T02:19:12Z		:arrow_double_down: Dumb downloader that scrapes the web
+4	small-tou/js2image	1549	2025-10-27T05:38:01Z		一个可以把js源代码压缩成一个ascii字符画的源代码的工具，压缩后�
+4	slatedocs/slate	35998	2026-02-01T05:54:12Z	api,api-documentation,slate,static-site-generator	Beautiful static documentation for your API
+4	skyline75489/what-happens-when-zh_CN	8058	2022-05-19T04:05:39Z		What-happens-when 的中文翻译，原仓库 https://github.com/alex/what-happens-when
+4	sitespeedio/sitespeed.io	5050	2026-11-12T12:31:27Z	metrics,monitoring,perfmatters,performance-analysis,performance-dashboard,performance-metrics,sitespeed,web,webperf	sitespeed.io is an open-source tool for comprehensive web performance analysis, enabling y
+4	shoelace-style/shoelace	13820	2026-05-14T13:39:51Z	css,designsystem,html,javascript,ui,ux,webcomponents	Shoelace is now Web Awesome. Come see what’s new!
+4	shfshanyue/blog	1613	2024-02-26T11:23:55Z	canvas,css,grid,javascript,python,tmux,vim	在这里写一些工作中遇到的前端，后端以及运维的问题
+4	shareAI-lab/learn-claude-code	80327	2026-10-27T04:47:00Z	agent,agent-development,ai-agent,claude,claude-code,educational,llm,python,teaching,tutorial	Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1
+4	shadcn-ui/ui	127988	2026-11-12T06:06:10Z	ai,base-ui,components,gen-ui,generative-ai,generative-ui,laravel,nextjs,radix-ui,react,react-aria,react-aria-components,shadcn,tailwindcss,tanstack,ui,vite	Composable, accessible components with thoughtful defaults. Build your own component libra
+4	segmentio/evergreen	12428	2026-06-25T23:25:22Z	component-library,design-systems,evergreen,react,segment,ui,ui-components	🌲 Evergreen React UI Framework by Segment
+4	seajs/seajs	8250	2023-07-03T13:54:20Z		A Module Loader for the Web
+4	salomonelli/best-resume-ever	16491	2024-06-11T19:09:25Z	cv,javascript,nodejs,pdf,resume,vue	:necktie: :briefcase: Build fast :rocket: and easy multiple beautiful resumes and create y
+4	rustdesk/rustdesk	129168	2026-11-12T13:02:45Z	android,anydesk,dart,flatpak,flutter,flutter-apps,ios,linux,macos,p2p,rdp,remote-control,remote-desktop,rust,rust-lang,teamviewer,vnc,wayland,windows	An open-source remote desktop application designed for self-hosting, as an alternative to 
+4	run-llama/llama_index	52880	2026-11-11T19:05:14Z	agents,application,data,fine-tuning,framework,llamaindex,llm,multi-agents,rag,vector-database	LlamaIndex is the document processing platform for AI
+4	rsuite/rsuite	8697	2026-11-04T00:48:18Z	awesome-react-stuff,react,react-components,reactjs,rsuite,typescript,ui-kit,ui-library	🧱 A suite of React components .  
+4	rstacruz/nprogress	26332	2022-06-04T00:38:39Z		For slim progress bars like on YouTube, Medium, etc
+4	rough-stuff/rough-notation	9743	2024-03-18T05:16:12Z		Create and animate hand-drawn annotations on a web page
+4	ronami/minipack	3303	2021-02-14T14:51:03Z	browserify,commonjs,es2015,es6-modules,example,javascript,module-bundler,modules,parcel-bundler,webpack	📦 A simplified example of a modern module bundler written in JavaScript
+4	rollup/rollup	26302	2026-11-12T13:01:59Z		Next-generation ES module bundler
+4	release-it/release-it	9083	2026-10-30T18:53:15Z	automation,bump,changelog,ci-mode,cli,continuous-delivery,git,github,gitlab,gitlab-releases,hooks,npm,publish,release,release-automation,release-helper,semver,tool,version	🚀 Automate versioning and package publishing
+4	reactnativecn/react-native-guide	17808	2020-07-27T05:47:48Z		React Native指南汇集了各类react-native学习资源、开源App和组件
+4	qianguyihao/Web	28675	2025-12-08T09:38:41Z	css,front-end,html,javascript	千古前端图文教程，超详细的前端入门到进阶知识库。从零开始学前
+4	pugjs/pug	21817	2026-03-13T15:12:43Z		Pug – robust, elegant, feature rich template engine for Node.js
+4	projectstorm/react-diagrams	9438	2025-04-03T17:33:25Z	beta,canvas,demo,diagram,diagrams,drag,editing-diagrams,factories,flowchart,modular,react,svg,typescript,visualization,web	a super simple, no-nonsense diagramming library written in react that just works
+4	preactjs/preact	38998	2026-11-12T09:06:06Z	components,dom,jsx,preact,react,vdom,virtual-dom	⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.
+4	pomber/git-history	13686	2024-10-10T10:15:02Z	animation,blame,cli,commit,git,github,history,log,text,vscode,vscode-extension	Quickly browse the history of a file from any git repository
+4	pmndrs/react-three-fiber	33672	2026-10-21T15:24:39Z	3d,animation,fiber,react,renderer,threejs	🇨🇭 A React renderer for Three.js
+4	pipipi-pikachu/PPTist	9491	2026-11-06T15:58:56Z	ai,aippt,office,office-powerpoint,online-powerpoint,online-ppt,powerpoint,ppt,pptx,pptx-preview,presentation,slide	PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates 
+4	pillarjs/path-to-regexp	8614	2026-10-22T18:11:25Z	expressjs,nodejs,path-to-regexp,router	Turn a path string such as `/user/:name` into a regular expression
+4	phodal/microfrontends	3109	2021-10-07T10:19:19Z	micro-frontend,micro-frontends,micro-services,microfrontend,microfrontends,microservices-architecture	Micro-frontend Architecture in Action-微前端的那些事儿
+4	pbakaus/impeccable	108733	2026-11-12T12:46:49Z	agent-skills,ai,anti-slop,design,slop	The design vocabulary for your coding agent. Steer with polish and bolder, review with cri
+4	patriksimek/vm2	4117	2026-10-18T10:53:34Z	javascript,node-js,sandbox,security,vm	Advanced vm/sandbox for Node.js
+4	ovity/octotree	23310	2024-06-06T17:52:26Z	browser-extension,chrome,code-files,code-review,edge,firefox,github,opera,pull-request-review,safari	GitHub on steroids
+4	overtrue/share.js	3767	2025-01-07T05:41:16Z	share,social	一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、
+4	outline/outline	41242	2026-11-12T04:47:32Z	docker,javascript,mobx,nodejs,react,slack,wiki	The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature p
+4	open-cli-tools/concurrently	7868	2026-11-07T09:40:24Z	cli,command-line,concurrently,parallel,process,spawn	Run commands concurrently. Like `npm run watch-js & npm run watch-less` but better.
+4	nswbmw/node-in-debugging	6445	2021-09-02T18:49:43Z	debug,debugging,guide,node,tutorial	《Node.js 调试指南》
+4	nrwl/nx	29469	2026-11-12T11:01:04Z	angular,build,build-system,build-tool,building-tool,cli,cypress,hacktoberfest,javascript,monorepo,nextjs,nodejs,nx,nx-workspaces,react,storybook,typescript	The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your buil
+4	nomcopter/react-mosaic	4803	2026-09-28T13:13:15Z	react,tiling-window-manager,typescript,window-manager	A React tiling window manager
+4	nocodb/nocodb	65515	2026-11-12T10:06:29Z	airtable,airtable-alternative,automatic-api,hacktoberfest,low-code,no-code,no-code-database,no-code-platform,postgresql,rest-api,restful-api,spreadsheet,sqlite,swagger	🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative
+4	nhn/tui.editor	17986	2024-08-01T15:38:05Z	chart,commonmark,documentation,editor,frontend,gfm,html,jquery,jquery-plugin,markdown,uml,wysiwyg	🍞📝 Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible.
+4	nagadomi/waifu2x	28234	2023-05-04T00:50:48Z	super-resolution,torch,waifu2x	Image Super-Resolution for Anime-Style Art
+4	n8n-io/n8n	210287	2026-11-12T13:45:58Z	ai,apis,automation,cli,data-flow,development,integration-framework,integrations,ipaas,low-code,low-code-platform,mcp,mcp-client,mcp-server,n8n,no-code,self-hosted,typescript,workflow,workflow-automation	Fair-code workflow automation platform with native AI capabilities. Combine visual buildin
+4	mwilliamson/mammoth.js	6343	2026-10-16T07:32:21Z		Convert Word documents (.docx files) to HTML
+4	msitarzewski/agency-agents	167873	2026-11-09T00:27:04Z		A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas
+4	mozilla/pdf.js	54125	2026-11-12T12:32:55Z		PDF Reader in JavaScript
+4	microsoft/reflect-metadata	3358	2026-08-24T15:52:21Z	decorator-metadata,javascript,metadata,proposal,reflection,typescript	Prototype for a Metadata Reflection API for ECMAScript
+4	microsoft/napajs	9168	2022-08-29T14:03:08Z	javascript,multi-core,multithreading,napajs,nodejs,parallel,runtime	Napa.js: a multi-threaded JavaScript runtime
+4	microsoft/markitdown	195050	2026-11-07T00:14:01Z	autogen,autogen-extension,langchain,markdown,microsoft-office,openai,pdf	Python tool for converting files and office documents to Markdown.
+4	meta/relay	18982	2026-11-12T07:20:56Z		Relay is a JavaScript framework for building data-driven React applications.
+4	meta/react-devtools	11009	2019-09-03T10:48:51Z		An extension that allows inspection of React component hierarchy in the Chrome and Firefox
+4	meta/lexical	24019	2026-11-12T09:44:58Z		Lexical is an extensible text editor framework that provides excellent reliability, access
+4	meta/flipper	13444	2026-10-26T18:20:24Z		A desktop debugging platform for mobile developers.
+4	mdx-js/mdx	19859	2026-11-11T23:36:37Z	jsx,markdown,mdx,react,remark,unified,vue	Markdown for the component era
+4	mdnice/markdown-nice	4679	2023-10-06T06:15:36Z	antd,markdown,react,wechat	支持主题设计的 Markdown 编辑器，让排版变 Nice
+4	mattpocock/ts-reset	8645	2026-04-01T13:30:54Z	reset,typescript	A 'CSS reset' for TypeScript, improving types for common JavaScript API's
+4	mattpocock/skills	322612	2026-11-12T12:11:43Z		Skills for Real Engineers. Straight from my .agents directory.
+4	marktext/marktext	63909	2026-11-12T02:34:21Z	editor,electron,focus-mode,latex,linux,mac,macos,markdown,marktext,source-code,typewriter-mode,windows	📝A simple and elegant markdown editor, available for Linux, macOS and Windows.
+4	markmap/markmap	13234	2026-11-12T12:32:00Z	markmap,mindmap	Build mindmaps with plain text
+4	margox/braft-editor	4574	2024-11-19T02:15:52Z	draft-js,react,rich,rich-text-editor,wysiwyg,wysiwyg-js-editor	美观易用的React富文本编辑器，基于draft-js开发
+4	mapbox/pixelmatch	7023	2026-10-06T14:08:46Z	diff,image-comparison,testing-tools	The smallest, simplest and fastest JavaScript pixel-level image comparison library
+4	madrobby/zepto	15049	2026-05-07T22:44:38Z		Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible 
+4	lyricat/wechat-format	4559	2025-09-13T06:10:15Z		微信公众号排版编辑器，转换 Markdown 到微信特制的 HTML
+4	lxgw/LxgwWenKai	26979	2026-11-09T09:33:33Z	cjk,font,typeface	An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文字体，�
+4	lowlighter/metrics	17384	2026-05-29T21:41:23Z	automated,automation,github,github-action,github-api,github-metrics,github-profile,javascript,metrics,profile,profile-card,profile-readme,readme,readme-generator,readme-profile,svg-image	📊 An infographics generator with 30+ plugins and 300+ options to display stats about yo
+4	lin-xin/vue-manage-system	19586	2024-08-17T10:54:54Z	element-plus,pinia,typescript,vue	Vue3、Element Plus、typescript后台管理系统
+4	lecepin/WeChatVideoDownloader	4660	2024-05-15T13:58:22Z	downloader,wechat,wechat-video	超方便的微信视频号下载器
+4	lcxfs1991/blog	2177	2024-03-29T18:26:37Z		leehey's blog -- 请star或者watch
+4	layui/layui	30585	2026-11-12T08:50:06Z	component-library,css,html,javascript,layui,ui-kit,ui-library	一套遵循浏览器原生态开发模式的 Web UI 组件库。
+4	langgenius/dify	161040	2026-11-12T13:23:55Z	agent,agentic-ai,agentic-framework,agentic-workflow,ai,automation,claude,deepseek,genai,gpt,llm,low-code,mcp,nextjs,no-code,openai,python,skills,workflow	Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collabo
+4	langchain-ai/langchainjs	18341	2026-11-12T07:19:55Z		The agent engineering platform
+4	labuladong/fucking-algorithm	136051	2026-10-18T11:43:51Z	algorithms,computer-science,data-structures,dynamic-programming,dynamic-programming-algorithm,interview-questions,kmp,leetcode	Crack LeetCode, not only how, but also why. 
+4	kulshekhar/ts-jest	7072	2026-11-12T13:31:43Z	jest,testing,typescript	A Jest transformer with source map support that lets you use Jest to test projects written
+4	konvajs/react-konva	6446	2026-10-15T01:08:23Z	canvas,canvas-editor,design-editor,draw-graphics,konva,konva-framework,react,react-canvas,visualization,whiteboard	React components for the Konva 2d canvas library. Build interactive graphics, design edito
+4	kdn251/interviews	65562	2025-05-12T12:56:04Z	algorithm,algorithm-challenges,algorithm-competitions,algorithms,coding-challenge,coding-challenges,coding-interview,coding-interviews,interview,interview-practice,interview-prep,interview-preparation,interview-questions,interviews,java,leetcode,leetcode-java,leetcode-questions,leetcode-solutions,technical-coding-interview	Everything you need to know to get the job.
+4	justjavac/wechat-miniapp-radar	51167	2026-11-11T05:55:32Z	minapp,miniprogram,wechat,wechat-weapp,wxapp,wxml	:traffic_light:小程序雷达：AI 驱动的小程序技术选型、趋势追踪和迁移
+4	justadudewhohacks/face-api.js	17993	2024-01-24T09:25:35Z	age-estimation,emotion-recognition,face-detection,face-landmarks,face-recognition,gender-recognition,javascript,js,nodejs,tensorflow,tensorflowjs,tfjs	JavaScript API for face detection and face recognition in the browser and nodejs with tens
+4	joshbuchea/HEAD	30275	2026-05-28T02:33:42Z	favicon,frontend-development,head,html,html5,list,meta-tags,reference,seo,twitter-cards,web-development	A simple guide to HTML <head> elements
+4	jlevy/the-art-of-command-line	162748	2024-06-25T18:13:44Z	bash,documentation,linux,macos,unix,windows	Master the command line, in one page
+4	jimuyouyou/node-interview-questions	2303	2024-10-06T07:04:01Z		Node.js面试题，侧重后端应用与对Node核心的理解
+4	jgthms/bulma	50036	2026-09-21T09:56:34Z	css,css-framework,design,flexbox,html	Modern CSS framework based on Flexbox
+4	jeromeetienne/AR.js	15774	2022-12-07T23:32:13Z	a-frame,three-js,webar	Efficient Augmented Reality for the Web - 60fps on mobile!
+4	jaywcjlove/handbook	4382	2026-07-07T15:53:09Z		放置我的笔记、搜集、摘录、实践，保持好奇心。看文需谨慎，后果
+4	jayphelps/core-decorators	4480	2020-07-15T20:50:23Z		Library of stage-0 JavaScript decorators (aka ES2016/ES7 decorators but not accurate) insp
+4	jawil/blog	7810	2019-04-19T08:55:23Z	blog,css,difficulty,es6,github,javascript,js,nodejs,notes,study	Too young, too simple. Sometimes, naive & stupid 🐌
+4	javascript-obfuscator/javascript-obfuscator	16329	2026-11-12T04:55:32Z	browser,control-flow,cryptography,encoding,flattening,flow,javascript,javascript-obfuscator,js-obfuscator,literal,mangle,nodejs,obfuscate,obfuscation,obfuscator,protection,security,string,typescript,uglify	A powerful obfuscator for JavaScript and Node.js
+4	jaredreich/pell	12042	2024-05-12T17:09:57Z	contenteditable,editor,javascript,rich-text-editor,text-editing,text-editor,wysiwyg,wysiwyg-editor	📝 the simplest and smallest WYSIWYG text editor for web, with no dependencies
+4	jantimon/html-webpack-plugin	10723	2026-09-07T15:40:44Z	html-webpack-plugin,webpack	Simplifies creation of HTML files to serve your webpack bundles
+4	iptv-org/iptv	143856	2026-11-12T00:11:07Z	iptv,m3u,playlist,streams,tv	Collection of publicly available IPTV channels from all over the world
+4	immersive-translate/immersive-translate	19765	2026-11-12T11:28:58Z	chrome-extension,safari-extension,translation,userscript	沉浸式双语网页翻译扩展 , 支持输入框翻译， 鼠标悬停翻译， PDF, Ep
+4	imgcook/imgcook	1887	2023-10-31T07:02:53Z	design-to-code,frontend,machine-learning	Generate pages from any sketch or images.
+4	imagemin/imagemin	5717	2025-03-07T09:39:56Z	buffer,gif,imagemin,jpg,minify,nodejs,optimization,png,svg	Minify images seamlessly
+4	icepy/Front-End-Develop-Guide	2909	2026-02-08T09:07:35Z		💰 Awesome The Front End Develop Guide：这份指南汇集了前端开发所使用语�
+4	i5ting/imove	3720	2022-03-22T06:38:30Z	flowchart,javascript,logic,lowcode,x6,xstate	INACTIVE: Move your mouse, generate code from flow chart
+4	i5ting/How-to-learn-node-correctly	4519	2019-07-06T06:16:49Z		[全文]如何正确的学习Node.js
+4	hyperapp/hyperapp	19191	2025-03-20T01:04:38Z	framework,javascript,vdom,web	1kB-ish JavaScript framework for building hypertext applications
+4	http-party/node-http-proxy	14120	2026-11-11T12:00:39Z		A full-featured http proxy for node.js
+4	hotoo/pinyin	7834	2026-06-09T09:54:41Z	chinese,hanzi,pinyin,zhongwen	:cn: 汉字拼音 ➜ hàn zì pīn yīn
+4	herozhou/vue-framework-wz	4319	2023-04-18T20:31:36Z	admin,admin-dashboard,admin-template,admin-tool,admin-ui,vue,vue-admin,vue-cli,vue-components,vue-demo,vue-framework-wz,vue-template,vue2,vuejs	👏vue后台管理框架👏
+4	hemanth/functional-programming-jargon	18745	2026-10-04T05:28:31Z	awesome-list,education,fp,functional-programming,glossary,javascript	Jargon from the functional programming world in simple terms!
+4	hax/heshijun_v_360	2407	2024-03-19T02:51:02Z		贺师俊与360的劳动争议诉讼
+4	handsontable/handsontable	22082	2026-11-12T13:47:12Z	angular-datagrid,angular-table,component,crud-operations,data-editing,data-grid,data-management,data-tables,datagrid,datatable,excel,excel-javascript,grid,grid-component,react-datatable,react-grid,spreadsheet,table,vue-table	JavaScript Data Grid / Data Table with a Spreadsheet Look & Feel. Works with React, Angula
+4	handlebars-lang/handlebars.js	18692	2026-10-06T20:39:21Z	handlebars,mustache,templates	Minimal templating on steroids.
+4	hammerjs/hammer.js	24317	2026-11-12T08:05:20Z		A javascript library for multi-touch gestures :// You can touch this
+4	graphql/graphql-js	20344	2026-11-10T05:30:42Z	graphql,graphql-js	A reference implementation of GraphQL for JavaScript
+4	goofychris/art-template	9835	2026-07-13T02:00:06Z	express,javascript,koa,nodejs,template-engine,webpack	High performance JavaScript templating engine
+4	goldfire/howler.js	25443	2025-11-23T23:49:01Z	audio,audio-library,howler,html5-audio,javascript,playback,volume,web-audio	Javascript audio library for the modern web.
+4	gohugoio/hugo	90454	2026-11-12T10:30:37Z	blog-engine,cms,content-management-system,documentation-tool,go,hugo,static-site-generator	The world’s fastest framework for building websites.
+4	github/gitignore	176250	2026-11-09T17:05:44Z	git,gitignore	A collection of useful .gitignore templates
+4	git/git	64276	2026-11-11T22:35:52Z	c,hacktoberfest,shell	Git Source Code Mirror - This is a publish-only repository but pull requests can be turned
+4	getgauge/taiko	3671	2026-11-11T10:58:23Z	automation,headless,headless-browsers,headless-chrome,headless-chromium,headless-testing,testing-tools	A node.js library for testing modern web applications
+4	geekcompany/ResumeSample	28369	2024-08-14T10:20:23Z		Resume template for Chinese programmers . 程序员简历模板系列。包括PHP程序员
+4	gatsbyjs/gatsby	55914	2026-11-11T13:06:01Z	blog,compiler,gatsby,graphql,react,static-site-generator,web-app	React-based framework with performance, scalability, and security built in.
+4	galacean/engine	5919	2026-11-12T13:12:46Z	2d,3d,animation,graphics,html5,input,javascript,physics,typescript,web3d,webgl,webgl2	A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and gl
+4	gaearon/react-hot-loader	12149	2023-02-10T02:42:07Z		Tweak React components in real time. (Deprecated: use Fast Refresh instead.)
+4	ftlabs/fastclick	18489	2021-08-13T16:01:47Z		Polyfill to remove click delays on browsers with touch UIs
+4	frejs/fre	3762	2026-11-04T11:58:57Z	fiber,fre,hook,hooks,jsx,keyed-reconcilation-algorithm,react-hooks,react-like,reconcilation,reconciliation-algorithm,vdom,vdom-library	:ghost: Tiny Concurrent UI library with Fiber.
+4	firecrawl/firecrawl	201143	2026-11-12T11:19:51Z	ai,ai-agents,ai-crawler,ai-scraping,ai-search,crawler,data-extraction,html-to-markdown,llm,markdown,scraper,scraping,web-crawler,web-data,web-data-extraction,web-scraper,web-scraping,web-search,webscraping	Supercharge your AI agents with data from the web and beyond. Building the library for sup
+4	fighting41love/funNLP	84543	2024-05-10T07:38:24Z		中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字�
+4	ffmpegwasm/ffmpeg.wasm	17954	2026-09-29T21:30:20Z	audio,experimental-features,ffmpeg,transcode,video,wasm	FFmpeg for browser, powered by WebAssembly
+4	faressoft/terminalizer	16174	2024-08-29T00:40:13Z	animated,bash,bash-profile,capture,colors,command-line,font,generate,gif,powershell,pty,record,render,repeat,shell,shot,terminal,theme,tty,zsh	🦄 Record your terminal and generate animated gif images or share a web player
+4	fangzesheng/free-api	16285	2026-10-20T13:25:10Z	api,freeapi	收集免费的接口服务,做一个api的搬运工
+4	facebookarchive/prepack	14086	2022-02-11T05:19:57Z	javascript,optimization	A JavaScript bundle optimizer.
+4	enzymejs/enzyme	19803	2025-10-22T15:55:30Z	assertion-library,assertions,ava,chai,enzyme,jest,mocha,react,react-components,test,test-runner,test-runners,testing,traversal	JavaScript Testing utilities for React
+4	emscripten-core/emscripten	27772	2026-11-12T10:38:00Z	emscripten,hacktoberfest,wasm,webassembly	Emscripten: An LLVM-to-WebAssembly Compiler
+4	emilwallner/Screenshot-to-code	16533	2024-08-16T22:05:07Z	cnn,cnn-keras,deep-learning,encoder-decoder,floydhub,jupyter,jupyter-notebook,keras,lstm,machine-learning,seq2seq	A neural network that transforms a design mock-up into a static website.
+4	ejci/favico.js	8660	2017-10-05T14:56:42Z		Make use of your favicon with badges, images or videos
+4	egoist/tsup	11320	2026-11-12T11:40:56Z		The simplest and fastest way to bundle your TypeScript libraries.
+4	ecomfe/spec	4590	2022-12-05T08:30:19Z		This repository contains the specifications.
+4	dvajs/dva	16126	2025-08-06T04:38:43Z	dva,elm,framework,redux,redux-saga	🌱 React and redux based, lightweight and elm-style framework. (Inspired by elm and choo
+4	dunwu/nginx-tutorial	5455	2024-01-27T15:12:46Z	load-balancer,nginx,proxy,tutorial	这是一个 Nginx 极简教程，目的在于帮助新手快速入门 Nginx。
+4	dubinc/dub.link	25158	2026-10-27T02:24:37Z	clickhouse,mysql,nextjs,open-source,planetscale,prisma,tailwindcss,tinybird,typescript,upstash,vercel	The modern link attribution platform. Loved by world-class engineering teams at Twilio, Zi
+4	ds300/patch-package	11233	2025-09-30T07:56:17Z	dependencies,dependency-manager,diff,javascript,javascript-tools,node,node-js,node-modules,nodejs,package-management,package-manager,patch,patcher,postinstall	Fix broken node modules instantly  🏃🏽‍♀️💨
+4	dream-num/Luckysheet	16627	2025-08-19T12:36:59Z	canvas,chart,conditional-formatting,data-table,excel,formula,google-sheets,google-spreadsheet,javascript,office,pivot-tables,sparkline,spreadsheet,web-based,xlsx	Luckysheet upgraded to Univer
+4	didi/LogicFlow	11780	2026-10-24T01:23:33Z	bpmn,diagram,diagramming,didi,flow,flowchart,graph,javascript,javascript-diagramming-library,mvvm,svg,typescript,visualization	A flow chart editing framework focus on business customization.  专注于业务自定义�
+4	dexteryy/spellbook-of-modern-webdev	17957	2023-12-18T07:53:58Z	awesome,css3,html5,isomorphic-javascript,javascript,learning,libraries,nodejs,universal-javascript,webapp,webplatform	A Big Picture, Thesaurus, and Taxonomy of Modern JavaScript Web Development
+4	dexie/Dexie.js	14684	2026-11-09T08:29:32Z	database,indexeddb,javascript,offline,offline-storage,storage	A Minimalistic Wrapper for IndexedDB
+4	developit/workerize	4369	2021-03-04T23:04:53Z	threading,web-worker,web-workers	🏗️ Run a module in a Web Worker.
+4	curl/curl	43494	2026-11-12T02:17:42Z	c,client,curl,ftp,gopher,hacktoberfest,http,https,imaps,ldap,libcurl,library,mqtt,pop3,scp,sftp,transfer-data,transferring-data,user-agent,websocket	A command line tool and library for transferring data with URL syntax, supporting DICT, FI
+4	cure53/DOMPurify	17523	2026-11-11T10:22:53Z	cross-site-scripting,dom,dompurify,html,javascript,mathml,prevent-xss-attacks,sanitizer,security,svg,xss	DOMPurify - a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. 
+4	cuixiaorui/mini-vue	10514	2024-03-25T01:15:05Z	mini-vue,vue3-source	实现最简 vue3 模型( Help you learn more efficiently vue3 source code )
+4	css-modules/css-modules	18037	2024-05-30T14:58:51Z		Documentation about css-modules
+4	crawlab-team/artipub	3202	2026-01-29T11:47:33Z	article,article-publisher,csdn,docker,media,mongodb,nodejs,segmentfault,typescript	Article publishing platform that automatically distributes your articles to various media 
+4	conventional-changelog/commitlint	18810	2026-11-12T08:07:20Z	commit,conventions,git,lint	📓 Lint commit messages
+4	cmiscm/leonsans	10172	2020-09-21T05:40:09Z		Leon Sans is a geometric sans-serif typeface made with code in 2019 by Jongmin Kim.
+4	chrisvfritz/prerender-spa-plugin	7257	2023-04-09T13:38:15Z	prerender,seo,spa,static-site-generator,webpack,webpack-plugin	Prerenders static HTML in a single-page application.
+4	chokcoco/CSS-Inspiration	10838	2025-02-13T04:13:01Z		CSS Inspiration，在这里找到写 CSS 的灵感！
+4	chimurai/http-proxy-middleware	11131	2026-11-10T09:53:59Z	browser-sync,connect,express,fastify,hono,http-proxy,httpxy,javascript,middleware,nextjs,node,nodejs,polka,proxy,proxy-middleware,websocket	:zap: The one-liner node.js http-proxy-middleware (httpxy) for connect, express, next.js a
+4	chenshenhai/koa2-note	5148	2022-02-12T03:58:22Z	course-notes,koa,koa2,koa2-course,koajs,nodejs	《Koa2进阶学习笔记》已完结🎄🎄🎄
+4	chefyuan/algorithm-base	10754	2025-05-03T13:50:26Z	algorithms,base,interview-practice,interview-questions,java,leetcode,offer,programmers	一位酷爱做饭的程序员，立志用动画将算法说的通俗易懂。我的面试
+4	checkly/headless-recorder	15312	2022-12-16T13:35:36Z	chrome,chrome-extension,playwright,puppeteer,vue	Chrome extension that records your browser interactions and generates a Playwright or Pupp
+4	chartjs/Chart.js	67794	2026-11-09T02:22:25Z	canvas,chart,graph,html5,html5-charts,javascript	Simple HTML5 Charts using the <canvas> tag
+4	chaozh/awesome-blockchain-cn	18947	2024-02-29T07:33:18Z		收集所有区块链(BlockChain)技术开发相关资料，包括Fabric和Ethereum开发�
+4	changesets/changesets	12572	2026-11-08T15:53:38Z		🦋 A tool to manage versioning and changelogs with a focus on monorepos
+4	chalk/chalk	23341	2026-10-22T21:24:45Z	ansi,ansi-escape-codes,chalk,cli,color,commandline,console,javascript,strip-ansi,terminal,terminal-emulators	🖍 Terminal string styling done right
+4	ccxt/ccxt	44870	2026-11-12T13:18:49Z	altcoin,api,arbitrage,bitcoin,bot,btc,crypto,cryptocurrencies,cryptocurrency,eth,ethereum,exchange,invest,library,market-data,memecoin,strategy,trade,trading	A unified trading API with more than 100 crypto exchanges and prediction markets in JavaSc
+4	camsong/blog	3622	2023-02-20T05:06:34Z		✍️Front-end Development Thoughts
+4	camsong/You-Dont-Need-jQuery	20106	2026-11-06T00:12:53Z		Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript
+4	buefy/buefy	9508	2026-09-08T18:47:31Z	bulma,components,vue,vue-admin,vue-bulma,vuejs	Lightweight UI components for Vue.js based on Bulma
+4	browserslist/browserslist	13587	2026-11-05T23:27:07Z		🦔 Share target browsers between different front-end tools, like Autoprefixer, Stylelint
+4	brix/crypto-js	16399	2024-08-09T08:16:59Z		JavaScript library of crypto standards.
+4	binary-husky/gpt_academic	71657	2026-01-25T12:33:10Z	academic,chatglm-6b,chatgpt,gpt-4,large-language-models	为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润�
+4	bilibili/flv.js	23172	2024-07-07T07:28:53Z		HTML5 FLV Player
+4	bestony/logoly	7945	2026-07-06T09:55:42Z	generator,hacktoberfest,logo,pornhub,vue	A Pornhub Flavour Logo Generator
+4	bestiejs/benchmark.js	5447	2022-12-22T13:38:09Z		A benchmarking library. As used on jsPerf.com.
+4	benjamn/recast	5259	2026-11-09T00:29:58Z		JavaScript syntax tree transformer, nondestructive pretty-printer, and automatic source ma
+4	barretlee/performance-column	1202	2020-06-18T01:46:04Z	column,performance	🚅 性能专栏（Performance Column）
+4	bailicangdu/vue2-elm	40952	2025-04-11T12:52:02Z	es2015,flex,sass,vue,vue-router,vuex,webpack	Large single page application with 45 pages built on vue2 + vuex. 基于 vue2 + vuex 构�
+4	azl397985856/automate-everything	549	2021-12-03T15:13:37Z	automation,components,front-end-development,modules,performance	这是我准备写的第一本书，其实早些时候已经打算开始写书了，只是
+4	auth0/node-jsonwebtoken	18184	2026-06-25T15:23:15Z		JsonWebToken implementation for node.js http://self-issued.info/docs/draft-ietf-oauth-json
+4	aui/font-spider	5139	2022-12-30T18:18:29Z	eot,font-face,opentype,svg,truetype,ttf,webfont,woff,woff2	Smart webfont compression and format conversion tool
+4	auchenberg/vscode-browser-preview	4370	2023-04-30T05:33:08Z		A real browser preview inside your editor that you can debug.
+4	atomiks/tippyjs	12229	2024-05-27T19:00:23Z	combobox,dropdown,menu,popover,popup,tooltip	Tooltip, popover, dropdown, and menu library
+4	apitable/apitable	15668	2026-09-06T11:26:21Z	admin-dashboard,airtable,airtable-alternative,api,automatic-api,embed,hacktoberfest,internal-tool,javascript,low-code,nestjs,nextjs,no-code,nocodb,notion,react,spreadsheet,spring,typescript	🚀🎉📚 APITable, an API-oriented low-code platform for building collaborative apps a
+4	apify/crawlee	26427	2026-11-12T09:49:29Z	apify,automation,crawler,crawling,headless,headless-chrome,javascript,nodejs,npm,playwright,puppeteer,scraper,scraping,typescript,web-crawler,web-crawling,web-scraping	Crawlee—A web scraping and browser automation library for Node.js to build reliable craw
+4	apache/answer	15713	2026-11-12T10:06:06Z	community,forum,go,golang,hacktoberfest,q-and-a,question,react,typescript	A Q&A platform software for teams at any scales. Whether it's a community forum, help cent
+4	anthropics/skills	193498	2026-11-06T22:32:32Z	agent-skills	Public repository for Agent Skills
+4	antfu-collective/vitesse-webext	3375	2026-03-03T12:41:03Z	vite,vue3,webextension	⚡️ WebExtension Vite Starter Template
+4	anseki/leader-line	3244	2025-04-11T01:40:49Z	arrow,attention,bubble,highlight,leader,line,markup,mouse,spotlight,svg	Draw a leader line in your web page.
+4	angular/angular	101482	2026-11-12T09:35:46Z	angular,javascript,pwa,typescript,web,web-framework,web-performance	Deliver web apps with confidence 🚀
+4	amfe/lib-flexible	12463	2023-09-11T10:34:08Z		可伸缩布局方案
+4	alsotang/node-lessons	16402	2022-02-15T02:04:44Z	javascript,nodejs	:closed_book:《Node.js 包教不包会》 by alsotang
+4	alpinejs/alpine	32021	2026-11-04T00:45:57Z		A rugged, minimal framework for composing JavaScript behavior in your markup. 
+4	alienzhou/frontend-tech-list	3566	2020-03-07T12:24:05Z	css,frontend,html,javascript,list,pwa,security,tech	📝 Frontend Tech List for Developers 💡
+4	alibaba/x-render	7849	2026-05-26T06:16:52Z	ant,ant-design,chart,form,formrender,javascript,json-schema,list,react,table,typescript,webpack,widget	🚴‍♀️ Very easy to use process form table chart solution.
+4	alibaba/rax	8014	2023-03-27T06:49:28Z	framework,javascript,miniapp,mobile,pwa,rax,ssr,typescript,universal,web,weex	🐰 Rax is a progressive framework for building universal application. https://rax.js.org
+4	alibaba/lowcode-engine	15872	2025-03-10T09:37:14Z	alibaba,low-code,lowcode	An enterprise-class low-code technology stack with scale-out design / 一套面向扩展�
+4	alibaba/flutter-go	23616	2023-12-11T20:49:42Z	dart,flutter,flutter-demo,flutter-doc	flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文�
+4	alexfoxy/lax.js	10456	2025-05-21T06:07:55Z	animation,css,effects,parallax,scroll,transitions	Simple & lightweight (<4kb gzipped) vanilla JavaScript library to create smooth & beautifu
+4	akxcv/vuera	4278	2023-09-19T11:34:22Z	babel-plugin,interop,migrate,react,seamless-integration,vue,vue-plugin	:eyes: Vue in React, React in Vue. Seamless integration of the two. :dancers:
+4	ajv-validator/ajv	14877	2026-09-06T19:59:32Z	ajv,json-schema,validator	The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and
+4	airyland/vux	17443	2026-07-17T23:32:23Z	ant,components,javascript,mobile-web,vue,vue-components,vue2,vux,web-app,wechat,weui	Mobile UI Components based on Vue & WeUI
+4	airuikun/technology-blog	3147	2022-08-06T05:28:25Z		个人博客，前端技术收集，一起共同学习与成长
+4	aFarkas/lazysizes	17710	2024-04-03T08:17:04Z	javascript,lazy-evaluation,lazyload,lazysizes,performance,responsive-images	High performance and SEO friendly lazy loader for images (responsive and normal), iframes 
+4	Wei-Shaw/sub2api	45919	2026-11-12T08:53:36Z	2api,antigravity2api,cc2api,claude,claude-code,codex,crs,crs2,gemini	Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接�
+4	Vanessa219/vditor	11447	2026-11-09T04:54:43Z	commonmark,editor,gfm,lute,markdown,md,react,rich-text,typescript,typora,vue,wysiwyg	♏  一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即
+4	Tencent/wepy	22503	2026-03-18T07:48:11Z	weapp,wepy	小程序组件化开发框架 - 已归档
+4	TeamStuQ/skill-map	22060	2023-01-20T04:25:02Z	programmer,skillmap,stuq	程序员技能图谱
+4	SortableJS/Sortable	31209	2026-03-24T22:02:22Z	drag,drag-and-drop,drag-drop,draggable,droppable,reordering,sort,sortable,touch,ui	Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framew
+4	SheetJS/sheetjs	36345	2024-04-18T08:06:46Z	angular,bun,csv,data,database,deno,excel,grid,html,html5,ios,javascript,json,nodejs,react,spreadsheet,table,vue,xlsx,xml	📗 SheetJS Spreadsheet Data Toolkit -- New home https://git.sheetjs.com/SheetJS/sheetjs
+4	Schniz/fnm	27388	2026-10-26T16:28:14Z	hacktoberfest,javascript,nodejs,nvm,reasonml,version	🚀 Fast and simple Node.js version manager, built in Rust
+4	RubyLouvre/anu	3159	2020-09-18T02:59:39Z	anu,react,wechat-mini-program,zhifubao-mini-program	the React16-compat library with hooks 
+4	Reactive-Extensions/RxJS	19312	2018-04-18T20:17:39Z		The Reactive Extensions for JavaScript
+4	Raathigesh/majestic	7437	2022-05-03T14:54:05Z	developer-experience,developer-tools,jest,react	⚡ Zero config GUI for Jest
+4	OpenEthan/SMSBoom	15077	2024-03-20T03:30:32Z	deprecated	SMSBoom - Deprecate: Due to judicial reasons, the repository has been suspended!
+4	NaiboWang/EasySpider	44784	2026-11-07T13:35:29Z	batch-processing,batch-script,code-free,crawler,data-collection,frontend,gui,html,input-parameters,layman,parameters,robotics,rpa,scraper,spider,visual,visualization,visualprogramming,web,www	A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化
+4	Modernizr/Modernizr	25675	2026-10-21T21:07:40Z	css3-features,feature-detection,hacktoberfest,javascript,javascript-library,modernizr	Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s bro
+4	JakeChampion/fetch	25821	2024-07-15T00:26:39Z	fetch,javascript,polyfill,promise	A window.fetch JavaScript polyfill.
+4	JSMonk/hegel	2081	2024-01-29T12:23:47Z	javascript,type-safety,typeinference	An advanced static type checker
+4	Hufe921/canvas-editor	5261	2026-11-12T12:19:03Z	ai,browser,canvas,canvas-editor,control,date-picker,editor,emr,latex,pdf,pdf-generation,rich-text,svg,svg-editor,typescript,vite,word,wysiwyg	A Canvas/SVG-based rich text editor
+4	GoogleChromeLabs/squoosh	26187	2026-10-22T17:16:21Z		Make images smaller using best-in-class codecs, right in the browser.
+4	GoogleChromeLabs/ndb	10857	2022-05-26T07:03:35Z	debugging,devtools,nodejs	ndb is an improved debugging experience for Node.js, enabled by Chrome DevTools
+4	GoogleChrome/web-vitals	8674	2026-11-12T03:40:47Z		Essential metrics for a healthy site.
+4	GitSquared/edex-ui	45040	2021-10-19T22:38:47Z	desktop,edex-ui,electron,linux,macos,nodejs,science-fiction,shell,terminal,touchscreen,tron,unixporn,windows	A cross-platform, customizable science fiction terminal emulator with advanced monitoring 
+4	FelisCatus/SwitchyOmega	22613	2024-12-27T12:00:30Z		No longer maintained, see pinned issues
+4	EastWorld/wechat-app-mall	21923	2026-11-12T05:54:48Z		微信小程序商城，微信小程序微店
+4	DouyinFE/semi-design	10484	2026-11-12T10:41:20Z	ai-friendly,code2design,dark-mode,design-system,design2code,designops,designtocode,figma-plugin,react,theme,ui-libary	🚀A modern, comprehensive, flexible design system and React UI library, AI-friendly buil
+4	CreateJS/EaselJS	8172	2026-01-24T17:25:05Z		The Easel Javascript library provides a full, hierarchical display list, a core interactio
+4	CorentinJ/Real-Time-Voice-Cloning	60241	2026-03-09T10:31:58Z	deep-learning,python,pytorch,tensorflow,tts,voice-cloning	Clone a voice in 5 seconds to generate arbitrary speech in real-time
+4	Comfy-Org/ComfyUI	146465	2026-11-12T13:20:08Z	ai,comfy,comfyui,python,pytorch,stable-diffusion	The most powerful and modular diffusion model GUI, api and backend with a graph/nodes inte
+4	ChanceYu/front-end-rss	2899	2026-11-10T18:58:19Z	article,blog,collection,daily,fed,feed,feed-reader,front,front-end,javascript,latest,rss,weekly	:orange_book: 根据 RSS 订阅最新前端技术文章并自动分类
+4	BurntSushi/ripgrep	69910	2026-11-09T20:53:12Z	cli,command-line,command-line-tool,gitignore,grep,recursively-search,regex,ripgrep,rust,search	ripgrep recursively searches directories for a regex pattern while respecting your gitigno
+4	Automattic/wp-calypso	12654	2026-11-12T13:45:31Z	es2015,es6,es6-javascript,javascript,nodejs,react,redux,wordpress	The JavaScript and API powered WordPress.com
+4	AssemblyScript/assemblyscript	18040	2026-10-18T13:18:38Z	assemblyscript,compiler,typescript,wasm,webassembly	A TypeScript-like language for WebAssembly.
+4	Akryum/vue-virtual-scroller	10793	2026-10-24T19:18:50Z	scroller,virtual-scroller,vuejs,vuejs-components,vuejs2	⚡️ Blazing fast scrolling for any amount of data
+4	75team/w3c	435	2026-11-12T07:20:53Z	360,css,w3c,web	360 W3C工作组
+4	0x5e/wechat-deleted-friends	4771	2020-10-01T05:14:09Z	python,wechat	查看被删的微信好友
+3	zzzgydi/clash-verge	21857	2023-11-03T08:00:47Z	clash,cross-platform,react,rust,tauri	A Clash GUI based on tauri. Supports Windows, macOS and Linux.
+3	zouhir/jarvis	5483	2023-02-17T09:20:53Z	build-tool,dashboard,webpack	A very intelligent browser based Webpack dashboard
+3	zhangyuang/ssr	2684	2026-08-17T04:35:47Z	bun,csr,midway,midway-faas,nestjs,node,pinia,prerender,react,react18,rolldown,rspack,serverless,ssg,ssr,valtio,vite,vue,vue3,webpack	A most advanced ssr framework support React17/React18/Vue2/Vue3 on Earth that implemented 
+3	zenghongtu/react-use-chinese	1042	2021-12-06T13:26:32Z	docs,react,react-hooks	中文文档@react-use
+3	zai-org/ChatGLM-6B	40852	2024-06-27T04:05:25Z		ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型
+3	zaach/jison	4376	2022-10-14T08:26:50Z		Bison in JavaScript.
+3	yyx990803/vue-hooks	1582	2020-04-29T19:59:15Z		Experimental React hooks implementation in Vue
+3	yujiangshui/A-Programmers-Guide-to-English	17079	2023-01-28T07:48:04Z	english,english-learning	专为程序员编写的英语学习指南 v1.2。在线版本请点 ->
+3	youzan/vant-weapp	18474	2026-10-10T06:01:04Z	miniprogram,ui,vant,weapp,weixin	轻量、可靠的小程序 UI 组件库
+3	yodaos-project/yodaos	1228	2019-12-04T12:28:46Z	javascript,linux,nodejs,openwrt,web,yodaos	Yet another Linux distribution for voice-enabled IoT and embrace Web standards
+3	ymm-tech/gods-pen	4438	2023-02-25T02:45:26Z		基于vue的高扩展在线网页制作平台，可自定义组件，可添加脚本，可
+3	yiminghe/async-validator	9068	2024-02-20T12:34:08Z		validate form asynchronous
+3	ygs-code/vue	7332	2025-08-10T11:35:16Z		vue源码逐行注释分析+40多m的vue源码程序流程图思维导图(vue source code 
+3	yargs/yargs	11508	2026-11-11T20:23:22Z		 yargs the modern, pirate-themed successor to optimist.
+3	yangyangwithgnu/hardseed	9190	2018-08-25T17:29:23Z		SEX IS ZERO (0), so, who wanna be the ONE (1), aha?
+3	yahoo/serialize-javascript	2925	2026-10-26T14:54:48Z	javascript,json,serialize,web	Serialize JavaScript to a superset of JSON that includes regular expressions and functions
+3	ximan/dropload	2681	2018-09-29T06:30:32Z		移动端下拉刷新、上拉加载更多插件
+3	wulkano/Kap	19426	2024-11-12T15:32:40Z	aperture,app,capture,communication,electron,javascript,kap,mac,macos,nextjs,open-source,oss,productivity,record,screen-capture,screen-recorder	An open-source screen recorder built with web technology
+3	wubaiqing/zaobao	2248	2022-08-10T02:25:37Z	awesome,coding-article,daily,design,news,promotion-promotion,share,web-development,zaobao	每日时报，以前端技术体系为主要分享课题。根据：文章、工具、新
+3	wting/autojump	16961	2025-02-27T16:03:23Z	autojump,command-line-tool,filesystem,python	A cd command that learns - easily navigate directories from the command line
+3	windicss/windicss	6495	2024-06-21T23:11:31Z	css,css-compiler,on-demand,svelte,tailwindcss,utility-first,vuejs,windi-css	Next generation utility-first CSS framework.
+3	weolar/miniblink49	7840	2026-05-12T19:43:02Z	blink,chromium,electron,nodejs	a lighter, faster browser kernel of blink to integrate HTML UI in your app. 一个小巧�
+3	wenyan-lang/wenyan	20298	2023-10-20T13:39:33Z	classical-chinese,esoteric-language,programming-language,wenyan-lang	文言文編程語言 A programming language for the ancient Chinese.
+3	webtorrent/webtorrent	31476	2026-11-06T08:50:57Z	bittorrent,browser,hacktoberfest,javascript,nodejs,p2p,streaming,torrent,webrtc,webtorrent	⚡️ Streaming torrent client for the web
+3	webpack-china/awesome-webpack-cn	3791	2026-11-12T09:38:47Z	angular,react,vue,webpack,webpack2,webpack3	[印记中文](https://docschina.org/) - webpack 优秀中文文章
+3	web3/web3.js	19904	2025-03-05T08:48:59Z	abi-decoders,abi-encoders,api,ethereum,javascript,typescript,web3,web3js	Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RP
+3	web-infra-dev/modern.js	5049	2026-11-12T13:44:55Z	boilerplate,build-tool,framework,react,rspack,ssr,web,webpack,website	A progressive web framework based on React and Rsbuild.
+3	wbt5/real-url	7830	2024-06-07T01:36:57Z	bilibili,danmu,douyin,douyu,huya,kuaishou,python,streaming	获取斗鱼&虎牙&哔哩哔哩&抖音&快手等 58 个直播平台的真实流媒体地�
+3	wasm-bindgen/wasm-pack	7306	2026-11-11T05:15:39Z	cli,npm,package,registry,rust,rust-wasm,wasm	📦✨ your favorite rust -> wasm workflow tool!
+3	wahyd4/work-in-australia	2818	2026-09-11T23:06:17Z		Work in Australia as a Developer / 程序员如何申请到澳洲工作
+3	wagerfield/parallax	16569	2024-04-06T08:07:55Z		Parallax Engine that reacts to the orientation of a smart device
+3	vuejs/petite-vue	9687	2024-07-13T21:45:45Z		6kb subset of Vue optimized for progressive enhancement
+3	vuejs/docs-next-zh-cn	936	2022-08-08T15:50:03Z		:cn: Chinese translation for v3.vuejs.org
+3	vuejs/composition-api	4174	2023-08-15T11:08:15Z		Composition API plugin for Vue 2
+3	vitejs/launch-editor	724	2026-11-01T01:04:03Z		Open file in editor from Node.js.
+3	vinta/awesome-python	334221	2026-11-08T14:42:33Z	awesome,awesome-list,python,python-frameworks,python-libraries,python-tools	The definitive list that answers "I want to do X in Python, which tool should I use?"
+3	vercel/micro	10630	2026-11-09T08:30:21Z	async,await,micro,microservice,vercel	Asynchronous HTTP microservices
+3	vbenjs/vue-vben-admin	33798	2026-11-09T19:43:20Z	admin-template,ant-design,element-plus,monorepo,naive-ui,shadcn-ui,tsx,typescript,vben,vite,vite-template,vue-router,vue3,vuex	A modern vue admin panel built with Vue3, Shadcn UI, Vite, TypeScript, and Monorepo. It's 
+3	vasanthk/react-bits	17424	2025-12-05T19:33:18Z	best-practices,design-patterns,javascript,react,react-patterns,reactjs,techniques	✨ React patterns, techniques, tips and tricks ✨
+3	varletjs/varlet	5344	2026-11-09T11:07:03Z	components,javascript,js,material,material-design,material-design-3,material-design-you,mobile,ts,typescript,ui,ui-kit,ui-library,vue,vue3,vuejs3	A Vue3 component library based on Material Design 2 and 3, supporting mobile and desktop.
+3	validatorjs/validator.js	23740	2026-09-11T10:17:07Z	hacktoberfest,input,javascript,node,sanitization,sanitize,validate,validation,validations,validator	String validation
+3	utterance/utterances	9702	2024-08-15T15:04:06Z	blog,comments,comments-widget,github,utterances	:crystal_ball: A lightweight comments widget built on GitHub issues
+3	umijs/umi	16052	2026-11-05T14:51:34Z	react,react-framework,umi,umijs	A framework in react community ✨
+3	umijs/babel-plugin-import	3144	2024-04-24T12:41:03Z		Modularly import plugin for babel.
+3	ultraworkers/claw-code	194789	2026-11-10T05:59:18Z		An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed a
+3	udecode/plate	16700	2026-11-12T13:14:48Z	ai,mcp,react,shadcn-ui,slate,typescript,wysiwyg	Rich-text editor with AI and shadcn/ui
+3	typeorm/typeorm	36674	2026-11-12T12:06:28Z	active-record,cockroachdb,data-mapper,database,hacktoberfest,javascript,mariadb,mysql,orm,postgresql,sqlite,sqlserver,typeorm,typescript	TypeScript & JavaScript ORM for Node.js — supports PostgreSQL, MySQL, MariaDB, SQLite, S
+3	typecho/typecho	12454	2026-10-28T08:29:11Z	blog,markdown,php,typecho	A PHP Blogging Platform. Simple and Powerful.
+3	twitter/typeahead.js	16410	2023-04-14T07:24:33Z		typeahead.js is a fast and fully-featured autocomplete library
+3	tw93/Kami	12521	2026-11-10T02:51:15Z	agent-skills,ai-agents,claude-code,codex,document-design,pdf,pptx,typesetting	👩‍🚒 Good content deserves good paper. Layout rules and templates that let AI agent
+3	turbolinks/turbolinks	12559	2021-08-11T02:49:14Z		Turbolinks makes navigating your web application faster
+3	tt-a1i/archify	95825	2026-11-12T09:58:19Z	agent-skills,ai-agents,architecture-diagram,claude-code,claude-skills,codex,coding-agents,deepseek-harness,developer-tools,diagrams,diagrams-as-code,dsh-plugin,flowchart,llm,mermaid,opencode,sequence-diagram,software-architecture,system-design,visualization	Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for 
+3	tschaub/gh-pages	3353	2026-03-26T07:53:28Z		General purpose task for publishing files to a gh-pages branch on GitHub
+3	trpc/trpc	40813	2026-11-11T15:51:20Z	api,next,nextjs,prisma,react,typescript	🧙‍♀️  Move Fast and Break Nothing. End-to-end typesafe APIs made easy. 
+3	tree-sitter/tree-sitter	27452	2026-11-12T07:37:57Z	c,incremental,parser,parsing,rust,tree-sitter,wasm	An incremental parsing system for programming tools
+3	transloadit/uppy	31070	2026-11-12T12:13:35Z	dropbox,encoding,file-uploader,file-uploads,files,instagram,javascript,mit,modular,open-source,pick-files,resumable,transloadit,tus,uploader,uppy,webbrowser	The next open source file uploader for web browsers :dog: 
+3	toutiaoio/awesome-architecture	9679	2021-01-06T01:10:26Z	architecture	架构师技术图谱，助你早日成为架构师
+3	tonsky/FiraCode	82192	2026-07-28T17:02:16Z	font,ligatures,programming-ligatures	Free monospaced font with programming ligatures
+3	toeverything/blocksuite	6087	2026-11-11T20:26:00Z	block,block-editor,collaboration,components,components-library,crdt,editor,local-first,notion-editor,rich-text-editor,state-management,webcomponents,wysiwyg,wysiwyg-editor,yjs	🧩 Content editing tech stack for the web - BlockSuite is a toolkit for building editors
+3	tobiasahlin/SpinKit	19309	2020-08-01T09:04:59Z		A collection of loading indicators animated with CSS
+3	tmallfe/tmallfe.github.io	3898	2020-04-07T05:24:20Z		天猫前端
+3	tldr-pages/tldr	64197	2026-11-12T08:57:16Z	android,bsd,cheatsheet,cheatsheets,cli,command-line,console,documentation,examples,hacktoberfest,help,linux,macos,man-page,manual,osx,shell,terminal,tldr,windows	Collaborative cheatsheets for console commands 📚.
+3	tj/consolidate.js	3457	2024-12-21T08:02:38Z		Template engine consolidation library for node.js
+3	tisfeng/Easydict	15287	2026-11-11T18:09:53Z	app,baidu,bing,deepl,dictionary,gemini,google,macos,ocr,openai,shortcuts,tencent,translate,translator,youdao	一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支
+3	timqian/chinese-independent-blogs	24453	2026-11-12T13:12:17Z	blog,china,rss	中文独立博客列表
+3	timarney/react-app-rewired	9837	2026-10-03T08:24:28Z	config,create-react-app,eject,never,react,webpack	Override create-react-app webpack configs without ejecting
+3	think2011/localResizeIMG	3222	2021-04-16T08:09:58Z	canvas,compress-images,compressimage,frontend,image,localresizeimg,lrz,mobile	🔥 前端本地客户端压缩图片，兼容IOS，Android，PC、自动按需加载文�
+3	thedaviddias/Front-End-Performance-Checklist	17392	2026-10-13T10:27:13Z	checklist,css,front-end-developer-tool,front-end-development,frontend,guidelines,html,javascript,lists,performance,performance-metrics,reference,resources,web-development	🎮 The only Front-End Performance Checklist that runs faster than the others
+3	thebird/Swipe	6739	2020-05-12T17:10:27Z		Swipe is the most accurate touch slider.
+3	theanarkh/understand-nodejs	2366	2024-11-16T16:42:29Z		通过源码分析nodejs原理
+3	testing-library/react-testing-library	19682	2026-08-27T17:40:18Z	javascript,reactjs,testing	🐐 Simple and complete React DOM testing utilities that encourage good testing practices
+3	tesseract-ocr/tesseract	77479	2026-11-11T11:29:16Z	hacktoberfest,lstm,machine-learning,ocr,ocr-engine,tesseract,tesseract-ocr	Tesseract Open Source OCR Engine (main repository)
+3	terser/terser	9357	2026-11-07T05:12:27Z	compressor,es6,javascript,mangler,parser,uglifyjs	🗜 JavaScript parser, mangler and compressor toolkit for ES6+
+3	terkelg/prompts	9310	2025-05-14T16:42:36Z	choice,cli,command-line,interface,nodejs,prompt,prompter,prompts	❯ Lightweight, beautiful and user-friendly interactive prompts
+3	tensorflow/tfjs-models	14814	2026-06-23T19:24:12Z		Pretrained models for TensorFlow.js
+3	tensorflow/tfjs	19158	2026-06-23T00:04:38Z	deep-learning,deep-neural-network,gpu-acceleration,javascript,machine-learning,neural-network,typescript,wasm,web-assembly,webgl	A WebGL accelerated JavaScript library for training and deploying ML models.
+3	tc39/ecma262	15705	2026-11-12T00:33:11Z	ecmascript,javascript	Status, process, and documents for ECMA-262
+3	tastejs/todomvc	28974	2026-06-06T23:35:53Z		Helping you select a JavaScript framework - Todo apps for React.js, Angular, Vue and many 
+3	t4t5/sweetalert	22238	2023-04-15T22:54:03Z	alert,dialog,javascript,modal,popup,sweetalert,ui	A beautiful replacement for JavaScript's "alert"
+3	sxei/chrome-plugin-demo	8660	2023-02-05T12:10:19Z		《Chrome插件开发全攻略》配套完整Demo，欢迎clone体验
+3	svg/svgo	22811	2026-11-08T01:35:24Z	cli,hacktoberfest,javascript,minification,nodejs,optimization,svg,svgo	SVG Optimizer for Node.js and CLI. ⚙️
+3	suukii/Articles	27	2020-12-04T10:45:07Z		记录自己的学习轨迹
+3	suukii/91-days-algorithm	226	2021-12-23T02:32:18Z	algorithm,leetcode,leetcode-cpp,leetcode-cpp-solutions,leetcode-javascript,leetcode-python,leetcode-solutions,tree	91天学算法-Leetcode图解题解集合(JavaScript/C++/Python) Solutions and Explainatio
+3	surmon-china/videojs-player	5434	2022-08-23T11:04:12Z	dash-player,flv-player,hls-player,player,player-video,react-player,react-video-player,react-videojs,video-player,videojs,videojs-flv,videojs-player,vue,vue-component,vue-hls,vue-player,vue-video-player,vue-videojs,web-media-player	@videojs player component for @vuejs(3) and React.
+3	supabase/supabase	114918	2026-11-12T13:42:51Z	ai,alternative,auth,database,deno,embeddings,example,firebase,nextjs,oauth2,pgvector,postgis,postgres,postgresql,postgrest,realtime,supabase,vectors,websockets	The Postgres development platform. Supabase gives you a dedicated Postgres database to bui
+3	sunnyyoung/WeChatTweak	13840	2026-02-08T13:28:22Z	alfred,alfred-workflow,macos,no-revoke,norevoke,raycast-extension,revoke,tweak,wechat,wechat-macos,wechat-plugin,wechat-plugin-macos,wechat-raycast,wechat-tweak,wechathook,wechattweak,wechattweak-macos,weixin,weixin-plugin,weixin-tweak	A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多�
+3	sunface/rust-course	31115	2026-10-30T02:48:12Z	book,chinese,course,deno,javascript,learn,learning,programming-courses,rust,rust-book,rust-course,rust-lang,rust-learn,rust-learning,rust-study,study,wasm	什么？你敢放心的把后背交给 AI? 我赌你不敢，那就来学学 AI 时代最
+3	su37josephxia/wheel-awesome	1474	2024-03-13T15:32:22Z		天天造轮子，手写面试常见源码。
+3	styleguidist/react-styleguidist	11050	2025-01-07T10:44:29Z	documentation,hacktoberfest,react,styleguide	Isolated React component development environment with a living style guide
+3	streamich/memfs	2108	2026-09-29T20:25:25Z	browserfs,cas,crud,file,file-system,filesystem,fs,fsa,in-memory,memfs,memory,node,opfs,webfs	Node.js "fs" and browser "File System API" adapters and in-memory implementations 👍
+3	steveruizok/perfect-freehand	5811	2026-04-13T04:44:47Z	drawing,graphics,html-canvas,lines,pressure,stroke,svg,variable-width	Draw perfect pressure-sensitive freehand lines.
+3	stevenjoezhang/live2d-widget	11029	2026-11-09T21:24:44Z	javascript-plugin,live2d	把萌萌哒的看板娘抱回家 (ノ≧∇≦)ノ | Live2D widget for web platform
+3	stereobooster/package.json	975	2022-11-14T10:31:32Z		🗃️ package.json fields explained
+3	stephencookdev/speed-measure-webpack-plugin	2439	2026-03-24T15:47:10Z	measure,plugin,speed,stats,timer,webpack	⏱ See how fast (or not) your plugins and loaders are, so you can optimise your builds
+3	staven630/vue-cli4-config	2628	2023-01-04T21:40:32Z	gzip,prerender-spa-plugin,splitchunks,vue,vue-cli,vue-cli3	vue-cli4配置vue.config.js持续更新
+3	stackblitz/core	10893	2024-06-09T03:15:21Z		Online IDE powered by Visual Studio Code ⚡️
+3	stackblitz/bolt.new	16592	2024-12-17T06:29:27Z	ai-playground,anthropic,chatbot,webcontainers-api	Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: htt
+3	sorrycc/blog	4442	2019-03-21T13:35:52Z		💡
+3	soldair/node-qrcode	8191	2024-08-23T14:37:17Z		qr code generator
+3	socketio/socket.io	63246	2026-11-12T10:11:39Z	javascript,nodejs,socket-io,websocket	Bidirectional and low-latency communication for every platform
+3	smartcontractkit/full-blockchain-solidity-course-js	14046	2024-06-12T05:10:25Z	alchemy,blockchain,chainlink,dao,defi,eth-security-toolbox,ethereum,hardhat,ipfs,javascript,moralis,nextjs,nft,openzeppelin,reactjs,remix,smart-contracts,solidity,thegraphprotocol,typescript	Learn Blockchain, Solidity, and Full Stack Web3 Development with Javascript
+3	small-tou/s-mobx	123	2017-04-25T06:13:16Z	javascript,mobx,react	轻量级mobx实现，仅供参考
+3	slopus/happy	24602	2026-11-12T12:22:30Z	agent-orchestration,ai-agents,claude-code,claude-desktop,codex,codex-cli,coding-agents,grok,hacktoberfest	Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the subscriptions
+3	siyuan-note/siyuan	47201	2026-11-12T13:00:13Z	agentic-ai,ai-agent,knowledge-base,local-first,markdown,mcp,mindmap,note-taking,self-hosted,siyuan,workspace	An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents 
+3	sindresorhus/type-fest	17503	2026-11-11T20:49:02Z	npm-package,types,typescript,typescript-definitions,utilities	A collection of essential TypeScript types
+3	sindresorhus/np	7718	2026-10-24T13:44:01Z	cli,cli-app,javascript,nodejs,npm,npm-package,npm-publish,publish,yarn	A better `npm publish`
+3	sindresorhus/globby	2671	2026-08-19T17:04:33Z	directories,files,glob,globbing,javascript,matching,nodejs,patterns	User-friendly glob matching
+3	sindresorhus/awesome-nodejs	67472	2026-09-02T02:11:34Z	awesome,awesome-list,javascript,list,node,nodejs	:zap: Delightful Node.js packages and resources [BECAUSE OF TOO MUCH SPAM AND LOW-QUALITY 
+3	sikaozhe1997/Xin-Yue	7488	2019-05-04T17:07:56Z		岳昕：致北大师生与北大外国语学院的一封公开信
+3	shuding/tilg	2174	2022-12-23T10:28:52Z	debug,logger,react,react-hooks	A magical React Hook that helps you debug components.
+3	shimohq/chinese-programmer-wrong-pronunciation	23377	2026-09-11T02:52:29Z	chinese-programmers,documentation,pronunciation,spelling	中国程序员容易发音错误的单词
+3	shfshanyue/Daily-Question	5150	2026-06-23T12:08:03Z	devops,fe-interview,frontend-interview,interview,interview-questions,js,linux,microservice	互联网大厂内推及大厂面经整理，并且每天一道面试题推送。每天五
+3	sequelize/sequelize	30348	2026-11-12T01:32:04Z	db2-ibm-i,feature-rich,javascript,mariadb,microsoft-sql-server,mssql,mssql-server,mysql,nodejs,oracle-db,orm,postgresql,sequelize,snowflakedb,sql,sqlite,transactions,typescript	Feature-rich ORM for modern Node.js and TypeScript, it supports PostgreSQL (with JSON and 
+3	semlinker/reactjs-interview-questions	2166	2021-12-26T15:17:14Z	interview-preparation,interview-questions,react,react-router,react16,reactjs,redux	List of top 304 ReactJS Interview Questions & Answers
+3	sansan0/TrendRadar	63603	2026-11-05T00:47:51Z	ai,bark,data-analysis,docker,hot-news,llm,mail,mcp,mcp-server,news,ntfy,python,rss,trending-topics,wechat,wework	⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smar
+3	samccone/bundle-buddy	2877	2024-01-09T00:14:27Z	bundle,codesplitting,javascript,website	A tool to understand your bundle size and why files are in your bundle
+3	rzashakeri/beautify-github-profile	12614	2026-11-12T06:27:06Z	awsome,awsome-profile,beautifygithubprofile,github,github-api,github-profile,github-profile-readme,githubprofile,markdown,profile,profile-readme,readme,readme-profile	This repository will assist you in creating a more beautiful and appealing github profile,
+3	ryanhanwu/How-To-Ask-Questions-The-Smart-Way	36123	2025-01-01T19:14:38Z	rtfm,stfw,translation	本文原文由知名 Hacker Eric S. Raymond 所撰寫，教你如何正確的提出技術
+3	ruffle-rs/ruffle	18851	2026-11-12T13:41:32Z	emulator,flash,hacktoberfest,reimplementation,rust,swf	A Flash Player emulator written in Rust
+3	ruanyf/react-demos	16413	2024-10-29T16:07:57Z		a collection of simple demos of React.js
+3	ruanyf/document-style-guide	13071	2025-12-19T11:42:17Z		中文技术文档的写作规范
+3	rtk-ai/rtk	86330	2026-11-12T03:13:33Z	agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction,developer-tools,llm,open-source,productivity,rust,token-optimization	CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust
+3	rocboss/paopao-ce	4504	2026-08-03T10:33:18Z	bbs,forum,gin,go,naive,twitter,vue3,zinc	A scalable social community platform powered by Gin backend and modern TypeScript/Vue fron
+3	ritz078/transform	9258	2026-09-28T20:46:03Z	css,flow,golang,graphql,jsx,react,react-native,rust,transformations,typescript	A polyglot web converter.
+3	renovatebot/renovate	23099	2026-11-12T13:40:44Z	azure-devops,bitbucket,dependencies,dependencies-checking,dependency-manager,github,gitlab,npm,package-management	Home of the Renovate CLI: Cross-platform Dependency Automation by Mend.io
+3	remarkjs/remark	9043	2026-09-27T13:21:39Z	ast,commonmark,javascript,markdown,remark,unified	markdown processor powered by plugins part of the @unifiedjs collective
+3	refined-github/refined-github	32479	2026-11-09T10:53:16Z	browser-extension,chrome-extension,firefox-addon,github,github-extension,safari-extension,userstyle	:octocat: Browser extension that simplifies the GitHub interface and adds useful features
+3	redux-observable/redux-observable	7804	2026-08-11T12:57:00Z		RxJS middleware for action side effects in Redux using "Epics"
+3	redom/redom	3433	2025-03-10T13:37:31Z	dom,html5,javascript,redom,tiny,web-development	Tiny (2 KB) turboboosted JavaScript library for creating user interfaces.
+3	recharts/recharts	27704	2026-11-12T13:27:22Z	chart,charting-library,components,d3,data-visualisation,javascript,react,recharts,typescript,ui	Redefined chart library built with React and D3
+3	realworld-apps/realworld	84378	2026-11-02T07:05:35Z		"The mother of all demo apps" — Exemplary fullstack Medium.com clone powered by React, A
+3	react-native-elements/react-native-elements	25875	2026-05-21T14:17:40Z	android,cross-platform,hacktoberfest,ios,mobile-app,react,react-native,ui,ui-components	Cross-Platform React Native UI Toolkit
+3	react-grid-layout/react-grid-layout	22492	2026-11-10T09:03:16Z	drag-and-drop,es2015,grid,javascript,react,resize	A draggable and resizable grid layout with responsive breakpoints, for React.
+3	radix-ui/primitives	19493	2026-10-14T21:52:47Z	accessibility,colors,component-library,design-systems,radix-ui,react,ui,ui-components,ui-kit	Radix Primitives is an open-source UI component library for building high-quality, accessi
+3	quasarframework/quasar	27205	2026-11-12T12:37:58Z	android,browser-extension,electron,ios,javascript,material,material-components,material-design,material-theme,pwa,quasar-framework,server-side-rendering,ssr,vue,vue-component,vue-components,vue3,vuejs,vuejs3	Quasar Framework - Build high-performance VueJS user interfaces in record time
+3	qrohlf/trianglify	10089	2025-05-12T19:32:49Z		Algorithmically generated triangle art
+3	pytorch/pytorch	105451	2026-11-12T13:45:11Z	autograd,deep-learning,gpu,machine-learning,neural-network,numpy,python,tensor	Tensors and Dynamic neural networks in Python with strong GPU acceleration
+3	pwxcoo/chinese-xinhua	11772	2023-12-26T08:52:43Z	chinese,chinese-characters,chinese-language,chinese-nlp,chinese-simplified,chinese-traditional,data,json,json-data,json-dataset,python3,scraper	:orange_book: 中华新华字典数据库。包括歇后语，成语，词语，汉字。
+3	promptfoo/promptfoo	27087	2026-11-12T07:14:01Z	ci,ci-cd,cicd,evaluation,evaluation-framework,llm,llm-eval,llm-evaluation,llm-evaluation-framework,llmops,pentesting,prompt-engineering,prompt-testing,prompts,rag,red-teaming,testing,vulnerability-scanners	Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI.
+3	prompt-engineering/click-prompt	2385	2023-04-07T10:12:28Z	chatgpt,github-copilot,prompt-engineering,prompt-generator,prompt-tuning,stable-diffusion	ClickPrompt - Streamline your prompt design, with ClickPrompt, you can easily view, share,
+3	probot/probot	9632	2026-11-11T16:49:25Z	github-apps,probot	🤖 A framework for building GitHub Apps to automate and improve your workflow
+3	prisma/prisma1	16368	2022-09-01T18:57:41Z	dao,database,datamapper,graphql,orm,prisma1,serverless	💾 Database Tools incl. ORM, Migrations and Admin UI (Postgres, MySQL & MongoDB) [deprec
+3	prisma/orm	47670	2026-11-12T12:53:24Z	cockroachdb,database,javascript,loggy-core,loggy-terminal,mariadb,mongodb,mssql,mysql,nodejs,orm,postgres,postgresql,prisma,prisma-client,query-builder,sql-server,sqlite,sqlserver,typescript	The Prisma ORM: write your application in TypeScript with human-readable queries instead o
+3	power-assert-js/power-assert	2807	2023-01-07T03:57:23Z	assert,power-assert	Power Assert in JavaScript. Provides descriptive assertion messages through standard asser
+3	posthtml/posthtml	2961	2026-11-10T13:30:43Z	html,html-parser,parser,posthtml,transformer,xml,xml-parser	PostHTML is a tool to transform HTML/XML with JS plugins
+3	postcss-rs/postcss-rs	562	2022-10-31T16:07:24Z	ast,css,postcss,rust	🚀 Fast and 100% API compatible postcss replacer, built in Rust
+3	pomber/code-surfer	6367	2023-05-02T13:28:44Z	code,deck,keynote,markdown,mdx,mdx-deck,presentation,react,slides,syntax,syntax-highlighting	Rad code slides <🏄/>
+3	poetries/FE-Interview-Questions	2230	2026-11-10T07:01:55Z		关注公众号「前端进阶之旅」，一起学习。前端面试常考问题整理，
+3	pock/pock	10171	2022-11-12T18:15:22Z	control-strip,display-macos-dock,dock,macbook-pro,macos,touchbar,widgets	Widgets manager for MacBook Touch Bar
+3	pmndrs/valtio	10244	2026-10-30T04:08:46Z	mutable,proxy,react,state	🧙 Valtio makes proxy-state simple  for React and Vanilla
+3	pmndrs/jotai	21326	2026-11-09T03:01:40Z	atomic,hacktoberfest,management,react,state	👻 Primitive and flexible state management for React
+3	picturepan2/spectre	11302	2024-04-11T16:20:19Z	css,css-framework,flexbox,lightweight,modern,responsive-grid,spectre,utilities	Spectre.css - A Lightweight, Responsive and Modern CSS Framework
+3	phuocng/1loc	6712	2024-06-23T13:56:10Z	eleventy,javascript,javascript-utils,js-tips,one-line-code,one-liner,tips-and-tricks	What's your favorite JavaScript single LOC (line of code)?
+3	photopea/photopea	8524	2025-06-30T12:19:08Z		Photopea is online image editor
+3	phodal/phodit	334	2021-08-27T12:10:18Z	editor,electron,markdown,markdown-editor,phodit	Phodal's markdown/ebook editor with MicroFrontend & Web Components
+3	phodal/github	11343	2024-08-24T12:54:17Z	book,books,github,github-books,open-source,os	GitHub 漫游指南- a Chinese ebook on how to build a good project on Github. Explore the
+3	phodal/fe	1984	2020-09-16T02:53:23Z	ebook,fe,frontend,frontend-webdevelopment,github-books,guide,phodal,ued	《我的职业是前端工程师》 - Ebook：I'm a FrontEnd Developer
+3	peaceiris/actions-gh-pages	5372	2026-11-11T15:03:48Z	actions,gatsby,github-actions,github-pages,hugo,mdbook,mkdocs,nextjs,nuxt,static-site-generator,vuepress	GitHub Actions for GitHub Pages 🚀 Deploy static files and publish your site easily. Sta
+3	pd4d10/hashmd	4342	2024-06-14T19:09:20Z	markdown,markdown-editor,markdown-viewer,svelte	Hackable Markdown Editor and Viewer (WIP)
+3	parro-it/awesome-micro-npm-packages	4624	2023-12-18T13:25:02Z		A curated list of small, focused npm packages.
+3	pansyjs/watermark	401	2026-11-11T13:32:52Z	component,react,react-component,typescript,vue,vue-component,watermark	🛡  强大的水印组件，助你快速的给网页添加水印。
+3	pandao/editor.md	14311	2024-04-26T08:55:55Z	codemirror,commonmark,documentation,editor,flowchart,gfm,javascript,jquery,katex,markdown,markdown-editor,markdown-writer,marked,sequence-diagram,toc	The open source embeddable online markdown editor (component).
+3	oxc-project/oxc	23434	2026-11-12T13:43:30Z	compiler,javascript,linter,minifier,parser,transpiler,typescript	⚓ A collection of high-performance JavaScript tools.
+3	ossrs/srs	29440	2026-10-31T00:42:24Z	ai-driven,audio,c-plus-plus,dash,hevc,hls,live,live-streaming,low-latency,media-server,multimedia,prometheus-exporter,rtmp,server-side,srt,streaming,video,video-conferencing,video-streaming,webrtc	SRS is a simple, high-performance, AI-driven real-time media server supporting RTMP, WebRT
+3	openimsdk/open-im-server	16768	2026-11-10T08:35:25Z	chat,im,messaging,messenger,openclaw	IM Chat OpenClaw
+3	openfaas/faas	26262	2026-10-23T13:59:20Z	docker,faas,functions,functions-as-a-service,gitops,golang,k8s,kubernetes,lambda,nodejs,paas,prometheus,serverless,serverless-functions	OpenFaaS - Serverless Functions Made Simple
+3	opendigg/awesome-github-vue	12778	2023-07-22T14:29:05Z	vue,vue-blog,vue-bootstrap,vue-demo,vue-material	Vue相关开源项目库汇总
+3	openai/codex	135009	2026-11-12T05:22:01Z		Lightweight coding agent that runs in your terminal
+3	open-power-workgroup/Hospital	6708	2020-10-27T03:02:37Z		OpenPower工作组收集汇总的医院开放数据
+3	ollama/ollama	186765	2026-11-12T03:21:12Z	deepseek,gemma,glm,go,golang,gpt-oss,llama,llm,llms,minimax,mistral,muse,ollama,qwen	Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other model
+3	nvm-sh/nvm	95936	2026-11-12T05:50:45Z	bash,install,lts,node,node-js,nodejs,nvm,nvmrc,posix,posix-compliant,shell,version-manager,zsh	Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versi
+3	nvbn/thefuck	97956	2024-07-19T14:56:13Z	python,shell	Magnificent app which corrects your previous console command.
+3	nswbmw/N-blog	15352	2023-04-26T10:06:31Z	blog,course,express,javascript,mongodb,mongolass,nodejs,tutorial	《一起学 Node.js》
+3	npm/npm	17601	2020-08-07T14:31:21Z		This repository is moving to: https://github.com/npm/cli
+3	npm/node-semver	5474	2026-11-05T19:55:36Z	npm-cli	The semver parser for node (the one npm uses)
+3	nostalgic-css/NES.css	21857	2024-01-17T20:53:09Z	8bit,css,css-framework,nes,scss	NES-style CSS Framework | ファミコン風CSSフレームワーク
+3	nosir/cleave.js	17838	2023-11-25T10:40:46Z	credit-card,creditcard,input,input-mask,telephone-number	Format input text content when you are typing...
+3	nodejs/llparse	624	2026-02-14T16:39:03Z	finite-state-machine,llvm-ir	Generating parsers in LLVM IR
+3	nodeca/js-yaml	6641	2026-10-27T00:15:17Z		JavaScript YAML parser and dumper. Very fast.
+3	node-schedule/node-schedule	9197	2026-10-24T23:22:32Z		A cron-like and not-cron-like job scheduler for Node.
+3	node-formidable/formidable	7176	2026-11-06T15:13:39Z	aws-lambda,aws-s3,azure,azure-storage,file-upload,form,formdata,formidable,incomingform,multipart,multipart-formdata,multipart-parser,querystring-parser,serverless	The most used, flexible, fast and streaming parser for multipart form data. Supports uploa
+3	nieweidong/fetool	4434	2021-08-10T04:03:58Z	chrome,css,gulp,javascript,linux,nodejs,react,vim	大前端的瑞士军刀，只记录有用的。
+3	nicoespeon/gitgraph.js	3065	2024-07-13T11:37:49Z	git,gitgraph,graph,javascript,presentation	[ARCHIVED] A JavaScript library to draw pretty git graphs in the browser
+3	nhn/tui.image-editor	7663	2023-11-20T10:48:41Z	canvas,drawing,filter,image,image-editor,paint,photo,photoshop	🍞🎨 Full-featured photo image editor using canvas. It is really easy, and it comes wi
+3	nhn/tui.calendar	12687	2024-06-24T16:42:33Z	calendar,daily,frontend,fullcalendar,javascript,milestone,monthly,schedule,task,weekly	🍞📅A JavaScript calendar that has everything you need.
+3	nexu-io/open-design	107318	2026-11-12T13:29:21Z	agent-skills,ai-design,byok,claude-code-for-design,claude-design,codex-design,cursor-design,deepseek,deepseek-harness,design-systems,desktop-app,desktop-apps,dsh,dsh-plugin,figma-alternative,hermes-agent,local-first,prototyping,ui-generator,vibe-coding	The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motio
+3	nextai-translator/nextai-translator	25045	2026-11-02T07:48:47Z	browser-extension,chatgpt,chrome-extension,openai,translation,translator,translator-app	基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用    -    Brows
+3	nexe/nexe	13567	2026-03-05T04:50:47Z	binaries,binary,bundle,bundler,cli,executable,javascript,nexe,nodejs	🎉 create a single executable out of your node.js apps
+3	newbee-ltd/newbee-mall	11661	2025-10-27T10:43:30Z	adminlte,java,mall,microservice,mybatis,shop,spring-boot,spring-cloud,spring-cloud-alibaba,springboot,springboot-learning,springboot-mybatis,springboot-sample,springboot-vue,springboot2,springcloud,vue,vue3,vuejs3,wangeditor	🔥 🎉newbee-mall是一套电商系统，包括基础版本(Spring Boot+Thymeleaf)、�
+3	neuland/micro-frontends	4687	2026-02-20T01:29:52Z	architecture,micro-frontends,microservice-paradigms,microservices	extending the microservice paradigms to web development
+3	nektos/act	72665	2026-11-04T16:29:16Z	ci,devops,github-actions,golang	Run your GitHub Actions locally 🚀
+3	nativescript-vue/nativescript-vue	6536	2026-11-04T14:54:25Z	android,ios,native,nativescript,nativescript-plugin,nativescript-vue,vue	Native mobile applications using Vue and NativeScript.
+3	napi-rs/napi-rs	8028	2026-11-11T03:09:00Z	javascript,napi,napi-rs,node,node-api,nodejs,rust	A framework for building compiled Node.js add-ons in Rust via Node-API
+3	mysqljs/mysql	18609	2024-06-25T12:03:39Z	javascript,mysql,nodejs	A pure node.js JavaScript Client implementing the MySQL protocol.
+3	multica-ai/multica	55859	2026-11-12T12:27:53Z		Make humans and AI agents work as one team — open-source and self-hostable.
+3	multica-ai/andrej-karpathy-skills	232419	2026-04-20T10:05:04Z		A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's ob
+3	mrdoob/stats.js	9161	2024-10-11T03:59:02Z		JavaScript Performance Monitor
+3	morluto/rea	454324	2026-11-12T10:18:28Z	agent-skills,ai,android,claude-code,cli,cpp,dsh-plugin,html,java,javascript,linux,mcp,nodejs,python,rea,react,rust,security,touhou,typescript	Reverse engineer anything with agents, from app behavior down to native binaries.
+3	mojs/mojs	18901	2026-07-30T16:54:33Z	animation,burst,design,es6,graphics,javascript,library,mo-js,modern,mojs,motion,motion-graphics,shape,svg,swirl,timeline,toolbelt,web,webpack	The motion graphics toolbelt for the web
+3	moeru-ai/airi	51315	2026-11-12T13:18:31Z	ai-companion,ai-vtuber,airi,digital-life,grok-companion,live2d,neuro-sama,neurosama,openclaw,vrm,vtuber	💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livin
+3	modelcontextprotocol/servers	91946	2026-11-12T05:37:52Z		Model Context Protocol Reference Servers
+3	mirari/v-viewer	2640	2026-11-12T05:22:13Z	gallery,image,viewerjs,vue2,vue3,vuejs	Image viewer for Vue with zoom, rotation and custom toolbars, powered by Viewer.js.
+3	mikaelbr/node-notifier	5841	2026-10-31T22:25:35Z	growl,hacktoberfest,javascript,node-notifier,nodejs,notification,notification-center,toasters	A Node.js module for sending notifications on native Mac, Windows and Linux (or Growl as f
+3	microsoft/terminal	105375	2026-11-11T20:24:55Z	cmd,command-line,console,contributions-welcome,good-first-issue,hacktoberfest,terminal,windows,windows-console,windows-terminal,wsl	The new Windows Terminal and the original Windows console host, all in the same place!
+3	microsoft/reactxp	8201	2023-07-18T23:10:14Z		Library for cross-platform app development.
+3	microsoft/react-native-code-push	9111	2025-05-20T11:58:16Z	code-push,codepush,react-native	React Native module for CodePush
+3	microsoft/dts-gen	2412	2023-12-15T20:02:03Z		dts-gen creates starter TypeScript definition files for any module or library.
+3	microsoft/TypeScript-React-Starter	11016	2019-08-23T00:06:50Z		A starter template for TypeScript and React with a detailed README describing how to use t
+3	microsoft/PowerToys	140910	2026-11-12T11:49:03Z	advanced-paste,color-picker,command-palette,desktop,fancyzones,keyboard-manager,microsoft-powertoys,powerrename,powertoys,windows,windows-10,windows-11	Microsoft PowerToys is a collection of utilities that supercharge productivity and customi
+3	micromatch/micromatch	3045	2024-08-26T23:15:58Z	bash,extended-glob,extglob,glob,glob-matching,glob-pattern,globbing,globby,javascript,matcher,micromatch,minimatch,multimatch,node,node-glob,regex,regular-expression,tidelift,wildcard,wildmat	Highly optimized wildcard and glob matching library. Faster, drop-in replacement to minima
+3	michalsnik/aos	28051	2024-03-26T15:58:43Z		Animate on scroll library
+3	metersphere/metersphere	13629	2026-11-09T02:19:38Z	api-testing,continuous-testing,jmeter,metersphere,postman,swagger,test-automation,testcase,testing,testlink,testlink-alternative	MeterSphere 是新一代的开源持续测试工具，内置 AI 助手，让软件测试�
+3	metalsmith/metalsmith	7816	2026-02-09T20:40:55Z	javascript,markdown,markdown-to-html,metalsmith,nodejs,ssg,static-site-generator,templates	An extremely simple, pluggable static site generator for Node.js
+3	metafizzy/zdog	10698	2023-07-18T21:43:53Z	3d,canvas,svg	Flat, round, designer-friendly pseudo-3D engine for canvas & SVG
+3	metafizzy/infinite-scroll	7471	2025-03-08T13:42:52Z	ajax,javascript-plugin,jquery-plugin,ui	📜 Automatically add next page
+3	meta/regenerator	3819	2024-02-29T11:04:34Z		Source transformer enabling ECMAScript 6 generator functions in JavaScript-of-today.
+3	mertJF/tailblocks	8880	2023-01-31T22:16:06Z	components,css,tailblocks,tailwind,ui-components	Ready-to-use Tailwind CSS blocks.
+3	meolu/walle-web	11979	2022-01-06T22:27:38Z	cd,deployer,devops,devops-tools,git,python,walle-web	walle - 瓦力 Devops开源项目代码部署平台
+3	mem0ai/mem0	68867	2026-11-06T16:53:07Z	agentic-memory,agentic-memory-system,agents,ai,ai-agents,chatgpt,genai,llm,long-term-memory,memory,memory-management,python,rag,state-management	The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Con
+3	mcollina/autocannon	8538	2026-11-06T17:44:59Z		fast HTTP/1.1 benchmarking tool written in Node.js
+3	matchai/waka-box	1437	2024-07-27T17:20:29Z	pinned-gist	📊 Update a pinned gist to contain your weekly WakaTime stats
+3	markyun/markyun	11212	2026-09-22T16:39:46Z	front-end,front-end-developer,front-end-interview-question	在Github的学习片段
+3	marcuswestin/WebViewJavascriptBridge	14288	2024-08-01T09:17:17Z		An iOS/OSX bridge for sending messages between Obj-C and JavaScript in UIWebViews/WebViews
+3	marcj/deepkit	3547	2026-11-11T00:22:43Z	deepkit,dependency-injection,enterprise,framework,framework-javascript,laravel,mongodb,nodejs,orm,serializer,spring,symfony,typescript,validator	modular high-performance TypeScript framework
+3	mapbox/earcut	2626	2026-10-23T10:20:57Z	algorithm,computational-geometry,delaunay,javascript,polygon,tessellation,triangulation	The fastest and smallest JavaScript polygon triangulation library for your WebGL apps
+3	macdao/ocds-guide-to-setting-up-mac	4536	2025-09-29T09:06:21Z		OCD's Guide to Setting up Mac
+3	lydiahallie/javascript-questions	65276	2024-08-04T16:08:40Z		A long list of (advanced) JavaScript questions, and their explanations :sparkles:  
+3	lottie-react-native/lottie-react-native	17216	2026-11-04T17:35:45Z	after-effects,animations,bodymovin,react,react-native	Lottie wrapper for React Native.
+3	lokesh/color-thief	13667	2026-08-03T06:06:03Z		Grab the color palette from an image using just Javascript.  Works in the browser and in N
+3	lokalise/i18n-ally	4902	2024-12-13T10:59:15Z	angular,i10n,i18n,i18next,locales,react,translation,vscode,vscode-extension,vue,vue-i18n	🌍 All in one i18n extension for VS Code
+3	llh911001/mostly-adequate-guide-chinese	2544	2023-03-16T13:37:28Z	curry,functional-js,functional-programming,functor,monad	函数式编程指南中文版
+3	livoras/simple-virtual-dom	1718	2020-12-08T06:13:46Z		Basic virtual-dom algorithm
+3	listen1/listen1_chrome_extension	12125	2025-06-17T13:15:48Z	chrome-extension,music-player	one for all free music in china (chrome extension, also works for firefox)
+3	liriliri/chii	2256	2025-08-17T11:19:40Z		Remote debugging tool
+3	linx4200/vue-color	2614	2026-01-21T23:23:40Z	color-picker,vue,vue-components,vue-ui,vue-ui-components,vue3,vue3-typescript	A modern collection of Vue color pickers – fast, accessible, and easy to use.
+3	linshenkx/prompt-optimizer	41320	2026-11-09T12:27:36Z	ai-prompts,ai-tools,llm,prompt,prompt-engineering,prompt-optimization,prompt-optimizer,prompt-testing,prompt-toolkit,prompt-tuning	An AI prompt optimizer for writing better prompts and getting better AI results.
+3	lingui/js-lingui	5937	2026-11-10T07:25:05Z	i18n,internationalization,intl,javascript,localization,messageformat,nextjs,react,react-components,react-native,solidjs,translation,typescript,vue	🌍 📖 A readable, automated, and optimized (2 kb) internationalization for JavaScript
+3	lgwebdream/FE-Interview	7206	2023-01-06T11:32:02Z	angular,css,fe-interview,frontend,frontend-interview,html,interview,interview-questions,javascript,js,node,react,typescript,vue	🔥🔥🔥 前端面试，独有前端面试题详解，前端面试刷题必备，1000+
+3	leon-ai/leon	17668	2026-11-12T13:26:48Z	ai,ai-agent,ai-assistant,artificial-intelligence,assistant,automation,bot,chatbot,leon,nodejs,offline,personal-assistant,privacy,python,speech-recognition,speech-synthesis,speech-to-text,text-to-speech,virtual-assistant,voice-assistant	🧠 Leon is your open-source personal assistant.
+3	lbjlaq/Antigravity-Manager	33017	2026-11-11T17:28:15Z	account-manager,antigravity	Professional Antigravity Account Manager & Switcher. One-click seamless account switching 
+3	lavas-project/lavas	1937	2020-08-11T17:39:42Z		基于 Vue 的 PWA 解决方案，帮助开发者快速搭建 PWA 应用，解决接入 PW
+3	larksuite/cli	18084	2026-11-12T13:02:41Z		The official Lark/飞书 CLI tool, maintained by the larksuite team — built for humans a
+3	kucherenko/jscpd	6539	2026-11-12T07:54:53Z	ai,cli,clones-detection,code-duplication,code-quality,coding-agents,copy-paste,copy-paste-detection,cpd,developer-tools,dry,duplicates,github-action,linter,mcp,rust,sarif,skills,static-analysis,typescript	Copy/paste detector for source code. 220+ languages, Rust engine, SARIF/HTML/badge reporte
+3	krahets/hello-algo	132261	2026-11-10T14:30:01Z	algo,algorithm,algorithms,book,data-structure,data-structures,data-structures-and-algorithms,dsa,education,leetcode,programming	《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简
+3	kpdecker/jsdiff	9222	2026-11-11T15:24:00Z		A javascript text differencing implementation.
+3	klaudiosinani/signale	9174	2026-04-06T20:08:22Z	cli,console,library,log,logger,nodejs	Highly configurable logging library
+3	keystonejs/keystone-classic	14479	2026-09-14T01:19:02Z	cms,javascript,keystonejs,nodejs	Node.js CMS and web app framework
+3	keycastr/keycastr	15207	2026-09-07T01:54:48Z		KeyCastr, an open-source keystroke visualizer
+3	kazupon/vue-i18n	7215	2024-12-31T15:15:58Z	i18n,internationalization,internationalization-plugin,javascript,plugin,vue	:globe_with_meridians: Internationalization plugin for Vue.js
+3	k0kubun/gitstar-ranking	825	2026-11-03T06:16:28Z		GitHub star ranking for users, organizations and repositories
+3	justauth/JustAuth	17541	2026-04-16T21:43:23Z	googlelogin,justauth,oauth2,qqlogin,weixinlogin	🏆Gitee 最有价值开源项目 🚀:100: 小而全而美的第三方登录开源组件
+3	jsfront/src	2925	2022-09-13T02:24:25Z		常用代码收集资源分享
+3	jquery/jquery	59952	2026-11-02T22:48:21Z	jquery	jQuery JavaScript Library
+3	jprichardson/node-fs-extra	9595	2026-11-11T16:01:59Z	copy,delete,filesystem,javascript,move,nodejs,remove	Node.js: extra methods for the fs object like copy(), remove(), mkdirs()
+3	josephg/diamond-types	1854	2026-09-02T06:04:59Z	collaborative-editing,crdt	The world's fastest CRDT. WIP.
+3	josdejong/mathjs	15108	2026-11-11T22:52:09Z	bignumbers,complex-numbers,expression-evaluator,javascript,math,matrices,units	An extensive math library for JavaScript and Node.js
+3	jobbole/awesome-javascript-cn	7799	2022-04-13T09:32:03Z	javascript	JavaScript 资源大全中文版，内容包括：包管理器、加载器、测试框架�
+3	jlmakes/scrollreveal	22470	2026-11-11T07:16:45Z	animation,css,javascript,reveal,scroll,scrollreveal,transform,transition	Animate elements as they scroll into view.
+3	jingyaogong/minimind	65166	2026-10-27T06:57:09Z	artificial-intelligence,large-language-model	🧠 Train a 64M-parameter LLM from scratch in just 2h!
+3	jeecgboot/JeecgBoot	48442	2026-11-11T14:09:01Z	activiti,agent,ai,antd,claude-code,cli,codegenerator,codex,flowable,langchain4j,llm,low-code,mcp,mybatis-plus,rag,skills,spring-ai,springboot,springcloud,vue3	一款免费开源的 AI 低代码平台，也是 AI 时代构建复杂业务系统的开�
+3	jd-opensource/nutui	6515	2026-04-02T05:55:12Z	components,jd,nutui,typescript,vite,vue,vue-components,vue3	京东风格的移动端 Vue 组件库，支持多端小程序(A Vue.js UI Toolkit for Mob
+3	jd-opensource/micro-app	6260	2026-10-13T08:45:06Z	javascript,micro-frontend,microapp,webcomponents	A simple, efficient and powerful micro front-end framework. 一款简约、高效、功能
+3	javascript-tutorial/zh.javascript.info	10815	2026-03-24T08:45:04Z	chinese,javascript,tutorial	现代 JavaScript 教程（The Modern JavaScript Tutorial），以最新的 ECMAScript 规
+3	jasonmayes/Real-Time-Person-Removal	5149	2021-10-06T07:25:20Z		Removing people from complex backgrounds in real time using TensorFlow.js in the web brows
+3	jasmine/jasmine	15808	2026-11-07T16:06:38Z	jasmine,javascript,tdd,testing	Simple JavaScript testing framework for browsers and node.js
+3	jaredpalmer/tsdx	11466	2026-02-09T21:57:35Z	bundling,jest,npm,packaging,react,react-dom,rollup,typescript,yarn	Zero-config CLI for TypeScript package development
+3	jamiebuilds/react-loadable	16495	2024-07-10T11:51:12Z	async,babel-plugin,code-splitting,imports,loading,react,server-side-rendering,ssr,webpack	:hourglass_flowing_sand: A higher order component for loading components with promises.
+3	jakearchibald/idb	7440	2026-10-06T08:17:37Z		IndexedDB, but with promises
+3	jackwener/OpenCLI	31036	2026-11-07T17:39:55Z	ai-agent,ai-agents,ai-tools,browser-automation,browser-use,cli,playwright	Make Any Website into CLI & Use your logged-in browser by AI agent. 
+3	jackspirou/clientjs	2228	2023-01-08T17:39:54Z		Device information and digital fingerprinting written in pure JavaScript.
+3	jackfrued/Python-100-Days	187819	2026-07-29T15:18:29Z		Python - 100天从新手到大师
+3	ityouknow/spring-boot-examples	30428	2023-11-18T16:32:16Z	docker,docker-composer,fastdfs,java,mongodb,mybatis,rabbitmq,scheduler,spring,spring-boot,spring-boot-examples,spring-boot-mail,spring-boot-mongodb,spring-boot-upload-file,spring-cloud,spring-data-jpa,springboot,springboot-shiro,springcloud,thymeleaf	about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快�
+3	istio/istio	38503	2026-11-12T09:09:42Z	api-management,circuit-breaker,consul,enforce-policies,envoy,fault-injection,kubernetes,lyft-envoy,microservice,microservices,nomad,polyglot-microservices,proxies,request-routing,resiliency,service-mesh	Connect, secure, control, and observe services.
+3	isaacs/node-lru-cache	5917	2026-09-18T23:44:52Z	cache,caching,lru,lru-cache,lrucache	A fast cache that automatically deletes the least recently used items
+3	ionic-team/capacitor	17072	2026-11-11T20:05:54Z	android,capacitor,cordova,cross-platform,css,html,ionic,ios,java,javascript,pwa,swift	Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️
+3	inversify/InversifyJS	12053	2025-11-19T13:18:33Z	dependency-injection,inversifyjs,ioc,javascript,nodejs,typescript	Powerful and lightweight inversion of control container. Moved to https://github.com/inver
+3	insoxin/imaotai	1531	2023-03-09T10:03:48Z		i茅台app 每日自动预约 抢茅台
+3	infernojs/inferno	16459	2026-11-06T22:45:39Z	inferno,inferno-component,inferno-js,javascript-library,jsx,performance,react,vdom	:fire: An extremely fast, React-like JavaScript library for building modern user interface
+3	immerjs/use-immer	4554	2024-12-17T11:16:07Z		Use immer to drive state with a React hooks
+3	imDazui/Tvlist-awesome-m3u-m3u8	30390	2025-11-14T10:50:50Z	awesome,iptv,iptv-channels,iptv-free,iptv-m3u8,iptv-playlist,kodi,kodi-addons,kodi-plugin,m3u,m3u8	直播源相关资源汇总 📺 💯 IPTV、M3U —— 勤洗手、戴口罩，祝愿所�
+3	iluwatar/java-design-patterns	94862	2026-10-08T12:44:21Z	awesome-list,design-patterns,hacktoberfest,java,principles,snippets,snippets-collection,snippets-library	Design patterns implemented in Java
+3	iced-rs/iced	32012	2026-11-12T12:23:09Z	elm,graphics,gui,interface,renderer-agnostic,rust,toolkit,user-interface,widget,widgets	A cross-platform GUI library for Rust, inspired by Elm
+3	hustcc/timeago.js	5368	2026-11-12T06:16:30Z	date-format,datetime,i18n,multi-language,real-time,timeago,tiny	:clock8: :hourglass: timeago.js is a tiny(2.0 kb) library used to format date with `*** ti
+3	huggingface/transformers	168900	2026-11-12T13:41:47Z	audio,deep-learning,deepseek,gemma,glm,hacktoberfest,llm,machine-learning,model-hub,natural-language-processing,nlp,pretrained-models,python,pytorch,pytorch-transformers,qwen,speech-recognition,transformer,vlm	🤗 Transformers: the model-definition framework for state-of-the-art machine learning mo
+3	hug-sun/element3	3268	2026-02-27T02:35:38Z	element-ui,element3,vue3	A Vue.js 3.0 UI Toolkit for IT Education. Build with JS&TS
+3	hoosin/mobile-web-favorites	1740	2017-04-18T12:42:06Z	android,c-s-s,css,css3,favorites,html5,html5-css3,ios,iphone,javascript,mobile,retina,viewport,zepto	This is a favorites, with a mobile web tips.
+3	homerchen19/nba-go	3717	2023-01-09T22:06:35Z	basketball,box-score,cli,javascript,live,nba,scoreboard	🏀 💻 The finest NBA CLI.
+3	holynova/gushi_namer	2265	2026-10-22T03:52:09Z	chinese,classical-poetry,funny,github-pages,name,name-generator,poem,react,typescript	Chinese baby name generator from classical poems and ancient texts
+3	hinesboy/mavonEditor	6555	2025-03-05T09:30:29Z	editor,html,javascript,markdown,vue,webpack	mavonEditor - A markdown editor based on Vue that supports a variety of personalized featu
+3	heyui/heyui	2535	2026-04-07T08:58:45Z	autocomplete,button,datepicker,datetimepicker,form,heyui,i18n,javascript,modal,modals,select,table,tree,ui,ui-components,validator,vue,vue-components,vue2,webpack	🎉UI Toolkit for Web, Vue3.0
+3	heygen-com/hyperframes	83225	2026-11-12T13:46:00Z	ai,ai-agents,animation,claude-code,ffmpeg,framework,gsap,html,html-to-video,mcp,motion-graphics,puppeteer,rendering,typescript,video-editor	Write HTML. Render video. Built for agents.
+3	hepengwei/visualization-collection	4597	2026-11-11T07:56:13Z	canvas,collection,css3,frontend,javascript,react,threejs,typescript,visualization	🌈 一个专注于前端视觉效果的集合应用，包含CSS动效、Canvas动画、T
+3	hejialianghe/Senior-FrontEnd	1786	2025-09-25T16:14:31Z	js	🔥 🔥🔥 🔥🔥 高级开发工程师必备，打通全栈任督二脉，文档地�
+3	harry0703/MoneyPrinterTurbo	142775	2026-11-12T12:32:54Z	ai-video-generator,content-creation,ffmpeg,instagram-reels,llm,python,short-video,subtitles,text-to-speech,tiktok,video-automation,video-workflow,workflow-automation,youtube-shorts	利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短�
+3	hapijs/hapi	14798	2026-11-04T14:42:24Z	application,framework,hapi,http,nodejs	The Simple, Secure Framework Developers Trust
+3	hankcs/HanLP	36536	2026-11-07T02:12:30Z	dependency-parser,hanlp,named-entity-recognition,natural-language-processing,nlp,pos-tagging,semantic-parsing,text-classification	中文分词 词性标注 命名实体识别 依存句法分析 成分句法分析 语义�
+3	halfrost/LeetCode-Go	33813	2026-10-12T15:45:11Z	acm-icpc,algorithm,algorithm-competitions,algorithms,algorithms-and-data-structures,coding-interviews,competitive-programming,data-structures,dynamic-programming,ebook,go,golang,interview-questions,leetcode,leetcode-go,leetcode-golang,leetcode-solutions,math	✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% | LeetCode 题解
+3	graphql/dataloader	13395	2026-10-18T10:28:49Z	batch,dataloader,graphql,nodejs	DataLoader is a generic utility to be used as part of your application's data fetching lay
+3	googleworkspace/cli	32274	2026-11-03T01:37:22Z	agent-skills,ai-agent,automation,cli,discovery-api,gemini-cli-extension,google-admin,google-api,google-calendar,google-chat,google-docs,google-drive,google-sheets,google-workspace,oauth2,rust	Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, C
+3	google/material-design-icons	54290	2026-10-23T02:18:57Z	android,icons,ios,material,material-design,sprites,web	Material Design icons by Google (Material Symbols)
+3	golang/go	139864	2026-11-12T01:54:39Z	go,golang,language,programming-language	The Go programming language
+3	gkajs/gka	2113	2023-12-07T15:08:59Z		一款高效、高性能的帧动画生成工具
+3	gitkraken/vscode-gitlens	9972	2026-11-12T13:01:10Z	git,github,vscode,vscode-extension	Supercharge Git inside VS Code and unlock untapped knowledge within each repository — Vi
+3	gitalk/gitalk	7155	2026-10-19T11:39:53Z	comment,github,github-issues,plugin,preact,react	Gitalk — a comment component based on GitHub Discussions (current, 2.x). The GitHub Issu
+3	git-tips/tips	21723	2026-10-31T12:41:31Z	git,tips,tips-and-tricks	Most commonly used git tips and tricks.
+3	giscus/giscus	12218	2026-05-26T22:20:10Z	blog,comment-system,comments,comments-widget,giscus,github,github-discussions,hacktoberfest,javascript,nextjs,react,reactjs,utterances,widget	A commenting system powered by GitHub Discussions. :octocat: :speech_balloon: :gem:
+3	ggml-org/llama.cpp	134296	2026-11-12T13:12:46Z	ggml	LLM inference in C/C++
+3	gfx-rs/wgpu	18523	2026-11-11T19:37:50Z	d3d12,gpu,hacktoberfest,metal,opengl,rust,vulkan,webgpu	A cross-platform, safe, pure-Rust graphics API.
+3	getsentry/sentry-javascript	8774	2026-11-12T13:32:08Z	angular,crash-reporting,ember,error-monitoring,hacktoberfest,javascript,javascript-client,nextjs,node,raven,react,sdk,sentry,sentry-client,tag-production,team-sdk-javascript,team-web-frontend,typescript,vue	Official Sentry SDKs for JavaScript
+3	getify/Functional-Light-JS	16717	2023-12-26T15:46:02Z	book,education,functional-programming,javascript,training-materials,training-providers	Pragmatic, balanced FP in JavaScript. @FLJSBook on twitter.
+3	garrytan/gstack	141338	2026-11-12T12:42:51Z		Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer,
+3	gaoding-inc/stateshot	197	2024-06-15T11:46:02Z	history-management,history-state,javascript,json,state,state-management,undo-redo	 💾 Non-aggressive history state management with structure sharing.
+3	gajus/react-css-modules	5155	2019-11-02T09:55:04Z		Seamless mapping of class names to CSS modules inside of React components.
+3	gaearon/overreacted.io	7274	2026-09-18T20:38:22Z		Personal blog by Dan Abramov.
+3	fuckcqcs/fuckcqcs	4286	2018-07-27T11:33:38Z		14小时
+3	freeCodeCamp/devdocs	39628	2026-11-11T16:15:46Z	api-documentation,app,devdocs,developer-tools,docs,documentation,documentation-tool,offline,pwa	API Documentation Browser
+3	foru17/front-end-collect	5720	2019-03-23T09:06:40Z		分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发
+3	formulahendry/955.WLB	36455	2025-02-03T05:15:20Z		955 不加班的公司名单 - 工作 955，work–life balance (工作与生活的平衡)
+3	fex-team/webuploader	7623	2021-01-27T12:18:56Z		It's a new file uploader solution! 
+3	fex-team/interview-questions	1663	2015-09-08T07:25:23Z		FEX 面试问题
+3	fex-team/fis3	2778	2024-02-03T05:24:05Z		FIS3
+3	fengyuanchen/viewerjs	8244	2026-10-16T12:13:48Z	image,image-viewer,javascript,viewer	JavaScript image viewer.
+3	feikerwu/shan-hai-jing	14	2023-11-22T09:48:04Z	blog,fe	
+3	febobo/web-interview	11887	2025-05-14T09:36:03Z	javascript,react,typescript,vue	语音打卡社群维护的前端面试题库，包含不限于Vue面试题，React面试�
+3	fatedier/frp	110557	2026-11-10T09:44:59Z	expose,firewall,frp,go,http-proxy,nat,p2p,proxy,reverse-proxy,tunnel	A fast reverse proxy to help you expose a local server behind a NAT or firewall to the int
+3	fastify/fast-json-stringify	3709	2026-11-12T11:21:47Z	fastify-core,json,speed,stringify	Fast JSON serializer that shapes the output with your JSON Schema
+3	fangwei716/30-days-of-react-native	6851	2018-09-07T13:12:27Z	ios,react-native	30 days of React Native demos
+3	faisalman/ua-parser-js	10212	2026-11-11T10:33:24Z	analytics,bot-detection,browser-detection,client-hints,device-detection,mobile-detection,user-agent,user-agent-parser	UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers,
+3	facebookresearch/faiss	41497	2026-11-12T01:29:46Z		A library for efficient similarity search and clustering of dense vectors.
+3	facebookarchive/react-360	8692	2020-12-11T10:19:14Z		Create amazing 360 and VR content using React
+3	facebookarchive/flux	17433	2023-03-21T23:41:43Z		Application Architecture for Building User Interfaces
+3	expressjs/morgan	8204	2026-11-01T09:36:19Z	express,javascript,logger,nodejs	HTTP request logger middleware for node.js
+3	expressjs/express	69674	2026-11-02T20:15:26Z	express,javascript,nodejs,server	Fast, unopinionated, minimalist web framework for node.
+3	expo/expo	53481	2026-11-12T13:47:45Z	android,app-framework,expo,framework,frontend,ios,javascript,mobile,native,native-apps,react,react-native,typescript,universal,web,web-framework	An open-source framework for making universal native apps with React. Expo runs on Android
+3	exceljs/exceljs	15515	2025-01-21T16:00:46Z	csv,exceljs,hacktoberfest,streaming-workbook,workbook,workbook-writer,worksheet,xlsx,xlsx-workbook,xlsxreader,xlsxwriter	Excel Workbook Manager
+3	exacity/deeplearningbook-chinese	37996	2019-12-03T04:25:44Z		Deep Learning Book Chinese Translation
+3	evilstreak/markdown-js	7661	2020-03-27T01:02:30Z		A Markdown parser for javascript
+3	estree/estree	5438	2026-10-28T20:56:54Z	ast,estree,javascript,parsing,specification	The ESTree Spec
+3	eslint/js	2391	2026-11-06T14:28:58Z		Monorepo for the JS language tools.
+3	ericclemmons/click-to-component	2352	2025-09-23T01:32:31Z		Option+Click React components in your browser to instantly open the source in VS Code
+3	enquirer/enquirer	7956	2024-06-11T15:05:05Z	bash,cli,command-line,confirm,console,dialog,hyper,inquirer,interactive,iterm,prompt,prompts,question,readline,shell,terminal,tty,yeoman,yo,zsh	Stylish, intuitive and user-friendly prompts. Used by eslint, webpack, yarn, pm2, pnpm, Re
+3	emilk/egui	32245	2026-11-12T10:29:29Z	egui,game-development,gamedev,gui,imgui,rust,wasm	egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native
+3	elsewhencode/project-guidelines	29416	2024-12-09T07:59:04Z	best-practices,guidelines,how-to,javascript,javascript-best-practices,maintainability	A set of best practices for JavaScript projects
+3	eleme/morjs	2118	2025-11-06T09:38:31Z		基于小程序 DSL（微信、支付宝）的，可扩展的多端研发框架，支持�
+3	electron-react-boilerplate/electron-react-boilerplate	24252	2026-10-30T03:05:55Z	babel,boilerplate,electron,eslint,javascript,react,typescript,webpack	A Foundation for Scalable Cross-Platform Apps
+3	egoist/poi	5155	2021-12-06T12:22:48Z	babel,build-tool,bundle,postcss,preact,react,svelte,typescript,vue,vuejs,webpack	⚡A zero-config bundler for JavaScript applications.
+3	egoist/import-http	1236	2023-01-04T00:39:47Z	esmodules,module,rollup,webpack	Import modules from URL instead of local node_modules
+3	ecmadao/hacknical	1542	2026-10-09T05:27:05Z	contribute-languages,contributions,data-analysis,github,github-analysis,github-commits,github-contributions,reac,react,resume,resume-template	Hacknical, hacker & technical. A website for GitHub user to make a better resume.
+3	eclipse-theia/theia	21756	2026-11-12T13:35:59Z	cloud-ide,editor,electron,ide,language-server-protocol,typescript	Eclipse Theia is a cloud & desktop IDE framework implemented in TypeScript.
+3	easychen/lean-side-bussiness	12184	2024-03-28T04:22:59Z		精益副业：程序员如何优雅地做副业
+3	dwyl/learn-travis	1227	2022-03-24T12:06:38Z		:sunglasses: A quick Travis CI (Continuous Integration) Tutorial for Node.js developers
+3	dwqs/blog	3767	2025-01-06T09:59:45Z	blog	:dog: :clap: :star2: Welcome to star
+3	dudykr/stc	5693	2024-01-25T14:30:28Z	rust,typescript	Speedy TypeScript type checker
+3	dreammis/social-auto-upload	16452	2026-10-22T18:42:22Z	agent-skills,bilibili,douyin,tiktok,xiaohongshu,youtube	自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube�
+3	drawcall/Proton	2479	2026-03-06T08:19:03Z	canvas,js-particle,particle,particle-engine,particle-system,particles,particles-library,webgl	Javascript particle animation library
+3	doocs/md	13531	2026-11-12T12:29:31Z	ai-bot,doocs,editor,llm,markdown,markdown-editor,tailwindcss,vite,vue,vue3,wechat,weixin	✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markd
+3	dongsuo/vue-data-board	1325	2025-06-06T16:39:33Z	bi,big-data-analytics,business-intelligence,data-analysis,data-analysis-board,data-visualization,databoard,drag,echarts,element-ui,no-code,visualization,vue	A Data Analysis Board in Vue.
+3	django/django	91718	2026-11-12T11:01:57Z	apps,django,framework,models,orm,python,templates,views,web	The Web framework for perfectionists with deadlines.
+3	digitalocean/nginxconfig.io	28246	2024-12-14T10:56:21Z	cdn,digitalocean,digitalocean-community-tools,drupal,gzip,hacktoberfest,hsts,http2,https,letsencrypt,nginx,nginx-configs,nginx-configuration,php-fpm,rate-limiting,security,security-headers,ssl,ssl-certificate,wordpress	⚙️ NGINX config generator on steroids 💉
+3	didi/mpx	3953	2026-11-12T10:22:29Z	alipay-mini-program,development-framework,miniprogram,mpx,reactive-programming,vue,webapp,webpack,wechat-mini-program	Mpx，一款具有优秀开发体验和深度性能优化的增强型跨端小程序框架
+3	developit/unistore	2839	2021-06-07T10:00:27Z	architecture,preact,redux,state,subscription,unistore	🌶 350b / 650b state container with component actions for Preact & React
+3	developit/microbundle	8138	2026-02-01T19:24:38Z	build,bundle,microlib,module-bundler,rollup,tiny-modules,umd	📦 Zero-configuration bundler for tiny modules.
+3	defunkt/jquery-pjax	16624	2022-11-30T22:59:46Z		pushState + ajax = pjax
+3	deepseek-ai/DeepSeek-V3	104813	2025-08-28T03:24:37Z		
+3	debug-js/debug	11457	2026-10-14T15:47:53Z	browser,debug,debugging,javascript,logging,node,node-js	A tiny JavaScript debugging utility modelled after Node.js core's debugging technique. Wor
+3	daybrush/moveable	10764	2024-06-03T07:57:45Z	draggable,groupable,movable,moveable,pinchable,resizable,rotatable,scalable,snappable,warpable	Moveable! Draggable! Resizable! Scalable! Rotatable! Warpable! Pinchable! Groupable! Snapp
+3	davidmarkclements/0x	3551	2025-09-30T08:30:19Z		🔥 single-command flamegraph profiling 🔥
+3	davideuler/architecture.of.internet-product	20787	2024-02-17T12:02:24Z	architecture,architecture-guidelines,architecture-of-internet-product,chatgpt,dall-e-3,gpt,gpt-4,internet-architecutre,llm,sora	互联网公司技术架构，微信/淘宝/微博/腾讯/阿里/美团点评/百度/OpenA
+3	date-fns/date-fns	36661	2026-10-26T04:11:52Z	date,date-fns,hacktoberfest,javascript,modules,nodejs,time,utilities	⏳ Modern JavaScript date utility library ⌛️
+3	darukjs/daruk	912	2024-02-29T07:20:29Z	node-framework,nodejs,typescript	a node.js web framework based on typescript
+3	danilowoz/react-content-loader	13998	2026-01-22T16:36:19Z	facebook-cards-loaders,hacktoberfest,loader,loading,placeholder,react,react-native,react-native-components,skeleton,skeleton-screen,svg	⚪ SVG-Powered component to easily create skeleton loadings.
+3	danielstjules/jsinspect	3579	2024-03-20T04:23:04Z	clean-code,code-analysis,duplication,javascript,refactoring	Detect copy-pasted and structurally similar code
+3	dair-ai/Prompt-Engineering-Guide	80006	2026-03-11T20:09:13Z	agent,agents,ai-agents,chatgpt,deep-learning,generative-ai,language-model,llms,openai,prompt-engineering,rag	🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engi
+3	dagrejs/dagre	5852	2026-10-24T21:46:51Z		Directed graph layout for JavaScript
+3	d2l-ai/d2l-zh	82492	2024-07-30T09:32:19Z	book,chinese,computer-vision,deep-learning,machine-learning,natural-language-processing,notebook,python	《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被
+3	d2forum/14th	1803	2020-09-30T10:02:29Z		第十四届D2前端技术论坛「创心」
+3	cytoscape/cytoscape.js	11283	2026-11-10T16:39:40Z	analysis,cytoscapejs,graph-theory,javascript,network,visualisation,visualization	Graph theory (network) library for visualisation and analysis
+3	cursor/cursor	33331	2026-05-12T15:25:06Z		
+3	cubiq/iscroll	12780	2018-12-13T19:06:24Z		Smooth scrolling for the web
+3	ctimmerm/axios-mock-adapter	3541	2026-02-07T08:38:21Z	axios,javascript,mock,mocking	Axios adapter that allows to easily mock requests
+3	csstree/csstree	2129	2026-09-16T15:23:07Z	ast,css,css-parser,fast,generator,lexer,parser,w3c,walker	A tool set for CSS including fast detailed parser, walker, generator and lexer based on W3
+3	cssnano/cssnano	4980	2026-11-11T14:45:40Z	css,cssnano,minification,optimisation,postcss	A modular CSS minifier, built on top of the PostCSS ecosystem.
+3	conventional-changelog/conventional-changelog	8532	2026-11-12T01:31:54Z	changelog,git,hacktoberfest,history,metadata,tag	Generate changelogs and release notes from a project's commit messages and metadata.
+3	colbymchenry/codegraph	77470	2026-11-01T17:36:07Z		Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemi
+3	codesandbox/sandpack	6269	2025-04-24T13:17:28Z	documentation,hacktoberfest,live-coding,playground,reactjs,sandbox,sandpack	A component toolkit for creating live-running code editing experiences, using the power of
+3	codesandbox/codesandbox-client	13659	2026-10-22T03:13:44Z	angular,codesandbox,javascript,preact,react,svelte,vue	An online IDE for rapid web development
+3	cnodejs/nodeclub	9276	2025-12-06T06:26:40Z		:baby_chick:Nodeclub 是使用 Node.js 和 MongoDB 开发的社区系统
+3	cloudflare/workerd	9176	2026-11-12T12:47:58Z		The JavaScript / Wasm runtime that powers Cloudflare Workers
+3	cloudflare/pingora	27886	2026-11-09T16:45:48Z		A library for building fast, reliable and evolvable network services.
+3	clinicjs/node-clinic	5947	2024-09-19T09:48:16Z	nodejs	Clinic.js diagnoses your Node.js performance issues
+3	cline/cline	71559	2026-11-12T09:24:11Z		Autonomous coding agent as an SDK, IDE extension, or CLI assistant.
+3	clash-verge-rev/clash-verge-rev	157984	2026-11-12T09:29:10Z	clash,clash-meta,clash-verge,linux,mac,mihomo,tauri-app,windows	A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailor
+3	chyingp/nodejs-learning-guide	6862	2023-08-22T05:55:31Z	crypto,express,nodejs	Nodejs学习笔记以及经验总结，公众号"程序猿小卡"
+3	chokcoco/magicCss	1443	2020-02-08T15:13:00Z	css3,pesudo	CSS3奇思妙想，单标签实现各类图形
+3	chenglou/react-motion	21912	2024-01-05T12:11:49Z		A spring that solves your animation problems.
+3	cassiozen/useStateMachine	2403	2024-04-22T04:59:24Z	hooks,react-hook,state-machine,state-management,statemachine,typescript	The <1 kb state machine hook for React
+3	casesandberg/react-color	12332	2024-01-12T23:19:54Z	chrome,color-picker,inline-styles,photoshop,react,react-component,sketch	:art: Color Pickers from Sketch, Photoshop, Chrome, Github, Twitter & more
+3	canvg/canvg	3838	2026-10-26T22:26:04Z	canvas,hacktoberfest,javascript,svg	JavaScript SVG parser and renderer on Canvas
+3	camsong/number-precision	4093	2024-06-11T02:08:46Z	floating-point,number-converter,rounding-error	🚀1K tiny & fast lib for doing addition, subtraction, multiplication and division operat
+3	calcom/cal.diy	49969	2026-11-11T18:58:53Z	next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss,trpc,turborepo,typescript,zod	Scheduling infrastructure for absolutely everyone.
+3	cabloy/cabloy	986	2026-11-12T10:35:37Z	framework,full-stack,fullstack,nodejs,spec-driven-development,typescript,vibe-coding	Cabloy is a Node.js fullstack framework for AI vibe coding, with AI Spec-Driven Developmen
+3	bytedance/IconPark	9034	2023-02-24T07:46:02Z	fill,icon,icon-components,icons,multiple-themes,stroke,svg,svg-icon,vue-component,vue-next,vue3	🍎Transform an SVG icon into multiple themes, and generate React icons，Vue icons，svg
+3	bvaughn/react-window	17213	2026-11-06T19:21:04Z		React components for efficiently rendering large lists and tabular data
+3	browsh-org/browsh	19129	2026-11-02T11:17:24Z	bandwidth-saver,http-performance,mosh,ssh,tty,vnc	A fully-modern text-based browser, rendering to TTY and browsers
+3	browser-use/browser-harness	19043	2026-11-12T00:24:46Z	ai-agent,browser-agent,browser-automation,browser-use,browser-use-box,browser-use-cloud,cdp,chrome,chrome-devtools-protocol,claude-code,cloud-browser,codex,cursor,llm,mcp,persistent-browser,real-browser,telegram-agent,vps-agent,web-automation	Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set
+3	broofa/mime	2358	2026-10-30T05:00:41Z		Mime types for JavaScript
+3	bripkens/connect-history-api-fallback	1857	2023-10-26T06:55:33Z		Fallback to index.html for applications that are using the HTML 5 history API
+3	briangonzalez/rgbaster.js	1743	2019-12-20T00:32:39Z		🎨 A simple library for extracting dominant colors from images.
+3	bramp/js-sequence-diagrams	7836	2022-09-21T12:42:11Z	javascript,sequence-diagram,svg	Draws simple SVG sequence diagrams from textual representation of the diagram
+3	bpmn-io/bpmn-js	9734	2026-11-09T13:05:52Z	bpmn,bpmn-js,browser,hacktoberfest,javascript,modeler,toolkit	A BPMN 2.0 rendering toolkit and web modeler.
+3	boxlite-ai/boxlite	2635	2026-11-12T13:45:12Z	agentic,ai-agent,embedded,rust,sandbox,security,self-hosted,serverless,virtualization	The micro-VM for AI agents — light enough to embed on your laptop, elastic enough to pow
+3	bojieli/ai-agent-book	57850	2026-10-08T15:06:27Z	agent,agent-memory,ai-agent,book,coding-agent,context-engineering,large-language-models,llm,mcp,multi-agent,multimodal,rag,reinforcement-learning	《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓�
+3	bmad-code-org/BMAD-METHOD	55299	2026-11-12T12:48:14Z	agile,ai,context-engineering,sdlc,spec-driven-development	Breakthrough Method for Agile Ai Driven Development
+3	big-house-road/meme	4	2020-11-22T06:12:55Z		data structure for live use
+3	biaochenxuying/blog	4777	2023-10-27T06:05:30Z	algorithms,element-ui,express,html,javascript,nodejs,react,structure,typescript,vue,vue-typescript-element,vuepress,webpack	大前端技术为主，读书笔记、随笔、理财为辅，做个终身学习者。
+3	bevacqua/dragula	22118	2024-06-07T11:46:14Z	component,drag-and-drop,drag-drop,dragging,front-end,javascript,vanilla	:ok_hand: Drag and drop so simple it hurts
+3	benweet/stackedit	23104	2023-07-04T16:12:06Z	blogger,couchdb,dropbox,editor,gist,github,gitlab,google-drive,javascript,markdown,offline,stackedit,wordpress,zendesk	In-browser Markdown editor
+3	bcherny/json-schema-to-typescript	3353	2026-09-07T16:38:05Z	json-schema,typescript	Compile JSON Schema to TypeScript type declarations
+3	bannedbook/fanqiang	56617	2026-11-11T07:56:44Z	brook,daze,fanqiang,goflyway,lightsocks,proxy,psiphon,shadowsocks,ssr,trojan,v2ray	翻墙-科学上网
+3	bailicangdu/vue2-manage	13598	2024-07-05T12:16:35Z	element-ui,less,vue,vue-cli,vue-router,vuex,webpack	A admin template based on vue + element-ui. 基于vue + element-ui的后台管理系统基
+3	babel/babel	44057	2026-11-12T04:08:58Z	ast,babel,compiler,es2015,es6,flavortown,javascript	🐠 Babel is a compiler for writing next generation JavaScript.
+3	azl397985856/daily-featured	571	2026-10-23T15:10:34Z	daily,development,fe,lucifer,news	不仅仅是冷冰冰的链接（Not just link）
+3	ayuer/shanghai_house_knowledge	5092	2021-07-23T05:36:57Z		2020年11月在上海买房经历总结出来的买房购房做的一些功课分享给大
+3	avoidwork/filesize.js	1714	2026-11-12T12:34:23Z	bits,bytes,file,filesize,filesystem,iec,jedec,simple,size,size-calculation	A lightweight, high-performance file size utility that converts bytes to human-readable st
+3	atian25/blog	1580	2019-10-21T04:39:48Z	blog,egg,eggjs,front-end,scrat	天猪部落阁  http://atian25.github.io
+3	astrit/css.gg	10061	2024-08-26T22:56:02Z	adobe-xd,api,css,css-icon,customizable,figma,figma-ui-icons,icons,json,multiple-icons,npm,purecss,retina-ready,styled-components,svg,svg-icon,svg-icon-pack,svg-icons,svg-sprite,svg-sprites	700+ Pure CSS, SVG & Figma UI Icons, 6000+ glyphs, patterns, colors and layouts.
+3	ast-grep/ast-grep	16577	2026-11-12T05:50:08Z	ast,babel,codemod,codereview,command-line,command-line-tool,grep,linter,refactoring,rust,search,static-analysis,structural-search,tree-sitter,typescript	⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
+3	apollographql/apollo-client	19778	2026-11-12T08:56:09Z	apollo-client,apollographql,graphql,graphql-client,typescript	The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and m
+3	apache/maka	5962	2026-11-12T13:44:07Z	agent-runtime,ai,ai-agent,apache,cli,desktop,electron,event-sourcing,incubator,llm,local-first,maka,tool-use,typescript	Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete recor
+3	apache/incubator-weex	13586	2021-05-31T09:47:25Z	weex	Apache Weex (Incubating)
+3	aosabook/500lines	29580	2023-08-19T11:18:34Z		500 Lines or Less
+3	any86/any-rule	8629	2024-07-21T05:29:34Z	awsome,express,regex,regexp,zheng-ze	🦕  常用正则大全, 支持web / vscode / idea / Alfred Workflow多平台
+3	antvis/X6	6762	2026-10-23T03:11:37Z	antv,dag,diagram,diagramming,erd,erdiagram,flowchart,graph,graph-editor,javascript,javascript-diagramming-library,svg,typescript,uml-diagram	🚀 JavaScript diagramming library that uses SVG and HTML for rendering.
+3	antvis/G2	12659	2026-10-28T15:19:33Z	animation,canvas,chart,grammar,graphics,hacktoberfest,interaction,svg,visualization,webgl	📊 The concise and progressive visualization grammar.
+3	antlr/antlr4	19041	2026-10-30T08:32:16Z	antlr,antlr4,cpp,csharp,dart,golang,grammar,java,javascript,language-recognition,parse,parser-generator,parsing,php,python,swift	ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, 
+3	anthropics/claude-code	155407	2026-11-11T22:55:16Z		Claude Code is an agentic coding tool that lives in your terminal, understands your codeba
+3	anthonyshort/deku	3385	2018-07-10T06:28:41Z		Render interfaces using pure functions and virtual DOM
+3	antfu-collective/vitesse	9436	2026-10-06T08:41:36Z	vite,vite-starter,vite-template	🏕 Opinionated Vite + Vue Starter Template
+3	antfu-collective/sponsorkit	837	2026-10-22T06:06:23Z	github-sponsors,sponsors	💖 Toolkit for generating sponsors images 😄
+3	ant-design/ant-motion	4628	2022-07-05T18:20:57Z	animation,ant-motion,javascript,motion,motion-design,react,react-animate,react-components,react-motion	  :bicyclist: Animate specification and components of Ant Design
+3	aliyunfe/weekly	1784	2019-10-23T02:03:59Z	javascript,js,nodejs,react,vue,web	《阿里云前端技术周刊》
+3	alibaba/pipcook	2591	2026-11-12T00:22:51Z	js,machine-learning,pipeline,tensorflow	Machine learning platform for Web developers
+3	alibaba/designable	3523	2025-04-07T03:20:40Z	builder,designable,designer,editor,form,react	🧩 Make everything designable 🧩 
+3	alibaba/ChatUI	4464	2026-10-12T03:21:55Z	chat,chatbot,react,ui	The UI design language and React library for Conversational UI
+3	alibaba-fusion/next	4682	2026-11-01T21:11:00Z	component,design-system,fusion,fusion-design,next,react,ui	🦍 A configurable component library for web built on React. 
+3	ajaxorg/ace	27134	2026-10-29T15:18:14Z		Ace (Ajax.org Cloud9 Editor)
+3	airuikun/front-core	1159	2023-01-27T01:36:06Z		前端前沿技术实现原理+源码解析
+3	airtap/airtap	1379	2025-04-01T19:48:24Z	airtap,browsers,javascript,nodejs,npm-package,sauce-labs,sauceconnect,test-anything-protocol,unit-testing,zuul	Run TAP unit tests in 1789+ browsers.
+3	airbnb/react-sketchapp	14849	2025-11-06T00:54:06Z	react,react-renderer,react-sketchapp,sketch,sketch-plugin	render React components to Sketch ⚛️💎
+3	aidenybai/million	17665	2026-05-20T16:10:55Z	best-practices,blockdom,compiler,hacktoberfest,memo,million,millionjs,optimization,optimize,performance,preact,react,react-hooks,react-optimize,renderer,rendering,virtual-dom	Optimizing compiler for React
+3	agalwood/Motrix	58181	2026-11-09T16:32:27Z	aria2,bt,download,electron,linux,mac,macos,magnet,motrix,torrent,windows	A full-featured download manager.
+3	aframevr/aframe	17699	2026-07-13T15:27:11Z	3d,aframe,augmented-reality,daydream,ecs,game-development,game-engine,gamedev,html,metaverse,oculus,rift,threejs,virtual-reality,virtualreality,vive,vr,webgl,webvr,webxr	:a: Web framework for building virtual reality experiences.
+3	affaan-m/ECC	301725	2026-11-09T04:56:24Z	ai-agents,anthropic,claude,claude-code,developer-tools,llm,mcp,productivity	The agent harness performance optimization system. Skills, instincts, memory, security, an
+3	adrai/flowchart.js	8699	2026-10-23T08:11:14Z	diagram,flowchart,javascript,svg	Draws simple SVG flow chart diagrams from textual representation of the diagram
+3	addyosmani/puppeteer-webperf	1861	2023-01-18T10:55:29Z	chrome,chrome-devtools,devtools,lighthouse,puppeteer,puppeteer-demo,web-performance	Automating Web Performance testing with Puppeteer 🎪
+3	adam-p/markdown-here	60252	2025-08-22T00:21:50Z		Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown an
+3	acdlite/recompose	14752	2022-09-10T03:59:05Z		A React utility belt for function components and higher-order components.
+3	a597873885/webfunny_monitor	5303	2026-09-24T11:57:11Z	apm,burying-point,free,free-monitor,front-end-monitor,frontend-monitoring,js-monitor,monitoring,monitoring-tool,qian-duan,topology,track,web-monitor	【免费社区版】【企业版】Webfunny是一款集全链路监控和用户行为分�
+3	Zulko/eagle.js	4046	2022-07-10T19:20:42Z	html,presentations,slideshow,slideshow-framework,slideshow-maker,slideshows,vuejs	A hackable slideshow framework built with Vue.js
+3	WeNeedHome/SummaryOfLoanSuspension	20321	2024-07-13T02:44:33Z		全国各省市停贷通知汇总
+3	WTFAcademy/WTF-Ethers	3518	2025-10-06T08:50:40Z	ethereum,ethers,ethersjs,javascript,nodejs,solidity,typescript,web3	我最近在重新学ethers.js，巩固一下细节，也写一个“WTF Ethers.js极简�
+3	WICG/virtual-scroller	1994	2021-09-30T21:53:48Z		
+3	VickScarlet/remake	10442	2026-11-08T04:03:01Z		やり直すんだ。そして、次はうまくやる。
+3	TypeStrong/typedoc	8457	2026-07-13T01:33:41Z	documentation,generator,typescript	Documentation generator for TypeScript projects.
+3	ThoughtWorksInc/Binding.scala	1573	2026-11-09T09:55:07Z	data-binding,dom,front-end,fxml,gui,html,javafx,reactive-frameworks,scala,scalajs,web-framework,xml	Reactive data-binding for Scala
+3	Tencent/wujie	5063	2026-06-16T07:49:28Z		极致的微前端框架
+3	Tencent/tdesign	4130	2026-11-11T02:29:59Z	miniapp,react,tdesign,vue	Enterprise Design System
+3	Tencent/kbone	4920	2025-10-20T11:15:24Z		一个致力于微信小程序和 Web 端同构的解决方案
+3	Tencent/VasSonic	11845	2023-04-07T11:37:52Z	android-sdk,h5,hybrid,ios-sdk,web,webview	VasSonic is a lightweight and high-performance Hybrid framework developed by tencent VAS t
+3	TalkingData/iview-weapp	6596	2023-03-01T22:40:28Z	components,iview,ui-design,ui-kit,weapp,wechat,weixin	一套高质量的微信小程序 UI 组件库
+3	Stuk/jszip	10397	2026-09-09T17:13:04Z	javascript,zip	Create, read and edit .zip files with Javascript
+3	SonarSource/sonarqube	11177	2026-11-11T20:06:38Z	code-quality,sonarqube,static-analysis	Continuous Inspection
+3	SocialSisterYi/bilibili-API-collect	20122	2026-01-30T09:06:33Z		
+3	SimulatedGREG/electron-vue	15341	2022-01-14T15:11:42Z	babel,boilerplate,documentation,electron,electron-builder,electron-packager,end-to-end-testing,es6,unit-testing,vue,vue-cli,webpack	An Electron & Vue.js quick start boilerplate with vue-cli scaffolding, common Vue plugins,
+3	Significant-Gravitas/AutoGPT	188005	2026-11-12T13:46:18Z	agentic-ai,agents,ai,artificial-intelligence,autonomous-agents,claude,gpt,llama-api,llm,openai,python	AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission i
+3	SangKa/PWA-Book-CN	3426	2018-06-20T09:27:05Z	progressive-web-app,pwa,pwa-book,pwa-chinese-book,service-worker	第一本 PWA 中文书
+3	SamVerschueren/listr	3284	2022-08-28T16:33:28Z		Terminal task list
+3	SagerNet/sing-box	39906	2026-11-10T11:25:05Z		The universal proxy platform
+3	RemoteDebug/remotedebug-ios-webkit-adapter	2737	2021-03-03T05:09:06Z	chrome-devtools,debugger,devtools,ios,protocol-adapter,remotedebug,safari	Debug Safari and WebViews on iOS from tools like VS Code and Chrome DevTools
+3	RSSNext/Folo	39281	2026-11-10T16:50:54Z	ai,reader,rss,rss-reader,rsshub	🧡 Folo is the AI RSS Reader
+3	PrismJS/prism	13068	2026-11-12T13:42:35Z		Lightweight, robust, elegant syntax highlighting.
+3	Platane/snk	6178	2026-10-18T15:15:46Z	gif,github-actions,github-contribution-graph,github-contributions,github-profile-readme,snake-game,svg-animations	🟩⬜ Generates a snake game from a github user contributions graph and output a screen 
+3	PlasmoHQ/plasmo	13176	2026-11-11T22:19:33Z	browser-extension,bundler,chrome-extension,edge-addon,firefox-addon,parcel,reactjs,sdk,typescript	🧩 The Browser Extension Framework
+3	PatrickJS/awesome-cursorrules	41152	2026-05-30T18:01:29Z	awesome,awesome-list,cursor,cursor-ai-editor,cursorrules	📄  Configuration files that enhance Cursor AI editor experience with custom rules and b
+3	PaddlePaddle/PaddleOCR	92625	2026-09-16T03:31:50Z	ai4science,chineseocr,document-parsing,document-translation,kie,ocr,paddleocr-vl,pdf-extractor-rag,pdf-parser,pdf2markdown,pp-ocr,pp-structure,rag	Turn any PDF or image document into structured data for your AI. A powerful, lightweight O
+3	OpenHands/OpenHands	93318	2026-11-12T13:23:14Z	agent,artificial-intelligence,chatgpt,claude-ai,cli,developer-tools,gpt,llm,openai	🙌 OpenHands: AI-Driven Development
+3	NorthwoodsSoftware/GoJS	8504	2026-10-02T17:39:38Z	canvas,chart,charts,data-visualization,diagram,es6,es6-modules,flowchart,gojs,graph,html,interactive-diagrams,javascript,javascript-library,layout,orgchart,svg,typescript,typescript-library,visualization	JavaScript diagramming library for interactive flowcharts, org charts, design tools, plann
+3	NodeBB/NodeBB	15248	2026-11-12T13:05:58Z	community,forum,javascript,mongodb,node,nodebb,nodejs,postgresql,redis,socket-io,websockets	Node.js based forum software built for the modern web
+3	Nickersoft/push.js	8645	2023-12-15T05:08:17Z	javascript,javascript-library,notification-api,notifications,push,push-notifications	The world's most versatile desktop notifications framework :earth_americas:
+3	Netflix/pollyjs	10251	2025-05-31T22:29:19Z	browser,javascript,netflix,nodejs,record,replay,testing	Record, Replay, and Stub HTTP Interactions.
+3	NervJS/nerv	5405	2021-03-29T17:17:19Z	framework,frontend,inferno,javascript,jsx,nerv,nervjs,preact,react,reactjs,typescript,vdom,virutal-dom	A blazing fast React alternative, compatible with IE8 and React 16.
+3	NekR/offline-plugin	4499	2021-11-08T05:42:32Z	appcache,application-cache,caching,javascript,offline,offline-first,plugin,progressive-web-app,pwa,service-worker,service-workers,serviceworker,storage,webpack,webpack-plugin	Offline plugin  (ServiceWorker, AppCache) for webpack (https://webpack.js.org/)
+3	NandhaKishorM/laya	35446	2026-11-10T19:14:19Z	calibration,classification,decision-model,huggingface,jev,modernbert,multilingual,nlp,python,pytorch,routing,typed-decisions,zero-shot	Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over
+3	MochiDiffusion/MochiDiffusion	7981	2026-11-08T00:13:04Z	ane,apple,apple-silicon,coreml,macos,neural-engine,stable-diffusion,swift,swiftui	Run Stable Diffusion on Mac natively
+3	MichalLytek/type-graphql	8093	2026-07-16T07:50:15Z	api,controllers,decorators,gql,graphql,graphql-js,graphql-schema,hacktoberfest,resolvers,schema,typescript	Create GraphQL schema and resolvers with TypeScript, using classes and decorators!
+3	Louiszhai/tool	5679	2022-08-25T12:17:58Z	mac,tool	开发效率提升：Mac生产力工具链推荐
+3	LiangJunrong/document-library	3877	2024-04-09T16:25:45Z	docker,echarts,front-end,front-end-developer,interview,interview-questions,jsliang,node,react,vue	jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、Reac
+3	LeetCode-OpenSource/vscode-leetcode	8496	2024-09-13T07:26:20Z	algorithm,datastructure,interview,leetcode,vscode	Solve LeetCode problems in VS Code
+3	Leaflet/Leaflet	45912	2026-11-12T12:24:48Z	javascript,leaflet,maps	🍃 number one JavaScript library for interactive maps 🇺🇦
+3	KieSun/all-of-frontend	5267	2022-12-15T09:55:39Z	css,front-end,javascript,js,react	你想知道的前端内容都在这
+3	JuliusBrussee/caveman	119291	2026-11-12T07:27:22Z	ai,anthropic,caveman,claude,claude-code,llm,meme,prompt-engineering,skill,tokens	🪨 why use many token when few token do trick. Viral skill + proxy for coding agents tha
+3	JimLiu/baoyu-skills	27491	2026-11-06T17:20:33Z	agent-skills,claude-skills,codex-skills,openclaw-skills	
+3	JaneaSystems/nodejs-mobile	2598	2021-10-27T09:42:35Z		Full-fledged Node.js on Android and iOS
+3	Homebrew/brew	50311	2026-11-12T13:47:32Z	brew,homebrew,macos,package-manager,ruby	🍺 The Package Manager for Everywhere
+3	Hedgehog-Computing/hedgehog-lab	2389	2024-05-02T16:29:14Z	computer-algebra,data-visualization,gpu-acceleration,javascript,latex,machine-learning,matrix-library,scientific-computing,symbolic-computation,tex,webgl,webgl2	Run, compile and execute JavaScript for Scientific Computing and Data Visualization TOTALL
+3	GrapesJS/grapesjs	26402	2026-11-03T11:04:51Z	drag-and-drop,framework,no-code,nocode,page-builder,site-builder,site-generator,template-builder,ui-builder,web-builder,web-builder-framework,website-builder	Free and Open source Web Builder Framework. Next generation tool for building templates wi
+3	GoogleChrome/lighthouse	31051	2026-11-12T01:35:46Z	audit,best-practices,chrome-devtools,developer-tools,performance-analysis,performance-metrics,pwa,web	Automated auditing, performance metrics, and best practices for the web.
+3	GitbookIO/gitbook	29095	2026-11-12T13:40:09Z	documentation,git,gitbook,markdown	The open source frontend for GitBook doc sites
+3	FrontEndGitHub/FrontEndGitHub	6598	2025-01-08T15:09:11Z	frontend,frontend-map,javascript,react,vue	:octocat:GitHub最全的前端资源汇总仓库（包括前端学习、开发资源、数
+3	FoundationAgents/OpenManus	58960	2026-11-02T08:38:21Z		No fortress, purely open ground.  OpenManus is Coming.
+3	Flipboard/react-canvas	13191	2022-09-27T06:00:42Z		High performance <canvas> rendering for React components
+3	Eugeny/tabby	75397	2026-11-06T04:03:17Z	serial,ssh-client,telnet-client,terminal,terminal-emulators	A terminal for a more modern age
+3	ErosZy/SecurityWorker	737	2021-03-02T14:10:44Z	asmjs,emscripten,encryption,javascript,protection,shield,vm,webassembly	The best javascript code protection solution ever.
+3	ElemeFE/obsolete-webpack-plugin	185	2020-04-29T08:05:20Z	browser,browser-update,browserslist,compatibility,obsolete,outdated,webpack,webpack-plugin	🌈 A Webpack plugin generates a browser-side standalone script that detects browser comp
+3	DietrichGebert/ponytail	189536	2026-10-29T11:59:31Z	agent-skills,ai-agents,claude,claude-code,claude-code-plugin,cursor-rules,developer-tools,llm,prompt-engineering,yagni	Makes your AI agent think like the laziest senior dev in the room. The best code is the co
+3	DataV-Team/DataV	9716	2024-06-14T06:06:34Z	bi,datav,svg,vue	Vue数据可视化组件库（类似阿里DataV，大屏数据展示），提供SVG的边�
+3	DIYgod/APlayer	7693	2024-02-23T16:58:13Z	aplayer,html,html5,music,player	:lollipop: Wow, such a beautiful HTML5 music player
+3	CyberNika/v-contextmenu	930	2024-06-16T09:51:57Z	contextmenu,vue,vue-component,vue2,vue3	🖱 ContextMenu based on Vue 3 & Vue 2
+3	ConnorAtherton/loaders.css	10220	2023-05-03T19:08:55Z		Delightful, performance-focused pure css loading animations.
+3	CompVis/stable-diffusion	73573	2024-06-18T01:53:49Z		A latent text-to-image diffusion model
+3	CodeHubApp/CodeHub	22540	2022-06-22T16:14:05Z	c-sharp,codehub,github,reactiveui	CodeHub is an iOS application written using Xamarin
+3	Chevrotain/chevrotain	2818	2026-11-12T07:02:46Z	grammars,javascript,lexer,open-source,parser-library,parsing,tokenizer,typescript	Parser Building Toolkit for JavaScript
+3	BuilderIO/mitosis	14463	2026-10-28T22:04:27Z	angular,builder,compiler,declarative,figma,jsx,jsx-lite,liquid,no-code,react,shopify,solid,solidjs,svelte,visual,vue	Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelt
+3	BrowserSync/browser-sync	12287	2026-05-09T08:29:15Z		Keep multiple browsers & devices in sync when building websites. https://browsersync.io
+3	BetaSu/big-react	3899	2025-06-05T14:14:58Z	react,reactjs	跟着我，从0实现React18
+3	Automattic/mongoose	27449	2026-11-12T10:02:44Z	mongo,mongodb,nodejs,odm,orm	MongoDB object modeling designed to work in an asynchronous environment.
+3	AutoPiano/AutoPiano	6034	2022-12-23T16:51:40Z	anti-996,audio-player,entertainment,instruments,music,piano,relax	🎹 自由钢琴 AutoPiano - Simple & Elegant Piano Online
+3	Asabeneh/30-Days-Of-React	27530	2026-08-27T12:11:56Z	30dayofjavascript,challenge,css,html,html5,javascript,js,programming,react,react-router-dom,reactjs,redux,webdevelopment,website	30 Days of  React challenge is a step by step guide to learn React in 30 days.  These vide
+3	Armour/vue-typescript-admin-template	5660	2023-11-04T02:48:46Z	admin,admin-dashboard,template,typescript,vue,vue-cli	🖖 A vue-cli 3.0 + typescript minimal admin template
+3	Anduin2017/HowToCook	103885	2026-10-26T14:16:34Z	chinese,cookbook,cooking,dishes,recipes	Programmer's guide about how to cook at home.
+3	AmazingAng/WTF-Solidity	14067	2026-10-11T14:38:51Z	airdrop,auction,blockchain,dapp,dapps,erc20,erc721,ethereum,merkle-tree,nft,open-source,signature-verification,smart-contracts,solidity,solidity-contracts,tutorial-code,web3	WTF Solidity 极简入门教程，供小白们使用。Now supports English! 官网: https
+3	AZeC4/TelegramGroup	23993	2026-11-01T09:54:32Z	telegram,telegram-api,telegram-bot,telegram-bot-api,telegram-bots,telegram-channel,telegramgroups	2026最新悄咪咪收集的10000+个Telegram群合集，附全网最有趣好用的机器
+3	APIJSON/APIJSON	18387	2026-11-08T17:23:47Z	baas,clickhouse,crud,databricks,elasticsearch,hadoop,hive,influxdb,low-code,lowcode,milvus,nocode,oracle,postgresql,postgresql-database,serverless,snowflake,sqlserver,tdengine,tidb	🏆 Real-Time no-code, powerful and secure ORM 🚀  providing APIs and Docs without codi
+3	88250/symphony	2952	2026-11-11T16:20:12Z	bbs,community,discussion,forum,java,markdown,sns,sym,vditor	🎶 一款用 Java 实现的现代化社区（论坛/问答/BBS/社交网络/博客）系
+3	233boy/v2ray	29862	2026-01-15T00:50:11Z	shell-script,v2ray,vmess	最好用的 V2Ray 一键安装脚本 & 管理脚本
+3	0voice/interview_internal_reference	37256	2025-10-22T09:39:06Z	cpu,high-performance,interview,mongodb,mysql,network,nginx,redis,storage,zookeeper	2025年最新总结，阿里，腾讯，百度，美团，头条等技术面试题目，�

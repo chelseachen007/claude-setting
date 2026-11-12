@@ -24,6 +24,7 @@ read_when:
 | `projects/dsh-platform.md` | 改 `~/.dsh` 配置、插件、workspace；排查 dsh-chat-import / Mnemon / magpie；查平台迁移经验 |
 | `projects/agent-autoloop.md` | 改自动化中台的规则、通道、worker；查「单次任务百万 token」的优化结论 |
 | `projects/invest-workspace.md` | 投资数据抓取的接口坑、口径纪律、复盘机制 |
+| `projects/github-mirror/INDEX.md` | **选库/选技术栈/找现成轮子之前先查**：46 位关注对象画像、每人主力仓库、24 位大佬共同收藏的 239 个共识仓库（≥8 人收藏=圈内公共设施）。数据快照在同目录 `*.tsv` |
 
 ## 跨平台 AI 资产架构
 

@@ -1,0 +1,311 @@
+phodal	github	11343	GitHub 漫游指南- a Chinese ebook on how to build a good project on Github. Explore the users' behavior. Find some thing interest.	2024-08-24T12:54:17Z	Rich Text Format	book,books,github,github-books,open-source,os	false
+phodal	growth-ebook	7819	Growth Engineering: The Definitive Guide。全栈增长工程师指南	2022-08-25T23:39:31Z	HTML	back-end,book,ebook,free-book,freebook,frontend,full-stack,fullstack,github,github-books,growth,growth-hacking,phodal,repractise	false
+phodal	understand-prompt	5662	【🔞🔞🔞 内含不适合未成年人阅读的图片】基于我擅长的编程、绘画、写作展开的 AI 探索和总结：StableDiffusion 是一种强大的图像生成模型，能够通过对一张图片进行演化来生成新的图片。ChatGPT 是一个基于 Transformer 的语言生成模型，它能够自动为输入的主题生成合适的文章。而 Github Copilot 是一个智能编程助手，能够加速日常编程活动。	2023-03-11T13:25:16Z	Jupyter Notebook	ai,aigc,chatgpt,github-copilot,stable-diffusion	false
+phodal	awesome-iot	4634	Awesome IoT. A collaborative list of great resources about IoT Framework, Library,  OS, Platform	2026-11-12T09:43:46Z	Python	awesome-iot,awesome-list,azure-iot,iot,iot-application,iot-cloud,iot-device,iot-platform	false
+phodal	auto-dev	4569	🧙‍AutoDev: the Multi-Agent coding development platform built on Kotlin Multiplatform.	2026-09-25T13:55:26Z	Kotlin	aigc,genai,genaistack,ide,intellij	false
+phodal	ideabook	3756	一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action.	2017-11-20T09:21:05Z	HTML	ebook,github-books,growth,idea,ideabook,phodal	false
+phodal	migration	3469	《系统重构与迁移指南》手把手教你分析、评估现有系统、制定重构策略、探索可行重构方案、搭建测试防护网、进行系统架构重构、服务架构重构、模块重构、代码重构、数据库重构、重构后的架构守护	2021-08-12T08:05:53Z	Java	agile,ddd,ebook,guard,legacy-system,migration,refactoring,tdd,testing	false
+phodal	microfrontends	3109	Micro-frontend Architecture in Action-微前端的那些事儿	2021-10-07T10:19:19Z		micro-frontend,micro-frontends,micro-services,microfrontend,microfrontends,microservices-architecture	false
+fouber	blog	22536	没事写写文章，喜欢的话请点star，想订阅点watch，千万别fork！	2019-11-12T05:28:36Z			false
+fouber	page-monitor	2088	capture webpage and diff the dom change with phantomjs  ♨	2020-01-18T17:59:56Z	JavaScript		false
+fouber	lottery	1626	年会抽奖程序	2024-01-23T10:24:53Z	JavaScript	lottery,lottery-draw,lottery-game,lottery-program	false
+fouber	static-resource-digest-project	453	静态资源摘要信息冗余发布演示项目	2014-10-30T18:44:16Z	JavaScript		false
+fouber	pmui	146	An UI wrapper of page-monitor, to show webpage history captures and diff them.	2014-11-24T09:40:09Z	JavaScript		false
+fouber	spmx	132	a wrapper of fis to build seajs project	2015-05-23T13:23:39Z	JavaScript		false
+fouber	fis-java-jsp	117	fis与java-jsp结合使用	2014-01-24T07:17:12Z	JavaScript		false
+fouber	static-resource-digest-project-release	99	static-resource-digest-project项目的md5发布结果展示	2014-10-30T19:00:32Z	CSS		false
+ruanyf	weekly	107967	科技爱好者周刊，每周五发布	2026-11-08T14:43:20Z			false
+ruanyf	es6tutorial	21412	《ECMAScript 6入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新增的语法特性。	2026-09-24T14:20:28Z	JavaScript		false
+ruanyf	jstraining	20041	全栈工程师培训材料	2025-07-15T03:46:56Z			false
+ruanyf	react-demos	16413	a collection of simple demos of React.js	2024-10-29T16:07:57Z	JavaScript		false
+ruanyf	free-books	16065	互联网上的免费书籍	2024-03-28T03:59:19Z			false
+ruanyf	document-style-guide	13071	中文技术文档的写作规范	2025-12-19T11:42:17Z			false
+ruanyf	webpack-demos	9558	a collection of simple demos of Webpack	2020-12-03T12:31:38Z	JavaScript		false
+ruanyf	jstutorial	5363	Javascript tutorial book	2023-04-01T08:50:14Z	CSS		false
+shengxinjing	programmer-job-blacklist	28381	:see_no_evil:程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞	2026-02-27T02:34:40Z	Shell		false
+shengxinjing	fe-advanced-interview	1396	前端进阶面试指南	2025-04-23T13:47:04Z	JavaScript		false
+shengxinjing	email-helper	714	Generate your business emails in seconds (by OpenAI)	2024-06-09T14:57:36Z	TypeScript		false
+shengxinjing	it-roadmap	520	大圣的前端学习路线图	2025-04-21T08:37:09Z	Python		false
+shengxinjing	self-employed-workbook	405	写给自己的程序员自由职业工作手册	2025-07-03T07:04:49Z			false
+shengxinjing	vue3-vs-vue2	402	《前端会客厅第一期代码》和尤大聊vue3的 提升	2022-11-22T15:23:38Z	HTML		false
+shengxinjing	woniu-cmdb	263	:ghost:写配置文件生成增删改查系统	2016-09-08T01:56:11Z	HTML		false
+shengxinjing	geektime-vue-course	241	极客时间代码 	2023-03-16T02:41:36Z	Vue		false
+berwin	Blog	4144	记录成长的过程	2022-09-20T03:32:54Z	JavaScript	article,blog,education,javascript,koa,learn-to-code,learning,learning-js,vue	false
+berwin	aliyun-oss-upload-stream	151	A Node.js module for streaming data to Aliyun oss via the multipart upload API	2017-04-24T06:49:33Z	JavaScript	aliyun-oss,stream	false
+berwin	demos	137	demos 一个简洁的web开发编辑器	2016-12-04T11:31:42Z	JavaScript	css,demo,editor,html,javascript	false
+berwin	time-slicing	104	Break down long tasks into smaller tasks, avoid blocking the main process.	2019-05-18T09:39:54Z	JavaScript	time-slicing,web-performance	false
+berwin	learn-javascript-design-pattern	95	 :musical_note:学习javascript设计模式，记录的小例子~ :musical_note:	2015-12-30T10:59:38Z	JavaScript		false
+berwin	easy-to-understand-Vue.js-examples	51	《深入浅出Vue.js》的相关代码	2019-05-13T04:19:29Z	JavaScript	books,examples,examples-vue	false
+berwin	learn-react	50	用react+redux写的demo~	2015-11-09T10:49:42Z	JavaScript		false
+berwin	lone	18	双线程-多WebView架构下的小程序引擎	2023-03-08T15:48:45Z	JavaScript		false
+linonetwo	segmentit	321	任何 JS 环境可用的中文分词包，fork from leizongmin/node-segment	2023-04-13T08:15:52Z	JavaScript	chinese,chinese-nlp,nlp,segmentation	false
+linonetwo	langchain-alpaca	215	Run Alpaca LLM in LangChain	2023-12-14T20:33:28Z	TypeScript	alpaca,chatgpt,llama,llm,local-first,offline-first,self-hosted	false
+linonetwo	yaba-japanese	100	矢波日语扫描版	2020-11-16T14:07:50Z			false
+linonetwo	ChatGPT-Magic-Chat	85	使唤 AI 使魔必备魔咒，一些验证可用的操作 ChatGPT 的咒语。	2026-05-06T02:49:36Z	JavaScript	chatgpt,chinese,prompt	true
+linonetwo	Relay-Tutorial-Chinese	41	Facebook React Relay 中文入门教程	2023-12-15T08:46:45Z	JavaScript		false
+linonetwo	template-based-generator-template	38	基于模板的文本生成器的模板，模生模，凤生凤，老鼠的儿子会打洞。本地启动：npm i && npm run dev:demo	2024-01-14T07:44:16Z	TypeScript	generator,nlp,nlp-library,template	false
+linonetwo	communism-report-generator	38	共产中文报告生成器，用于生成有伏特加味的参水报告	2022-03-02T12:07:16Z	TypeScript		false
+linonetwo	neo4j-tutorial-Chinese	35	学图论数据库 Neo4j 的时候顺手翻译了它的在线课程	2015-12-05T04:26:37Z			false
+ityouknow	spring-boot-examples	30428	about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。 	2023-11-18T16:32:16Z	Java	docker,docker-composer,fastdfs,java,mongodb,mybatis,rabbitmq,scheduler,spring,spring-boot,spring-boot-examples,spring-boot-mail,spring-boot-mongodb,spring-boot-upload-file,spring-cloud,spring-data-jpa,springboot,springboot-shiro,springcloud,thymeleaf	false
+ityouknow	spring-cloud-examples	6171	Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等	2023-07-18T20:52:20Z	Java	eureka,hystrix,hystrix-dashboard-turbine,refresh,spring-boot,spring-cloud,spring-cloud-demo,spring-cloud-examples,springboot,springclond,springcloud,turbine,zuul	false
+ityouknow	awesome-spring-boot	4564	Spring Boot Resources	2024-05-25T13:46:41Z		awesome,spring,spring-boot,springboot,springboot-learning,vue-springboot	false
+ityouknow	spring-boot-leaning	2082	Spring Boot 2.X 最全课程代码	2022-10-19T07:12:01Z	Java	activemq,docker,druid,elasticsearch,jpa,memcache,mongodb,mybatis,quartz,redis,security,spring-boot,springboot,springboot2,swagger,thymeleaf,websocket	false
+ityouknow	awesome-spring-cloud	1467	Spring Cloud 资源大全	2020-10-16T15:03:45Z		spring-cloud,springcloud	false
+ityouknow	awesome-list	539	collect all  awesome about IT	2022-10-19T06:41:49Z		android,awesome,docker,frontend,go,interview,it,javascript,nodejs,opensource,python	false
+ityouknow	drools-examples	523	drools examples, spring boot drools examples	2021-10-05T08:21:55Z	Java	drools,drools-example,drools-springboot,spring-boot-drools	false
+ityouknow	diagram	479	将画过的架构图、ppt、思维导图的文件收集在一起	2019-10-18T01:54:51Z			false
+icarusion	vue-book	1251	《Vue.js实战》源码及答疑	2018-10-31T03:14:54Z	Vue		false
+icarusion	vue-vueRouter-webpack	742	A base vue project with webpack	2018-01-20T18:27:30Z	JavaScript		false
+icarusion	vue-component-book	219	掘金小册《Vue.js 组件精讲》示例源码	2018-12-24T09:44:00Z	Vue		false
+icarusion	nodejs-express-mysql	51	A base nodejs project with Express,using MySQL and ORM of sequelize. 	2016-08-26T14:42:09Z	JavaScript		false
+icarusion	vuetodo	13	基于Vue.js实现的一个简单todo应用	2016-03-22T10:40:41Z	JavaScript		false
+icarusion	ball-game-canvas	8	A simple ball game with HTML5 canvas.	2023-07-26T10:25:38Z	JavaScript		false
+icarusion	element-pro	1		2018-01-22T03:33:14Z			false
+icarusion	theme	0	1c81329ba1bdbff555b6	2019-01-24T10:16:06Z			false
+huanglinsong	HelloWorld	0	Just test	2018-02-28T03:37:23Z			false
+huanglinsong	CPPHomework	0		2013-11-24T15:00:57Z	C++		false
+dailc	image-process	254	图像裁剪，图像缩放(最邻近插值，双线性差值，三次卷积插值)，图像滤镜（灰度，模糊，锐化，卡通），应用（边缘识别，水印）等	2025-08-01T07:39:28Z	JavaScript		false
+dailc	hybrid-h5plus-rayapp	155	Hybrid开发，基于h5+ API和mui前端框架，以及seajs模块化开发的一套跨平台APP开发框架。	2025-08-01T07:31:49Z	JavaScript		false
+dailc	pulltorefresh-h5-iscroll	54	基于IScroll5的PullToRefresh实现.。提供多套皮肤机制，便于拓展！	2017-08-30T03:18:34Z	JavaScript	iscroll,iscroll-pull-to-refresh,iscroll5-pull-to-refresh,javascript,pull-down-refresh,pull-to-refresh,pulltorefresh	false
+dailc	dailc.github.io	23	个人GitHub Pages	2025-08-01T07:46:21Z	JavaScript		false
+dailc	node-server-examples	14	node.js 后台示例，包括express使用，结合mongodb的使用等	2025-08-01T07:29:34Z	JavaScript		false
+dailc	jseffect-demo	13	自己写的一些精选功能点效果类库，如瀑布流，360加速球等效果.	2017-02-15T02:22:27Z	JavaScript		false
+dailc	hybrid-jsbridge-simple	13	Hybrid模式下，H5通过JSbridge与原生通信的示例。	2017-12-06T10:37:19Z	Java		false
+dailc	mini-mvvm	8	mvvm模式源码分析，还原一个极简版的双向绑定框架。	2018-02-05T10:28:15Z	HTML		false
+doodlewind	jshistory-cn	4216	🇨🇳 《JavaScript 二十年》中文版	2022-08-24T14:44:33Z	TypeScript	actionscript,book,browser,chinese,eich,history,javascript,js,jscript,mocha,spidermonkey,translation	false
+doodlewind	beam	529	✨ Expressive WebGPU	2026-09-09T21:42:31Z	TypeScript	3d,frontend,graphics,image-processing,library,particles,pbr,renderer,shadow-mapping,webgpu,webgpu-library,wgsl	false
+doodlewind	react-ssd1306	385	📟 A React Renderer for SSD1306 OLED chip on Raspberry Pi.	2022-10-07T15:24:20Z	C	c-module,demo,quickjs,raspberry-pi,react-native,react-renderer,ssd1306,tutorial	false
+doodlewind	mocha1995	375	☕️ The world's first JavaScript engine written in 1995 by Brendan Eich, now compiled back to JS and WASM!	2026-06-14T10:47:29Z	C	javascript,js,js-engine,netscape,retro,wasm	false
+doodlewind	freecube	134	⚛ Solve Rubik's Cube with WebGL in 10KB.	2019-05-02T08:07:23Z	JavaScript	animation,cfop,cube-face-rotation,javascript,rubik-cube,webgl	false
+doodlewind	learn-wgpu-cn	112	🇨🇳 《Learn Wgpu》中文版	2022-04-30T14:55:56Z	Rust	graphics,rust,translation,tutorial,webgl,webgpu	false
+doodlewind	webgl-seminar	111	代码清晰、直接、可追溯的一系列 WebGL 示例	2019-04-05T11:51:29Z	JavaScript	example,tutorial,webgl	false
+doodlewind	sinomap	106	🌎 Super lightweight canvas map lib.	2018-03-22T15:57:49Z	JavaScript		false
+okbug	ajunge-docs	3		2022-08-22T14:41:29Z	JavaScript		false
+okbug	smart-contract	2		2022-03-23T16:10:27Z	TypeScript		false
+okbug	algo	2		2022-08-15T15:19:53Z	JavaScript		false
+okbug	college-design	1		2022-06-29T09:13:59Z	Vue		false
+okbug	IsBug	1		2022-07-08T12:26:22Z			false
+okbug	vue3-test	0	Created with StackBlitz ⚡️	2021-11-03T02:31:51Z	Vue		false
+okbug	vue3-study	0		2020-12-15T08:50:37Z	Vue		false
+okbug	uni	0		2021-01-15T13:37:51Z	CSS		false
+ascoders	weekly	31717	前端精读周刊。帮你理解最前沿、实用的技术。	2024-09-09T01:39:37Z	JavaScript	awesome,frontend,weekly	false
+ascoders	react-native-image-viewer	2435	🚀 tiny & fast lib for react native image viewer pan and zoom	2021-09-20T21:30:31Z	TypeScript	image-viewer,react-component,react-native	true
+ascoders	gaea-editor	1346	Design websites in your browser. A smart web editor!	2022-05-22T01:50:45Z	TypeScript	editor,web-design,web-editor	false
+ascoders	react-native-image-zoom	637	react native image pan and zoom	2021-09-20T21:54:19Z	TypeScript		true
+ascoders	syntax-parser	478	Light and fast 🚀parser! With zero dependents. - Sql Parser Demo added!	2023-10-28T04:37:05Z	TypeScript	lexer,parser,sql,sql-parser	false
+ascoders	alipay	459	golang SDK for alipay	2018-06-19T11:42:40Z	Go		false
+ascoders	blog	259	博客	2016-09-23T01:54:53Z			false
+ascoders	avatar	42	avalon开源中文社区	2015-07-01T13:50:45Z	JavaScript		false
+PanJiaChen	vue-element-admin	90103	:tada: A magical vue admin                                                                https://panjiachen.github.io/vue-element-admin	2024-10-24T11:25:46Z	Vue	admin,admin-dashboard,admin-template,axios,dashboard,desktop,element,element-ui,i18n,management-system,mock,tinymce,vue,vue-admin,vue-cli,vuex,webpack,webpack4,xlsx	false
+PanJiaChen	vue-admin-template	20348	a vue2.0 minimal admin template 	2024-04-27T17:06:42Z	JavaScript	axios,element-ui,javascript,vue,vue-admin,vue-cli,vue-router,vuex	false
+PanJiaChen	electron-vue-admin	3229	 vue electron admin template web: http://panjiachen.github.io/vue-admin-template	2022-01-24T19:30:35Z	JavaScript	admin,electron,electron-application,electron-vue,vue	false
+PanJiaChen	awesome-bookmarks	2014	:sparkling_heart: A curated list of awesome things 	2022-07-29T02:23:42Z	JavaScript		false
+PanJiaChen	vue-countTo	1491	It's a vue component that will count to a target number at a specified duration https://panjiachen.github.io/countTo/demo/	2023-02-22T02:20:36Z	JavaScript	countup,vue,vue-component	false
+PanJiaChen	vue-split-pane	553	Split-Pane component built with vue2.0, can be split vertically or horizontally. http://panjiachen.github.io/split-pane/demo/index.html	2020-10-07T02:17:15Z	JavaScript		false
+PanJiaChen	vue-element-admin-site	362	:pencil: The documentation source of vue-element-admin https://panjiachen.github.io/vue-element-admin-site	2024-10-24T11:43:36Z	Shell	documentation,vuepress	false
+PanJiaChen	Music-Visualization	94	音乐可视化	2019-04-21T07:18:31Z	JavaScript		false
+react-component	slider	3085	🎚️ Accessible React slider for single values, ranges, marks, and editable handles.	2026-09-21T13:15:37Z	TypeScript	ant-design,antd,javascript,react,react-component,react-components	false
+react-component	form	1808	React High Order Form Component(web & react-native)	2021-12-23T10:06:13Z	JavaScript		false
+react-component	calendar	1702	React Calendar	2025-11-13T04:04:17Z	JavaScript		true
+react-component	table	1374	📋 Low-level table primitives for React, maintained in the Ant Design ecosystem.	2026-10-27T06:34:06Z	TypeScript	ant-design,antd,javascript,react,react-component	false
+react-component	tree	1274	🌳 Accessible tree view primitives for React, maintained in the Ant Design ecosystem.	2026-09-14T13:16:37Z	TypeScript	ant-design,antd,javascript,react,react-component	false
+react-component	field-form	1028	📝 Performance-first React form state manager with field subscriptions, validation, lists, dependencies, and hook APIs.	2026-10-13T11:52:27Z	TypeScript	ant-design,antd,javascript,react,react-component	false
+react-component	tooltip	944	💡 Positioned React tooltip for hover, focus, click, and controlled popup flows.	2026-09-07T13:19:20Z	TypeScript	ant-design,antd,javascript,react,react-component	false
+react-component	select	941	🎯 Composable Select component for React, with search, async-friendly option data, custom rendering, and virtual scrolling.	2026-10-13T08:48:40Z	TypeScript	ant-design,antd,javascript,react,react-component	false
+su37josephxia	wheel-awesome	1474	天天造轮子，手写面试常见源码。	2024-03-13T15:32:22Z	JavaScript		false
+su37josephxia	learn-vue3	582	vue3学习的各种实验代码	2023-03-05T22:29:45Z	JavaScript		false
+su37josephxia	kaikeba-code	365	课上代码分享	2022-12-11T01:47:55Z	JavaScript		false
+su37josephxia	frontend-basic	312	前端基础知识汇总	2023-01-06T21:00:47Z	JavaScript		false
+su37josephxia	frontend-interview	164	前端面试知识点	2022-04-18T08:26:30Z	JavaScript		false
+su37josephxia	bytedance-youth-training-camp	136	字节青训营教程	2021-10-08T15:00:40Z	HTML		false
+su37josephxia	node_practice	122		2021-08-09T02:42:29Z	JavaScript		false
+su37josephxia	Daydayup	80	刻意练习计划	2021-12-20T22:58:00Z	JavaScript		false
+mqyqingfeng	Blog	31058	冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。	2026-06-09T09:43:14Z		advanced,blog,javascript	false
+mqyqingfeng	learn-typescript	609	可能是中国最好的 TypeScript 从入门到进阶系统教程	2022-06-21T07:48:09Z			false
+mqyqingfeng	Wheels	545	以自己是否能造出轮子来衡量学习的效果	2022-06-26T15:06:11Z		dom,javascript,learn-javascript,wheels	false
+mqyqingfeng	frontend-interview-question-and-answer	409	前端校招面试题和答案	2021-12-25T13:06:33Z			false
+mqyqingfeng	waterfall	122	原生 JavaScript 实现的瀑布流效果，兼容到 IE8。	2017-12-05T03:17:25Z	JavaScript	javascript,waterfalls	false
+mqyqingfeng	react-admin	97	基于React + ant-design的用作后台管理项目的脚手架	2017-03-23T06:22:35Z	JavaScript	ant-design,javascript,react,redux,starter-kit,starter-template	false
+mqyqingfeng	AutoType	97	原生 JavaScript 实现的自动打字效果。	2021-12-25T13:07:07Z	JavaScript	autotype,javascript	false
+mqyqingfeng	EventEmitter	54	一个简单的 EventEmitter，可在浏览器中使用，帮助你实现事件的订阅和发布。	2018-03-27T12:56:32Z	JavaScript	eventemitter,javascript	false
+azl397985856	leetcode	55706	LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)	2025-07-16T09:42:17Z	JavaScript	algo,algorithm,algorithms,algorithms-datastructures,computer-science,cpp,data-structures,interview,java,javascript,leetcode,leetcode-solutions,python,tree	false
+azl397985856	fe-interview	2836	宇宙最强的前端面试指南 (https://lucifer.ren/fe-interview)	2023-09-18T17:04:14Z	JavaScript	algorithm,fe,frontend,interview,javascript,qian-duan	false
+azl397985856	daily-featured	571	不仅仅是冷冰冰的链接（Not just link）	2026-10-23T15:10:34Z	JavaScript	daily,development,fe,lucifer,news	false
+azl397985856	automate-everything	549	这是我准备写的第一本书，其实早些时候已经打算开始写书了，只是苦于没有写书经验，无从下手。写书不同于博客，写书需要将知识，经验等系统化地讲述出来，而我现在恰巧缺乏这种表现能力。因此我决定在这里将项目中零散的东西记录下来，然后后期润色一下，写成一本书。	2021-12-03T15:13:37Z	Roff	automation,components,front-end-development,modules,performance	false
+azl397985856	mono-react	75	Create React from zero series	2020-01-31T15:56:11Z		algorithm,react,tutorial	false
+azl397985856	leetcode-cheat	56	release of leetcode-cheat	2024-06-24T08:54:56Z			false
+azl397985856	mono-webpack	52	Create webpack from zero series	2020-08-19T05:39:17Z			false
+azl397985856	functional-programming	38	javascript函数式编程指南	2018-06-27T11:47:44Z			false
+LuckyWinty	blog	668	This is the project which is used as my blog. 	2026-02-23T12:11:32Z	JavaScript		false
+LuckyWinty	fe-weekly-questions	341	A pro to record some interview questions every week...	2019-12-10T12:59:46Z			false
+LuckyWinty	UserBehaviorRecord	28	A Repo To Test Recording User Behavior	2022-12-06T19:56:59Z	JavaScript		false
+LuckyWinty	dragDemo	21	this	2016-11-01T07:03:00Z	JavaScript		false
+LuckyWinty	uploadImgs	14	This plugin is using to preview imgs when we upload !	2019-12-16T10:19:37Z	JavaScript		false
+LuckyWinty	carrousel	14	This is a very cool image carrousel making by original javascript.	2016-04-25T14:45:25Z	JavaScript		false
+LuckyWinty	resetFile	12	This file is consist of a reset CSS and JS which is help to our project.	2016-10-14T15:58:19Z	CSS		false
+LuckyWinty	two-way-data	8	This is a simple demo which can explain the theory of vue.js !	2016-11-25T12:24:20Z	JavaScript		false
+amikey	anki-connect	177	https://github.com/FooSoft/anki-connect.git	2018-02-20T13:39:39Z	Python		false
+amikey	Coursera-ML-AndrewNg-Notes	118	https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes.git	2019-06-15T04:38:57Z	HTML		false
+amikey	12306	99	https://github.com/testerSunshine/12306.git	2019-02-15T00:06:07Z	Python		false
+amikey	java-design-patterns	64	引用https://github.com/iluwatar/java-design-patterns.git	2015-08-16T09:38:21Z	Java		false
+amikey	pytorch-CycleGAN-and-pix2pix	34	https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git	2018-02-19T13:22:12Z	Python		false
+amikey	py12306	24	https://github.com/pjialin/py12306.git	2022-12-08T01:36:48Z	Python		false
+amikey	Langchain-Chatchat	18	https://github.com/chatchat-space/Langchain-Chatchat.git	2023-11-25T09:35:50Z	Python		false
+amikey	Fooocus	18	https://github.com/lllyasviel/Fooocus.git	2023-11-25T00:43:32Z	Python		false
+HcySunYang	vue-design	5951	📖 master分支：《渲染器》	2022-12-03T06:00:25Z	JavaScript		false
+HcySunYang	code-for-vue-3-book	644		2023-05-04T09:40:37Z	HTML		false
+HcySunYang	knowledge	363	📗：https://kb.hcysun.me	2022-02-19T14:24:39Z			false
+HcySunYang	finger-mover	332	🥊A motion effect library that integrates Fingerd and Moved	2018-09-06T10:26:18Z	JavaScript		false
+HcySunYang	vue3-figma-plugin-starter	111		2023-01-06T10:50:47Z	JavaScript		false
+HcySunYang	scroll-flip-page	94	🎁A super easy to use infinite scroll component.(Vue component)	2022-12-03T15:56:35Z	Vue		false
+HcySunYang	HcySunYang	17		2024-08-10T06:23:54Z			false
+HcySunYang	hcysunyang.github.io	12	my blog	2022-01-11T04:22:01Z	HTML		false
+answershuto	learnVue	12638	:octocat:Vue.js 源码解析	2023-02-16T16:48:01Z	JavaScript	diff,dom,dom-nexttick,vue,vue-router,vue-template,vuex	false
+answershuto	H5	468	📃an app which automatically generates HTML5 files.	2017-09-28T01:07:53Z	Vue	nodejs,vue,vuejs2	false
+answershuto	VueDemo	421	《剖析 Vue.js 内部运行机制》配套Demo	2019-01-16T03:26:11Z	JavaScript		false
+answershuto	Rental	385	🏠 Rental app base on Node.js	2017-06-03T05:59:35Z	JavaScript	nodejs	false
+answershuto	Blog	120	📖 染陌的Blog	2021-09-13T08:21:50Z			false
+answershuto	recruit	58	阿里云招前端啦～	2019-12-08T11:56:05Z			false
+answershuto	Games	8	🎮 html games	2016-06-19T14:17:38Z	JavaScript		false
+answershuto	Weather	4	☁️ Weather app based on react width redux	2016-10-07T14:30:44Z	JavaScript		false
+FontEndArt	luocaptcha-vue	12	https://luosimao.com/  人机验证vue版本	2018-11-29T03:28:14Z	Vue		false
+FontEndArt	SGGB	12	Study Group Greens Bird	2020-06-08T00:32:14Z	HTML		false
+FontEndArt	blog	8	博客源码 含md文件	2022-12-11T09:30:41Z	JavaScript		false
+FontEndArt	FontEndArt.github.io	5	前端小然子的博客	2020-10-31T06:59:44Z	HTML		false
+FontEndArt	uni-circle	4	uni-app 进度环插件uni-app 进度环插件	2019-05-29T11:23:19Z	Vue		true
+FontEndArt	typescript-utils-study	3		2022-03-08T07:49:09Z	TypeScript	typescript,utils	false
+FontEndArt	interview	1	面试用	2021-11-24T16:38:55Z	JavaScript		false
+FontEndArt	wxcloud	0		2023-01-03T15:23:14Z	HTML		false
+co-star	love-anniversary	2	我们的纪念日	2018-03-12T11:46:07Z	JavaScript		false
+co-star	wa	1	wa	2021-06-19T13:37:10Z	Vue		false
+co-star	homepage	1	个人主页，微简历	2020-05-08T10:01:03Z	CSS		false
+co-star	biyao	1	 仿写必要商城，静态	2018-03-03T07:31:43Z	CSS	ajax,javascript,php	false
+co-star	wechat-chatgpts	0		2023-11-25T11:17:02Z	TypeScript		false
+co-star	vue.github.io	0		2017-07-27T07:14:53Z	JavaScript		false
+co-star	vue-project	0		2021-09-16T06:39:07Z	Vue		false
+co-star	tianyamingyuedao	0	仿写天涯明月刀	2018-03-03T07:33:03Z	CSS		false
+woai3c	visual-drag-demo	5619	一个低代码（可视化拖拽）教学项目	2026-05-27T06:08:01Z	Vue		false
+woai3c	nand2tetris	2932	计算机系统要素-从零开始构建现代计算机	2026-07-29T09:52:30Z	JavaScript		false
+woai3c	introduction-to-front-end-engineering	1987	一本小书《带你入门前端工程》	2026-07-26T14:45:41Z			false
+woai3c	MIT6.828	1901	实现一个操作系统内核	2023-03-04T14:40:52Z	C		false
+woai3c	Front-end-articles	1640	分享我的编程经验和学习心得，订阅请点 watch	2026-08-28T08:06:16Z	JavaScript		false
+woai3c	Front-end-basic-knowledge	787	前端知识点、面试题	2024-03-27T07:57:18Z			false
+woai3c	vue-admin-template	762	Vue 轻量级后台管理系统基础模板	2023-06-28T15:32:44Z	Vue		true
+woai3c	vue-form-maker	260	Vue 表单生成器——动态生成表单组件	2024-10-29T16:08:07Z	JavaScript		false
+lvxiaowu	vue-vuex-typescript-demo	4	自己搭建Vue + Vuex + Typescript 项目的配置	2019-05-16T12:12:46Z	TypeScript		false
+lvxiaowu	xhr-hook-cycle	3	用于拦截浏览器 XMLHttpRequest 的库	2020-11-26T08:45:18Z	JavaScript		false
+lvxiaowu	vue-form-making	2	vue自定义表单	2019-05-19T12:16:02Z	JavaScript		false
+lvxiaowu	vue-cli	0	一个用于移动端vue项目的脚手架	2022-12-09T11:40:37Z	JavaScript		false
+lvxiaowu	upload	0	upload_to_oss	2020-05-12T05:56:48Z	JavaScript		false
+lvxiaowu	uniapp-vue3-pinia	0		2023-08-09T10:43:44Z	TypeScript		false
+lvxiaowu	typescript-axios	0		2021-05-19T12:53:59Z	TypeScript		false
+lvxiaowu	resources	0	个人图床	2022-07-01T10:33:22Z	JavaScript		false
+LiangJunrong	document-library	3877	jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React,、ECharts、微信小程序、算法、数据结构等……	2024-04-09T16:25:45Z	CSS	docker,echarts,front-end,front-end-developer,interview,interview-questions,jsliang,node,react,vue	false
+LiangJunrong	Node	97	Node 基础，Node 提供 API、Node 连接 MySQL……	2020-02-22T16:57:53Z	HTML		false
+LiangJunrong	Work-Frequently-Used	44	工作中常用的前端代码	2018-12-11T01:54:49Z	CSS		false
+LiangJunrong	CurriculumVitae	40	ECharts 打造在线个人简历	2018-12-10T13:02:13Z	JavaScript		false
+LiangJunrong	webpack-study	36	jsliang webpack study - jsliang的webpack学习，一切基础尽在此	2018-11-20T03:12:27Z	JavaScript		false
+LiangJunrong	React	30	React demo by jsliang.	2019-05-15T08:09:02Z	JavaScript		false
+LiangJunrong	webpack-MPA-config	27	The basic webpack configuration by jsliang - jsliang的多页面webpack配置	2018-08-21T09:42:45Z	HTML		false
+LiangJunrong	RestaurantPOS	14	vue-cli+ElementUI+axios构建的单页点餐系统	2017-11-02T08:32:29Z	JavaScript		false
+biaochenxuying	blog	4777	大前端技术为主，读书笔记、随笔、理财为辅，做个终身学习者。	2023-10-27T06:05:30Z	HTML	algorithms,element-ui,express,html,javascript,nodejs,react,structure,typescript,vue,vue-typescript-element,vuepress,webpack	false
+biaochenxuying	blog-vue-typescript	2612	Vue3 + TypeScript + Vite2 + Vuex4 + Vue-Router4 + element-plus 支持 markdown 渲染的博客前台展示	2023-04-08T16:22:32Z	Vue	blog,element-plus,markdown,typescript,vite2,vue,vue-typescript-element,vue3,vue3-typescript	false
+biaochenxuying	awesome-books	881	技术类精华书单推荐，包括 前端、后端、数据结构与算法、计算机基础、设计模式、数据库等书籍。	2021-10-16T05:52:09Z			false
+biaochenxuying	vue-family-mindmap	771	用一张思维导图总结了 Vue | Vue-Router | Vuex 源码与架构要点。	2019-10-24T09:56:59Z		vue,vue-router,vuex	false
+biaochenxuying	blog-react	657	react + Ant Design + 支持 markdown 的博客前台展示	2024-01-20T03:58:14Z	JavaScript	antd,axios,highlight,react,webpack	false
+biaochenxuying	blog-node	547	基于 node + express  + mongodb 的博客网站后台	2022-12-09T07:25:39Z	JavaScript	blog,express,mongodb,mongoose,node,node-mongodb	false
+biaochenxuying	blog-react-admin	491	基于 pro.ant.design 的 react + Ant Design 的博客管理后台项目	2020-09-23T14:57:05Z	JavaScript	ant,markdown-editor,react	false
+biaochenxuying	route	87	原生 js 实现的轻量级路由，且页面跳转间有缓存功能。	2019-10-24T10:20:35Z	JavaScript	history,javascript,pushstate,replacestate,router,state-popstate	false
+cjygis	PythonBaseStudy	0		2018-06-30T06:13:18Z			false
+xlzy520	uniapp-tailwind-uview-starter	110	利用uniapp+tailwindcss 3.x+uview 1.x+vue-cli搭建的一套基础模板，可以使用Webstorm或者vscode开发。集成miniprogram-ci自动部署	2026-10-21T13:28:27Z	JavaScript	miniprogram-ci,tailwindcss,uniapp,uview	false
+xlzy520	picgo-plugin-smms-user	44	a plugin for picgo for SM.MS	2022-09-09T07:46:53Z	JavaScript	picgo-plugin,smms	false
+xlzy520	scenery	37	景你所见（小程序已上线）, 定位信息，天气，地图景点标注，云开发，云函数，小程序	2023-03-27T10:19:26Z	Vue	map,miniprogram,uniapp,vant	false
+xlzy520	CloundDisk3.0	24	云盘系统，包含文件操作以及文本、图像、markdown、xmind、code的编辑，zip的前端预览解压，office的预览编辑。with vue-cli 3	2020-09-07T16:58:01Z	Vue	clouddisk,javascript	false
+xlzy520	exam-score-reporter	21	考试成绩记录分析小程序, 记录每次考试成绩，自定义科目，通过可视化图表分析	2023-05-10T16:27:22Z	JavaScript	miniprogram,ucharts,uniapp	false
+xlzy520	baby-life	15	私密朋友圈小程序（云开发），做一个自己的树洞（宝宝生活）	2022-10-25T10:07:06Z	Vue	cloud-functions,miniprogram,miniprogram-ci,uview	false
+xlzy520	bilibili-lottery-tool	11	哔哩哔哩(bilibili)评论区抽奖工具，可以去重，查看抽奖的人是否关注自己	2022-02-20T05:51:49Z	JavaScript	bilibili,bilibili-lottery	false
+xlzy520	wx-qq-music	9		2021-07-31T07:23:58Z	JavaScript		false
+qdlaoyao	js-regex-mini-book	1445		2019-07-02T10:10:08Z			false
+qdlaoyao	css-gif	338	一个动图，一个CSS知识点	2019-07-29T10:24:37Z			false
+qdlaoyao	js-book	81	《JavaScript 迷你书》，全面夯实基础	2019-05-10T12:48:20Z			false
+qdlaoyao	qdlaoyao.github.io	0		2019-04-27T01:45:24Z	HTML		false
+suukii	91-days-algorithm	226	91天学算法-Leetcode图解题解集合(JavaScript/C++/Python) Solutions and Explainations with Hand Drawings in Chinese(JavaScript/C++/Python)	2021-12-23T02:32:18Z	JavaScript	algorithm,leetcode,leetcode-cpp,leetcode-cpp-solutions,leetcode-javascript,leetcode-python,leetcode-solutions,tree	false
+suukii	Articles	27	记录自己的学习轨迹	2020-12-04T10:45:07Z			false
+suukii	fe-interview	5	前端面试题整理	2020-11-14T02:43:38Z		fe-interview,javascript	false
+suukii	leetcode	3	Solutions And Ideas of Solving Leetcode Problems	2020-08-12T01:55:09Z		algorithm,leetcode-javascript,leetcode-python,leetcode-solutions	false
+suukii	daily	3	整理每天输出的一些小片段--前端/算法	2020-09-18T07:47:10Z	JavaScript	algorithm,frontend,js	false
+suukii	sue-cli	2	A simple cli	2020-12-08T09:07:55Z	JavaScript		false
+suukii	mini-webpack	2	A naive webpack implementation.	2023-01-06T07:34:57Z	JavaScript	webpack	false
+suukii	auto-mkfiles	2	自动生成VUE后台管理项目的目录和文件(just a toy)	2020-06-17T10:53:53Z	JavaScript		false
+wow-lc	Reptile_YouDaoNote	13	爬取、导出个人有道云笔记内容	2021-10-08T09:54:57Z	JavaScript		false
+wow-lc	v-cut-reactive	4	 开局一张图，页面交互全靠一个指令。	2020-07-29T07:04:16Z	JavaScript		false
+wow-lc	websocket_chat	1	简易聊天-websocket实现	2020-09-04T01:59:10Z	HTML		false
+wow-lc	web-speedly	1	前端进阶练习	2024-05-01T20:47:25Z	JavaScript		false
+wow-lc	vue-shop	1	vue 商城项目 （商城 + 新闻 + 娱乐的移动端网页）	2023-01-04T03:56:41Z	JavaScript		false
+wow-lc	vue-cli-multiple	1	vue 多页面脚手架    基于vue-cli,支持自动px-rem转化的vue多页面脚手架	2023-03-21T02:19:14Z	JavaScript		false
+wow-lc	skills_blog	1	Blog summary of skills	2023-07-12T23:26:41Z	Shell		false
+wow-lc	react-webworker-share	1	react-webworker-share	2022-06-14T07:27:54Z	HTML		false
+gryphonWcw	workLog	0	一个编辑和查看工作日志的网站	2018-11-09T03:45:32Z	HTML		false
+gryphonWcw	eve	0		2020-05-14T15:25:58Z	JavaScript		false
+hiraras	stages	0		2026-08-15T23:11:15Z	TypeScript		false
+hiraras	error-monitor	0		2026-07-02T09:09:39Z	TypeScript		false
+Lucas0719	Helloworld	2	I got nothing to descripe	2018-01-22T13:46:08Z			false
+xutianhuii	static	0		2023-07-25T08:08:37Z	HTML		false
+unrealflow	sk_render_scripts	0		2019-11-06T01:01:33Z	Python		false
+unrealflow	TrendRadar	0		2026-05-14T13:29:38Z	Python		false
+unrealflow	ShaderHost	0	Personal Work	2019-06-05T05:16:19Z	C++		false
+unrealflow	LearnVulkan	0		2026-11-04T09:05:42Z	C++		false
+unrealflow	LearnShader	0	Glsl Shaders, some from me, and some from ShaderToy. 	2020-12-08T02:57:04Z	GLSL		false
+unrealflow	LearnPhysX	0		2019-10-11T06:17:41Z	C++		false
+unrealflow	LearnDX12	0		2020-04-27T00:43:53Z	C++		false
+unrealflow	Hexbound	0	Hexbound web tech validation: Civ-style hex terrain with pure procedural shaders (Babylon.js).	2026-09-22T07:40:59Z	TypeScript		false
+lxhguard	shopping	1	购物平台 react+express+mongodb ，主要写了购物车，商家列表展示，单个商家展示，用户中心：修改个人信息，查看订单	2019-08-03T06:35:45Z	JavaScript		false
+lxhguard	nodeBlog	1		2019-02-24T15:32:47Z	JavaScript		false
+lxhguard	lxhguard.github.io	1	使用github搭建主页	2026-10-14T17:10:15Z	HTML		false
+lxhguard	leetcode-javascript	1	leetcode题解	2025-07-23T11:54:12Z	JavaScript		false
+lxhguard	gulp-demo	1	gulp构建 js,less,css,异步任务,压缩html,半自动项目构建，全自动项目构建，插件	2022-12-11T21:23:59Z	JavaScript		false
+lxhguard	go.fgo-wangyi.co	1	go.fgo-wangyi.co 我的	2023-07-19T17:14:30Z	HTML		false
+lxhguard	computer-network-note	1	my learning note of computer network(我的计算机网络学习笔记，参考第六版《计算机网络自顶向下方法》)	2020-05-14T15:12:35Z			false
+lxhguard	ys.184.cab	0	ys.184.cab	2023-07-22T12:17:40Z			false
+Adashuai5	my-desktop	105	A page written in react hooks and typescript that mimics the macOS desktop	2023-07-07T23:10:21Z	TypeScript		false
+Adashuai5	awesome-financial-freedom	19	An awesome list of structured knowledge about financial independence, packaged as an AI Skill for effortless conversational learning.	2026-05-21T13:33:28Z	JavaScript	ai,awesome,financial,freedom,skill	false
+Adashuai5	wheels-ada	5	An easy UI components based on Vue	2022-12-12T11:44:18Z	Vue	vue,vue-ui,wheel	false
+Adashuai5	my-front-end-notes	3	笔记	2023-01-28T02:26:38Z	HTML		false
+Adashuai5	elegant-ui	2	An UI library based on Vue3.	2023-01-07T21:37:50Z	Vue		false
+Adashuai5	checkpoint-skill	2	A Claude Code / Agent Skill that hands a long session off to a file, so a fresh session can resume cheaply — without re-deriving context or hallucinating.	2026-07-26T16:14:47Z		ai,ai-tools,memery,skill	false
+Adashuai5	vue-element-plus	1		2022-12-12T15:48:24Z	Vue		false
+Adashuai5	vue-echarts-map-china	1		2022-12-12T09:11:43Z	Vue		false
+DeianHsu	kaggle-WattBot-2026	0	面向 WattBot 2026 的多模态检索增强生成（RAG）问答系统，支持论文文本、表格和图像。	2026-10-22T23:24:33Z	Python		false
+DeianHsu	game-pbz-assistant	0	《影之刃零》本机存档只读助手	2026-11-10T13:37:40Z	JavaScript		false
+DeianHsu	game-Sudoku-assistant	0		2026-10-13T06:09:32Z	Python	gametool	false
+DeianHsu	game-MUSYNX-assistant	0	MUSYNX 自动打歌工具（同步音律喵赛克 Steam 版）	2026-10-28T12:01:27Z	C#		false
+DeianHsu	game-Glass-Masquerade-2-assistant	0	Standalone Windows assistant for Glass Masquerade 2: auto-solve puzzles and complete achievements.	2026-10-28T10:32:03Z	C#	automation,bepinex,glass-masquerade-2,trainer,unity,windows	false
+DeianHsu	game-BadPunPC-assistant	0	《这是谐音梗》Steam 电脑版自动解题助手：视觉模型识图、自然语言反馈条件、本地接口自动提交，支持后台运行。	2026-10-13T21:41:30Z	Python	gametool	false
+DeianHsu	demo-mini-swe-agent	0	手写 Python 智能体学习项目，支持 PowerShell、Docker Bash 和 SWE-bench Pro V2 本地评测。	2026-10-25T17:21:44Z	Python		false
+DeianHsu	demo-jd-insight	0	从真实 JD 中抽取、验证和归并岗位要求，生成可统计、可追溯的市场需求分析。	2026-09-20T21:44:37Z	Python		false
+FangCWProject	JDindex	1	京东的主页	2018-03-25T16:46:21Z	HTML		false
+FangCWProject	JS	0	JS学习过程中的练习	2018-06-03T16:20:06Z	HTML		false
+taopoppy	stackflowovermirror	16		2021-07-22T06:37:23Z	JavaScript		false
+taopoppy	MyVuepress	12		2024-12-24T02:19:22Z	Shell		false
+taopoppy	Driver-license	8	学习驾照	2021-03-29T02:57:00Z			false
+taopoppy	taopoppy.github.io	7		2021-03-11T14:31:25Z	HTML		false
+taopoppy	react_ssr	1	study react_ssr	2023-01-26T21:42:27Z	HTML		false
+taopoppy	weixinrumen	0		2021-03-28T14:19:15Z	JavaScript		false
+taopoppy	weixin-fullstack	0	全面学习成为微信全栈开发工程师	2023-10-24T03:11:43Z	JavaScript		false
+taopoppy	vue-todo-tech	0		2022-12-07T21:30:36Z	JavaScript		false
+zzzzzhowie	file-upload	702	A guide about how to upload and process large files (using Vue.js for frontend and Node.js for backend)	2024-10-08T23:01:51Z	Vue		false
+zzzzzhowie	practical-javascript	367	28 JavaScript skills that a front-end engineer needs to know	2026-02-03T00:37:25Z	JavaScript		false
+zzzzzhowie	async-catch-loader	134	A webpack loader that can automatically injects try/catch into async function	2023-09-28T09:14:43Z	JavaScript		false
+zzzzzhowie	vue2-admin	123	Some good practice for Vue projects	2023-09-28T09:50:11Z	JavaScript		false
+zzzzzhowie	free-swagger	68	swagger → API code	2024-07-10T19:07:40Z	TypeScript	frontend,swagger	false
+zzzzzhowie	excel-code-generator	21	A tool that can extract specified data from xlsx and generate code into any file	2023-09-28T09:21:54Z	TypeScript	excel,node,typescript	false
+zzzzzhowie	free-swagger-demo	2		2021-09-15T03:34:03Z	JavaScript		false
+zzzzzhowie	zzzzzhowie	1		2026-11-12T05:04:21Z			false
+feikerwu	shan-hai-jing	14		2023-11-22T09:48:04Z	MDX	blog,fe	false
+feikerwu	algorithm-camp	3	算法训练	2024-06-25T07:35:34Z	JavaScript	algorithm	false
+feikerwu	typescript-to-markdown	1	将ts类型转换为markdown table语法	2022-06-09T07:10:36Z	TypeScript		false
+feikerwu	relearn-cs	1	重学计算机原理，夯实基础，望厚积而薄发	2020-04-09T07:15:20Z			false
+feikerwu	qing-shui-he	1	～好一对痴心的人，双双就跳了河～	2022-08-15T10:51:24Z	TypeScript		false
+feikerwu	fei-cli	1	个人项目脚手架	2024-03-05T06:26:51Z	JavaScript	cli,javascript,typescript	false
+feikerwu	xuan-gui	0	Scriptable 脚本	2020-11-19T08:51:42Z	TypeScript		false
+feikerwu	word-detector-2	0		2018-08-10T02:52:17Z	JavaScript		false

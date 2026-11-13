@@ -5,7 +5,7 @@
 为什么：盯盘的价值全在「沉默=没事、响=真有事」。规则写错时会静默地永远不响，
 这种 bug 只能靠断言抓。改 盯盘.py 或 watchlist.json 之后跑一遍。
 
-    ~/WorkBuddy AI/投资/.venv/bin/python3 工具/盯盘/盯盘_test.py
+    ~/ai/invest/.venv/bin/python3 工具/盯盘/盯盘_test.py
 """
 
 import sys

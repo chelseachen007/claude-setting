@@ -59,14 +59,21 @@ read_when:
 - 飞书 websocket 在 `~/.agent-autoloop/logs/up.log` 里 `reconnecting` 出现 154 次，属正常断线重连（04:00:48 disconnected → 04:02:21 connected），不影响投递。
 - Chrome 远程调试失效时（如 11-08）雪球日报会失败并派卡片；恢复后选「已恢复，重新派发」会从抓取开始补跑。人机协同链路已验证可用。
 
-## 当前规则（2026-11-12）
+## 当前规则（2026-11-13 拆分后）
 
-| 名称 | 触发 | skill | tell |
-|---|---|---|---|
-| 试一下 | 事件 `try.*` | — | — |
-| 早报 | cron `0 8 * * *` | morning-brief | needed |
-| 雪球日报 | cron `0 9 * * *` | xueqiu-digest | needed |
-| 积压消化 | cron `30 21 * * *` | clip-batch | needed |
+**中台只保留早报一条**，其余两条已迁到 dsh 的 `schedule`（见 `dsh-platform.md`「定时日程」一节）。
+
+| 名称 | 在哪 | 触发 | skill | tell |
+|---|---|---|---|---|
+| 试一下 | 中台 | 事件 `try.*` | — | — |
+| 早报 | **中台** | cron `0 8 * * *` | morning-brief | needed |
+| 雪球日报 | **dsh 日程** `schedule-0dcdd825` | 每天 09:00 | xueqiu-digest | — |
+| 积压消化 | **dsh 日程** `schedule-60091c44` | 每天 21:30 | clip-batch | — |
+
+- 为什么早报留在中台：dsh 日程的 `target: new_once` 只把结果写进新会话，**不主动推送**；
+  早报需要每天递到眼前，中台的飞书卡片通道更合适。另两条跑完放着就行，不需要推。
+- 迁移发生在 2026-11-13 09:29（备份 `rules.json.bak-migrate-to-dsh-20261113-092959`），
+  原 4 条规则的原文就在那份备份里，要还原直接读它。
 
 - `tell` 三档：`always`（无条件推）/ `needed`（**默认值**，只有 Agent 提问或出错才推）/ `never`。
   定义在 `app/protocol/rules.ts:16`，判定在 `app/kernel/decide.ts:329`。定时任务一律用 `needed`，

@@ -80,6 +80,12 @@ MCP 不是 `mcp.json`，是 `~/.dsh/profiles/<profile>/cordis.patch.yml` 里的�
 
 **体检**：跑 `~/ai/sync.sh`（规则/记忆软链 + 项目技能 + 全局技能源 + dsh CLI）。技能源单独体检用 `~/ai/scripts/sync-skill-sources.sh`，加 `--apply` 可把被 App 覆盖成实体目录的入口重新接管成软链。
 
+**路径链接的写法（重要）**：在聊天里给用户发链接时，**绝对不要写 `[xxx](~/ai/...)`**。
+客户端把 `~/` 当相对路径，拼到当前工作目录后面，变成 `<cwd>/~/ai/...` 然后报 ENOENT——看起来像「文件丢了」，实际只是没展开 `~`。
+- 链接一律写全路径：`[INDEX.md](/Users/chenjie/ai/memory/projects/github-mirror/INDEX.md)`
+- 代码块、普通正文里讲路径可以继续用 `~`（不会变成链接）
+- 2026-11-13 在 DeepSeek Harness Web 界面实测触发，用户以为整个 `~/ai` 目录被删了
+
 **写入规则**：
 - 学到跨项目的长期事实 → 写 `~/ai/memory/MEMORY.md`
 - 当天做了什么 → 追加 `~/ai/memory/daily/YYYY-MM-DD.md`

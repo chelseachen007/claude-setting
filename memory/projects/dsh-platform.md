@@ -32,6 +32,28 @@ read_when:
 - WorkBuddy 的 Bash 工具里 `nohup &` 起的进程会随 shell 退出被回收；要持久化用 Python `start_new_session=True`
 - **坑**：`launchctl bootstrap` 对该 plist 返回 `EIO 5` 是假报错 —— 任务其实已加载。判断依据看 `launchctl print gui/501/com.user.dsh-web` 的 `state/pid/runs`，别看返回码
 
+## 定时日程（dsh-schedule，2026-11-13 取代中台的定时部分）
+
+- 存储：`~/.dsh/storages/schedule.json`（`tables.tasks` 下每个 `schedule-<uuid>` 一条；`status` 为 `active`/`ended`）
+- 管理只用 `schedule_*` 工具看，别手改 JSON
+- **沙箱关键坑**：`sandbox-policy` 默认 `mode: workspace-write` + `workspaceRoot: process.cwd()`。
+  `workspace-write` 下**只能写 workspaceRoot**，写别的目录报 `PermissionError [Errno 1] Operation not permitted`。
+  中台规则原来靠 `"access": "full"`（danger-full-access）绕过去，迁到 dsh 后这个能力丢失。
+- **修法**：`~/.dsh/profiles/web/cordis.patch.yml` 加
+  ```yaml
+  - id: sandbox-policy
+    config:
+      additionalWritableRoots:
+        - /Users/chenjie/ai/invest
+  ```
+  等价于命令行 `--add-dir <path>`。已备份 `cordis.patch.yml.bak-addwritable-20261113`。
+- **验证方法（重要）**：必须让 dsh 自己执行，用 shell 直接跑 python 会绕过沙箱给出假阳性 `WRITE_OK`。
+  干净的隔离测法：
+  `dsh --profile headless --patch <只含 additionalWritableRoots 的 yml> --permission-mode workspace-write --approval-policy never "用 bash 执行 <探针>"`。
+  2026-11-13 实测该项生效（`WRITE_OK`）。**别拿 web 的完整 patch 叠到 headless 上**，会因缺 `xdpool` adapter 报 `NO_ADAPTER`。
+- **无人值守风险**：`workspace-write` 预设自带 `approval: ask`，日程运行时没人在旁边批准，遇到需授权操作会卡住。
+- 改 `sandbox-policy` / `retryPolicy` 这类配置都要**重启 dsh web** 才生效。
+
 ## 模型网关：magpie 取代 CC Switch（2026-10-28）
 
 **CC Switch 已退场**：登录项删除、进程退出、15721 不再监听；其遗留 LaunchAgent `io.ccswitch.deepseek-responses-sanitizer`（15722）已 bootout，plist 移到 `~/.config/magpie/backups/cc-switch-disabled/`。App 本体没删，可回退；迁移前的库备份在 `~/.config/magpie/backups/cc-switch-before-migration-20261028-090931.db`。
@@ -112,3 +134,28 @@ read_when:
   - 代价：该 id 在当前 profile 不存在 → 启动时 stderr 一行 `not found`。**exit=0，不影响功能。**
   - **不要动它**：改 node_modules 会被升级覆盖；在 profile 里加同名 disabled 条目虽然能消警告，
     但那条目会出现在插件列表里，正是作者想避免的局面。
+
+## dsh-xdpool 数据看板：2000 次调用上限（2026-11-13）
+
+- **现象**：数据看板「最近 N 次调用」卡在 2000，KPI 不再增长。原因是 `lib/index.js` 里
+  `const USAGE_MAX_SAMPLES = 2e3;` 硬编码，`UsageRecorder.record()` 超限就 `shift()` 丢最旧样本；
+  用量纯内存、重启清空（`~/.dsh/.xdpool/` 里没有 stats 落盘文件）。
+- **每次插件升级都会回来**：11/6 升到 2.4.2 时把旧补丁覆盖了。与升级备份
+  `index.js.bak-20261106-094532` 的 diff 只剩 11128 指纹补丁，说明用量补丁确实没了。
+- **补丁脚本**：`bash ~/ai/scripts/patch-xdpool-usage-cap.sh`（幂等，自动备份 `*.bak-usagcap-<时间>`）。
+  它做两件事：`USAGE_MAX_SAMPLES` 2e3 → 2e4；`summary().entries` 从全量改成 `slice(-500)`。
+  后者是因为面板只渲染 12 行（`client.js` 里 `DETAIL_ROWS = 12`），回传全量会让 `/usage` 响应膨胀。
+- **生效要重启 DSH**：node 模块进程内已缓存，改 node_modules 不会热生效（cordis.patch.yml 的热重载只重跑插件 fiber，不重读磁盘代码）。
+
+## ⚠️ cordis.patch.yml 是热重载的（血的教训）
+
+- 2026-11-13 想在 profile 里给 `- id: llm-xdpool / name: dsh-xdpool` 加 `disabled: true` 临时停用，
+  存盘即生效：adapter 立刻注销，正在跑的请求先报
+  `502 "acp-proxy failure: connect-refused ECONNREFUSED 127.0.0.1:50334"`，下一次就是
+  `no adapter registered for provider "xdpool"`（`NO_ADAPTER`），会话被自动降级到 `deepseek-account/deepseek-flash`，
+  并把 `agent-default-model` 那段配置改写成了降级后的模型。
+- **规矩**：不能把「禁用插件」当临时手段。要试本地构建，用别的 profile 或复制一份目录，别动线上 profile 的条目。
+- 恢复方法：删掉 `disabled` 行即可热生效；顺手检查 `agent-default-model` 有没有被改写回去。
+- 复核手段（不用重启）：`POST /plugins/dsh-xdpool/channels/models` 带 `{"providers":["xdpool"]}`，
+  能返回模型列表就说明 host registry 里 adapter 已注册；`POST /plugins/dsh-xdpool/model/test`
+  带 `{"provider":"xdpool","model":"deepseek-v4.1-flash"}` 打一次真实连通性。

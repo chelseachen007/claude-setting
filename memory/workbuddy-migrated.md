@@ -15,7 +15,7 @@ source: ~/.workbuddy/memory/ 与 ~/WorkBuddy AI/*/.workbuddy-ai/memory/
 | `~/.workbuddy/memory/02e67107-…_memory.md` | App 级用户记忆，`memoryBlock` 为空 | 无内容可迁 |
 | `~/WorkBuddy AI/博物馆探索/.workbuddy-ai/memory/MEMORY.md` | 博物馆项目约定 + 12 条跨会话踩坑 | 通用踩坑已提炼 |
 | `~/WorkBuddy AI/历史学习/.workbuddy-ai/memory/MEMORY.md` | 历史学习应用项目记忆（多 Agent 分工） | 项目私有，保留 |
-| `~/WorkBuddy AI/投资/.workbuddy-ai/memory/MEMORY.md` | CNEquity 数据湖项目记忆 | 项目私有 + 2 条通用坑 |
+| `~/WorkBuddy AI/投资/.workbuddy-ai/memory/MEMORY.md`（投资工作区已迁走，见下） | CNEquity 数据湖项目记忆 | 项目私有 + 2 条通用坑 |
 | `~/WorkBuddy AI/{Claw,博物馆,未来模板,2026-10-23-17-00-39}/…/YYYY-MM-DD.md` | 按日工作日志 | 不迁，属于流水 |
 
 ---
@@ -56,13 +56,15 @@ source: ~/.workbuddy/memory/ 与 ~/WorkBuddy AI/*/.workbuddy-ai/memory/
 
 ## 投资数据湖（项目私有）
 
-工作区：`/Users/chenjie/WorkBuddy AI/投资`
+> 原 `~/WorkBuddy AI/投资` 已于 2026-11-12 退役（整体移废纸篓），现工作区 `/Users/chenjie/ai/invest`。
+
+工作区：`/Users/chenjie/ai/invest`（2026-11-12 迁入）
 
 - 本地 CNEquity A 股数据湖 + MCP 只读接口。不是选股软件，不产生信号。
-- venv：`/Users/chenjie/WorkBuddy AI/投资/.venv`；必须 `./.venv/bin/python3 ./.venv/bin/cne-wb`
+- venv：`/Users/chenjie/ai/invest/.venv`；必须 `./.venv/bin/python3 ./.venv/bin/cne-wb`
 - **读数据必须 `hive_partitioning=false`**：DuckDB 会用分区目录名顶掉同名字段（`trade_date=2023/` 把 DATE 静默变成 BIGINT 2023），不报错
 - 自检：`select count(distinct trade_date)`，正常 700+，只剩 4~5 个就是踩了
-- 湖结构：`data/cnequity/{curated,derived}/<dataset>/<分区>/part-merged.parquet`
+- 湖结构：`~/Data/cnequity/cnequity/{curated,derived}/<dataset>/<分区>/part-merged.parquet`
 - **北交所无历史**（只有当日 tip bar，换 920 号段后新浪只认旧代码）
 - `snapshot_only` 数据集没有历史可回填，只能从首次采集日积累
 - 看板：launchd `com.cnequity.lake-serve`，http://127.0.0.1:8787/

@@ -22,7 +22,6 @@ read_when:
 | 文件 | 什么时候读 |
 |---|---|
 | `projects/dsh-platform.md` | 改 `~/.dsh` 配置、插件、workspace；排查 dsh-chat-import / Mnemon / magpie；查平台迁移经验 |
-| `projects/agent-autoloop.md` | 改自动化中台的规则、通道、worker；查「单次任务百万 token」的优化结论 |
 | `projects/invest-workspace.md` | 投资数据抓取的接口坑、口径纪律、复盘机制 |
 | `projects/github-mirror/INDEX.md` | **选库/选技术栈/找现成轮子之前先查**：46 位关注对象画像、每人主力仓库、24 位大佬共同收藏的 239 个共识仓库（≥8 人收藏=圈内公共设施）。数据快照在同目录 `*.tsv` |
 
@@ -51,7 +50,7 @@ read_when:
 - **Obsidian Git 插件的自动提交已关闭**（2026-11-11），由 LaunchAgent 统一管，避免两个进程抢 `index.lock`。
 - ObPublish 的 submodule 指针由 **Vercel 自动跟随**推送，不用手动管。
 - `com.user.dsh-web`：dsh web 服务托管（见 `projects/dsh-platform.md`）
-- `agent-autoloop`：自动化中台（见 `projects/agent-autoloop.md`）
+- ~~`agent-autoloop`：自动化中台~~ **2026-11-13 已卸载**，定时任务全部迁到 dsh 日程（见 `projects/dsh-platform.md`）
 
 ## 系统维护脚本
 

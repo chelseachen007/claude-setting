@@ -36,6 +36,7 @@ PY_ASR = "/opt/homebrew/bin/python3"
 ASR_MODEL = "mlx-community/whisper-large-v3-turbo"
 MAGPIE = "http://127.0.0.1:3425/v1/chat/completions"
 MAGPIE_MODEL = "deepseek/deepseek-v4-pro"
+MAGPIE_MODEL_LIGHT = "deepseek/deepseek-flash"  # 闪念用：12s → 2.5s
 
 CST = timezone(timedelta(hours=8))
 SHORT_SEC = 60  # 短于这个长度算"闪念"，长于等于算"会议"
@@ -213,6 +214,10 @@ print(json.dumps(r.get("segments", []), ensure_ascii=False))
 """
     env = {k: v for k, v in os.environ.items()
            if k.lower() not in ("http_proxy", "https_proxy", "all_proxy", "no_proxy")}
+    # 关键提速：不设 HF_HUB_OFFLINE 时，transformers 每次都会去 HF 查一遍权重是否要更新，
+    # 实测 2 秒语音转写从 7.8s 涨到 77s（10 倍）。模型早已在本地缓存，直接强制离线。
+    env["HF_HUB_OFFLINE"] = "1"
+    env["TRANSFORMERS_OFFLINE"] = "1"
     p = subprocess.run([PY_ASR, "-c", code], capture_output=True, text=True,
                        timeout=3600, env=env)
     if p.returncode != 0:
@@ -319,7 +324,7 @@ def polish(text: str, meeting: bool) -> dict:
     """调 magpie 整理，返回 {"title","summary","cleaned"}；失败返回空 dict。"""
     prompt = (MEETING_PROMPT if meeting else FLASH_PROMPT).replace("{text}", text)
     body = json.dumps({
-        "model": MAGPIE_MODEL,
+        "model": MAGPIE_MODEL if meeting else MAGPIE_MODEL_LIGHT,
         "messages": [
             {"role": "system", "content": "你只输出严格 JSON，不要任何别的字符。"},
             {"role": "user", "content": prompt},
@@ -328,6 +333,8 @@ def polish(text: str, meeting: bool) -> dict:
         # 预算给小了会 finish_reason=length 且 content 为空（实测 600 → 空，2000 → 正常）。
         "max_tokens": 4000 if meeting else 2500,
         "temperature": 0.3,
+        # 闪念记录不需要深度推理：v4-pro 默认会先想几十秒，关掉思考头
+        "chat_template_kwargs": {"thinking": False},
     }).encode()
     p = subprocess.run(
         ["curl", "-s", "--noproxy", "127.0.0.1", "-X", "POST", MAGPIE,

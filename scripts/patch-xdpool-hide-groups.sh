@@ -3,9 +3,14 @@
 #
 # 把 dsh-xdpool 模型选择器里两组从下拉里摘掉，幂等可重打。
 #
-# 摘掉的两组：
+# 摘掉的三组：
 #   [xdpool-hide-free]   XD Pool · 免费模型   (provider id: xdpool-free)
 #   [xdpool-hide-buddy]  CodeBuddy (腾讯)     (provider id: buddy)
+#   [xdpool-hide-cn]     XD Pool（国内版）     (provider id: xdpool)
+#
+# 注意 hide-cn：摘掉后 dsh 里就完全没有 xdpool 的 adapter 了，
+# 模型一律走 magpie（provider: magpie, 模型名 xd-pool-xdpool/<model>）。
+# 打之前确认 agent-default-model / 各会话没有还指向 provider: xdpool。
 #
 # 为什么必须用脚本：改的是 node_modules 里的插件源码，
 # `dsh plugin add/update` 升级 xdpool 会整包覆盖，补丁随即丢失，
@@ -122,6 +127,33 @@ open(path, "w", encoding="utf-8").write(s)
 print("ok")
 PY
 
+# ── 补丁 3：XD Pool（国内版）（lib/index.js 两处）─────────────────────
+read -r -d '' CN_PY <<'PY'
+import os, sys
+path = os.environ["PATCH_TARGET"]
+s = open(path, encoding="utf-8").read()
+
+# 1) 不再注册国内版 adapter
+old = '\t\t\t\treleaseAdapterCn = ctx.llm.registerAdapter([POOL_PROVIDER_BY_REGION.cn], adaptersByRegion.cn.adapter);\n'
+new = '\t\t\t\t// [xdpool-hide-cn] cn lane unregistered; models go through magpie\n'
+if s.count(old) != 1: sys.exit("anchor1 registerAdapter cn: %d hits" % s.count(old))
+s = s.replace(old, new)
+
+# 2) 从 configurable-provider 目录里摘掉国内版条目
+old2 = ('\t\t\t\t\t{\n'
+        '\t\t\t\t\t\tprovider: POOL_PROVIDER_BY_REGION.cn,\n'
+        '\t\t\t\t\t\tdisplayName: POOL_NAME_BY_REGION.cn,\n'
+        '\t\t\t\t\t\tsettingsNs: XDPOOL_SETTINGS_NS,\n'
+        '\t\t\t\t\t\tsettingsPath: [],\n'
+        '\t\t\t\t\t\tdeclared: false\n'
+        '\t\t\t\t\t},\n')
+if s.count(old2) != 1: sys.exit("anchor2 cn entry: %d hits" % s.count(old2))
+s = s.replace(old2, '')
+
+open(path, "w", encoding="utf-8").write(s)
+print("ok")
+PY
+
 # ── 补丁 2：CodeBuddy (腾讯)（pack.js 一处）──────────────────────────
 read -r -d '' BUDDY_PY <<'PY'
 import os, sys
@@ -178,10 +210,11 @@ say "插件：$PLUGIN"
 rc=0
 apply_one "[xdpool-hide-free]"  "$IDX"  "免费模型分组"    "$FREE_PY"  || rc=$?
 apply_one "[xdpool-hide-buddy]" "$PACK" "CodeBuddy 分组"  "$BUDDY_PY" || rc=$?
+apply_one "[xdpool-hide-cn]"    "$IDX"  "国内版分组"      "$CN_PY"    || rc=$?
 
 if [ "$MODE" = "check" ]; then
   say ""
-  if [ "$rc" -ne 0 ]; then say "有补丁未打。修：$0"; else say "两个补丁都在位。"; fi
+  if [ "$rc" -ne 0 ]; then say "有补丁未打。修：$0"; else say "补丁都在位。"; fi
   exit "$rc"
 fi
 

@@ -82,6 +82,16 @@ read_when:
 - **magpie library 的 instructions/skills 不用**——会与 `~/ai/rules/global.md`、`~/ai/skills/` 双写；只把 MCP 收口在 library（当前 notion → codex）。
 - dsh 侧：`~/.dsh/.credentials.yaml` 的 refs 段需要 `MAGPIE_GATEWAY_KEY: magpie`（值随意，网关不校验）；`cordis.patch.yml` 里同 id 的多个 patch 是**浅覆盖不合并**，`!delete` 自定义 tag 会让整个文件解析失败，删键只能整段重写。
 - 实际可用的 provider 目前只有 deepseek 官方 + xdpool；neko（403 余额不足）、xiaomi（401 key 失效）、zhipu（429 余额不足）、minimax（402 余额不足）、nvidia（404 模型不存在）都不可用。
+- **dsh UI 的模型「删不掉」＝清单真源在 patch.yml（2026-11-13 查清）**：UI 模型选择器里的 magpie
+  模型全部来自 `cordis.patch.yml` 里 `llm-pi-ai → providers.magpie.models`（手工维护的 YAML 数组），
+  UI 没有对应的删除入口。修法：直接编辑 patch.yml 删条目，保存即热重载生效，无需重启。
+  已删 zhipu 三条 + `magpie-responses` 整段（里面只有 neko 两条，删空 provider 一并删），
+  备份 `cordis.patch.yml.bak-delmodels-20261113-1341`。
+  - 热重载后 dsh 会**把规范化配置写回 patch.yml**（md5 会变、运行时状态如 `agent-default-model.model`
+    会混进文件，实测从 deepseek-v4.1-flash 变成 kimi-k3.1-pro），但外部删除会被保留。
+    稳定性验证：隔几秒 `grep -c "zhipu\|neko-api" cordis.patch.yml` 连续两次为 0 才算稳。
+  - 写回有竞态：同一条 bash 里先后两次读文件能读到不同版本。别信单次读取结果。
+  - 模型列表变化会 emit `llm/models-updated`，已打开的选择器自动重载，不需要刷新页面。
 
 ## 平台会话迁移（2026-10-27 核对）
 

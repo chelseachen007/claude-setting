@@ -34,7 +34,6 @@ from datetime import date, datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-INVEST = HERE.parent.parent  # ~/ai/invest
 
 WATCH_FILE = HERE / "watchlist.json"
 STATE_FILE = HERE / "watch_state.json"
